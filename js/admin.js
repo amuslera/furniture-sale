@@ -121,7 +121,8 @@ const AdminPanel = {
     // Image upload
     document.getElementById('imageUpload').addEventListener('change', (e) => this.handleImageUpload(e));
 
-    // Export/Import
+    // Export/Import/Publish
+    document.getElementById('publishBtn').addEventListener('click', () => this.publishChanges());
     document.getElementById('exportDataBtn').addEventListener('click', () => this.exportData());
     document.getElementById('importDataBtn').addEventListener('click', () => this.importData());
   },
@@ -438,6 +439,35 @@ const AdminPanel = {
         this.showMessage('Failed to delete item', 'error');
       }
     }
+  },
+
+  /**
+   * Publish changes - sends email with JSON data
+   */
+  publishChanges() {
+    const jsonData = FurnitureData.exportData();
+    const items = FurnitureData.loadItems();
+    const itemCount = items.length;
+    const timestamp = new Date().toISOString().split('T')[0];
+
+    // Create email subject and body
+    const subject = encodeURIComponent(`Furniture Website Update - ${timestamp}`);
+    const body = encodeURIComponent(
+      `Hi,\n\n` +
+      `I've updated the furniture listings and would like to publish the changes to the live website.\n\n` +
+      `Updated data:\n` +
+      `- Total items: ${itemCount}\n` +
+      `- Date: ${timestamp}\n\n` +
+      `The JSON data is attached below. Please copy it and update the website.\n\n` +
+      `JSON Data:\n` +
+      `${jsonData}\n\n` +
+      `Thanks!`
+    );
+
+    // Open email client with pre-filled content
+    window.location.href = `mailto:arielmuslera@gmail.com?subject=${subject}&body=${body}`;
+
+    this.showMessage('Email opened - send it to publish your changes', 'success');
   },
 
   /**
