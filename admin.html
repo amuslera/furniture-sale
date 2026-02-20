@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Furniture Showcase</title>
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <!-- Login Section -->
+  <section id="loginSection">
+    <div class="login-container">
+      <h1>Admin Login</h1>
+      <div class="login-form">
+        <div class="form-group">
+          <label for="passwordInput">Password</label>
+          <input type="password" id="passwordInput" placeholder="Enter admin password">
+        </div>
+        <div class="login-error" id="loginError">
+          Incorrect password. Please try again.
+        </div>
+        <button type="button" id="loginBtn" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admin Section -->
+  <section id="adminSection">
+    <!-- Header -->
+    <div class="admin-header">
+      <div>
+        <h1>Furniture Admin Panel</h1>
+        <span class="storage-info" id="storageInfo">Storage: Loading...</span>
+      </div>
+      <div class="header-actions">
+        <button id="exportDataBtn" class="btn btn-secondary">Export Data</button>
+        <button id="importDataBtn" class="btn btn-secondary">Import Data</button>
+        <button id="logoutBtn" class="btn btn-logout">Logout</button>
+      </div>
+    </div>
+
+    <!-- Message Box -->
+    <div id="messageBox" class="message"></div>
+
+    <!-- Items List Section -->
+    <div id="itemsListSection">
+      <div class="section-header">
+        <h2>All Items</h2>
+        <button id="addNewBtn" class="btn btn-success">+ Add New Item</button>
+      </div>
+
+      <div class="table-container">
+        <table id="itemsTable">
+          <thead>
+            <tr>
+              <th style="width: 80px;">Image</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th style="width: 100px;">Price</th>
+              <th style="width: 130px;">Status</th>
+              <th style="width: 150px;">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="6" class="no-items">Loading...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Item Form Section -->
+    <div id="itemFormSection">
+      <div class="form-header">
+        <h2 id="formTitle">Add New Item</h2>
+      </div>
+
+      <form class="item-form" onsubmit="return false;">
+        <!-- Item Name -->
+        <div class="form-group">
+          <label for="itemName">Item Name *</label>
+          <input
+            type="text"
+            id="itemName"
+            placeholder="e.g., Modern Gray Lounge Chair"
+            required
+          >
+        </div>
+
+        <!-- Description -->
+        <div class="form-group">
+          <label for="itemDescription">Description *</label>
+          <textarea
+            id="itemDescription"
+            placeholder="Include dimensions, condition, brand, materials, etc."
+            required
+          ></textarea>
+        </div>
+
+        <!-- Price -->
+        <div class="form-group">
+          <label for="itemPrice">Price ($) *</label>
+          <input
+            type="number"
+            id="itemPrice"
+            placeholder="250"
+            min="0"
+            step="0.01"
+            required
+          >
+        </div>
+
+        <!-- Status -->
+        <div class="form-group">
+          <label for="itemStatus">Status *</label>
+          <select id="itemStatus">
+            <option value="available">Available</option>
+            <option value="pending">Pending</option>
+            <option value="sold">Sold</option>
+          </select>
+        </div>
+
+        <!-- Image Upload -->
+        <div class="form-group image-upload-section">
+          <label>Photos *</label>
+          <div class="upload-button-wrapper">
+            <label for="imageUpload" class="upload-button">
+              Choose Images
+            </label>
+            <input
+              type="file"
+              id="imageUpload"
+              accept="image/*"
+              multiple
+            >
+          </div>
+          <small style="color: #666; display: block; margin-bottom: 10px;">
+            Upload multiple images. First image will be the primary photo.
+            Images will be automatically optimized.
+          </small>
+          <div id="imagePreview">
+            <p class="no-images-text">No images uploaded yet</p>
+          </div>
+        </div>
+
+        <!-- Form Actions -->
+        <div class="form-actions">
+          <button type="button" id="saveItemBtn" class="btn btn-success">Save Item</button>
+          <button type="button" id="cancelFormBtn" class="btn btn-secondary">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

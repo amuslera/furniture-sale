@@ -1,0 +1,525 @@
+/**
+ * Admin Panel JavaScript
+ * Handles authentication, CRUD operations, and image management
+ */
+
+const AdminPanel = {
+  // Configuration
+  AUTH_KEY: 'furniture_admin_auth',
+  ADMIN_PASSWORD: 'furniture2024',
+  MAX_IMAGE_WIDTH: 1200,
+  THUMBNAIL_WIDTH: 400,
+  MAX_FILE_SIZE: 200 * 1024, // 200KB
+
+  // State
+  currentEditId: null,
+  uploadedImages: [],
+
+  /**
+   * Initialize the admin panel
+   */
+  init() {
+    // Check authentication
+    if (!this.checkAuth()) {
+      this.showLoginForm();
+      return;
+    }
+
+    // Show admin panel
+    this.showAdminPanel();
+    this.loadItemsTable();
+    this.attachEventListeners();
+  },
+
+  /**
+   * Check if user is authenticated
+   */
+  checkAuth() {
+    const auth = sessionStorage.getItem(this.AUTH_KEY);
+    return auth === 'true';
+  },
+
+  /**
+   * Show login form
+   */
+  showLoginForm() {
+    document.getElementById('loginSection').style.display = 'flex';
+    document.getElementById('adminSection').style.display = 'none';
+
+    const loginBtn = document.getElementById('loginBtn');
+    const passwordInput = document.getElementById('passwordInput');
+
+    loginBtn.addEventListener('click', () => this.handleLogin());
+    passwordInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        this.handleLogin();
+      }
+    });
+
+    // Focus password input
+    passwordInput.focus();
+  },
+
+  /**
+   * Handle login attempt
+   */
+  handleLogin() {
+    const password = document.getElementById('passwordInput').value;
+    const errorMsg = document.getElementById('loginError');
+
+    if (password === this.ADMIN_PASSWORD) {
+      sessionStorage.setItem(this.AUTH_KEY, 'true');
+      errorMsg.style.display = 'none';
+      this.showAdminPanel();
+      this.loadItemsTable();
+      this.attachEventListeners();
+    } else {
+      errorMsg.style.display = 'block';
+      document.getElementById('passwordInput').value = '';
+      document.getElementById('passwordInput').focus();
+    }
+  },
+
+  /**
+   * Show admin panel
+   */
+  showAdminPanel() {
+    document.getElementById('loginSection').style.display = 'none';
+    document.getElementById('adminSection').style.display = 'block';
+    this.updateStorageInfo();
+  },
+
+  /**
+   * Logout user
+   */
+  logout() {
+    sessionStorage.removeItem(this.AUTH_KEY);
+    location.reload();
+  },
+
+  /**
+   * Attach event listeners
+   */
+  attachEventListeners() {
+    // Logout button
+    document.getElementById('logoutBtn').addEventListener('click', () => this.logout());
+
+    // Add new item button
+    document.getElementById('addNewBtn').addEventListener('click', () => this.showItemForm());
+
+    // Form buttons
+    document.getElementById('saveItemBtn').addEventListener('click', () => this.saveItem());
+    document.getElementById('cancelFormBtn').addEventListener('click', () => this.hideItemForm());
+
+    // Image upload
+    document.getElementById('imageUpload').addEventListener('change', (e) => this.handleImageUpload(e));
+
+    // Export/Import
+    document.getElementById('exportDataBtn').addEventListener('click', () => this.exportData());
+    document.getElementById('importDataBtn').addEventListener('click', () => this.importData());
+  },
+
+  /**
+   * Load items into table
+   */
+  loadItemsTable() {
+    const items = FurnitureData.loadItems();
+    const tbody = document.querySelector('#itemsTable tbody');
+
+    if (items.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="6" class="no-items">No items yet. Click "Add New Item" to get started.</td></tr>';
+      return;
+    }
+
+    tbody.innerHTML = items.map(item => `
+      <tr>
+        <td>
+          ${item.images && item.images.length > 0
+            ? `<img src="${item.images[0]}" alt="${item.name}" class="table-thumbnail">`
+            : '<div class="no-image">No image</div>'}
+        </td>
+        <td><strong>${this.escapeHtml(item.name)}</strong></td>
+        <td class="description-cell">${this.escapeHtml(item.description).substring(0, 100)}${item.description.length > 100 ? '...' : ''}</td>
+        <td>$${item.price.toFixed(2)}</td>
+        <td>
+          <select class="status-select status-${item.status}" onchange="AdminPanel.quickStatusUpdate('${item.id}', this.value)">
+            <option value="available" ${item.status === 'available' ? 'selected' : ''}>Available</option>
+            <option value="pending" ${item.status === 'pending' ? 'selected' : ''}>Pending</option>
+            <option value="sold" ${item.status === 'sold' ? 'selected' : ''}>Sold</option>
+          </select>
+        </td>
+        <td class="actions-cell">
+          <button onclick="AdminPanel.editItem('${item.id}')" class="btn btn-edit">Edit</button>
+          <button onclick="AdminPanel.deleteItem('${item.id}')" class="btn btn-delete">Delete</button>
+        </td>
+      </tr>
+    `).join('');
+
+    this.updateStorageInfo();
+  },
+
+  /**
+   * Quick status update from table
+   */
+  quickStatusUpdate(id, newStatus) {
+    const item = FurnitureData.getItemById(id);
+    if (!item) return;
+
+    item.status = newStatus;
+    if (FurnitureData.updateItem(id, item)) {
+      this.showMessage('Status updated successfully', 'success');
+      this.updateStorageInfo();
+    } else {
+      this.showMessage('Failed to update status', 'error');
+    }
+  },
+
+  /**
+   * Show item form for adding/editing
+   */
+  showItemForm(item = null) {
+    this.currentEditId = item ? item.id : null;
+    this.uploadedImages = item && item.images ? [...item.images] : [];
+
+    // Update form title
+    document.getElementById('formTitle').textContent = item ? 'Edit Item' : 'Add New Item';
+
+    // Populate form fields
+    document.getElementById('itemName').value = item ? item.name : '';
+    document.getElementById('itemDescription').value = item ? item.description : '';
+    document.getElementById('itemPrice').value = item ? item.price : '';
+    document.getElementById('itemStatus').value = item ? item.status : 'available';
+
+    // Clear file input
+    document.getElementById('imageUpload').value = '';
+
+    // Show uploaded images
+    this.renderUploadedImages();
+
+    // Show form
+    document.getElementById('itemFormSection').style.display = 'block';
+    document.getElementById('itemsListSection').style.display = 'none';
+
+    // Focus first field
+    document.getElementById('itemName').focus();
+  },
+
+  /**
+   * Hide item form
+   */
+  hideItemForm() {
+    document.getElementById('itemFormSection').style.display = 'none';
+    document.getElementById('itemsListSection').style.display = 'block';
+    this.currentEditId = null;
+    this.uploadedImages = [];
+  },
+
+  /**
+   * Handle image upload
+   */
+  async handleImageUpload(event) {
+    const files = Array.from(event.target.files);
+
+    if (files.length === 0) return;
+
+    this.showMessage('Processing images...', 'info');
+
+    for (const file of files) {
+      try {
+        // Check file type
+        if (!file.type.startsWith('image/')) {
+          this.showMessage(`${file.name} is not an image`, 'error');
+          continue;
+        }
+
+        // Process image
+        const processedImage = await this.processImage(file);
+        this.uploadedImages.push(processedImage);
+      } catch (error) {
+        console.error('Error processing image:', error);
+        this.showMessage(`Failed to process ${file.name}`, 'error');
+      }
+    }
+
+    this.renderUploadedImages();
+    this.showMessage(`${files.length} image(s) added`, 'success');
+
+    // Clear input
+    event.target.value = '';
+  },
+
+  /**
+   * Process and optimize image
+   */
+  processImage(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+
+      reader.onload = (e) => {
+        const img = new Image();
+
+        img.onload = () => {
+          try {
+            // Calculate new dimensions
+            let width = img.width;
+            let height = img.height;
+
+            if (width > this.MAX_IMAGE_WIDTH) {
+              height = (height * this.MAX_IMAGE_WIDTH) / width;
+              width = this.MAX_IMAGE_WIDTH;
+            }
+
+            // Create canvas and resize
+            const canvas = document.createElement('canvas');
+            canvas.width = width;
+            canvas.height = height;
+
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, width, height);
+
+            // Compress image
+            let quality = 0.8;
+            let dataUrl = canvas.toDataURL('image/jpeg', quality);
+
+            // Reduce quality if still too large
+            while (dataUrl.length > this.MAX_FILE_SIZE * 1.37 && quality > 0.1) {
+              quality -= 0.1;
+              dataUrl = canvas.toDataURL('image/jpeg', quality);
+            }
+
+            resolve(dataUrl);
+          } catch (error) {
+            reject(error);
+          }
+        };
+
+        img.onerror = reject;
+        img.src = e.target.result;
+      };
+
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  },
+
+  /**
+   * Render uploaded images preview
+   */
+  renderUploadedImages() {
+    const container = document.getElementById('imagePreview');
+
+    if (this.uploadedImages.length === 0) {
+      container.innerHTML = '<p class="no-images-text">No images uploaded yet</p>';
+      return;
+    }
+
+    container.innerHTML = this.uploadedImages.map((img, index) => `
+      <div class="image-preview-item">
+        <img src="${img}" alt="Preview ${index + 1}">
+        <button type="button" class="remove-image-btn" onclick="AdminPanel.removeImage(${index})">×</button>
+        ${index === 0 ? '<span class="primary-badge">Primary</span>' : ''}
+      </div>
+    `).join('');
+  },
+
+  /**
+   * Remove an uploaded image
+   */
+  removeImage(index) {
+    this.uploadedImages.splice(index, 1);
+    this.renderUploadedImages();
+    this.showMessage('Image removed', 'info');
+  },
+
+  /**
+   * Validate form data
+   */
+  validateForm() {
+    const name = document.getElementById('itemName').value.trim();
+    const description = document.getElementById('itemDescription').value.trim();
+    const price = parseFloat(document.getElementById('itemPrice').value);
+
+    if (!name) {
+      this.showMessage('Please enter item name', 'error');
+      document.getElementById('itemName').focus();
+      return false;
+    }
+
+    if (!description) {
+      this.showMessage('Please enter item description', 'error');
+      document.getElementById('itemDescription').focus();
+      return false;
+    }
+
+    if (isNaN(price) || price < 0) {
+      this.showMessage('Please enter a valid price', 'error');
+      document.getElementById('itemPrice').focus();
+      return false;
+    }
+
+    if (this.uploadedImages.length === 0) {
+      this.showMessage('Please upload at least one image', 'error');
+      return false;
+    }
+
+    return true;
+  },
+
+  /**
+   * Save item (add or update)
+   */
+  saveItem() {
+    if (!this.validateForm()) return;
+
+    const itemData = {
+      name: document.getElementById('itemName').value.trim(),
+      description: document.getElementById('itemDescription').value.trim(),
+      price: parseFloat(document.getElementById('itemPrice').value),
+      status: document.getElementById('itemStatus').value,
+      images: this.uploadedImages
+    };
+
+    let success;
+    if (this.currentEditId) {
+      // Update existing item
+      itemData.dateAdded = FurnitureData.getItemById(this.currentEditId).dateAdded;
+      success = FurnitureData.updateItem(this.currentEditId, itemData);
+    } else {
+      // Add new item
+      itemData.id = FurnitureData.generateId();
+      itemData.dateAdded = new Date().toISOString();
+      itemData.dateUpdated = new Date().toISOString();
+      success = FurnitureData.addItem(itemData);
+    }
+
+    if (success) {
+      this.showMessage(this.currentEditId ? 'Item updated successfully' : 'Item added successfully', 'success');
+      this.hideItemForm();
+      this.loadItemsTable();
+    } else {
+      this.showMessage('Failed to save item. Storage may be full.', 'error');
+    }
+  },
+
+  /**
+   * Edit item
+   */
+  editItem(id) {
+    const item = FurnitureData.getItemById(id);
+    if (item) {
+      this.showItemForm(item);
+    } else {
+      this.showMessage('Item not found', 'error');
+    }
+  },
+
+  /**
+   * Delete item
+   */
+  deleteItem(id) {
+    const item = FurnitureData.getItemById(id);
+    if (!item) {
+      this.showMessage('Item not found', 'error');
+      return;
+    }
+
+    if (confirm(`Are you sure you want to delete "${item.name}"? This cannot be undone.`)) {
+      if (FurnitureData.deleteItem(id)) {
+        this.showMessage('Item deleted successfully', 'success');
+        this.loadItemsTable();
+      } else {
+        this.showMessage('Failed to delete item', 'error');
+      }
+    }
+  },
+
+  /**
+   * Export data to JSON file
+   */
+  exportData() {
+    const jsonData = FurnitureData.exportData();
+    const blob = new Blob([jsonData], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `furniture-data-${new Date().toISOString().split('T')[0]}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    this.showMessage('Data exported successfully', 'success');
+  },
+
+  /**
+   * Import data from JSON file
+   */
+  importData() {
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json';
+
+    input.onchange = (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        try {
+          if (confirm('This will replace all existing data. Continue?')) {
+            if (FurnitureData.importData(event.target.result)) {
+              this.showMessage('Data imported successfully', 'success');
+              this.loadItemsTable();
+            } else {
+              this.showMessage('Failed to import data. Invalid format.', 'error');
+            }
+          }
+        } catch (error) {
+          console.error('Import error:', error);
+          this.showMessage('Failed to import data', 'error');
+        }
+      };
+      reader.readAsText(file);
+    };
+
+    input.click();
+  },
+
+  /**
+   * Update storage info display
+   */
+  updateStorageInfo() {
+    const info = FurnitureData.getStorageInfo();
+    if (info) {
+      document.getElementById('storageInfo').textContent =
+        `Storage: ${info.sizeInKB} KB (${info.itemCount} items)`;
+    }
+  },
+
+  /**
+   * Show message to user
+   */
+  showMessage(message, type = 'info') {
+    const messageEl = document.getElementById('messageBox');
+    messageEl.textContent = message;
+    messageEl.className = `message message-${type}`;
+    messageEl.style.display = 'block';
+
+    setTimeout(() => {
+      messageEl.style.display = 'none';
+    }, 3000);
+  },
+
+  /**
+   * Escape HTML to prevent XSS
+   */
+  escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+};
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', () => {
+  AdminPanel.init();
+});

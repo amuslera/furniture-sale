@@ -1,0 +1,616 @@
+{
+  "items": [
+    {
+      "id": "001",
+      "name": "Gray Upholstered Lounge Chair",
+      "description": "Gray Upholstered Lounge Chair - Multiple angles available. Exact details to be added by admin.",
+      "category": "seating",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-001-1.jpg",
+        "images/full/item-001-2.jpg",
+        "images/full/item-001-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-001-1-thumb.jpg",
+        "images/thumbnails/item-001-2-thumb.jpg",
+        "images/thumbnails/item-001-3-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "002",
+      "name": "Modern Accent Chair",
+      "description": "Modern Accent Chair - Multiple angles available. Exact details to be added by admin.",
+      "category": "seating",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-002-1.jpg",
+        "images/full/item-002-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-002-1-thumb.jpg",
+        "images/thumbnails/item-002-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "003",
+      "name": "Leather Sofa",
+      "description": "Leather Sofa - Multiple angles available. Exact details to be added by admin.",
+      "category": "seating",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-003-1.jpg",
+        "images/full/item-003-2.jpg",
+        "images/full/item-003-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-003-1-thumb.jpg",
+        "images/thumbnails/item-003-2-thumb.jpg",
+        "images/thumbnails/item-003-3-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "004",
+      "name": "Dining Chair Set",
+      "description": "Dining Chair Set - Multiple angles available. Exact details to be added by admin.",
+      "category": "seating",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-004-1.jpg",
+        "images/full/item-004-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-004-1-thumb.jpg",
+        "images/thumbnails/item-004-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "005",
+      "name": "Coffee Table",
+      "description": "Coffee Table - Multiple angles available. Exact details to be added by admin.",
+      "category": "tables",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-005-1.jpg",
+        "images/full/item-005-2.jpg",
+        "images/full/item-005-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-005-1-thumb.jpg",
+        "images/thumbnails/item-005-2-thumb.jpg",
+        "images/thumbnails/item-005-3-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "006",
+      "name": "Side Table",
+      "description": "Side Table - Multiple angles available. Exact details to be added by admin.",
+      "category": "tables",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-006-1.jpg",
+        "images/full/item-006-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-006-1-thumb.jpg",
+        "images/thumbnails/item-006-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "007",
+      "name": "Console Table",
+      "description": "Console Table - Multiple angles available. Exact details to be added by admin.",
+      "category": "tables",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-007-1.jpg",
+        "images/full/item-007-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-007-1-thumb.jpg",
+        "images/thumbnails/item-007-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "008",
+      "name": "Bookshelf",
+      "description": "Bookshelf - Multiple angles available. Exact details to be added by admin.",
+      "category": "storage",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-008-1.jpg",
+        "images/full/item-008-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-008-1-thumb.jpg",
+        "images/thumbnails/item-008-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "009",
+      "name": "Dresser",
+      "description": "Dresser - Multiple angles available. Exact details to be added by admin.",
+      "category": "storage",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-009-1.jpg",
+        "images/full/item-009-2.jpg",
+        "images/full/item-009-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-009-1-thumb.jpg",
+        "images/thumbnails/item-009-2-thumb.jpg",
+        "images/thumbnails/item-009-3-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "010",
+      "name": "TV Stand",
+      "description": "TV Stand - Multiple angles available. Exact details to be added by admin.",
+      "category": "storage",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-010-1.jpg",
+        "images/full/item-010-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-010-1-thumb.jpg",
+        "images/thumbnails/item-010-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "011",
+      "name": "Nightstand",
+      "description": "Nightstand - Multiple angles available. Exact details to be added by admin.",
+      "category": "tables",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-011-1.jpg",
+        "images/full/item-011-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-011-1-thumb.jpg",
+        "images/thumbnails/item-011-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "012",
+      "name": "Desk",
+      "description": "Desk - Multiple angles available. Exact details to be added by admin.",
+      "category": "tables",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-012-1.jpg",
+        "images/full/item-012-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-012-1-thumb.jpg",
+        "images/thumbnails/item-012-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "013",
+      "name": "Dining Table",
+      "description": "Dining Table - Multiple angles available. Exact details to be added by admin.",
+      "category": "tables",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-013-1.jpg",
+        "images/full/item-013-2.jpg",
+        "images/full/item-013-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-013-1-thumb.jpg",
+        "images/thumbnails/item-013-2-thumb.jpg",
+        "images/thumbnails/item-013-3-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "014",
+      "name": "Bar Cart",
+      "description": "Bar Cart - Multiple angles available. Exact details to be added by admin.",
+      "category": "storage",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-014-1.jpg",
+        "images/full/item-014-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-014-1-thumb.jpg",
+        "images/thumbnails/item-014-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "015",
+      "name": "Armchair",
+      "description": "Armchair - Multiple angles available. Exact details to be added by admin.",
+      "category": "seating",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-015-1.jpg",
+        "images/full/item-015-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-015-1-thumb.jpg",
+        "images/thumbnails/item-015-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "016",
+      "name": "Ottoman",
+      "description": "Ottoman - Multiple angles available. Exact details to be added by admin.",
+      "category": "seating",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-016-1.jpg",
+        "images/full/item-016-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-016-1-thumb.jpg",
+        "images/thumbnails/item-016-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "017",
+      "name": "Accent Cabinet",
+      "description": "Accent Cabinet - Multiple angles available. Exact details to be added by admin.",
+      "category": "storage",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-017-1.jpg",
+        "images/full/item-017-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-017-1-thumb.jpg",
+        "images/thumbnails/item-017-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "018",
+      "name": "Wardrobe",
+      "description": "Wardrobe - Multiple angles available. Exact details to be added by admin.",
+      "category": "storage",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-018-1.jpg",
+        "images/full/item-018-2.jpg",
+        "images/full/item-018-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-018-1-thumb.jpg",
+        "images/thumbnails/item-018-2-thumb.jpg",
+        "images/thumbnails/item-018-3-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "019",
+      "name": "Bench",
+      "description": "Bench - Multiple angles available. Exact details to be added by admin.",
+      "category": "seating",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-019-1.jpg",
+        "images/full/item-019-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-019-1-thumb.jpg",
+        "images/thumbnails/item-019-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "020",
+      "name": "Floor Lamp",
+      "description": "Floor Lamp - Multiple angles available. Exact details to be added by admin.",
+      "category": "decor",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-020-1.jpg",
+        "images/full/item-020-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-020-1-thumb.jpg",
+        "images/thumbnails/item-020-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "021",
+      "name": "Table Lamp",
+      "description": "Table Lamp - Multiple angles available. Exact details to be added by admin.",
+      "category": "decor",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-021-1.jpg",
+        "images/full/item-021-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-021-1-thumb.jpg",
+        "images/thumbnails/item-021-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "022",
+      "name": "Mirror",
+      "description": "Mirror - Multiple angles available. Exact details to be added by admin.",
+      "category": "decor",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-022-1.jpg",
+        "images/full/item-022-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-022-1-thumb.jpg",
+        "images/thumbnails/item-022-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "023",
+      "name": "Wall Art",
+      "description": "Wall Art - Multiple angles available. Exact details to be added by admin.",
+      "category": "decor",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-023-1.jpg",
+        "images/full/item-023-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-023-1-thumb.jpg",
+        "images/thumbnails/item-023-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "024",
+      "name": "Sectional Sofa",
+      "description": "Sectional Sofa - Multiple angles available. Exact details to be added by admin.",
+      "category": "seating",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-024-1.jpg",
+        "images/full/item-024-2.jpg",
+        "images/full/item-024-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-024-1-thumb.jpg",
+        "images/thumbnails/item-024-2-thumb.jpg",
+        "images/thumbnails/item-024-3-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "025",
+      "name": "Recliner",
+      "description": "Recliner - Multiple angles available. Exact details to be added by admin.",
+      "category": "seating",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-025-1.jpg",
+        "images/full/item-025-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-025-1-thumb.jpg",
+        "images/thumbnails/item-025-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "026",
+      "name": "Vanity",
+      "description": "Vanity - Multiple angles available. Exact details to be added by admin.",
+      "category": "storage",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-026-1.jpg",
+        "images/full/item-026-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-026-1-thumb.jpg",
+        "images/thumbnails/item-026-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "027",
+      "name": "Plant Stand",
+      "description": "Plant Stand - Multiple angles available. Exact details to be added by admin.",
+      "category": "decor",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-027-1.jpg",
+        "images/full/item-027-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-027-1-thumb.jpg",
+        "images/thumbnails/item-027-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "028",
+      "name": "Media Console",
+      "description": "Media Console - Multiple angles available. Exact details to be added by admin.",
+      "category": "storage",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-028-1.jpg",
+        "images/full/item-028-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-028-1-thumb.jpg",
+        "images/thumbnails/item-028-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "029",
+      "name": "Credenza",
+      "description": "Credenza - Multiple angles available. Exact details to be added by admin.",
+      "category": "storage",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-029-1.jpg",
+        "images/full/item-029-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-029-1-thumb.jpg",
+        "images/thumbnails/item-029-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "030",
+      "name": "Loveseat",
+      "description": "Loveseat - Multiple angles available. Exact details to be added by admin.",
+      "category": "seating",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-030-1.jpg",
+        "images/full/item-030-2.jpg",
+        "images/full/item-030-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-030-1-thumb.jpg",
+        "images/thumbnails/item-030-2-thumb.jpg",
+        "images/thumbnails/item-030-3-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "031",
+      "name": "Chaise Lounge",
+      "description": "Chaise Lounge - Multiple angles available. Exact details to be added by admin.",
+      "category": "seating",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-031-1.jpg",
+        "images/full/item-031-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-031-1-thumb.jpg",
+        "images/thumbnails/item-031-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "032",
+      "name": "Decorative Vase",
+      "description": "Decorative Vase - Multiple angles available. Exact details to be added by admin.",
+      "category": "decor",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-032-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-032-1-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    },
+    {
+      "id": "033",
+      "name": "Storage Cabinet",
+      "description": "Storage Cabinet - Multiple angles available. Exact details to be added by admin.",
+      "category": "storage",
+      "price": 0,
+      "status": "available",
+      "images": [
+        "images/full/item-033-1.jpg",
+        "images/full/item-033-2.jpg",
+        "images/full/item-033-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-033-1-thumb.jpg",
+        "images/thumbnails/item-033-2-thumb.jpg",
+        "images/thumbnails/item-033-3-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-20T20:01:16.067Z",
+      "dateUpdated": "2026-02-20T20:01:16.067Z"
+    }
+  ],
+  "lastUpdated": "2026-02-20T20:01:16.067Z",
+  "totalItems": 33
+}
