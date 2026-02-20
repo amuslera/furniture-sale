@@ -25,6 +25,36 @@ const FurnitureData = {
   },
 
   /**
+   * Initialize data - seeds localStorage from furniture.json if empty
+   * Call this before using loadItems() on page load
+   * @returns {Promise<Array>} Array of furniture items
+   */
+  async init() {
+    const existing = this.loadItems();
+    if (existing.length > 0) {
+      return existing;
+    }
+
+    // localStorage is empty, try to load from furniture.json
+    try {
+      const response = await fetch('data/furniture.json');
+      if (response.ok) {
+        const data = await response.json();
+        const items = data.items || [];
+        if (items.length > 0) {
+          this.saveItems(items);
+          console.log('Seeded localStorage with', items.length, 'items from furniture.json');
+        }
+        return items;
+      }
+    } catch (error) {
+      console.error('Error loading furniture.json:', error);
+    }
+
+    return [];
+  },
+
+  /**
    * Save furniture items to localStorage
    * @param {Array} items - Array of furniture items to save
    * @returns {boolean} Success status

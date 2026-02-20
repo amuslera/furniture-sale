@@ -47,31 +47,15 @@ const elements = {
 // ========================================
 
 /**
- * Load furniture data from localStorage or furniture.json
+ * Load furniture data using shared FurnitureData module
+ * Seeds localStorage from furniture.json if empty, then loads items
  */
 async function loadFurnitureData() {
     try {
-        // Try localStorage first
-        const localData = localStorage.getItem('furnitureData');
-
-        if (localData) {
-            const data = JSON.parse(localData);
-            state.furniture = data.items || [];
-            console.log('Loaded furniture data from localStorage:', state.furniture.length, 'items');
-        } else {
-            // Fallback to furniture.json
-            const response = await fetch('data/furniture.json');
-
-            if (response.ok) {
-                const data = await response.json();
-                state.furniture = data.items || [];
-                console.log('Loaded furniture data from furniture.json:', state.furniture.length, 'items');
-            } else {
-                // No data available, use empty array
-                state.furniture = [];
-                console.log('No furniture data available');
-            }
-        }
+        // Use shared data module - seeds from furniture.json if localStorage is empty
+        await FurnitureData.init();
+        state.furniture = FurnitureData.loadItems();
+        console.log('Loaded furniture data:', state.furniture.length, 'items');
 
         // Initialize the app
         state.filteredFurniture = [...state.furniture];

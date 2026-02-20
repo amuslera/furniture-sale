@@ -18,12 +18,15 @@ const AdminPanel = {
   /**
    * Initialize the admin panel
    */
-  init() {
+  async init() {
     // Check authentication
     if (!this.checkAuth()) {
       this.showLoginForm();
       return;
     }
+
+    // Seed localStorage from furniture.json if empty
+    await FurnitureData.init();
 
     // Show admin panel
     this.showAdminPanel();
@@ -63,13 +66,17 @@ const AdminPanel = {
   /**
    * Handle login attempt
    */
-  handleLogin() {
+  async handleLogin() {
     const password = document.getElementById('passwordInput').value;
     const errorMsg = document.getElementById('loginError');
 
     if (password === this.ADMIN_PASSWORD) {
       sessionStorage.setItem(this.AUTH_KEY, 'true');
       errorMsg.style.display = 'none';
+
+      // Seed localStorage from furniture.json if empty
+      await FurnitureData.init();
+
       this.showAdminPanel();
       this.loadItemsTable();
       this.attachEventListeners();
