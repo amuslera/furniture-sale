@@ -379,7 +379,124 @@ body {
     text-decoration: line-through;
 }
 
-.card-view-photos {
+.card-product-link {
+    margin-top: var(--spacing-sm);
+    padding-top: var(--spacing-sm);
+    border-top: 1px solid var(--color-border);
+}
+
+.card-product-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.875rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+.card-product-link a:hover {
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+
+.card-product-link svg {
+    flex-shrink: 0;
+}
+
+/* Image Carousel */
+.card-image-carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card-image-carousel .card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.card-image-carousel .card-image.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease, background 0.2s ease;
+    z-index: 2;
+}
+
+.card-image-container:hover .carousel-prev,
+.card-image-container:hover .carousel-next {
+    opacity: 1;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-prev {
+    left: 8px;
+}
+
+.carousel-next {
+    right: 8px;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 6px;
+    z-index: 2;
+}
+
+.carousel-dots .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-dots .dot:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.2);
+}
+
+.carousel-dots .dot.active {
+    background: white;
+}
+
+.card-view-all {
     font-size: 0.85rem;
     color: var(--color-primary);
     text-decoration: none;
@@ -388,7 +505,7 @@ body {
     transition: color var(--transition-fast);
 }
 
-.card-view-photos:hover {
+.card-view-all:hover {
     color: var(--color-secondary);
     text-decoration: underline;
 }

@@ -122,11 +122,49 @@ function createFurnitureCard(item) {
     card.className = 'furniture-card';
     card.dataset.itemId = item.id;
 
-    const primaryImage = item.images && item.images.length > 0
-        ? item.images[0]
-        : 'images/placeholder.jpg';
-
+    const hasImages = item.images && item.images.length > 0;
     const hasMultiplePhotos = item.images && item.images.length > 1;
+
+    // Build image carousel HTML
+    let imagesHTML = '';
+    if (hasImages) {
+        if (hasMultiplePhotos) {
+            imagesHTML = `
+                <div class="card-image-carousel" data-item-id="${item.id}">
+                    ${item.images.map((img, idx) => `
+                        <img
+                            src="${img}"
+                            alt="${escapeHtml(item.name)} - Photo ${idx + 1}"
+                            class="card-image ${idx === 0 ? 'active' : ''}"
+                            onclick="openLightbox('${item.id}', ${idx})"
+                            onerror="this.src='images/placeholder.jpg'"
+                            data-index="${idx}"
+                        >
+                    `).join('')}
+                    <button class="carousel-prev" onclick="event.stopPropagation(); scrollCardImage('${item.id}', -1)">‹</button>
+                    <button class="carousel-next" onclick="event.stopPropagation(); scrollCardImage('${item.id}', 1)">›</button>
+                    <div class="carousel-dots">
+                        ${item.images.map((_, idx) => `
+                            <span class="dot ${idx === 0 ? 'active' : ''}" onclick="event.stopPropagation(); setCardImage('${item.id}', ${idx})"></span>
+                        `).join('')}
+                    </div>
+                </div>
+            `;
+        } else {
+            imagesHTML = `
+                <img
+                    src="${item.images[0]}"
+                    alt="${escapeHtml(item.name)}"
+                    class="card-image"
+                    onclick="openLightbox('${item.id}', 0)"
+                    onerror="this.src='images/placeholder.jpg'"
+                >
+            `;
+        }
+    } else {
+        imagesHTML = '<div class="card-no-image">No Image</div>';
+    }
+
     const photoCountBadge = hasMultiplePhotos
         ? `<div class="card-photo-count">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -140,25 +178,31 @@ function createFurnitureCard(item) {
 
     card.innerHTML = `
         <div class="card-image-container">
-            <img
-                src="${primaryImage}"
-                alt="${escapeHtml(item.name)}"
-                class="card-image"
-                onclick="openLightbox('${item.id}', 0)"
-                onerror="this.src='images/placeholder.jpg'"
-            >
+            ${imagesHTML}
             <div class="card-status-badge ${item.status}">${formatStatus(item.status)}</div>
             ${photoCountBadge}
         </div>
         <div class="card-content">
             <h3 class="card-title">${escapeHtml(item.name)}</h3>
             <p class="card-description">${escapeHtml(item.description)}</p>
+            ${item.productLink ? `
+                <div class="card-product-link">
+                    <a href="${escapeHtml(item.productLink)}" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation()">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        Product Details
+                    </a>
+                </div>
+            ` : ''}
             <div class="card-footer">
                 <div class="card-price-section">
                     <div class="card-price">$${item.price.toLocaleString()}</div>
                     ${item.retailPrice ? `<div class="card-retail-price">Retails for $${item.retailPrice.toLocaleString()}</div>` : ''}
                 </div>
-                ${hasMultiplePhotos ? `<a class="card-view-photos" onclick="openLightbox('${item.id}', 0)">View Photos</a>` : ''}
+                ${hasMultiplePhotos ? `<a class="card-view-all" onclick="openLightbox('${item.id}', 0)">View All Photos</a>` : ''}
             </div>
         </div>
     `;
@@ -456,6 +500,53 @@ if (document.readyState === 'loading') {
     init();
 }
 
+// ========================================
+// Card Image Carousel Functions
+// ========================================
+
+function scrollCardImage(itemId, direction) {
+    const carousel = document.querySelector(`.card-image-carousel[data-item-id="${itemId}"]`);
+    if (!carousel) return;
+
+    const images = carousel.querySelectorAll('.card-image');
+    const dots = carousel.querySelectorAll('.dot');
+    const currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+    let newIndex = currentIndex + direction;
+
+    // Wrap around
+    if (newIndex < 0) newIndex = images.length - 1;
+    if (newIndex >= images.length) newIndex = 0;
+
+    // Update images
+    images[currentIndex].classList.remove('active');
+    images[newIndex].classList.add('active');
+
+    // Update dots
+    dots[currentIndex].classList.remove('active');
+    dots[newIndex].classList.add('active');
+}
+
+function setCardImage(itemId, index) {
+    const carousel = document.querySelector(`.card-image-carousel[data-item-id="${itemId}"]`);
+    if (!carousel) return;
+
+    const images = carousel.querySelectorAll('.card-image');
+    const dots = carousel.querySelectorAll('.dot');
+    const currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+
+    if (currentIndex === index) return;
+
+    // Update images
+    images[currentIndex].classList.remove('active');
+    images[index].classList.add('active');
+
+    // Update dots
+    dots[currentIndex].classList.remove('active');
+    dots[index].classList.add('active');
+}
+
 // Expose functions to global scope for inline event handlers
 window.openLightbox = openLightbox;
 window.closeLightbox = closeLightbox;
+window.scrollCardImage = scrollCardImage;
+window.setCardImage = setCardImage;
