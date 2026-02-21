@@ -333,6 +333,8 @@ const AdminPanel = {
     document.getElementById('itemName').value = item ? item.name : '';
     document.getElementById('itemDescription').value = item ? item.description : '';
     document.getElementById('itemPrice').value = item ? item.price : '';
+    document.getElementById('itemRetailPrice').value = item && item.retailPrice ? item.retailPrice : '';
+    document.getElementById('itemProductLink').value = item && item.productLink ? item.productLink : '';
     document.getElementById('itemStatus').value = item ? item.status : 'available';
 
     // Clear file input
@@ -578,10 +580,15 @@ const AdminPanel = {
   saveItem() {
     if (!this.validateForm()) return;
 
+    const retailPrice = document.getElementById('itemRetailPrice').value;
+    const productLink = document.getElementById('itemProductLink').value.trim();
+
     const itemData = {
       name: document.getElementById('itemName').value.trim(),
       description: document.getElementById('itemDescription').value.trim(),
       price: parseFloat(document.getElementById('itemPrice').value),
+      retailPrice: retailPrice ? parseFloat(retailPrice) : null,
+      productLink: productLink || null,
       status: document.getElementById('itemStatus').value,
       images: this.uploadedImages
     };

@@ -613,7 +613,7 @@
     {
       "id": "excel-item-001",
       "name": "Purple Matress Brand NEW (NEVER SLEPT ON )",
-      "description": "Purple Matress Brand NEW (NEVER SLEPT ON ).\n\nOriginal price: $3599.0\nSelling for: $1800.0\n\nProduct link: https://purple.com/2",
+      "description": "Purple Matress Brand NEW (NEVER SLEPT ON ).\n\nRetails for: $3599.0\nSelling for: $1800.0",
       "price": 1800.0,
       "category": "other",
       "status": "available",
@@ -629,12 +629,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://purple.com/2"
+      "productLink": "https://purple.com/2",
+      "retailPrice": 3599.0
     },
     {
       "id": "excel-item-002",
       "name": "DROMMEN ACACIA WOOD KING BED CB2",
-      "description": "DROMMEN ACACIA WOOD KING BED CB2.\n\nOriginal price: $1299.0\nSelling for: $1000.0\n\nProduct link: https://www.cb2.com/drommen-acacia-wood-king-bed/s213846",
+      "description": "DROMMEN ACACIA WOOD KING BED CB2.\n\nRetails for: $1299.0\nSelling for: $1000.0",
       "price": 1000.0,
       "category": "other",
       "status": "available",
@@ -642,12 +643,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.cb2.com/drommen-acacia-wood-king-bed/s213846"
+      "productLink": "https://www.cb2.com/drommen-acacia-wood-king-bed/s213846",
+      "retailPrice": 1299.0
     },
     {
       "id": "excel-item-003",
       "name": "Case Study V-Leg DayBed Couch",
-      "description": "Case Study V-Leg DayBed Couch.\n\nOriginal price: $2525.0\nSelling for: $1800.0\n\nProduct link: https://modernica.net/collections/couch/products/case-study%C2%AE-v-leg-daybed-couch?variant=9097025585217",
+      "description": "Case Study V-Leg DayBed Couch.\n\nRetails for: $2525.0\nSelling for: $1800.0",
       "price": 1800.0,
       "category": "other",
       "status": "available",
@@ -663,12 +665,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-v-leg-daybed-couch?variant=9097025585217"
+      "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-v-leg-daybed-couch?variant=9097025585217",
+      "retailPrice": 2525.0
     },
     {
       "id": "excel-item-004",
       "name": "WoodScape Coffee Table with V-Legs",
-      "description": "WoodScape Coffee Table with V-Legs.\n\nOriginal price: $840.0\nSelling for: $200.0",
+      "description": "WoodScape Coffee Table with V-Legs.\n\nRetails for: $840.0\nSelling for: $200.0",
       "price": 200.0,
       "category": "other",
       "status": "available",
@@ -676,12 +679,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null
+      "productLink": null,
+      "retailPrice": 840.0
     },
     {
       "id": "excel-item-005",
       "name": "Chair with Ottoman - Smoke Gray Fabric",
-      "description": "Chair with Ottoman - Smoke Gray Fabric.\n\nOriginal price: $2260.0\nSelling for: $1200.0\n\nProduct link: https://www.modernclassics.com/store/pc/Womb-Chair-with-Ottoman-Smoke-Gray-Fabric-p32758.htm",
+      "description": "Chair with Ottoman - Smoke Gray Fabric.\n\nRetails for: $2260.0\nSelling for: $1200.0",
       "price": 1200.0,
       "category": "other",
       "status": "available",
@@ -697,12 +701,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.modernclassics.com/store/pc/Womb-Chair-with-Ottoman-Smoke-Gray-Fabric-p32758.htm"
+      "productLink": "https://www.modernclassics.com/store/pc/Womb-Chair-with-Ottoman-Smoke-Gray-Fabric-p32758.htm",
+      "retailPrice": 2260.0
     },
     {
       "id": "excel-item-006",
       "name": "LC4 Le Corbusier Lounge Chair ORIGINAL",
-      "description": "LC4 Le Corbusier Lounge Chair ORIGINAL.\n\nOriginal price: $5780.0\nSelling for: $3500.0\n\nProduct link: https://www.dwr.com/living-lounge-chairs/lc4-chaise-lounge/6515.html?lang=en_US",
+      "description": "LC4 Le Corbusier Lounge Chair ORIGINAL.\n\nRetails for: $5780.0\nSelling for: $3500.0",
       "price": 3500.0,
       "category": "other",
       "status": "available",
@@ -718,12 +723,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.dwr.com/living-lounge-chairs/lc4-chaise-lounge/6515.html?lang=en_US"
+      "productLink": "https://www.dwr.com/living-lounge-chairs/lc4-chaise-lounge/6515.html?lang=en_US",
+      "retailPrice": 5780.0
     },
     {
       "id": "excel-item-007",
       "name": "CowHide Rug Under Chair",
-      "description": "CowHide Rug Under Chair.\n\nOriginal price: $1495.0\nSelling for: $500.0\n\nProduct link: https://www.dwr.com/rug-type-area-rug/cowhide-rug/8969718.html?lang=en_US&gclid=EAIaIQobChMI1qirzamU_gIVfBqtBh2fegZIEAQYAiABEgLIvPD_BwE&gclsrc=aw.ds",
+      "description": "CowHide Rug Under Chair.\n\nRetails for: $1495.0\nSelling for: $500.0",
       "price": 500.0,
       "category": "other",
       "status": "available",
@@ -739,12 +745,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.dwr.com/rug-type-area-rug/cowhide-rug/8969718.html?lang=en_US&gclid=EAIaIQobChMI1qirzamU_gIVfBqtBh2fegZIEAQYAiABEgLIvPD_BwE&gclsrc=aw.ds"
+      "productLink": "https://www.dwr.com/rug-type-area-rug/cowhide-rug/8969718.html?lang=en_US&gclid=EAIaIQobChMI1qirzamU_gIVfBqtBh2fegZIEAQYAiABEgLIvPD_BwE&gclsrc=aw.ds",
+      "retailPrice": 1495.0
     },
     {
       "id": "excel-item-008",
       "name": "Vizio TV 65 or 75 don\u2019t remember / Stand For TV",
-      "description": "Vizio TV 65 or 75 don\u2019t remember / Stand For TV.\n\nOriginal price: $1400.0\nSelling for: $400.0",
+      "description": "Vizio TV 65 or 75 don\u2019t remember / Stand For TV.\n\nRetails for: $1400.0\nSelling for: $400.0",
       "price": 400.0,
       "category": "other",
       "status": "available",
@@ -752,12 +759,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null
+      "productLink": null,
+      "retailPrice": 1400.0
     },
     {
       "id": "excel-item-009",
       "name": "Knoll Authentic Womb\u2122 Chair",
-      "description": "Knoll Authentic Womb\u2122 Chair.\n\nOriginal price: $5687.0\nSelling for: $4500.0\n\nProduct link: https://www.knoll.com/product/womb-chair",
+      "description": "Knoll Authentic Womb\u2122 Chair.\n\nRetails for: $5687.0\nSelling for: $4500.0",
       "price": 4500.0,
       "category": "other",
       "status": "available",
@@ -773,12 +781,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.knoll.com/product/womb-chair"
+      "productLink": "https://www.knoll.com/product/womb-chair",
+      "retailPrice": 5687.0
     },
     {
       "id": "excel-item-010",
       "name": "Case Study\u00ae Furniture 98 V-Leg Daybed Couch",
-      "description": "Case Study\u00ae Furniture 98 V-Leg Daybed Couch.\n\nOriginal price: $3255.0\nSelling for: $2800.0\n\nProduct link: https://modernica.net/collections/couch/products/case-study%C2%AE-furniture-98-v-leg-daybed-couch",
+      "description": "Case Study\u00ae Furniture 98 V-Leg Daybed Couch.\n\nRetails for: $3255.0\nSelling for: $2800.0",
       "price": 2800.0,
       "category": "other",
       "status": "available",
@@ -794,12 +803,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-furniture-98-v-leg-daybed-couch"
+      "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-furniture-98-v-leg-daybed-couch",
+      "retailPrice": 3255.0
     },
     {
       "id": "excel-item-011",
       "name": "Case Study\u00ae Furniture 98 V-Leg Daybed Extension with V-leg",
-      "description": "Case Study\u00ae Furniture 98 V-Leg Daybed Extension with V-leg.\n\nOriginal price: $2525.0\nSelling for: $1600.0\n\nProduct link: https://modernica.net/collections/couch/products/case-study%C2%AE-v-leg-daybed-couch",
+      "description": "Case Study\u00ae Furniture 98 V-Leg Daybed Extension with V-leg.\n\nRetails for: $2525.0\nSelling for: $1600.0",
       "price": 1600.0,
       "category": "other",
       "status": "available",
@@ -815,12 +825,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-v-leg-daybed-couch"
+      "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-v-leg-daybed-couch",
+      "retailPrice": 2525.0
     },
     {
       "id": "excel-item-012",
       "name": "Hex Carpet Under table 2nd floor KOLLUND",
-      "description": "Hex Carpet Under table 2nd floor KOLLUND.\n\nOriginal price: $349.99\nSelling for: $200.0\n\nProduct link: https://www.ikea.com/us/en/p/kollund-rug-flatwoven-handmade-gray-20374569/",
+      "description": "Hex Carpet Under table 2nd floor KOLLUND.\n\nRetails for: $349.99\nSelling for: $200.0",
       "price": 200.0,
       "category": "other",
       "status": "available",
@@ -828,12 +839,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.ikea.com/us/en/p/kollund-rug-flatwoven-handmade-gray-20374569/"
+      "productLink": "https://www.ikea.com/us/en/p/kollund-rug-flatwoven-handmade-gray-20374569/",
+      "retailPrice": 349.99
     },
     {
       "id": "excel-item-013",
       "name": "Modernist Vintage Chrome and Glass Dining Table",
-      "description": "Modernist Vintage Chrome and Glass Dining Table.\n\nOriginal price: $820.0\nSelling for: $350.0",
+      "description": "Modernist Vintage Chrome and Glass Dining Table.\n\nRetails for: $820.0\nSelling for: $350.0",
       "price": 350.0,
       "category": "other",
       "status": "available",
@@ -841,12 +853,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null
+      "productLink": null,
+      "retailPrice": 820.0
     },
     {
       "id": "excel-item-014",
       "name": "Ping Pong Table",
-      "description": "Ping Pong Table.\n\nOriginal price: $399.0\nSelling for: $300.0\n\nProduct link: https://www.amazon.com/STIGA-Advantage-Competition-Ready-Indoor-Preassembled/dp/B01JMTDZ5Q/ref=asc_df_B01JMTDZ5Q/?tag=hyprod-20&linkCode=df0&hvadid=167134282234&hvpos=&hvnetw=g&hvrand=4297347808149441009&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031037&hvtargid=pla-305812410130&psc=1",
+      "description": "Ping Pong Table.\n\nRetails for: $399.0\nSelling for: $300.0",
       "price": 300.0,
       "category": "other",
       "status": "available",
@@ -854,12 +867,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.amazon.com/STIGA-Advantage-Competition-Ready-Indoor-Preassembled/dp/B01JMTDZ5Q/ref=asc_df_B01JMTDZ5Q/?tag=hyprod-20&linkCode=df0&hvadid=167134282234&hvpos=&hvnetw=g&hvrand=4297347808149441009&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031037&hvtargid=pla-305812410130&psc=1"
+      "productLink": "https://www.amazon.com/STIGA-Advantage-Competition-Ready-Indoor-Preassembled/dp/B01JMTDZ5Q/ref=asc_df_B01JMTDZ5Q/?tag=hyprod-20&linkCode=df0&hvadid=167134282234&hvpos=&hvnetw=g&hvrand=4297347808149441009&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031037&hvtargid=pla-305812410130&psc=1",
+      "retailPrice": 399.0
     },
     {
       "id": "excel-item-015",
       "name": "TV 75\" New",
-      "description": "TV 75\" New.\n\nOriginal price: $2200.0\nSelling for: $800.0\n\nProduct link: closeout sale blueprint store",
+      "description": "TV 75\" New.\n\nRetails for: $2200.0\nSelling for: $800.0\n\nProduct link: closeout sale blueprint store",
       "price": 800.0,
       "category": "other",
       "status": "available",
@@ -867,12 +881,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "closeout sale blueprint store"
+      "productLink": "closeout sale blueprint store",
+      "retailPrice": 2200.0
     },
     {
       "id": "excel-item-016",
       "name": "Glass Ground Efects TV STAND",
-      "description": "Glass Ground Efects TV STAND.\n\nOriginal price: $350.0\nSelling for: $0",
+      "description": "Glass Ground Efects TV STAND.\n\nRetails for: $350.0\nSelling for: $0",
       "price": 0.0,
       "category": "other",
       "status": "available",
@@ -880,12 +895,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null
+      "productLink": null,
+      "retailPrice": 350.0
     },
     {
       "id": "excel-item-017",
       "name": "Samsung Surround Sound system with Subwoofer and Speakers",
-      "description": "Samsung Surround Sound system with Subwoofer and Speakers.\n\nOriginal price: $450.0\nSelling for: $300.0",
+      "description": "Samsung Surround Sound system with Subwoofer and Speakers.\n\nRetails for: $450.0\nSelling for: $300.0",
       "price": 300.0,
       "category": "other",
       "status": "available",
@@ -893,12 +909,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null
+      "productLink": null,
+      "retailPrice": 450.0
     },
     {
       "id": "excel-item-018",
       "name": "Dinner Table Original Ron Rezek 1980s Original table with W/custom made marble top that is removable",
-      "description": "Dinner Table Original Ron Rezek 1980s Original table with W/custom made marble top that is removable.\n\nOriginal price: $4700.0\nSelling for: $1800.0\n\nProduct link: Auction",
+      "description": "Dinner Table Original Ron Rezek 1980s Original table with W/custom made marble top that is removable.\n\nRetails for: $4700.0\nSelling for: $1800.0\n\nProduct link: Auction",
       "price": 1800.0,
       "category": "other",
       "status": "available",
@@ -906,12 +923,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "Auction"
+      "productLink": "Auction",
+      "retailPrice": 4700.0
     },
     {
       "id": "excel-item-019",
       "name": "Italian Carrera Marble RECTANGULAR DINING TABLE Custom Ordered Restoration Harware",
-      "description": "Italian Carrera Marble RECTANGULAR DINING TABLE Custom Ordered Restoration Harware.\n\nOriginal price: $2650.0\nSelling for: $800.0\n\nProduct link: https://rh.com/",
+      "description": "Italian Carrera Marble RECTANGULAR DINING TABLE Custom Ordered Restoration Harware.\n\nRetails for: $2650.0\nSelling for: $800.0",
       "price": 800.0,
       "category": "other",
       "status": "available",
@@ -919,12 +937,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://rh.com/"
+      "productLink": "https://rh.com/",
+      "retailPrice": 2650.0
     },
     {
       "id": "excel-item-020",
       "name": "BLUE DOT Real Good Chair Powder Coated Steel",
-      "description": "BLUE DOT Real Good Chair Powder Coated Steel.\n\nOriginal price: $$199.00/each\nSelling for: $0\n\nProduct link: https://www.bludot.com/",
+      "description": "BLUE DOT Real Good Chair Powder Coated Steel.\n\nOriginal price: $$199.00/each\nSelling for: $0",
       "price": 0.0,
       "category": "other",
       "status": "available",
@@ -937,7 +956,7 @@
     {
       "id": "excel-item-021",
       "name": "VONDOM White Dinner Table Chairs with Metal Legs",
-      "description": "VONDOM White Dinner Table Chairs with Metal Legs.\n\nOriginal price: $$249.00/each\nSelling for: $0\n\nProduct link: https://www.2modern.com/",
+      "description": "VONDOM White Dinner Table Chairs with Metal Legs.\n\nOriginal price: $$249.00/each\nSelling for: $0",
       "price": 0.0,
       "category": "other",
       "status": "available",
@@ -963,7 +982,7 @@
     {
       "id": "excel-item-023",
       "name": "Bello Shag Wool Rug",
-      "description": "Bello Shag Wool Rug.\n\nOriginal price: $1349.2\nSelling for: $800.0\n\nProduct link: https://www.westelm.com/products/bello-shag-rug-r783/",
+      "description": "Bello Shag Wool Rug.\n\nRetails for: $1349.2\nSelling for: $800.0",
       "price": 800.0,
       "category": "other",
       "status": "available",
@@ -971,12 +990,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.westelm.com/products/bello-shag-rug-r783/"
+      "productLink": "https://www.westelm.com/products/bello-shag-rug-r783/",
+      "retailPrice": 1349.2
     },
     {
       "id": "excel-item-024",
       "name": "TURBINE COFFEE TABLE w/round Glass",
-      "description": "TURBINE COFFEE TABLE w/round Glass.\n\nOriginal price: $8950.0\nSelling for: $6400.0",
+      "description": "TURBINE COFFEE TABLE w/round Glass.\n\nRetails for: $8950.0\nSelling for: $6400.0",
       "price": 6400.0,
       "category": "other",
       "status": "available",
@@ -984,12 +1004,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null
+      "productLink": null,
+      "retailPrice": 8950.0
     },
     {
       "id": "excel-item-025",
       "name": "RESTORATION HADWARE Italia Slope Arm Leather Bench Couch Metal Base Custom Ordered Leather",
-      "description": "RESTORATION HADWARE Italia Slope Arm Leather Bench Couch Metal Base Custom Ordered Leather.\n\nOriginal price: $12650.0\nSelling for: $4200.0\n\nProduct link: https://rh.com/catalog/category/products.jsp?categoryId=cat7150089",
+      "description": "RESTORATION HADWARE Italia Slope Arm Leather Bench Couch Metal Base Custom Ordered Leather.\n\nRetails for: $12650.0\nSelling for: $4200.0",
       "price": 4200.0,
       "category": "other",
       "status": "available",
@@ -997,12 +1018,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://rh.com/catalog/category/products.jsp?categoryId=cat7150089"
+      "productLink": "https://rh.com/catalog/category/products.jsp?categoryId=cat7150089",
+      "retailPrice": 12650.0
     },
     {
       "id": "excel-item-026",
       "name": "Polished Airplane Fuselage, with 5 Airplane window",
-      "description": "Polished Airplane Fuselage, with 5 Airplane window.\n\nOriginal price: $4826.0\nSelling for: $2500.0",
+      "description": "Polished Airplane Fuselage, with 5 Airplane window.\n\nRetails for: $4826.0\nSelling for: $2500.0",
       "price": 2500.0,
       "category": "other",
       "status": "available",
@@ -1010,12 +1032,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null
+      "productLink": null,
+      "retailPrice": 4826.0
     },
     {
       "id": "excel-item-027",
       "name": "Platner Coffee Table (Right side wire table with glass when you come in)",
-      "description": "Platner Coffee Table (Right side wire table with glass when you come in).\n\nOriginal price: $2929.0\nSelling for: $1800.0\n\nProduct link: https://www.dwr.com/living-accent-coffee-tables/platner-coffee-table/100208860.html?lang=en_US&gclid=EAIaIQobChMIjtrW54-U_gIVjQStBh22agBQEAQYAyABEgK8fvD_BwE&gclsrc=aw.ds",
+      "description": "Platner Coffee Table (Right side wire table with glass when you come in).\n\nRetails for: $2929.0\nSelling for: $1800.0",
       "price": 1800.0,
       "category": "other",
       "status": "available",
@@ -1031,12 +1054,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.dwr.com/living-accent-coffee-tables/platner-coffee-table/100208860.html?lang=en_US&gclid=EAIaIQobChMIjtrW54-U_gIVjQStBh22agBQEAQYAyABEgK8fvD_BwE&gclsrc=aw.ds"
+      "productLink": "https://www.dwr.com/living-accent-coffee-tables/platner-coffee-table/100208860.html?lang=en_US&gclid=EAIaIQobChMIjtrW54-U_gIVjQStBh22agBQEAQYAyABEgK8fvD_BwE&gclsrc=aw.ds",
+      "retailPrice": 2929.0
     },
     {
       "id": "excel-item-028",
       "name": "Varnado Vegan Leather Armchair",
-      "description": "Varnado Vegan Leather Armchair.\n\nOriginal price: $$399.99/each\nSelling for: $0\n\nProduct link: https://www.wayfair.com/furniture/pdp/ivy-bronx-varnado-2975-wide-armchair-w000183354.html?piid=1622117663",
+      "description": "Varnado Vegan Leather Armchair.\n\nOriginal price: $$399.99/each\nSelling for: $0",
       "price": 0.0,
       "category": "other",
       "status": "available",
@@ -1049,7 +1073,7 @@
     {
       "id": "excel-item-029",
       "name": "Bertoia Asymmetric Chaise AUTHENTIC KNOLL WITH LEATHER INSERT",
-      "description": "Bertoia Asymmetric Chaise AUTHENTIC KNOLL WITH LEATHER INSERT.\n\nOriginal price: $10672.0\nSelling for: $8500.0\n\nProduct link: https://www.dwr.com/living-lounge-chairs/bertoia-asymmetric-chaise/100151126.html?lang=en_US&gclid=EAIaIQobChMIpeqH5qWU_gIVZAh9Ch1O1w4eEAQYCCABEgJ2hfD_BwE&gclsrc=aw.ds",
+      "description": "Bertoia Asymmetric Chaise AUTHENTIC KNOLL WITH LEATHER INSERT.\n\nRetails for: $10672.0\nSelling for: $8500.0",
       "price": 8500.0,
       "category": "other",
       "status": "available",
@@ -1065,12 +1089,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.dwr.com/living-lounge-chairs/bertoia-asymmetric-chaise/100151126.html?lang=en_US&gclid=EAIaIQobChMIpeqH5qWU_gIVZAh9Ch1O1w4eEAQYCCABEgJ2hfD_BwE&gclsrc=aw.ds"
+      "productLink": "https://www.dwr.com/living-lounge-chairs/bertoia-asymmetric-chaise/100151126.html?lang=en_US&gclid=EAIaIQobChMIpeqH5qWU_gIVZAh9Ch1O1w4eEAQYCCABEgJ2hfD_BwE&gclsrc=aw.ds",
+      "retailPrice": 10672.0
     },
     {
       "id": "excel-item-030",
       "name": "Richard Schultz Prototype for Knoll Wing Chair 1/1",
-      "description": "Richard Schultz Prototype for Knoll Wing Chair 1/1.\n\nOriginal price: $4700.0\nSelling for: $2800.0\n\nProduct link: https://www.shealatone.com/portfolio-items/richard-schultz-wing-chair/",
+      "description": "Richard Schultz Prototype for Knoll Wing Chair 1/1.\n\nRetails for: $4700.0\nSelling for: $2800.0",
       "price": 2800.0,
       "category": "other",
       "status": "available",
@@ -1078,12 +1103,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.shealatone.com/portfolio-items/richard-schultz-wing-chair/"
+      "productLink": "https://www.shealatone.com/portfolio-items/richard-schultz-wing-chair/",
+      "retailPrice": 4700.0
     },
     {
       "id": "excel-item-031",
       "name": "LG OLED 65\" TV 4K",
-      "description": "LG OLED 65\" TV 4K.\n\nOriginal price: $1685.0\nSelling for: $1200.0\n\nProduct link: lg.com",
+      "description": "LG OLED 65\" TV 4K.\n\nRetails for: $1685.0\nSelling for: $1200.0\n\nProduct link: lg.com",
       "price": 1200.0,
       "category": "other",
       "status": "available",
@@ -1091,12 +1117,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "lg.com"
+      "productLink": "lg.com",
+      "retailPrice": 1685.0
     },
     {
       "id": "excel-item-032",
       "name": "Salamander Designs Acadia XL Wall Stand for TV",
-      "description": "Salamander Designs Acadia XL Wall Stand for TV.\n\nOriginal price: $499.0\nSelling for: $300.0\n\nProduct link: https://www.crutchfield.com/S-m4wAqfr4dh5/p_537ACWXL60/Salamander-Designs-Acadia-XL-Wall-Stand.html?XVINQ=GLX&XVVer=1FHV&awcr=634085895758&awdv=c&awnw=g&awug=9031037&awkw=pla-1883912639691&awmt=&awat=pla&gclid=EAIaIQobChMIr83xkrOU_gIVegutBh0inAnkEAQYCCABEgLh7fD_BwE",
+      "description": "Salamander Designs Acadia XL Wall Stand for TV.\n\nRetails for: $499.0\nSelling for: $300.0",
       "price": 300.0,
       "category": "other",
       "status": "available",
@@ -1104,12 +1131,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.crutchfield.com/S-m4wAqfr4dh5/p_537ACWXL60/Salamander-Designs-Acadia-XL-Wall-Stand.html?XVINQ=GLX&XVVer=1FHV&awcr=634085895758&awdv=c&awnw=g&awug=9031037&awkw=pla-1883912639691&awmt=&awat=pla&gclid=EAIaIQobChMIr83xkrOU_gIVegutBh0inAnkEAQYCCABEgLh7fD_BwE"
+      "productLink": "https://www.crutchfield.com/S-m4wAqfr4dh5/p_537ACWXL60/Salamander-Designs-Acadia-XL-Wall-Stand.html?XVINQ=GLX&XVVer=1FHV&awcr=634085895758&awdv=c&awnw=g&awug=9031037&awkw=pla-1883912639691&awmt=&awat=pla&gclid=EAIaIQobChMIr83xkrOU_gIVegutBh0inAnkEAQYCCABEgLh7fD_BwE",
+      "retailPrice": 499.0
     },
     {
       "id": "excel-item-033",
       "name": "Magis Spun Chair Spinning chair back bedroom",
-      "description": "Magis Spun Chair Spinning chair back bedroom.\n\nOriginal price: $995.0\nSelling for: $600.0\n\nProduct link: https://store.hermanmiller.com/outdoor-furniture-chairs/magis-spun-chair/100063889.html?lang=en_US&gclid=EAIaIQobChMIkfn0h5CU_gIVUwKtBh3zAwSFEAQYAiABEgI07fD_BwE&gclsrc=aw.ds",
+      "description": "Magis Spun Chair Spinning chair back bedroom.\n\nRetails for: $995.0\nSelling for: $600.0",
       "price": 600.0,
       "category": "other",
       "status": "available",
@@ -1125,12 +1153,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://store.hermanmiller.com/outdoor-furniture-chairs/magis-spun-chair/100063889.html?lang=en_US&gclid=EAIaIQobChMIkfn0h5CU_gIVUwKtBh3zAwSFEAQYAiABEgI07fD_BwE&gclsrc=aw.ds"
+      "productLink": "https://store.hermanmiller.com/outdoor-furniture-chairs/magis-spun-chair/100063889.html?lang=en_US&gclid=EAIaIQobChMIkfn0h5CU_gIVUwKtBh3zAwSFEAQYAiABEgI07fD_BwE&gclsrc=aw.ds",
+      "retailPrice": 995.0
     },
     {
       "id": "excel-item-034",
       "name": "WaterRower Rowing Machine Model #300 S4 in Walnut Wood",
-      "description": "WaterRower Rowing Machine Model #300 S4 in Walnut Wood.\n\nOriginal price: $1599.0\nSelling for: $400.0\n\nProduct link: https://store.moma.org/products/waterrower-rowing-machine-model-300-s4-in-walnut-wood?currency=USD?variant=42994208276710&gclid=EAIaIQobChMIi9GUlqeU_gIVpBStBh2Q2wi4EAQYBSABEgItqPD_BwE",
+      "description": "WaterRower Rowing Machine Model #300 S4 in Walnut Wood.\n\nRetails for: $1599.0\nSelling for: $400.0",
       "price": 400.0,
       "category": "other",
       "status": "available",
@@ -1146,12 +1175,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://store.moma.org/products/waterrower-rowing-machine-model-300-s4-in-walnut-wood?currency=USD?variant=42994208276710&gclid=EAIaIQobChMIi9GUlqeU_gIVpBStBh2Q2wi4EAQYBSABEgItqPD_BwE"
+      "productLink": "https://store.moma.org/products/waterrower-rowing-machine-model-300-s4-in-walnut-wood?currency=USD?variant=42994208276710&gclid=EAIaIQobChMIi9GUlqeU_gIVpBStBh2Q2wi4EAQYBSABEgItqPD_BwE",
+      "retailPrice": 1599.0
     },
     {
       "id": "excel-item-035",
       "name": "Aluminimum Bike Rack Guest Bedroom",
-      "description": "Aluminimum Bike Rack Guest Bedroom.\n\nOriginal price: $120.0\nSelling for: $80.0",
+      "description": "Aluminimum Bike Rack Guest Bedroom.\n\nRetails for: $120.0\nSelling for: $80.0",
       "price": 80.0,
       "category": "other",
       "status": "available",
@@ -1159,12 +1189,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null
+      "productLink": null,
+      "retailPrice": 120.0
     },
     {
       "id": "excel-item-036",
       "name": "FLOYD The Bed Frame",
-      "description": "FLOYD The Bed Frame.\n\nOriginal price: $1599.0\nSelling for: $1200.0\n\nProduct link: https://floydhome.com/products/the-bed-frame?variant=36971988385954&gclid=EAIaIQobChMIscjkqqeU_gIVaxKtBh2d8AD6EAQYAyABEgKcjfD_BwE",
+      "description": "FLOYD The Bed Frame.\n\nRetails for: $1599.0\nSelling for: $1200.0",
       "price": 1200.0,
       "category": "other",
       "status": "available",
@@ -1180,12 +1211,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://floydhome.com/products/the-bed-frame?variant=36971988385954&gclid=EAIaIQobChMIscjkqqeU_gIVaxKtBh2d8AD6EAQYAyABEgKcjfD_BwE"
+      "productLink": "https://floydhome.com/products/the-bed-frame?variant=36971988385954&gclid=EAIaIQobChMIscjkqqeU_gIVaxKtBh2d8AD6EAQYAyABEgKcjfD_BwE",
+      "retailPrice": 1599.0
     },
     {
       "id": "excel-item-037",
       "name": "Queen purple mattress (slept on for 4 weeks)",
-      "description": "Queen purple mattress (slept on for 4 weeks).\n\nOriginal price: $1399.0\nSelling for: $900.0\n\nProduct link: https://purple.com/mattresses/purple-bed",
+      "description": "Queen purple mattress (slept on for 4 weeks).\n\nRetails for: $1399.0\nSelling for: $900.0",
       "price": 900.0,
       "category": "other",
       "status": "available",
@@ -1197,12 +1229,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://purple.com/mattresses/purple-bed"
+      "productLink": "https://purple.com/mattresses/purple-bed",
+      "retailPrice": 1399.0
     },
     {
       "id": "excel-item-038",
       "name": "PS ROCKING CHAIR 2017 Limited Release",
-      "description": "PS ROCKING CHAIR 2017 Limited Release.\n\nOriginal price: $587.0\nSelling for: $400.0\n\nProduct link: https://www.walmart.com/ip/Ikea-Rocking-chair-428-20829-1818/298419101",
+      "description": "PS ROCKING CHAIR 2017 Limited Release.\n\nRetails for: $587.0\nSelling for: $400.0",
       "price": 400.0,
       "category": "other",
       "status": "available",
@@ -1210,12 +1243,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.walmart.com/ip/Ikea-Rocking-chair-428-20829-1818/298419101"
+      "productLink": "https://www.walmart.com/ip/Ikea-Rocking-chair-428-20829-1818/298419101",
+      "retailPrice": 587.0
     },
     {
       "id": "excel-item-039",
       "name": "Jaxon Metal Outdoor Sofas 4 sofas total and table",
-      "description": "Jaxon Metal Outdoor Sofas 4 sofas total and table.\n\nOriginal price: $2540.0\nSelling for: $0\n\nProduct link: https://www.allmodern.com/outdoor/pdp/grey-aluminum-outdoor-3-seater-sofa-with-cushions-a000949298.html?piid=2126512877",
+      "description": "Jaxon Metal Outdoor Sofas 4 sofas total and table.\n\nRetails for: $2540.0\nSelling for: $0",
       "price": 0.0,
       "category": "other",
       "status": "available",
@@ -1223,12 +1257,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.allmodern.com/outdoor/pdp/grey-aluminum-outdoor-3-seater-sofa-with-cushions-a000949298.html?piid=2126512877"
+      "productLink": "https://www.allmodern.com/outdoor/pdp/grey-aluminum-outdoor-3-seater-sofa-with-cushions-a000949298.html?piid=2126512877",
+      "retailPrice": 2540.0
     },
     {
       "id": "excel-item-040",
       "name": "Covers for all outdoor Furniture",
-      "description": "Covers for all outdoor Furniture.\n\nOriginal price: $290.0\nSelling for: $0\n\nProduct link: amazon.com",
+      "description": "Covers for all outdoor Furniture.\n\nRetails for: $290.0\nSelling for: $0\n\nProduct link: amazon.com",
       "price": 0.0,
       "category": "other",
       "status": "available",
@@ -1236,12 +1271,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "amazon.com"
+      "productLink": "amazon.com",
+      "retailPrice": 290.0
     },
     {
       "id": "excel-item-041",
       "name": "Bubble Club Sofa By Philippe Starch forKartell",
-      "description": "Bubble Club Sofa By Philippe Starch forKartell.\n\nOriginal price: $1525.0\nSelling for: $700.0\n\nProduct link: https://www.lumens.com/bubble-club-sofa-by-kartell-R050152.html?utm_source=google&utm_medium=PLA&utm_term=&utm_brand=Kartell&utm_id=R050152&utm_campaign=958854861&gclid=EAIaIQobChMI5rXTpq2U_gIVrx6tBh1BDANvEAQYASABEgJzgPD_BwE",
+      "description": "Bubble Club Sofa By Philippe Starch forKartell.\n\nRetails for: $1525.0\nSelling for: $700.0",
       "price": 700.0,
       "category": "other",
       "status": "available",
@@ -1249,12 +1285,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.lumens.com/bubble-club-sofa-by-kartell-R050152.html?utm_source=google&utm_medium=PLA&utm_term=&utm_brand=Kartell&utm_id=R050152&utm_campaign=958854861&gclid=EAIaIQobChMI5rXTpq2U_gIVrx6tBh1BDANvEAQYASABEgJzgPD_BwE"
+      "productLink": "https://www.lumens.com/bubble-club-sofa-by-kartell-R050152.html?utm_source=google&utm_medium=PLA&utm_term=&utm_brand=Kartell&utm_id=R050152&utm_campaign=958854861&gclid=EAIaIQobChMI5rXTpq2U_gIVrx6tBh1BDANvEAQYASABEgJzgPD_BwE",
+      "retailPrice": 1525.0
     },
     {
       "id": "excel-item-042",
       "name": "Bubble Club Table Yellow By Philippe Starch forKartell",
-      "description": "Bubble Club Table Yellow By Philippe Starch forKartell.\n\nOriginal price: $285.0\nSelling for: $100.0\n\nProduct link: https://www.lumens.com/bubble-club-table-by-kartell-KTLY13043.html",
+      "description": "Bubble Club Table Yellow By Philippe Starch forKartell.\n\nRetails for: $285.0\nSelling for: $100.0",
       "price": 100.0,
       "category": "other",
       "status": "available",
@@ -1262,12 +1299,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.lumens.com/bubble-club-table-by-kartell-KTLY13043.html"
+      "productLink": "https://www.lumens.com/bubble-club-table-by-kartell-KTLY13043.html",
+      "retailPrice": 285.0
     },
     {
       "id": "excel-item-043",
       "name": "Bubble Club Chair By Philippe Starch forKartell",
-      "description": "Bubble Club Chair By Philippe Starch forKartell.\n\nOriginal price: $1010.0\nSelling for: $400.0\n\nProduct link: https://www.patioliving.com/kartelloutdoor-bubble-club-resin-patio-lounge-chair-kao607064",
+      "description": "Bubble Club Chair By Philippe Starch forKartell.\n\nRetails for: $1010.0\nSelling for: $400.0",
       "price": 400.0,
       "category": "other",
       "status": "available",
@@ -1283,12 +1321,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.patioliving.com/kartelloutdoor-bubble-club-resin-patio-lounge-chair-kao607064"
+      "productLink": "https://www.patioliving.com/kartelloutdoor-bubble-club-resin-patio-lounge-chair-kao607064",
+      "retailPrice": 1010.0
     },
     {
       "id": "excel-item-044",
       "name": "Large Ceramic Pot with Cactus",
-      "description": "Large Ceramic Pot with Cactus.\n\nOriginal price: $450.0\nSelling for: $50.0",
+      "description": "Large Ceramic Pot with Cactus.\n\nRetails for: $450.0\nSelling for: $50.0",
       "price": 50.0,
       "category": "other",
       "status": "available",
@@ -1296,12 +1335,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null
+      "productLink": null,
+      "retailPrice": 450.0
     },
     {
       "id": "excel-item-045",
       "name": "Savannah Modern Classic Black Stainless Steel Base Grey Outdoor Bench",
-      "description": "Savannah Modern Classic Black Stainless Steel Base Grey Outdoor Bench.\n\nOriginal price: $1099.0\nSelling for: $400.0\n\nProduct link: https://www.kathykuohome.com/Product/Detail/42450-Savannah-Modern-Classic-Black-Stainless-Steel-Base-Grey-Outdoor-Bench?gclid=EAIaIQobChMI3Mqov66U_gIVbwStBh20VwAoEAQYBiABEgKd2vD_BwE",
+      "description": "Savannah Modern Classic Black Stainless Steel Base Grey Outdoor Bench.\n\nRetails for: $1099.0\nSelling for: $400.0",
       "price": 400.0,
       "category": "other",
       "status": "available",
@@ -1309,12 +1349,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.kathykuohome.com/Product/Detail/42450-Savannah-Modern-Classic-Black-Stainless-Steel-Base-Grey-Outdoor-Bench?gclid=EAIaIQobChMI3Mqov66U_gIVbwStBh20VwAoEAQYBiABEgKd2vD_BwE"
+      "productLink": "https://www.kathykuohome.com/Product/Detail/42450-Savannah-Modern-Classic-Black-Stainless-Steel-Base-Grey-Outdoor-Bench?gclid=EAIaIQobChMI3Mqov66U_gIVbwStBh20VwAoEAQYBiABEgKd2vD_BwE",
+      "retailPrice": 1099.0
     },
     {
       "id": "excel-item-046",
       "name": "Large Wood Table With Metal X Base",
-      "description": "Large Wood Table With Metal X Base.\n\nOriginal price: $1460.0\nSelling for: $200.0",
+      "description": "Large Wood Table With Metal X Base.\n\nRetails for: $1460.0\nSelling for: $200.0",
       "price": 200.0,
       "category": "other",
       "status": "available",
@@ -1322,12 +1363,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null
+      "productLink": null,
+      "retailPrice": 1460.0
     },
     {
       "id": "excel-item-047",
       "name": "Folding Garden Chairs 2 pcs Solid Teak Wood - Brown",
-      "description": "Folding Garden Chairs 2 pcs Solid Teak Wood - Brown.\n\nOriginal price: $212.24/each\nSelling for: $0\n\nProduct link: https://www.overstock.com/c/outdoor-dining-furniture/outdoor-dining-chairs?t=7926&featuredproduct=35111535&featuredoption=67221056&ci_sku=39317484-000-000&cnc=US&srsltid=AfAwrE4JPX4a9nIyMq4i8oVEBvyuShK1AqLu3OFo-nrrBIRgIlmjxtBJJxQ",
+      "description": "Folding Garden Chairs 2 pcs Solid Teak Wood - Brown.\n\nRetails for: $212.24/each\nSelling for: $0",
       "price": 0.0,
       "category": "other",
       "status": "available",
@@ -1335,12 +1377,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.overstock.com/c/outdoor-dining-furniture/outdoor-dining-chairs?t=7926&featuredproduct=35111535&featuredoption=67221056&ci_sku=39317484-000-000&cnc=US&srsltid=AfAwrE4JPX4a9nIyMq4i8oVEBvyuShK1AqLu3OFo-nrrBIRgIlmjxtBJJxQ"
+      "productLink": "https://www.overstock.com/c/outdoor-dining-furniture/outdoor-dining-chairs?t=7926&featuredproduct=35111535&featuredoption=67221056&ci_sku=39317484-000-000&cnc=US&srsltid=AfAwrE4JPX4a9nIyMq4i8oVEBvyuShK1AqLu3OFo-nrrBIRgIlmjxtBJJxQ",
+      "retailPrice": 212.24
     },
     {
       "id": "excel-item-048",
       "name": "Burning Barrel Dark Grey Barrel Large",
-      "description": "Burning Barrel Dark Grey Barrel Large.\n\nOriginal price: $1493.64\nSelling for: $1200.0\n\nProduct link: https://www.burningbarrel.co.uk/?v=79cba1185463",
+      "description": "Burning Barrel Dark Grey Barrel Large.\n\nRetails for: $1493.64\nSelling for: $1200.0",
       "price": 1200.0,
       "category": "other",
       "status": "available",
@@ -1354,12 +1397,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.burningbarrel.co.uk/?v=79cba1185463"
+      "productLink": "https://www.burningbarrel.co.uk/?v=79cba1185463",
+      "retailPrice": 1493.64
     },
     {
       "id": "excel-item-049",
       "name": "Aquart Outdoor Shower by Seletti",
-      "description": "Aquart Outdoor Shower by Seletti.\n\nOriginal price: $472.0\nSelling for: $300.0\n\nProduct link: https://www.houzz.com/products/aquart-outdoor-shower-by-seletti-prvw-vr~129370114?m_refid=PLA_HZ_129370114_17540098681&device=c&nw=x&gclid=EAIaIQobChMI2Pzq4bCU_gIVJgCtBh2x-QGKEAQYASABEgLsNvD_BwE",
+      "description": "Aquart Outdoor Shower by Seletti.\n\nRetails for: $472.0\nSelling for: $300.0",
       "price": 300.0,
       "category": "other",
       "status": "available",
@@ -1375,12 +1419,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.houzz.com/products/aquart-outdoor-shower-by-seletti-prvw-vr~129370114?m_refid=PLA_HZ_129370114_17540098681&device=c&nw=x&gclid=EAIaIQobChMI2Pzq4bCU_gIVJgCtBh2x-QGKEAQYASABEgLsNvD_BwE"
+      "productLink": "https://www.houzz.com/products/aquart-outdoor-shower-by-seletti-prvw-vr~129370114?m_refid=PLA_HZ_129370114_17540098681&device=c&nw=x&gclid=EAIaIQobChMI2Pzq4bCU_gIVJgCtBh2x-QGKEAQYASABEgLsNvD_BwE",
+      "retailPrice": 472.0
     },
     {
       "id": "excel-item-050",
       "name": "Kamado Joe BBQ Classic II 18-Inch Ceramic Grill - KJ23RHC (used 1 time)",
-      "description": "Kamado Joe BBQ Classic II 18-Inch Ceramic Grill - KJ23RHC (used 1 time).\n\nOriginal price: $1833.0\nSelling for: $700.0\n\nProduct link: https://www.bbqguys.com/kamado-joe/classic-ii-18-inch-freestanding-ceramic-grill?irclickid=wZcXYdVkJxyNTLp0v31s%3A3WLUkAThmQEiSR2VI0&utm_source=impact&utm_medium=cpa&utm_species=affiliate&utm_partner=2006806&irgwc=1&%3D",
+      "description": "Kamado Joe BBQ Classic II 18-Inch Ceramic Grill - KJ23RHC (used 1 time).\n\nRetails for: $1833.0\nSelling for: $700.0",
       "price": 700.0,
       "category": "other",
       "status": "available",
@@ -1388,12 +1433,13 @@
       "thumbnails": [],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.bbqguys.com/kamado-joe/classic-ii-18-inch-freestanding-ceramic-grill?irclickid=wZcXYdVkJxyNTLp0v31s%3A3WLUkAThmQEiSR2VI0&utm_source=impact&utm_medium=cpa&utm_species=affiliate&utm_partner=2006806&irgwc=1&%3D"
+      "productLink": "https://www.bbqguys.com/kamado-joe/classic-ii-18-inch-freestanding-ceramic-grill?irclickid=wZcXYdVkJxyNTLp0v31s%3A3WLUkAThmQEiSR2VI0&utm_source=impact&utm_medium=cpa&utm_species=affiliate&utm_partner=2006806&irgwc=1&%3D",
+      "retailPrice": 1833.0
     },
     {
       "id": "excel-item-051",
       "name": "Geo Lounge Chair Set (White Lounge Chair with leg rest)",
-      "description": "Geo Lounge Chair Set (White Lounge Chair with leg rest).\n\nOriginal price: $700.0\nSelling for: $200.0\n\nProduct link: https://industrywest.com/products/geo-lounge-chair?variant=40311603953804&nbt=nb%3Aadwords%3Ax%3A19689132220%3A%3A&nb_adtype=pla&nb_kwd=&nb_ti=&nb_mi=101621302&nb_pc=online&nb_pi=40311603953804&nb_ppi=&nb_placement=&nb_si=%7Bsourceid%7D&nb_li_ms=&nb_lp_ms=&nb_fii=&nb_ap=&nb_mt=&tw_source=google&tw_adid=&tw_campaign=19689132220&gclid=EAIaIQobChMImI7AuLGU_gIVAzetBh3u0Q2TEAQYDiABEgJ15PD_BwE",
+      "description": "Geo Lounge Chair Set (White Lounge Chair with leg rest).\n\nRetails for: $700.0\nSelling for: $200.0",
       "price": 200.0,
       "category": "other",
       "status": "available",
@@ -1409,12 +1455,13 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://industrywest.com/products/geo-lounge-chair?variant=40311603953804&nbt=nb%3Aadwords%3Ax%3A19689132220%3A%3A&nb_adtype=pla&nb_kwd=&nb_ti=&nb_mi=101621302&nb_pc=online&nb_pi=40311603953804&nb_ppi=&nb_placement=&nb_si=%7Bsourceid%7D&nb_li_ms=&nb_lp_ms=&nb_fii=&nb_ap=&nb_mt=&tw_source=google&tw_adid=&tw_campaign=19689132220&gclid=EAIaIQobChMImI7AuLGU_gIVAzetBh3u0Q2TEAQYDiABEgJ15PD_BwE"
+      "productLink": "https://industrywest.com/products/geo-lounge-chair?variant=40311603953804&nbt=nb%3Aadwords%3Ax%3A19689132220%3A%3A&nb_adtype=pla&nb_kwd=&nb_ti=&nb_mi=101621302&nb_pc=online&nb_pi=40311603953804&nb_ppi=&nb_placement=&nb_si=%7Bsourceid%7D&nb_li_ms=&nb_lp_ms=&nb_fii=&nb_ap=&nb_mt=&tw_source=google&tw_adid=&tw_campaign=19689132220&gclid=EAIaIQobChMImI7AuLGU_gIVAzetBh3u0Q2TEAQYDiABEgJ15PD_BwE",
+      "retailPrice": 700.0
     },
     {
       "id": "excel-item-052",
       "name": "Modern Adirondack Chairs 2 Under Tree",
-      "description": "Modern Adirondack Chairs 2 Under Tree.\n\nOriginal price: $249.0\nSelling for: $100.0\n\nProduct link: https://www.polywood.com/modern-adirondack-chair-ad420.html?polywood_frame_color=47&gclid=EAIaIQobChMIz4GQ6bGU_gIVJiCtBh2kTwLUEAQYAyABEgJTUvD_BwE",
+      "description": "Modern Adirondack Chairs 2 Under Tree.\n\nRetails for: $249.0\nSelling for: $100.0",
       "price": 100.0,
       "category": "other",
       "status": "available",
@@ -1430,7 +1477,8 @@
       ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.polywood.com/modern-adirondack-chair-ad420.html?polywood_frame_color=47&gclid=EAIaIQobChMIz4GQ6bGU_gIVJiCtBh2kTwLUEAQYAyABEgJTUvD_BwE"
+      "productLink": "https://www.polywood.com/modern-adirondack-chair-ad420.html?polywood_frame_color=47&gclid=EAIaIQobChMIz4GQ6bGU_gIVJiCtBh2kTwLUEAQYAyABEgJTUvD_BwE",
+      "retailPrice": 249.0
     }
   ],
   "lastUpdated": "2026-02-20T16:48:11.000Z"

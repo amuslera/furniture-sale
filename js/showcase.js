@@ -154,7 +154,10 @@ function createFurnitureCard(item) {
             <h3 class="card-title">${escapeHtml(item.name)}</h3>
             <p class="card-description">${escapeHtml(item.description)}</p>
             <div class="card-footer">
-                <div class="card-price">$${item.price.toLocaleString()}</div>
+                <div class="card-price-section">
+                    <div class="card-price">$${item.price.toLocaleString()}</div>
+                    ${item.retailPrice ? `<div class="card-retail-price">Retails for $${item.retailPrice.toLocaleString()}</div>` : ''}
+                </div>
                 ${hasMultiplePhotos ? `<a class="card-view-photos" onclick="openLightbox('${item.id}', 0)">View Photos</a>` : ''}
             </div>
         </div>

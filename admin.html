@@ -111,7 +111,7 @@
 
         <!-- Price -->
         <div class="form-group">
-          <label for="itemPrice">Price ($) *</label>
+          <label for="itemPrice">Selling Price ($) *</label>
           <input
             type="number"
             id="itemPrice"
@@ -120,6 +120,30 @@
             step="0.01"
             required
           >
+        </div>
+
+        <!-- Retail Price -->
+        <div class="form-group">
+          <label for="itemRetailPrice">Retails For ($)</label>
+          <input
+            type="number"
+            id="itemRetailPrice"
+            placeholder="500"
+            min="0"
+            step="0.01"
+          >
+          <small style="color: #666; margin-top: 5px; display: block;">Current retail price (optional)</small>
+        </div>
+
+        <!-- Product Link -->
+        <div class="form-group">
+          <label for="itemProductLink">Product Link</label>
+          <input
+            type="url"
+            id="itemProductLink"
+            placeholder="https://example.com/product"
+          >
+          <small style="color: #666; margin-top: 5px; display: block;">Link to manufacturer or retailer page (optional)</small>
         </div>
 
         <!-- Status -->
