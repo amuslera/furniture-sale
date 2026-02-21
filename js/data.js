@@ -31,27 +31,41 @@ const FurnitureData = {
    */
   async init() {
     const existing = this.loadItems();
-    if (existing.length > 0) {
-      return existing;
-    }
 
-    // localStorage is empty, try to load from furniture.json
+    // Always check furniture.json for new items
     try {
       const response = await fetch('data/furniture.json');
       if (response.ok) {
         const data = await response.json();
-        const items = data.items || [];
-        if (items.length > 0) {
-          this.saveItems(items);
-          console.log('Seeded localStorage with', items.length, 'items from furniture.json');
+        const jsonItems = data.items || [];
+
+        if (existing.length === 0) {
+          // localStorage empty - seed entirely from JSON
+          if (jsonItems.length > 0) {
+            this.saveItems(jsonItems);
+            console.log('Seeded localStorage with', jsonItems.length, 'items from furniture.json');
+          }
+          return jsonItems;
         }
-        return items;
+
+        // Merge: add any items from JSON that don't exist in localStorage
+        const existingIds = new Set(existing.map(item => item.id));
+        const newItems = jsonItems.filter(item => !existingIds.has(item.id));
+
+        if (newItems.length > 0) {
+          const merged = existing.concat(newItems);
+          this.saveItems(merged);
+          console.log('Merged', newItems.length, 'new items from furniture.json. Total:', merged.length);
+          return merged;
+        }
+
+        return existing;
       }
     } catch (error) {
       console.error('Error loading furniture.json:', error);
     }
 
-    return [];
+    return existing.length > 0 ? existing : [];
   },
 
   /**
