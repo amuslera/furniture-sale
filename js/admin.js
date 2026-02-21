@@ -544,10 +544,7 @@ const AdminPanel = {
       return false;
     }
 
-    if (this.uploadedImages.length === 0) {
-      this.showMessage('Please upload at least one image', 'error');
-      return false;
-    }
+    // Images are optional - placeholder will be shown if none provided
 
     return true;
   },
