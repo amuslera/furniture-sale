@@ -14,6 +14,7 @@ const AdminPanel = {
   // State
   currentEditId: null,
   uploadedImages: [],
+  visibilityFilter: 'all', // 'all', 'visible', 'hidden'
 
   /**
    * Initialize the admin panel
@@ -125,6 +126,12 @@ const AdminPanel = {
     document.getElementById('publishBtn').addEventListener('click', () => this.publishChanges());
     document.getElementById('exportDataBtn').addEventListener('click', () => this.exportData());
     document.getElementById('importDataBtn').addEventListener('click', () => this.importData());
+
+    // Visibility filter
+    document.getElementById('visibilityFilter').addEventListener('change', (e) => {
+      this.visibilityFilter = e.target.value;
+      this.loadItemsTable();
+    });
   },
 
   /**
@@ -137,6 +144,13 @@ const AdminPanel = {
     if (items.length === 0) {
       tbody.innerHTML = '<tr><td colspan="8" class="no-items">No items yet. Click "Add New Item" to get started.</td></tr>';
       return;
+    }
+
+    // Apply visibility filter
+    if (this.visibilityFilter === 'visible') {
+      items = items.filter(item => !item.hidden);
+    } else if (this.visibilityFilter === 'hidden') {
+      items = items.filter(item => item.hidden === true);
     }
 
     // Sort items if specified
@@ -179,9 +193,18 @@ const AdminPanel = {
     // Update item count display
     const countEl = document.getElementById('itemCount');
     if (countEl) {
-      const visibleCount = items.filter(i => !i.hidden).length;
-      const hiddenCount = items.filter(i => i.hidden).length;
-      countEl.textContent = `(${items.length} total${hiddenCount > 0 ? ', ' + hiddenCount + ' hidden' : ''})`;
+      const allItems = FurnitureData.loadItems();
+      const totalCount = allItems.length;
+      const visibleCount = allItems.filter(i => !i.hidden).length;
+      const hiddenCount = allItems.filter(i => i.hidden).length;
+
+      if (this.visibilityFilter === 'all') {
+        countEl.textContent = `(${totalCount} total${hiddenCount > 0 ? ', ' + hiddenCount + ' hidden' : ''})`;
+      } else if (this.visibilityFilter === 'visible') {
+        countEl.textContent = `(${visibleCount} visible of ${totalCount} total)`;
+      } else if (this.visibilityFilter === 'hidden') {
+        countEl.textContent = `(${hiddenCount} hidden of ${totalCount} total)`;
+      }
     }
 
     this.updateStorageInfo();

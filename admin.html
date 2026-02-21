@@ -47,7 +47,15 @@
     <div id="itemsListSection">
       <div class="section-header">
         <h2>All Items <span id="itemCount" style="font-size: 14px; color: #666; font-weight: normal;"></span></h2>
-        <button id="addNewBtn" class="btn btn-success">+ Add New Item</button>
+        <div style="display: flex; gap: 10px; align-items: center;">
+          <label for="visibilityFilter" style="font-size: 14px; color: #666;">Show:</label>
+          <select id="visibilityFilter" style="padding: 8px 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px;">
+            <option value="all">All Items</option>
+            <option value="visible">Visible Only</option>
+            <option value="hidden">Hidden Only</option>
+          </select>
+          <button id="addNewBtn" class="btn btn-success">+ Add New Item</button>
+        </div>
       </div>
 
       <div class="table-container">
