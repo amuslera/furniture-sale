@@ -199,8 +199,8 @@ function createFurnitureCard(item) {
             ` : ''}
             <div class="card-footer">
                 <div class="card-price-section">
+                    ${item.retailPrice ? `<div class="card-retail-price">$${item.retailPrice.toLocaleString()}</div>` : ''}
                     <div class="card-price">$${item.price.toLocaleString()}</div>
-                    ${item.retailPrice ? `<div class="card-retail-price">Retails for $${item.retailPrice.toLocaleString()}</div>` : ''}
                 </div>
                 ${hasMultiplePhotos ? `<a class="card-view-all" onclick="openLightbox('${item.id}', 0)">View All Photos</a>` : ''}
             </div>
