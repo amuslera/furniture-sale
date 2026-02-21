@@ -1,1 +1,7 @@
 .git-credentials
+
+# NanoClaw operational files
+CLAUDE.md
+logs/
+media/
+conversations/
