@@ -591,3 +591,103 @@ tr:hover {
     font-size: 12px;
   }
 }
+
+/* Sortable table headers */
+.sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+.sortable:hover {
+  background-color: #f0f0f0;
+}
+
+.sort-icon {
+  font-size: 12px;
+  margin-left: 4px;
+  color: #666;
+}
+
+/* Hidden item styling */
+.hidden-item {
+  opacity: 0.6;
+  background-color: #f9f9f9;
+}
+
+.hidden-badge {
+  display: inline-block;
+  background-color: #ffc107;
+  color: #000;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+/* Last edit cell */
+.last-edit-cell {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Image controls for reordering */
+.image-preview-item {
+  position: relative;
+  cursor: move;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.image-preview-item.dragging {
+  opacity: 0.5;
+}
+
+.image-preview-item.drag-over {
+  transform: scale(1.05);
+  border: 2px dashed #667eea;
+}
+
+.image-controls {
+  display: flex;
+  gap: 4px;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 4px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.move-image-btn {
+  background-color: #667eea;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+.move-image-btn:hover:not(:disabled) {
+  background-color: #5568d3;
+}
+
+.move-image-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Button styles for new actions */
+.btn-warning {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}

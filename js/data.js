@@ -94,6 +94,8 @@ const FurnitureData = {
    */
   addItem(item) {
     const items = this.loadItems();
+    item.dateUpdated = new Date().toISOString();
+    item.hidden = item.hidden || false;
     items.push(item);
     return this.saveItems(items);
   },
@@ -111,7 +113,12 @@ const FurnitureData = {
       console.error('Item not found:', id);
       return false;
     }
-    items[index] = { ...updatedItem, id, dateUpdated: new Date().toISOString() };
+    items[index] = {
+      ...updatedItem,
+      id,
+      dateUpdated: new Date().toISOString(),
+      hidden: updatedItem.hidden !== undefined ? updatedItem.hidden : false
+    };
     return this.saveItems(items);
   },
 

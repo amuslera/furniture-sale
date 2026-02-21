@@ -55,16 +55,17 @@
           <thead>
             <tr>
               <th style="width: 80px;">Image</th>
-              <th>Name</th>
+              <th class="sortable" data-sort="name">Name <span class="sort-icon"></span></th>
               <th>Description</th>
-              <th style="width: 100px;">Price</th>
-              <th style="width: 130px;">Status</th>
-              <th style="width: 150px;">Actions</th>
+              <th class="sortable" data-sort="price" style="width: 100px;">Price <span class="sort-icon"></span></th>
+              <th class="sortable" data-sort="status" style="width: 130px;">Status <span class="sort-icon"></span></th>
+              <th class="sortable" data-sort="dateUpdated" style="width: 150px;">Last Edit <span class="sort-icon"></span></th>
+              <th style="width: 180px;">Actions</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td colspan="6" class="no-items">Loading...</td>
+              <td colspan="7" class="no-items">Loading...</td>
             </tr>
           </tbody>
         </table>

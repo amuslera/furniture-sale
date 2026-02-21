@@ -130,23 +130,32 @@ const AdminPanel = {
   /**
    * Load items into table
    */
-  loadItemsTable() {
-    const items = FurnitureData.loadItems();
+  loadItemsTable(sortBy = null, sortOrder = 'asc') {
+    let items = FurnitureData.loadItems();
     const tbody = document.querySelector('#itemsTable tbody');
 
     if (items.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="6" class="no-items">No items yet. Click "Add New Item" to get started.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="7" class="no-items">No items yet. Click "Add New Item" to get started.</td></tr>';
       return;
     }
 
-    tbody.innerHTML = items.map(item => `
-      <tr>
+    // Sort items if specified
+    if (sortBy) {
+      items = this.sortItems(items, sortBy, sortOrder);
+    }
+
+    tbody.innerHTML = items.map(item => {
+      const isHidden = item.hidden === true;
+      const lastEdit = item.dateUpdated ? new Date(item.dateUpdated).toLocaleDateString() + ' ' + new Date(item.dateUpdated).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) : 'N/A';
+
+      return `
+      <tr class="${isHidden ? 'hidden-item' : ''}">
         <td>
           ${item.images && item.images.length > 0
             ? `<img src="${item.images[0]}" alt="${item.name}" class="table-thumbnail">`
             : '<div class="no-image">No image</div>'}
         </td>
-        <td><strong>${this.escapeHtml(item.name)}</strong></td>
+        <td><strong>${this.escapeHtml(item.name)}</strong>${isHidden ? ' <span class="hidden-badge">Hidden</span>' : ''}</td>
         <td class="description-cell">${this.escapeHtml(item.description).substring(0, 100)}${item.description.length > 100 ? '...' : ''}</td>
         <td>$${item.price.toFixed(2)}</td>
         <td>
@@ -156,14 +165,110 @@ const AdminPanel = {
             <option value="sold" ${item.status === 'sold' ? 'selected' : ''}>Sold</option>
           </select>
         </td>
+        <td class="last-edit-cell">${lastEdit}</td>
         <td class="actions-cell">
           <button onclick="AdminPanel.editItem('${item.id}')" class="btn btn-edit">Edit</button>
+          <button onclick="AdminPanel.duplicateItem('${item.id}')" class="btn btn-secondary">Duplicate</button>
+          <button onclick="AdminPanel.toggleHidden('${item.id}')" class="btn ${isHidden ? 'btn-success' : 'btn-warning'}">${isHidden ? 'Show' : 'Hide'}</button>
           <button onclick="AdminPanel.deleteItem('${item.id}')" class="btn btn-delete">Delete</button>
         </td>
       </tr>
-    `).join('');
+    `}).join('');
 
     this.updateStorageInfo();
+    this.attachSortListeners();
+  },
+
+  /**
+   * Sort items by field
+   */
+  sortItems(items, field, order = 'asc') {
+    return items.sort((a, b) => {
+      let aVal = a[field];
+      let bVal = b[field];
+
+      // Handle different data types
+      if (field === 'price') {
+        aVal = parseFloat(aVal) || 0;
+        bVal = parseFloat(bVal) || 0;
+      } else if (field === 'dateUpdated') {
+        aVal = new Date(aVal || 0).getTime();
+        bVal = new Date(bVal || 0).getTime();
+      } else {
+        aVal = (aVal || '').toString().toLowerCase();
+        bVal = (bVal || '').toString().toLowerCase();
+      }
+
+      if (aVal < bVal) return order === 'asc' ? -1 : 1;
+      if (aVal > bVal) return order === 'asc' ? 1 : -1;
+      return 0;
+    });
+  },
+
+  /**
+   * Attach sort listeners to table headers
+   */
+  attachSortListeners() {
+    const sortableHeaders = document.querySelectorAll('.sortable');
+    sortableHeaders.forEach(header => {
+      header.style.cursor = 'pointer';
+      header.onclick = () => {
+        const field = header.dataset.sort;
+        const currentOrder = header.dataset.order || 'asc';
+        const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
+
+        // Update all headers
+        sortableHeaders.forEach(h => {
+          h.dataset.order = '';
+          h.querySelector('.sort-icon').textContent = '';
+        });
+
+        // Update clicked header
+        header.dataset.order = newOrder;
+        header.querySelector('.sort-icon').textContent = newOrder === 'asc' ? ' ▲' : ' ▼';
+
+        // Reload table with sorting
+        this.loadItemsTable(field, newOrder);
+      };
+    });
+  },
+
+  /**
+   * Duplicate an item
+   */
+  duplicateItem(id) {
+    const item = FurnitureData.getItemById(id);
+    if (!item) return;
+
+    const newItem = {
+      ...item,
+      id: FurnitureData.generateId(),
+      name: item.name + ' (Copy)',
+      dateUpdated: new Date().toISOString()
+    };
+
+    if (FurnitureData.addItem(newItem)) {
+      this.showMessage('Item duplicated successfully', 'success');
+      this.loadItemsTable();
+    } else {
+      this.showMessage('Failed to duplicate item', 'error');
+    }
+  },
+
+  /**
+   * Toggle hidden status of an item
+   */
+  toggleHidden(id) {
+    const item = FurnitureData.getItemById(id);
+    if (!item) return;
+
+    item.hidden = !item.hidden;
+    if (FurnitureData.updateItem(id, item)) {
+      this.showMessage(item.hidden ? 'Item hidden from public view' : 'Item is now visible', 'success');
+      this.loadItemsTable();
+    } else {
+      this.showMessage('Failed to update visibility', 'error');
+    }
   },
 
   /**
@@ -322,12 +427,77 @@ const AdminPanel = {
     }
 
     container.innerHTML = this.uploadedImages.map((img, index) => `
-      <div class="image-preview-item">
+      <div class="image-preview-item" draggable="true" data-index="${index}">
         <img src="${img}" alt="Preview ${index + 1}">
-        <button type="button" class="remove-image-btn" onclick="AdminPanel.removeImage(${index})">×</button>
+        <div class="image-controls">
+          <button type="button" class="move-image-btn" onclick="AdminPanel.moveImage(${index}, -1)" ${index === 0 ? 'disabled' : ''}>◀</button>
+          <button type="button" class="move-image-btn" onclick="AdminPanel.moveImage(${index}, 1)" ${index === this.uploadedImages.length - 1 ? 'disabled' : ''}>▶</button>
+          <button type="button" class="remove-image-btn" onclick="AdminPanel.removeImage(${index})">×</button>
+        </div>
         ${index === 0 ? '<span class="primary-badge">Primary</span>' : ''}
       </div>
     `).join('');
+
+    // Add drag and drop listeners
+    this.attachImageDragListeners();
+  },
+
+  /**
+   * Move an image in the array
+   */
+  moveImage(fromIndex, direction) {
+    const toIndex = fromIndex + direction;
+    if (toIndex < 0 || toIndex >= this.uploadedImages.length) return;
+
+    // Swap images
+    [this.uploadedImages[fromIndex], this.uploadedImages[toIndex]] =
+      [this.uploadedImages[toIndex], this.uploadedImages[fromIndex]];
+
+    this.renderUploadedImages();
+    this.showMessage('Image order updated', 'info');
+  },
+
+  /**
+   * Attach drag and drop listeners for image reordering
+   */
+  attachImageDragListeners() {
+    const items = document.querySelectorAll('.image-preview-item');
+    let draggedIndex = null;
+
+    items.forEach((item, index) => {
+      item.addEventListener('dragstart', (e) => {
+        draggedIndex = index;
+        item.classList.add('dragging');
+      });
+
+      item.addEventListener('dragend', (e) => {
+        item.classList.remove('dragging');
+      });
+
+      item.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        item.classList.add('drag-over');
+      });
+
+      item.addEventListener('dragleave', (e) => {
+        item.classList.remove('drag-over');
+      });
+
+      item.addEventListener('drop', (e) => {
+        e.preventDefault();
+        item.classList.remove('drag-over');
+
+        if (draggedIndex !== null && draggedIndex !== index) {
+          // Reorder images
+          const draggedImage = this.uploadedImages[draggedIndex];
+          this.uploadedImages.splice(draggedIndex, 1);
+          this.uploadedImages.splice(index, 0, draggedImage);
+          this.renderUploadedImages();
+          this.showMessage('Image order updated', 'info');
+        }
+        draggedIndex = null;
+      });
+    });
   },
 
   /**

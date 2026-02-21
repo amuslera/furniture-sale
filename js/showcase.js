@@ -54,8 +54,11 @@ async function loadFurnitureData() {
     try {
         // Use shared data module - seeds from furniture.json if localStorage is empty
         await FurnitureData.init();
-        state.furniture = FurnitureData.loadItems();
-        console.log('Loaded furniture data:', state.furniture.length, 'items');
+        const allItems = FurnitureData.loadItems();
+
+        // Filter out hidden items from public view
+        state.furniture = allItems.filter(item => item.hidden !== true);
+        console.log('Loaded furniture data:', state.furniture.length, 'items (', allItems.length - state.furniture.length, 'hidden)');
 
         // Initialize the app
         state.filteredFurniture = [...state.furniture];
