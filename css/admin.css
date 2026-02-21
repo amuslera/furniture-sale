@@ -592,6 +592,13 @@ tr:hover {
   }
 }
 
+/* Row numbers */
+.row-number {
+  text-align: center;
+  color: #999;
+  font-size: 13px;
+}
+
 /* Sortable table headers */
 .sortable {
   cursor: pointer;

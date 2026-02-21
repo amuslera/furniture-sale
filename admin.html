@@ -46,7 +46,7 @@
     <!-- Items List Section -->
     <div id="itemsListSection">
       <div class="section-header">
-        <h2>All Items</h2>
+        <h2>All Items <span id="itemCount" style="font-size: 14px; color: #666; font-weight: normal;"></span></h2>
         <button id="addNewBtn" class="btn btn-success">+ Add New Item</button>
       </div>
 
@@ -54,6 +54,7 @@
         <table id="itemsTable">
           <thead>
             <tr>
+              <th style="width: 40px;">#</th>
               <th style="width: 80px;">Image</th>
               <th class="sortable" data-sort="name">Name <span class="sort-icon"></span></th>
               <th>Description</th>
@@ -65,7 +66,7 @@
           </thead>
           <tbody>
             <tr>
-              <td colspan="7" class="no-items">Loading...</td>
+              <td colspan="8" class="no-items">Loading...</td>
             </tr>
           </tbody>
         </table>

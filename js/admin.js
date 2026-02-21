@@ -135,7 +135,7 @@ const AdminPanel = {
     const tbody = document.querySelector('#itemsTable tbody');
 
     if (items.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="7" class="no-items">No items yet. Click "Add New Item" to get started.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="8" class="no-items">No items yet. Click "Add New Item" to get started.</td></tr>';
       return;
     }
 
@@ -144,12 +144,13 @@ const AdminPanel = {
       items = this.sortItems(items, sortBy, sortOrder);
     }
 
-    tbody.innerHTML = items.map(item => {
+    tbody.innerHTML = items.map((item, index) => {
       const isHidden = item.hidden === true;
       const lastEdit = item.dateUpdated ? new Date(item.dateUpdated).toLocaleDateString() + ' ' + new Date(item.dateUpdated).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) : 'N/A';
 
       return `
       <tr class="${isHidden ? 'hidden-item' : ''}">
+        <td class="row-number">${index + 1}</td>
         <td>
           ${item.images && item.images.length > 0
             ? `<img src="${item.images[0]}" alt="${item.name}" class="table-thumbnail">`
@@ -174,6 +175,14 @@ const AdminPanel = {
         </td>
       </tr>
     `}).join('');
+
+    // Update item count display
+    const countEl = document.getElementById('itemCount');
+    if (countEl) {
+      const visibleCount = items.filter(i => !i.hidden).length;
+      const hiddenCount = items.filter(i => i.hidden).length;
+      countEl.textContent = `(${items.length} total${hiddenCount > 0 ? ', ' + hiddenCount + ' hidden' : ''})`;
+    }
 
     this.updateStorageInfo();
     this.attachSortListeners();
