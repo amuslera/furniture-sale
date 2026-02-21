@@ -617,8 +617,16 @@
       "price": 1800.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-001_purple-matress-brand-new-never-slept-on-_1.jpg",
+        "images/excel-items/excel-item-001_purple-matress-brand-new-never-slept-on-_2.jpg",
+        "images/excel-items/excel-item-001_purple-matress-brand-new-never-slept-on-_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-001_purple-matress-brand-new-never-slept-on-_1.jpg",
+        "images/excel-items/excel-item-001_purple-matress-brand-new-never-slept-on-_2.jpg",
+        "images/excel-items/excel-item-001_purple-matress-brand-new-never-slept-on-_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://purple.com/2"
@@ -643,8 +651,16 @@
       "price": 1800.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-003_case-study-v-leg-daybed-couch_1.jpg",
+        "images/excel-items/excel-item-003_case-study-v-leg-daybed-couch_2.jpg",
+        "images/excel-items/excel-item-003_case-study-v-leg-daybed-couch_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-003_case-study-v-leg-daybed-couch_1.jpg",
+        "images/excel-items/excel-item-003_case-study-v-leg-daybed-couch_2.jpg",
+        "images/excel-items/excel-item-003_case-study-v-leg-daybed-couch_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-v-leg-daybed-couch?variant=9097025585217"
@@ -669,8 +685,16 @@
       "price": 1200.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-005_chair-with-ottoman-smoke-gray-fabric_1.jpg",
+        "images/excel-items/excel-item-005_chair-with-ottoman-smoke-gray-fabric_2.jpg",
+        "images/excel-items/excel-item-005_chair-with-ottoman-smoke-gray-fabric_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-005_chair-with-ottoman-smoke-gray-fabric_1.jpg",
+        "images/excel-items/excel-item-005_chair-with-ottoman-smoke-gray-fabric_2.jpg",
+        "images/excel-items/excel-item-005_chair-with-ottoman-smoke-gray-fabric_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://www.modernclassics.com/store/pc/Womb-Chair-with-Ottoman-Smoke-Gray-Fabric-p32758.htm"
@@ -682,8 +706,16 @@
       "price": 3500.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-006_lc4-le-corbusier-lounge-chair-original_1.jpg",
+        "images/excel-items/excel-item-006_lc4-le-corbusier-lounge-chair-original_2.jpg",
+        "images/excel-items/excel-item-006_lc4-le-corbusier-lounge-chair-original_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-006_lc4-le-corbusier-lounge-chair-original_1.jpg",
+        "images/excel-items/excel-item-006_lc4-le-corbusier-lounge-chair-original_2.jpg",
+        "images/excel-items/excel-item-006_lc4-le-corbusier-lounge-chair-original_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://www.dwr.com/living-lounge-chairs/lc4-chaise-lounge/6515.html?lang=en_US"
@@ -695,8 +727,16 @@
       "price": 500.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-007_cowhide-rug-under-chair_1.jpg",
+        "images/excel-items/excel-item-007_cowhide-rug-under-chair_2.jpg",
+        "images/excel-items/excel-item-007_cowhide-rug-under-chair_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-007_cowhide-rug-under-chair_1.jpg",
+        "images/excel-items/excel-item-007_cowhide-rug-under-chair_2.jpg",
+        "images/excel-items/excel-item-007_cowhide-rug-under-chair_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://www.dwr.com/rug-type-area-rug/cowhide-rug/8969718.html?lang=en_US&gclid=EAIaIQobChMI1qirzamU_gIVfBqtBh2fegZIEAQYAiABEgLIvPD_BwE&gclsrc=aw.ds"
@@ -721,8 +761,16 @@
       "price": 4500.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-009_knoll-authentic-womb-chair_1.jpg",
+        "images/excel-items/excel-item-009_knoll-authentic-womb-chair_2.jpg",
+        "images/excel-items/excel-item-009_knoll-authentic-womb-chair_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-009_knoll-authentic-womb-chair_1.jpg",
+        "images/excel-items/excel-item-009_knoll-authentic-womb-chair_2.jpg",
+        "images/excel-items/excel-item-009_knoll-authentic-womb-chair_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://www.knoll.com/product/womb-chair"
@@ -734,8 +782,16 @@
       "price": 2800.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-010_case-study-furniture-98-v-leg-daybed-cou_1.jpg",
+        "images/excel-items/excel-item-010_case-study-furniture-98-v-leg-daybed-cou_2.jpg",
+        "images/excel-items/excel-item-010_case-study-furniture-98-v-leg-daybed-cou_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-010_case-study-furniture-98-v-leg-daybed-cou_1.jpg",
+        "images/excel-items/excel-item-010_case-study-furniture-98-v-leg-daybed-cou_2.jpg",
+        "images/excel-items/excel-item-010_case-study-furniture-98-v-leg-daybed-cou_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-furniture-98-v-leg-daybed-couch"
@@ -747,8 +803,16 @@
       "price": 1600.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_1.jpg",
+        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_2.jpg",
+        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_1.jpg",
+        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_2.jpg",
+        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-v-leg-daybed-couch"
@@ -955,8 +1019,16 @@
       "price": 1800.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-027_platner-coffee-table-right-side-wire-tab_1.jpg",
+        "images/excel-items/excel-item-027_platner-coffee-table-right-side-wire-tab_2.jpg",
+        "images/excel-items/excel-item-027_platner-coffee-table-right-side-wire-tab_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-027_platner-coffee-table-right-side-wire-tab_1.jpg",
+        "images/excel-items/excel-item-027_platner-coffee-table-right-side-wire-tab_2.jpg",
+        "images/excel-items/excel-item-027_platner-coffee-table-right-side-wire-tab_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://www.dwr.com/living-accent-coffee-tables/platner-coffee-table/100208860.html?lang=en_US&gclid=EAIaIQobChMIjtrW54-U_gIVjQStBh22agBQEAQYAyABEgK8fvD_BwE&gclsrc=aw.ds"
@@ -981,8 +1053,16 @@
       "price": 8500.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-029_bertoia-asymmetric-chaise-authentic-knol_1.jpg",
+        "images/excel-items/excel-item-029_bertoia-asymmetric-chaise-authentic-knol_2.jpg",
+        "images/excel-items/excel-item-029_bertoia-asymmetric-chaise-authentic-knol_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-029_bertoia-asymmetric-chaise-authentic-knol_1.jpg",
+        "images/excel-items/excel-item-029_bertoia-asymmetric-chaise-authentic-knol_2.jpg",
+        "images/excel-items/excel-item-029_bertoia-asymmetric-chaise-authentic-knol_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://www.dwr.com/living-lounge-chairs/bertoia-asymmetric-chaise/100151126.html?lang=en_US&gclid=EAIaIQobChMIpeqH5qWU_gIVZAh9Ch1O1w4eEAQYCCABEgJ2hfD_BwE&gclsrc=aw.ds"
@@ -1033,8 +1113,16 @@
       "price": 600.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-033_magis-spun-chair-spinning-chair-back-bed_1.jpg",
+        "images/excel-items/excel-item-033_magis-spun-chair-spinning-chair-back-bed_2.jpg",
+        "images/excel-items/excel-item-033_magis-spun-chair-spinning-chair-back-bed_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-033_magis-spun-chair-spinning-chair-back-bed_1.jpg",
+        "images/excel-items/excel-item-033_magis-spun-chair-spinning-chair-back-bed_2.jpg",
+        "images/excel-items/excel-item-033_magis-spun-chair-spinning-chair-back-bed_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://store.hermanmiller.com/outdoor-furniture-chairs/magis-spun-chair/100063889.html?lang=en_US&gclid=EAIaIQobChMIkfn0h5CU_gIVUwKtBh3zAwSFEAQYAiABEgI07fD_BwE&gclsrc=aw.ds"
@@ -1046,8 +1134,16 @@
       "price": 400.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-034_waterrower-rowing-machine-model-300-s4-i_1.jpg",
+        "images/excel-items/excel-item-034_waterrower-rowing-machine-model-300-s4-i_2.jpg",
+        "images/excel-items/excel-item-034_waterrower-rowing-machine-model-300-s4-i_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-034_waterrower-rowing-machine-model-300-s4-i_1.jpg",
+        "images/excel-items/excel-item-034_waterrower-rowing-machine-model-300-s4-i_2.jpg",
+        "images/excel-items/excel-item-034_waterrower-rowing-machine-model-300-s4-i_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://store.moma.org/products/waterrower-rowing-machine-model-300-s4-in-walnut-wood?currency=USD?variant=42994208276710&gclid=EAIaIQobChMIi9GUlqeU_gIVpBStBh2Q2wi4EAQYBSABEgItqPD_BwE"
@@ -1072,8 +1168,16 @@
       "price": 1200.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-036_floyd-the-bed-frame_1.jpg",
+        "images/excel-items/excel-item-036_floyd-the-bed-frame_2.jpg",
+        "images/excel-items/excel-item-036_floyd-the-bed-frame_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-036_floyd-the-bed-frame_1.jpg",
+        "images/excel-items/excel-item-036_floyd-the-bed-frame_2.jpg",
+        "images/excel-items/excel-item-036_floyd-the-bed-frame_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://floydhome.com/products/the-bed-frame?variant=36971988385954&gclid=EAIaIQobChMIscjkqqeU_gIVaxKtBh2d8AD6EAQYAyABEgKcjfD_BwE"
@@ -1085,8 +1189,12 @@
       "price": 900.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-037_queen-purple-mattress-slept-on-for-4-wee_2.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-037_queen-purple-mattress-slept-on-for-4-wee_2.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://purple.com/mattresses/purple-bed"
@@ -1163,8 +1271,16 @@
       "price": 400.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-043_bubble-club-chair-by-philippe-starch-for_1.jpg",
+        "images/excel-items/excel-item-043_bubble-club-chair-by-philippe-starch-for_2.jpg",
+        "images/excel-items/excel-item-043_bubble-club-chair-by-philippe-starch-for_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-043_bubble-club-chair-by-philippe-starch-for_1.jpg",
+        "images/excel-items/excel-item-043_bubble-club-chair-by-philippe-starch-for_2.jpg",
+        "images/excel-items/excel-item-043_bubble-club-chair-by-philippe-starch-for_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://www.patioliving.com/kartelloutdoor-bubble-club-resin-patio-lounge-chair-kao607064"
@@ -1228,8 +1344,14 @@
       "price": 1200.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-048_burning-barrel-dark-grey-barrel-large_2.jpg",
+        "images/excel-items/excel-item-048_burning-barrel-dark-grey-barrel-large_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-048_burning-barrel-dark-grey-barrel-large_2.jpg",
+        "images/excel-items/excel-item-048_burning-barrel-dark-grey-barrel-large_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://www.burningbarrel.co.uk/?v=79cba1185463"
@@ -1241,8 +1363,16 @@
       "price": 300.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-049_aquart-outdoor-shower-by-seletti_1.jpg",
+        "images/excel-items/excel-item-049_aquart-outdoor-shower-by-seletti_2.jpg",
+        "images/excel-items/excel-item-049_aquart-outdoor-shower-by-seletti_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-049_aquart-outdoor-shower-by-seletti_1.jpg",
+        "images/excel-items/excel-item-049_aquart-outdoor-shower-by-seletti_2.jpg",
+        "images/excel-items/excel-item-049_aquart-outdoor-shower-by-seletti_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://www.houzz.com/products/aquart-outdoor-shower-by-seletti-prvw-vr~129370114?m_refid=PLA_HZ_129370114_17540098681&device=c&nw=x&gclid=EAIaIQobChMI2Pzq4bCU_gIVJgCtBh2x-QGKEAQYASABEgLsNvD_BwE"
@@ -1267,8 +1397,16 @@
       "price": 200.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-051_geo-lounge-chair-set-white-lounge-chair-_1.jpg",
+        "images/excel-items/excel-item-051_geo-lounge-chair-set-white-lounge-chair-_2.jpg",
+        "images/excel-items/excel-item-051_geo-lounge-chair-set-white-lounge-chair-_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-051_geo-lounge-chair-set-white-lounge-chair-_1.jpg",
+        "images/excel-items/excel-item-051_geo-lounge-chair-set-white-lounge-chair-_2.jpg",
+        "images/excel-items/excel-item-051_geo-lounge-chair-set-white-lounge-chair-_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://industrywest.com/products/geo-lounge-chair?variant=40311603953804&nbt=nb%3Aadwords%3Ax%3A19689132220%3A%3A&nb_adtype=pla&nb_kwd=&nb_ti=&nb_mi=101621302&nb_pc=online&nb_pi=40311603953804&nb_ppi=&nb_placement=&nb_si=%7Bsourceid%7D&nb_li_ms=&nb_lp_ms=&nb_fii=&nb_ap=&nb_mt=&tw_source=google&tw_adid=&tw_campaign=19689132220&gclid=EAIaIQobChMImI7AuLGU_gIVAzetBh3u0Q2TEAQYDiABEgJ15PD_BwE"
@@ -1280,8 +1418,16 @@
       "price": 100.0,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/excel-items/excel-item-052_modern-adirondack-chairs-2-under-tree_1.jpg",
+        "images/excel-items/excel-item-052_modern-adirondack-chairs-2-under-tree_2.jpg",
+        "images/excel-items/excel-item-052_modern-adirondack-chairs-2-under-tree_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-052_modern-adirondack-chairs-2-under-tree_1.jpg",
+        "images/excel-items/excel-item-052_modern-adirondack-chairs-2-under-tree_2.jpg",
+        "images/excel-items/excel-item-052_modern-adirondack-chairs-2-under-tree_3.jpg"
+      ],
       "hidden": true,
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://www.polywood.com/modern-adirondack-chair-ad420.html?polywood_frame_color=47&gclid=EAIaIQobChMIz4GQ6bGU_gIVJiCtBh2kTwLUEAQYAyABEgJTUvD_BwE"
