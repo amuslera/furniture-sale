@@ -1,1270 +1,775 @@
 {
-  "version": 2,
+  "version": 3,
   "items": [
     {
-      "id": "excel-item-001",
-      "name": "Purple Mattress Brand NEW",
-      "description": "Purple Matress Brand NEW (NEVER SLEPT ON ).\n\nRetails for: $3599.0\nSelling for: $1800.0",
-      "price": 1800.0,
-      "category": "beds",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-001-1.jpg",
-        "images/full/excel-item-001-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-001-1-thumb.jpg",
-        "images/thumbnails/excel-item-001-2-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://purple.com/2",
-      "retailPrice": 3599.0
-    },
-    {
-      "id": "excel-item-002",
-      "name": "DROMMEN Acacia Wood King Bed (CB2)",
-      "description": "DROMMEN ACACIA WOOD KING BED CB2.\n\nRetails for: $1299.0\nSelling for: $1000.0",
-      "price": 1000.0,
-      "category": "beds",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-002-1.jpg",
-        "images/full/excel-item-002-2.jpg",
-        "images/full/excel-item-002-3.jpg",
-        "images/full/excel-item-002-4.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-002-1-thumb.jpg",
-        "images/thumbnails/excel-item-002-2-thumb.jpg",
-        "images/thumbnails/excel-item-002-3-thumb.jpg",
-        "images/thumbnails/excel-item-002-4-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://www.cb2.com/drommen-acacia-wood-king-bed/s213846",
-      "retailPrice": 1299.0
-    },
-    {
-      "id": "excel-item-003",
-      "name": "Case Study V-Leg DayBed Couch",
-      "description": "Case Study V-Leg DayBed Couch.\n\nRetails for: $2525.0\nSelling for: $1800.0",
-      "price": 1800.0,
-      "category": "seating",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-003-1.jpg",
-        "images/full/excel-item-003-2.jpg",
-        "images/full/excel-item-003-3.jpg",
-        "images/full/excel-item-003-4.jpg",
-        "images/full/excel-item-003-5.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-003-1-thumb.jpg",
-        "images/thumbnails/excel-item-003-2-thumb.jpg",
-        "images/thumbnails/excel-item-003-3-thumb.jpg",
-        "images/thumbnails/excel-item-003-4-thumb.jpg",
-        "images/thumbnails/excel-item-003-5-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-v-leg-daybed-couch?variant=9097025585217",
-      "retailPrice": 2525.0
-    },
-    {
-      "id": "excel-item-004",
-      "name": "WoodScape Coffee Table with V-Legs",
-      "description": "WoodScape Coffee Table with V-Legs.\n\nRetails for: $840.0\nSelling for: $200.0",
-      "price": 200.0,
-      "category": "tables",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-004-1.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-004-1-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": null,
-      "retailPrice": 840.0
-    },
-    {
-      "id": "excel-item-005",
-      "name": "Chair with Ottoman - Smoke Gray",
-      "description": "Chair with Ottoman - Smoke Gray Fabric.\n\nRetails for: $2260.0\nSelling for: $1200.0",
-      "price": 1200.0,
-      "category": "seating",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-005-1.jpg",
-        "images/full/excel-item-005-2.jpg",
-        "images/full/excel-item-005-3.jpg",
-        "images/full/excel-item-005-4.jpg",
-        "images/full/excel-item-005-5.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-005-1-thumb.jpg",
-        "images/thumbnails/excel-item-005-2-thumb.jpg",
-        "images/thumbnails/excel-item-005-3-thumb.jpg",
-        "images/thumbnails/excel-item-005-4-thumb.jpg",
-        "images/thumbnails/excel-item-005-5-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://www.modernclassics.com/store/pc/Womb-Chair-with-Ottoman-Smoke-Gray-Fabric-p32758.htm",
-      "retailPrice": 2260.0
-    },
-    {
-      "id": "excel-item-006",
-      "name": "LC4 Le Corbusier Lounge Chair",
-      "description": "LC4 Le Corbusier Lounge Chair ORIGINAL.\n\nRetails for: $5780.0\nSelling for: $3500.0",
-      "price": 3500.0,
-      "category": "seating",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-006-1.jpg",
-        "images/full/excel-item-006-2.jpg",
-        "images/full/excel-item-006-3.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-006-1-thumb.jpg",
-        "images/thumbnails/excel-item-006-2-thumb.jpg",
-        "images/thumbnails/excel-item-006-3-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://www.dwr.com/living-lounge-chairs/lc4-chaise-lounge/6515.html?lang=en_US",
-      "retailPrice": 5780.0
-    },
-    {
-      "id": "excel-item-009",
-      "name": "Knoll Authentic Womb Chair",
-      "description": "Knoll Authentic Womb\u2122 Chair.\n\nRetails for: $5687.0\nSelling for: $4500.0",
-      "price": 4500.0,
-      "category": "seating",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-009-1.jpg",
-        "images/full/excel-item-009-2.jpg",
-        "images/full/excel-item-009-3.jpg",
-        "images/full/excel-item-009-4.jpg",
-        "images/full/excel-item-009-5.jpg",
-        "images/full/excel-item-009-6.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-009-1-thumb.jpg",
-        "images/thumbnails/excel-item-009-2-thumb.jpg",
-        "images/thumbnails/excel-item-009-3-thumb.jpg",
-        "images/thumbnails/excel-item-009-4-thumb.jpg",
-        "images/thumbnails/excel-item-009-5-thumb.jpg",
-        "images/thumbnails/excel-item-009-6-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://www.knoll.com/product/womb-chair",
-      "retailPrice": 5687.0
-    },
-    {
-      "id": "excel-item-010",
-      "name": "Case Study Daybed + Extension Sectional",
-      "description": "Case Study 98 V-Leg Daybed Couch + Extension arranged as sectional.\n\nDaybed: $2800 | Extension: $1600\nCombined price: $4400\n\nRetails for: $5780",
-      "price": 4400.0,
-      "category": "seating",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-010-1.jpg",
-        "images/full/excel-item-010-2.jpg",
-        "images/full/excel-item-010-3.jpg",
-        "images/full/excel-item-010-4.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-010-1-thumb.jpg",
-        "images/thumbnails/excel-item-010-2-thumb.jpg",
-        "images/thumbnails/excel-item-010-3-thumb.jpg",
-        "images/thumbnails/excel-item-010-4-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-furniture-98-v-leg-daybed-couch",
-      "retailPrice": 3255.0
-    },
-    {
-      "id": "excel-item-013",
-      "name": "Modernist Vintage Chrome/Glass Dining Table",
-      "description": "Modernist Vintage Chrome and Glass Dining Table.\n\nRetails for: $820.0\nSelling for: $350.0",
-      "price": 350.0,
-      "category": "tables",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-013-1.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-013-1-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": null,
-      "retailPrice": 820.0
-    },
-    {
-      "id": "excel-item-015",
-      "name": "LG 75\" TV",
-      "description": "TV 75\" New.\n\nRetails for: $2200.0\nSelling for: $800.0\n\nProduct link: closeout sale blueprint store",
-      "price": 800.0,
+      "id": "item-001",
+      "name": "Aluminimum Bike Rack",
+      "description": "Aluminimum Bike Rack.\n\nRetails for: $85.00\nSelling for: $50.00",
+      "price": 50,
       "category": "other",
       "status": "available",
-      "images": [
-        "images/full/excel-item-015-1.jpg",
-        "images/full/excel-item-015-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-015-1-thumb.jpg",
-        "images/thumbnails/excel-item-015-2-thumb.jpg"
-      ],
+      "images": [],
+      "thumbnails": [],
       "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "closeout sale blueprint store",
-      "retailPrice": 2200.0
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 85
     },
     {
-      "id": "excel-item-019",
-      "name": "Italian Carrera Marble Dining Table (RH)",
-      "description": "Italian Carrera Marble RECTANGULAR DINING TABLE Custom Ordered Restoration Harware.\n\nRetails for: $2650.0\nSelling for: $800.0",
-      "price": 800.0,
-      "category": "tables",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-019-1.jpg",
-        "images/full/excel-item-019-2.jpg",
-        "images/full/excel-item-019-3.jpg",
-        "images/full/excel-item-019-4.jpg",
-        "images/full/excel-item-019-5.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-019-1-thumb.jpg",
-        "images/thumbnails/excel-item-019-2-thumb.jpg",
-        "images/thumbnails/excel-item-019-3-thumb.jpg",
-        "images/thumbnails/excel-item-019-4-thumb.jpg",
-        "images/thumbnails/excel-item-019-5-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://rh.com/",
-      "retailPrice": 2650.0
-    },
-    {
-      "id": "excel-item-020",
-      "name": "BLUE DOT Real Good Chair (x2)",
-      "description": "BLUE DOT Real Good Chair Powder Coated Steel.\n\nOriginal price: $$199.00/each\nSelling for: $0",
+      "id": "item-002",
+      "name": "Aquart Outdoor Shower by Seletti",
+      "description": "Aquart Outdoor Shower by Seletti.\n\nRetails for: $272.00\nSelling for: $100.00",
       "price": 100,
-      "category": "seating",
+      "category": "outdoor",
       "status": "available",
-      "images": [
-        "images/full/excel-item-020-1.jpg",
-        "images/full/excel-item-020-2.jpg",
-        "images/full/excel-item-020-3.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-020-1-thumb.jpg",
-        "images/thumbnails/excel-item-020-2-thumb.jpg",
-        "images/thumbnails/excel-item-020-3-thumb.jpg"
-      ],
+      "images": [],
+      "thumbnails": [],
       "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://www.bludot.com/"
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 272,
+      "productLink": "https://lamptwist.com/products/seletti-aquart-outdoor-shower"
     },
     {
-      "id": "excel-item-021",
-      "name": "VONDOM White Chairs (x4)",
-      "description": "VONDOM White Dinner Table Chairs with Metal Legs.\n\nOriginal price: $$249.00/each\nSelling for: $0",
-      "price": 140,
-      "category": "seating",
+      "id": "item-003",
+      "name": "Bang & Olufsen Beosound Speaker (Gen 1, connects via Airplay only)",
+      "description": "Bang & Olufsen Beosound Speaker (Gen 1, connects via Airplay only).\n\nSelling for: $300.00",
+      "price": 300,
+      "category": "electronics",
       "status": "available",
-      "images": [
-        "images/full/excel-item-021-1.jpg",
-        "images/full/excel-item-021-2.jpg",
-        "images/full/excel-item-021-3.jpg",
-        "images/full/excel-item-021-4.jpg",
-        "images/full/excel-item-021-5.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-021-1-thumb.jpg",
-        "images/thumbnails/excel-item-021-2-thumb.jpg",
-        "images/thumbnails/excel-item-021-3-thumb.jpg",
-        "images/thumbnails/excel-item-021-4-thumb.jpg",
-        "images/thumbnails/excel-item-021-5-thumb.jpg"
-      ],
+      "images": [],
+      "thumbnails": [],
       "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://www.2modern.com/"
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "productLink": "https://www.bang-olufsen.com/en/us/speakers/beosound-a9"
     },
     {
-      "id": "excel-item-022",
-      "name": "Modern Metal Bar Stools (x2)",
-      "description": "Modern Metal Bar Stools (Kitchen).\n\nOriginal price: $$450/each\nSelling for: $0",
-      "price": 250,
-      "category": "seating",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-022-1.jpg",
-        "images/full/excel-item-022-2.jpg",
-        "images/full/excel-item-022-3.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-022-1-thumb.jpg",
-        "images/thumbnails/excel-item-022-2-thumb.jpg",
-        "images/thumbnails/excel-item-022-3-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": null
-    },
-    {
-      "id": "excel-item-024",
-      "name": "Turbine Coffee Table w/Round Glass",
-      "description": "TURBINE COFFEE TABLE w/round Glass.\n\nRetails for: $8950.0\nSelling for: $6400.0",
-      "price": 6400.0,
-      "category": "tables",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-024-1.jpg",
-        "images/full/excel-item-024-2.jpg",
-        "images/full/excel-item-024-3.jpg",
-        "images/full/excel-item-024-4.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-024-1-thumb.jpg",
-        "images/thumbnails/excel-item-024-2-thumb.jpg",
-        "images/thumbnails/excel-item-024-3-thumb.jpg",
-        "images/thumbnails/excel-item-024-4-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": null,
-      "retailPrice": 8950.0
-    },
-    {
-      "id": "excel-item-025",
-      "name": "RH Italia Slope Arm Leather Bench Couch",
-      "description": "RESTORATION HADWARE Italia Slope Arm Leather Bench Couch Metal Base Custom Ordered Leather.\n\nRetails for: $12650.0\nSelling for: $4200.0",
-      "price": 4200.0,
-      "category": "seating",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-025-1.jpg",
-        "images/full/excel-item-025-2.jpg",
-        "images/full/excel-item-025-3.jpg",
-        "images/full/excel-item-025-4.jpg",
-        "images/full/excel-item-025-5.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-025-1-thumb.jpg",
-        "images/thumbnails/excel-item-025-2-thumb.jpg",
-        "images/thumbnails/excel-item-025-3-thumb.jpg",
-        "images/thumbnails/excel-item-025-4-thumb.jpg",
-        "images/thumbnails/excel-item-025-5-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://rh.com/catalog/category/products.jsp?categoryId=cat7150089",
-      "retailPrice": 12650.0
-    },
-    {
-      "id": "excel-item-027",
-      "name": "Platner Coffee Table",
-      "description": "Platner Coffee Table (Right side wire table with glass when you come in).\n\nRetails for: $2929.0\nSelling for: $1800.0",
-      "price": 1800.0,
-      "category": "tables",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-027-1.jpg",
-        "images/full/excel-item-027-2.jpg",
-        "images/full/excel-item-027-3.jpg",
-        "images/full/excel-item-027-4.jpg",
-        "images/full/excel-item-027-5.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-027-1-thumb.jpg",
-        "images/thumbnails/excel-item-027-2-thumb.jpg",
-        "images/thumbnails/excel-item-027-3-thumb.jpg",
-        "images/thumbnails/excel-item-027-4-thumb.jpg",
-        "images/thumbnails/excel-item-027-5-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://www.dwr.com/living-accent-coffee-tables/platner-coffee-table/100208860.html?lang=en_US&gclid=EAIaIQobChMIjtrW54-U_gIVjQStBh22agBQEAQYAyABEgK8fvD_BwE&gclsrc=aw.ds",
-      "retailPrice": 2929.0
-    },
-    {
-      "id": "excel-item-028",
-      "name": "Varnado Vegan Leather Armchair (x2)",
-      "description": "Varnado Vegan Leather Armchair.\n\nOriginal price: $$399.99/each\nSelling for: $0",
-      "price": 150,
-      "category": "seating",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-028-1.jpg",
-        "images/full/excel-item-028-2.jpg",
-        "images/full/excel-item-028-3.jpg",
-        "images/full/excel-item-028-4.jpg",
-        "images/full/excel-item-028-5.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-028-1-thumb.jpg",
-        "images/thumbnails/excel-item-028-2-thumb.jpg",
-        "images/thumbnails/excel-item-028-3-thumb.jpg",
-        "images/thumbnails/excel-item-028-4-thumb.jpg",
-        "images/thumbnails/excel-item-028-5-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://www.wayfair.com/furniture/pdp/ivy-bronx-varnado-2975-wide-armchair-w000183354.html?piid=1622117663"
-    },
-    {
-      "id": "excel-item-029",
-      "name": "Bertoia Asymmetric Chaise (Knoll)",
-      "description": "Bertoia Asymmetric Chaise AUTHENTIC KNOLL WITH LEATHER INSERT.\n\nRetails for: $10672.0\nSelling for: $8500.0",
-      "price": 8500.0,
-      "category": "seating",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-029-1.jpg",
-        "images/full/excel-item-029-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-029-1-thumb.jpg",
-        "images/thumbnails/excel-item-029-2-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://www.dwr.com/living-lounge-chairs/bertoia-asymmetric-chaise/100151126.html?lang=en_US&gclid=EAIaIQobChMIpeqH5qWU_gIVZAh9Ch1O1w4eEAQYCCABEgJ2hfD_BwE&gclsrc=aw.ds",
-      "retailPrice": 10672.0
-    },
-    {
-      "id": "excel-item-030",
-      "name": "Richard Schultz Wing Chair (Knoll 1/1)",
-      "description": "Richard Schultz Prototype for Knoll Wing Chair 1/1.\n\nRetails for: $4700.0\nSelling for: $2800.0",
-      "price": 2800.0,
-      "category": "seating",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-030-1.jpg",
-        "images/full/excel-item-030-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-030-1-thumb.jpg",
-        "images/thumbnails/excel-item-030-2-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://www.shealatone.com/portfolio-items/richard-schultz-wing-chair/",
-      "retailPrice": 4700.0
-    },
-    {
-      "id": "excel-item-034",
-      "name": "WaterRower Rowing Machine",
-      "description": "WaterRower Rowing Machine Model #300 S4 in Walnut Wood.\n\nRetails for: $1599.0\nSelling for: $400.0",
-      "price": 400.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-034-1.jpg",
-        "images/full/excel-item-034-2.jpg",
-        "images/full/excel-item-034-3.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-034-1-thumb.jpg",
-        "images/thumbnails/excel-item-034-2-thumb.jpg",
-        "images/thumbnails/excel-item-034-3-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://store.moma.org/products/waterrower-rowing-machine-model-300-s4-in-walnut-wood?currency=USD?variant=42994208276710&gclid=EAIaIQobChMIi9GUlqeU_gIVpBStBh2Q2wi4EAQYBSABEgItqPD_BwE",
-      "retailPrice": 1599.0
-    },
-    {
-      "id": "excel-item-036",
-      "name": "FLOYD The Bed Frame",
-      "description": "FLOYD The Bed Frame.\n\nRetails for: $1599.0\nSelling for: $1200.0",
-      "price": 1200.0,
-      "category": "beds",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-036-1.jpg",
-        "images/full/excel-item-036-2.jpg",
-        "images/full/excel-item-036-3.jpg",
-        "images/full/excel-item-036-4.jpg",
-        "images/full/excel-item-036-5.jpg",
-        "images/full/excel-item-036-6.jpg",
-        "images/full/excel-item-036-7.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-036-1-thumb.jpg",
-        "images/thumbnails/excel-item-036-2-thumb.jpg",
-        "images/thumbnails/excel-item-036-3-thumb.jpg",
-        "images/thumbnails/excel-item-036-4-thumb.jpg",
-        "images/thumbnails/excel-item-036-5-thumb.jpg",
-        "images/thumbnails/excel-item-036-6-thumb.jpg",
-        "images/thumbnails/excel-item-036-7-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://floydhome.com/products/the-bed-frame?variant=36971988385954&gclid=EAIaIQobChMIscjkqqeU_gIVaxKtBh2d8AD6EAQYAyABEgKcjfD_BwE",
-      "retailPrice": 1599.0
-    },
-    {
-      "id": "excel-item-039",
-      "name": "Jaxon Metal Outdoor Sofas",
-      "description": "Jaxon Metal Outdoor Sofas 4 sofas total and table.\n\nRetails for: $2540.0\nSelling for: $0",
-      "price": 0.0,
-      "category": "seating",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-039-1.jpg",
-        "images/full/excel-item-039-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-039-1-thumb.jpg",
-        "images/thumbnails/excel-item-039-2-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://www.allmodern.com/outdoor/pdp/grey-aluminum-outdoor-3-seater-sofa-with-cushions-a000949298.html?piid=2126512877",
-      "retailPrice": 2540.0
-    },
-    {
-      "id": "excel-item-043",
-      "name": "Bubble Club Chair (Kartell)",
-      "description": "Bubble Club Chair By Philippe Starch forKartell.\n\nRetails for: $1010.0\nSelling for: $400.0",
-      "price": 400.0,
-      "category": "seating",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-043-1.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-043-1-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://www.patioliving.com/kartelloutdoor-bubble-club-resin-patio-lounge-chair-kao607064",
-      "retailPrice": 1010.0
-    },
-    {
-      "id": "excel-item-045",
-      "name": "Savannah Outdoor Bench",
-      "description": "Savannah Modern Classic Black Stainless Steel Base Grey Outdoor Bench.\n\nRetails for: $1099.0\nSelling for: $400.0",
-      "price": 400.0,
-      "category": "seating",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-045-1.jpg",
-        "images/full/excel-item-045-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-045-1-thumb.jpg",
-        "images/thumbnails/excel-item-045-2-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://www.kathykuohome.com/Product/Detail/42450-Savannah-Modern-Classic-Black-Stainless-Steel-Base-Grey-Outdoor-Bench?gclid=EAIaIQobChMI3Mqov66U_gIVbwStBh20VwAoEAQYBiABEgKd2vD_BwE",
-      "retailPrice": 1099.0
-    },
-    {
-      "id": "excel-item-046",
-      "name": "Large Wood Table with Metal X Base",
-      "description": "Large Wood Table With Metal X Base.\n\nRetails for: $1460.0\nSelling for: $200.0",
-      "price": 200.0,
-      "category": "tables",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-046-1.jpg",
-        "images/full/excel-item-046-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-046-1-thumb.jpg",
-        "images/thumbnails/excel-item-046-2-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": null,
-      "retailPrice": 1460.0
-    },
-    {
-      "id": "excel-item-048",
-      "name": "Burning Barrel",
-      "description": "Burning Barrel Dark Grey Barrel Large.\n\nRetails for: $1493.64\nSelling for: $1200.0",
-      "price": 1200.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-048-1.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-048-1-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://www.burningbarrel.co.uk/?v=79cba1185463",
-      "retailPrice": 1493.64
-    },
-    {
-      "id": "excel-item-051",
-      "name": "Geo Lounge Chair Set",
-      "description": "Geo Lounge Chair Set (White Lounge Chair with leg rest).\n\nRetails for: $700.0\nSelling for: $200.0",
-      "price": 200.0,
-      "category": "seating",
-      "status": "available",
-      "images": [
-        "images/full/excel-item-051-1.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/excel-item-051-1-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateUpdated": "2026-02-24T01:21:12.000Z",
-      "productLink": "https://industrywest.com/products/geo-lounge-chair?variant=40311603953804&nbt=nb%3Aadwords%3Ax%3A19689132220%3A%3A&nb_adtype=pla&nb_kwd=&nb_ti=&nb_mi=101621302&nb_pc=online&nb_pi=40311603953804&nb_ppi=&nb_placement=&nb_si=%7Bsourceid%7D&nb_li_ms=&nb_lp_ms=&nb_fii=&nb_ap=&nb_mt=&tw_source=google&tw_adid=&tw_campaign=19689132220&gclid=EAIaIQobChMImI7AuLGU_gIVAzetBh3u0Q2TEAQYDiABEgJ15PD_BwE",
-      "retailPrice": 700.0
-    },
-    {
-      "id": "new-black-chest-of-drawers",
-      "name": "Black 5-Drawer Chest (Crate & Barrel Tate)",
-      "description": "Black 5-Drawer Chest (Crate & Barrel Tate). Price to be determined.",
-      "price": 0,
-      "category": "storage",
-      "status": "available",
-      "images": [
-        "images/full/new-black-chest-of-drawers-1.jpg",
-        "images/full/new-black-chest-of-drawers-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/new-black-chest-of-drawers-1-thumb.jpg",
-        "images/thumbnails/new-black-chest-of-drawers-2-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateAdded": "2026-02-24T01:21:12.000Z",
-      "dateUpdated": "2026-02-24T01:21:12.000Z"
-    },
-    {
-      "id": "new-black-fireplace-log-holder",
-      "name": "Black Fireplace Log Holder",
-      "description": "Black Fireplace Log Holder. Price to be determined.",
-      "price": 0,
+      "id": "item-004",
+      "name": "Bello Shag Wool Rug by West Elm",
+      "description": "Bello Shag Wool Rug by West Elm.\n\nRetails for: $1,349.20\nSelling for: $300.00",
+      "price": 300,
       "category": "decor",
       "status": "available",
-      "images": [
-        "images/full/new-black-fireplace-log-holder-1.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/new-black-fireplace-log-holder-1-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateAdded": "2026-02-24T01:21:12.000Z",
-      "dateUpdated": "2026-02-24T01:21:12.000Z"
-    },
-    {
-      "id": "new-black-fireplace-tool-set",
-      "name": "Black Fireplace Tool Set",
-      "description": "Black Fireplace Tool Set. Price to be determined.",
-      "price": 0,
-      "category": "decor",
-      "status": "available",
-      "images": [
-        "images/full/new-black-fireplace-tool-set-1.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/new-black-fireplace-tool-set-1-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateAdded": "2026-02-24T01:21:12.000Z",
-      "dateUpdated": "2026-02-24T01:21:12.000Z"
-    },
-    {
-      "id": "new-black-leather-office-chair",
-      "name": "Black Leather Office Chair",
-      "description": "Black Leather Office Chair. Price to be determined.",
-      "price": 0,
-      "category": "seating",
-      "status": "available",
-      "images": [
-        "images/full/new-black-leather-office-chair-1.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/new-black-leather-office-chair-1-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateAdded": "2026-02-24T01:21:12.000Z",
-      "dateUpdated": "2026-02-24T01:21:12.000Z"
-    },
-    {
-      "id": "new-cream-plastic-side-table",
-      "name": "Cream Plastic Side Table",
-      "description": "Cream Plastic Side Table. Price to be determined.",
-      "price": 0,
-      "category": "tables",
-      "status": "available",
-      "images": [
-        "images/full/new-cream-plastic-side-table-1.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/new-cream-plastic-side-table-1-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateAdded": "2026-02-24T01:21:12.000Z",
-      "dateUpdated": "2026-02-24T01:21:12.000Z"
-    },
-    {
-      "id": "new-industrial-console-table",
-      "name": "Industrial Console Table",
-      "description": "Industrial Console Table. Price to be determined.",
-      "price": 0,
-      "category": "tables",
-      "status": "available",
-      "images": [
-        "images/full/new-industrial-console-table-1.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/new-industrial-console-table-1-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateAdded": "2026-02-24T01:21:12.000Z",
-      "dateUpdated": "2026-02-24T01:21:12.000Z"
-    },
-    {
-      "id": "new-walnut-bar-bookcase",
-      "name": "Walnut Bar Bookcase with Drop-Front",
-      "description": "Walnut Bar Bookcase with Drop-Front. Price to be determined.",
-      "price": 0,
-      "category": "storage",
-      "status": "available",
-      "images": [
-        "images/full/new-walnut-bar-bookcase-1.jpg",
-        "images/full/new-walnut-bar-bookcase-2.jpg",
-        "images/full/new-walnut-bar-bookcase-3.jpg",
-        "images/full/new-walnut-bar-bookcase-4.jpg",
-        "images/full/new-walnut-bar-bookcase-5.jpg",
-        "images/full/new-walnut-bar-bookcase-6.jpg",
-        "images/full/new-walnut-bar-bookcase-7.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/new-walnut-bar-bookcase-1-thumb.jpg",
-        "images/thumbnails/new-walnut-bar-bookcase-2-thumb.jpg",
-        "images/thumbnails/new-walnut-bar-bookcase-3-thumb.jpg",
-        "images/thumbnails/new-walnut-bar-bookcase-4-thumb.jpg",
-        "images/thumbnails/new-walnut-bar-bookcase-5-thumb.jpg",
-        "images/thumbnails/new-walnut-bar-bookcase-6-thumb.jpg",
-        "images/thumbnails/new-walnut-bar-bookcase-7-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateAdded": "2026-02-24T01:21:12.000Z",
-      "dateUpdated": "2026-02-24T01:21:12.000Z"
-    },
-    {
-      "id": "new-walnut-bookshelf",
-      "name": "Walnut Leaning Bookshelf",
-      "description": "Walnut Leaning Bookshelf. Price to be determined.",
-      "price": 0,
-      "category": "storage",
-      "status": "available",
-      "images": [
-        "images/full/new-walnut-bookshelf-1.jpg",
-        "images/full/new-walnut-bookshelf-2.jpg",
-        "images/full/new-walnut-bookshelf-3.jpg",
-        "images/full/new-walnut-bookshelf-4.jpg",
-        "images/full/new-walnut-bookshelf-5.jpg",
-        "images/full/new-walnut-bookshelf-6.jpg",
-        "images/full/new-walnut-bookshelf-7.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/new-walnut-bookshelf-1-thumb.jpg",
-        "images/thumbnails/new-walnut-bookshelf-2-thumb.jpg",
-        "images/thumbnails/new-walnut-bookshelf-3-thumb.jpg",
-        "images/thumbnails/new-walnut-bookshelf-4-thumb.jpg",
-        "images/thumbnails/new-walnut-bookshelf-5-thumb.jpg",
-        "images/thumbnails/new-walnut-bookshelf-6-thumb.jpg",
-        "images/thumbnails/new-walnut-bookshelf-7-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateAdded": "2026-02-24T01:21:12.000Z",
-      "dateUpdated": "2026-02-24T01:21:12.000Z"
-    },
-    {
-      "id": "new-walnut-desk",
-      "name": "Walnut Writing Desk",
-      "description": "Walnut Writing Desk. Price to be determined.",
-      "price": 0,
-      "category": "tables",
-      "status": "available",
-      "images": [
-        "images/full/new-walnut-desk-1.jpg",
-        "images/full/new-walnut-desk-2.jpg",
-        "images/full/new-walnut-desk-3.jpg",
-        "images/full/new-walnut-desk-4.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/new-walnut-desk-1-thumb.jpg",
-        "images/thumbnails/new-walnut-desk-2-thumb.jpg",
-        "images/thumbnails/new-walnut-desk-3-thumb.jpg",
-        "images/thumbnails/new-walnut-desk-4-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateAdded": "2026-02-24T01:21:12.000Z",
-      "dateUpdated": "2026-02-24T01:21:12.000Z"
-    },
-    {
-      "id": "new-walnut-media-console",
-      "name": "Walnut Media Console",
-      "description": "Walnut Media Console. Price to be determined.",
-      "price": 0,
-      "category": "storage",
-      "status": "available",
-      "images": [
-        "images/full/new-walnut-media-console-1.jpg",
-        "images/full/new-walnut-media-console-2.jpg",
-        "images/full/new-walnut-media-console-3.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/new-walnut-media-console-1-thumb.jpg",
-        "images/thumbnails/new-walnut-media-console-2-thumb.jpg",
-        "images/thumbnails/new-walnut-media-console-3-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateAdded": "2026-02-24T01:21:12.000Z",
-      "dateUpdated": "2026-02-24T01:21:12.000Z"
-    },
-    {
-      "id": "new-walnut-wide-bookcase",
-      "name": "Walnut Wide Bookcase",
-      "description": "Walnut Wide Bookcase. Price to be determined.",
-      "price": 0,
-      "category": "storage",
-      "status": "available",
-      "images": [
-        "images/full/new-walnut-wide-bookcase-1.jpg",
-        "images/full/new-walnut-wide-bookcase-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/new-walnut-wide-bookcase-1-thumb.jpg",
-        "images/thumbnails/new-walnut-wide-bookcase-2-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateAdded": "2026-02-24T01:21:12.000Z",
-      "dateUpdated": "2026-02-24T01:21:12.000Z"
-    },
-    {
-      "id": "new-white-desk",
-      "name": "White Desk",
-      "description": "White Desk. Price to be determined.",
-      "price": 0,
-      "category": "tables",
-      "status": "available",
-      "images": [
-        "images/full/new-white-desk-1.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/new-white-desk-1-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateAdded": "2026-02-24T01:21:12.000Z",
-      "dateUpdated": "2026-02-24T01:21:12.000Z"
-    },
-    {
-      "id": "new-white-office-chair",
-      "name": "White Office Chair",
-      "description": "White Office Chair. Price to be determined.",
-      "price": 0,
-      "category": "seating",
-      "status": "available",
-      "images": [
-        "images/full/new-white-office-chair-1.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/new-white-office-chair-1-thumb.jpg"
-      ],
-      "hidden": false,
-      "dateAdded": "2026-02-24T01:21:12.000Z",
-      "dateUpdated": "2026-02-24T01:21:12.000Z"
-    },
-    {
-      "id": "excel-item-007",
-      "name": "CowHide Rug Under Chair",
-      "description": "CowHide Rug Under Chair.\n\nRetails for: $1495.0\nSelling for: $500.0",
-      "price": 500.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/excel-items/excel-item-007_cowhide-rug-under-chair_1.jpg",
-        "images/excel-items/excel-item-007_cowhide-rug-under-chair_2.jpg",
-        "images/excel-items/excel-item-007_cowhide-rug-under-chair_3.jpg"
-      ],
-      "thumbnails": [
-        "images/excel-items/excel-item-007_cowhide-rug-under-chair_1.jpg",
-        "images/excel-items/excel-item-007_cowhide-rug-under-chair_2.jpg",
-        "images/excel-items/excel-item-007_cowhide-rug-under-chair_3.jpg"
-      ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.dwr.com/rug-type-area-rug/cowhide-rug/8969718.html?lang=en_US&gclid=EAIaIQobChMI1qirzamU_gIVfBqtBh2fegZIEAQYAiABEgLIvPD_BwE&gclsrc=aw.ds",
-      "retailPrice": 1495.0
-    },
-    {
-      "id": "excel-item-008",
-      "name": "Vizio TV 65 or 75 don\u2019t remember / Stand For TV",
-      "description": "Vizio TV 65 or 75 don\u2019t remember / Stand For TV.\n\nRetails for: $1400.0\nSelling for: $400.0",
-      "price": 400.0,
-      "category": "other",
-      "status": "available",
       "images": [],
       "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null,
-      "retailPrice": 1400.0
-    },
-    {
-      "id": "excel-item-012",
-      "name": "Hex Carpet Under table 2nd floor KOLLUND",
-      "description": "Hex Carpet Under table 2nd floor KOLLUND.\n\nRetails for: $349.99\nSelling for: $200.0",
-      "price": 200.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.ikea.com/us/en/p/kollund-rug-flatwoven-handmade-gray-20374569/",
-      "retailPrice": 349.99
-    },
-    {
-      "id": "excel-item-014",
-      "name": "Ping Pong Table",
-      "description": "Ping Pong Table.\n\nRetails for: $399.0\nSelling for: $300.0",
-      "price": 300.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.amazon.com/STIGA-Advantage-Competition-Ready-Indoor-Preassembled/dp/B01JMTDZ5Q/ref=asc_df_B01JMTDZ5Q/?tag=hyprod-20&linkCode=df0&hvadid=167134282234&hvpos=&hvnetw=g&hvrand=4297347808149441009&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031037&hvtargid=pla-305812410130&psc=1",
-      "retailPrice": 399.0
-    },
-    {
-      "id": "excel-item-016",
-      "name": "Glass Ground Efects TV STAND",
-      "description": "Glass Ground Efects TV STAND.\n\nRetails for: $350.0\nSelling for: $0",
-      "price": 0.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null,
-      "retailPrice": 350.0
-    },
-    {
-      "id": "excel-item-017",
-      "name": "Samsung Surround Sound system with Subwoofer and Speakers",
-      "description": "Samsung Surround Sound system with Subwoofer and Speakers.\n\nRetails for: $450.0\nSelling for: $300.0",
-      "price": 300.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null,
-      "retailPrice": 450.0
-    },
-    {
-      "id": "excel-item-018",
-      "name": "Dinner Table Original Ron Rezek 1980s Original table with W/custom made marble top that is removable",
-      "description": "Dinner Table Original Ron Rezek 1980s Original table with W/custom made marble top that is removable.\n\nRetails for: $4700.0\nSelling for: $1800.0\n\nProduct link: Auction",
-      "price": 1800.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "Auction",
-      "retailPrice": 4700.0
-    },
-    {
-      "id": "excel-item-023",
-      "name": "Bello Shag Wool Rug",
-      "description": "Bello Shag Wool Rug.\n\nRetails for: $1349.2\nSelling for: $800.0",
-      "price": 800.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.westelm.com/products/bello-shag-rug-r783/",
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
       "retailPrice": 1349.2
     },
     {
-      "id": "excel-item-026",
-      "name": "Polished Airplane Fuselage, with 5 Airplane window",
-      "description": "Polished Airplane Fuselage, with 5 Airplane window.\n\nRetails for: $4826.0\nSelling for: $2500.0",
-      "price": 2500.0,
+      "id": "item-005",
+      "name": "Bertoia Asymmetric Chaise AUTHENTIC KNOLL WITH LEATHER INSERT",
+      "description": "Bertoia Asymmetric Chaise AUTHENTIC KNOLL WITH LEATHER INSERT.\n\nRetails for: $8,267.00\nSelling for: $4,100.00",
+      "price": 4100,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 8267,
+      "productLink": "https://www.lumens.com/bertoia-asymmetric-chaise-with-seat-cushion-by-knoll-KNO882019.html"
+    },
+    {
+      "id": "item-006",
+      "name": "Black Authentic Womb Chair by Knoll",
+      "description": "Black Authentic Womb Chair by Knoll.\n\nRetails for: $4,554.00\nSelling for: $2,200.00",
+      "price": 2200,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 4554,
+      "productLink": "https://www.knoll.com/shop/en_us/living-lounge-chairs/womb-chair-standard/310079.html"
+    },
+    {
+      "id": "item-007",
+      "name": "BLUE DOT Real Good Chair Powder Coated Steel (set of 2)",
+      "description": "BLUE DOT Real Good Chair Powder Coated Steel (set of 2).\n\nRetails for: $425.00\nSelling for: $150.00",
+      "price": 150,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 425,
+      "productLink": "https://www.bludot.com/collections/real-good-collection"
+    },
+    {
+      "id": "item-008",
+      "name": "Bubble Club Armchair Yellow By Philippe Starck for Kartell",
+      "description": "Bubble Club Armchair Yellow By Philippe Starck for Kartell.\n\nRetails for: $988.00\nSelling for: $300.00",
+      "price": 300,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 988,
+      "productLink": "https://www.lumens.com/bubble-club-chair-by-kartell-KTL2185695.html"
+    },
+    {
+      "id": "item-009",
+      "name": "Bubble Club Sofa White By Philippe Starck for Kartell",
+      "description": "Bubble Club Sofa White By Philippe Starck for Kartell.\n\nRetails for: $1,492.00\nSelling for: $500.00",
+      "price": 500,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1492,
+      "productLink": "https://www.lumens.com/bubble-club-sofa-by-kartell-R052427.html"
+    },
+    {
+      "id": "item-010",
+      "name": "Bubble Club Table Yellow By Philippe Starck for Kartell",
+      "description": "Bubble Club Table Yellow By Philippe Starck for Kartell.\n\nRetails for: $276.00\nSelling for: $100.00",
+      "price": 100,
+      "category": "tables",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 276,
+      "productLink": "https://www.lumens.com/bubble-club-table-by-kartell-KRTY360242.html"
+    },
+    {
+      "id": "item-011",
+      "name": "Burning Barrel Dark Grey Barrel Large",
+      "description": "Burning Barrel Dark Grey Barrel Large.\n\nRetails for: $1,500.00\nSelling for: $800.00",
+      "price": 800,
+      "category": "outdoor",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1500,
+      "productLink": "https://www.burningbarrel.co.uk/dark-grey-barrel-large/"
+    },
+    {
+      "id": "item-012",
+      "name": "Case Study V-Leg Daybed by Modernica (Cream)",
+      "description": "Case Study V-Leg Daybed by Modernica (Cream).\n\nRetails for: $2,295.00\nSelling for: $1,500.00",
+      "price": 1500,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 2295,
+      "productLink": "https://modernica.net/collections/daybeds/products/case-study%C2%AE-v-leg-daybed"
+    },
+    {
+      "id": "item-013",
+      "name": "Case Study V-Leg Daybed with Arm by Modernica (Grey)",
+      "description": "Case Study V-Leg Daybed with Arm by Modernica (Grey).\n\nRetails for: $2,395.00\nSelling for: $1,500.00",
+      "price": 1500,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 2395,
+      "productLink": "https://modernica.net/collections/all-seating/products/case-study%C2%AE-v-leg-daybed-w-arm"
+    },
+    {
+      "id": "item-014",
+      "name": "Case Study V-Leg Daybed Chair by Modernica (Grey)",
+      "description": "Case Study V-Leg Daybed Chair by Modernica (Grey).\n\nRetails for: $910.00\nSelling for: $500.00",
+      "price": 500,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 910,
+      "productLink": "https://modernica.net/collections/all-seating/products/case-study%C2%AE-furniture-v-leg-daybed-chair"
+    },
+    {
+      "id": "item-015",
+      "name": "Case Study V-Leg Daybed Convertible Square Ottoman by Modernica (Grey)",
+      "description": "Case Study V-Leg Daybed Convertible Square Ottoman by Modernica (Grey).\n\nRetails for: $750.00\nSelling for: $300.00",
+      "price": 300,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 750,
+      "productLink": "https://modernica.net/collections/all-seating/products/case-study%C2%AE-v-leg-daybed-convertible-ottoman-square"
+    },
+    {
+      "id": "item-016",
+      "name": "Chrome and Glass Coffee Table with V-Legs by Modernica",
+      "description": "Chrome and Glass Coffee Table with V-Legs by Modernica.\n\nRetails for: $840.00\nSelling for: $150.00",
+      "price": 150,
+      "category": "tables",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 840
+    },
+    {
+      "id": "item-017",
+      "name": "CowHide Rug #1",
+      "description": "CowHide Rug #1.\n\nRetails for: $1,495.00\nSelling for: $300.00",
+      "price": 300,
+      "category": "decor",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1495
+    },
+    {
+      "id": "item-018",
+      "name": "CowHide Rug #2",
+      "description": "CowHide Rug #2.\n\nRetails for: $1,495.00\nSelling for: $300.00",
+      "price": 300,
+      "category": "decor",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1495
+    },
+    {
+      "id": "item-019",
+      "name": "Dinner Table Original Ron Rezek 1980s Original table with W/custom made marble top that is removable",
+      "description": "Dinner Table Original Ron Rezek 1980s Original table with W/custom made marble top that is removable.\n\nRetails for: $4,700.00\nSelling for: $1,500.00",
+      "price": 1500,
+      "category": "tables",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 4700
+    },
+    {
+      "id": "item-020",
+      "name": "Drommen Acacia Wood King Bed by CB2",
+      "description": "Drommen Acacia Wood King Bed by CB2.\n\nRetails for: $1,299.00\nSelling for: $650.00",
+      "price": 650,
+      "category": "beds",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1299,
+      "productLink": "https://fernish.com/n/items/bedframes-drommen-acacia-wood-bed-ivory-king"
+    },
+    {
+      "id": "item-021",
+      "name": "FLOYD The Bed Frame #1",
+      "description": "FLOYD The Bed Frame #1.\n\nRetails for: $1,400.00\nSelling for: $700.00",
+      "price": 700,
+      "category": "beds",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1400,
+      "productLink": "https://floydhome.com/products/the-bed-frame"
+    },
+    {
+      "id": "item-022",
+      "name": "FLOYD The Bed Frame #2",
+      "description": "FLOYD The Bed Frame #2.\n\nRetails for: $1,400.00\nSelling for: $700.00",
+      "price": 700,
+      "category": "beds",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1400,
+      "productLink": "https://floydhome.com/products/the-bed-frame"
+    },
+    {
+      "id": "item-023",
+      "name": "Folding Garden Chairs Solid Teak Wood - Brown (set of 6)",
+      "description": "Folding Garden Chairs Solid Teak Wood - Brown (set of 6).\n\nRetails for: $1,200.00\nSelling for: $0.00",
+      "price": 0,
+      "category": "outdoor",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1200
+    },
+    {
+      "id": "item-024",
+      "name": "Geo Lounge Chair Set White",
+      "description": "Geo Lounge Chair Set White.\n\nRetails for: $700.00\nSelling for: $100.00",
+      "price": 100,
+      "category": "outdoor",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 700
+    },
+    {
+      "id": "item-025",
+      "name": "Glass Ground Effects TV STAND",
+      "description": "Glass Ground Effects TV STAND.\n\nRetails for: $350.00\nSelling for: $100.00",
+      "price": 100,
       "category": "other",
       "status": "available",
       "images": [],
       "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null,
-      "retailPrice": 4826.0
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 350
     },
     {
-      "id": "excel-item-031",
+      "id": "item-026",
+      "name": "Hex Carpet Under table 2nd floor KOLLUND",
+      "description": "Hex Carpet Under table 2nd floor KOLLUND.\n\nRetails for: $350.00\nSelling for: $50.00",
+      "price": 50,
+      "category": "decor",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 350
+    },
+    {
+      "id": "item-027",
+      "name": "Iconic 2007 Richard Schultz Prototype for Knoll Wing Chair (Like New)",
+      "description": "Iconic 2007 Richard Schultz Prototype for Knoll Wing Chair (Like New).\n\nRetails for: $4,700.00\nSelling for: $3,000.00",
+      "price": 3000,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 4700
+    },
+    {
+      "id": "item-028",
+      "name": "Italia Slope Arm Leather Bench Couch Metal Base Custom Ordered Leather by Restoration Hardware",
+      "description": "Italia Slope Arm Leather Bench Couch Metal Base Custom Ordered Leather by Restoration Hardware.\n\n9' x 41'', italian cavallino leather.\n\nRetails for: $12,695.00\nSelling for: $4,000.00",
+      "price": 4000,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 12695,
+      "productLink": "https://rh.com/us/en/catalog/product/product.jsp/prod14970190"
+    },
+    {
+      "id": "item-029",
+      "name": "Jaxon Metal Outdoor Sofas 4 sofas total and table (includes covers for free)",
+      "description": "Jaxon Metal Outdoor Sofas 4 sofas total and table (includes covers for free).\n\nRetails for: $1,300.00\nSelling for: $400.00",
+      "price": 400,
+      "category": "outdoor",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1300
+    },
+    {
+      "id": "item-030",
+      "name": "Kamado Joe BBQ Classic II 18-Inch Ceramic Grill - KJ23RHC",
+      "description": "Kamado Joe BBQ Classic II 18-Inch Ceramic Grill - KJ23RHC.\n\nRetails for: $1,833.00\nSelling for: $300.00",
+      "price": 300,
+      "category": "outdoor",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1833,
+      "productLink": "https://www.perigold.com/outdoor/pdp/kamado-joe-classicjoe-i-18-inch-charcoal-grill-in-red-kamj1041.html"
+    },
+    {
+      "id": "item-031",
+      "name": "Large Wood Table With Metal X Base",
+      "description": "Large Wood Table With Metal X Base.\n\nRetails for: $1,460.00\nSelling for: $0.00",
+      "price": 0,
+      "category": "tables",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1460
+    },
+    {
+      "id": "item-032",
+      "name": "LC4 Le Corbusier Lounge Chair ORIGINAL",
+      "description": "LC4 Le Corbusier Lounge Chair ORIGINAL.\n\nRetails for: $5,728.00\nSelling for: $3,500.00",
+      "price": 3500,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 5728,
+      "productLink": "https://www.dwr.com/brands-cassina"
+    },
+    {
+      "id": "item-033",
       "name": "LG OLED 65\" TV 4K",
-      "description": "LG OLED 65\" TV 4K.\n\nRetails for: $1685.0\nSelling for: $1200.0\n\nProduct link: lg.com",
-      "price": 1200.0,
-      "category": "other",
+      "description": "LG OLED 65\" TV 4K.\n\nRetails for: $1,685.00\nSelling for: $500.00",
+      "price": 500,
+      "category": "electronics",
       "status": "available",
       "images": [],
       "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "lg.com",
-      "retailPrice": 1685.0
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1685
     },
     {
-      "id": "excel-item-032",
+      "id": "item-034",
+      "name": "LG TV 75\" New",
+      "description": "LG TV 75\" New.\n\nRetails for: $2,200.00\nSelling for: $500.00",
+      "price": 500,
+      "category": "electronics",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 2200
+    },
+    {
+      "id": "item-035",
+      "name": "Modern Adirondack Chairs (set of 2)",
+      "description": "Modern Adirondack Chairs (set of 2).\n\nRetails for: $498.00\nSelling for: $150.00",
+      "price": 150,
+      "category": "outdoor",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 498,
+      "productLink": "https://www.allmodern.com/outdoor/pdp/allmodern-polywood-x-allmodern-plastic-adirondack-chair-ocgv1842.html"
+    },
+    {
+      "id": "item-036",
+      "name": "Modern Metal Bar Stools (set of 2)",
+      "description": "Modern Metal Bar Stools (set of 2).\n\nSelling for: $200.00",
+      "price": 200,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z"
+    },
+    {
+      "id": "item-037",
+      "name": "Perforated steel outdoor black rocking chair for 2",
+      "description": "Perforated steel outdoor black rocking chair for 2.\n\nSelling for: $150.00",
+      "price": 150,
+      "category": "outdoor",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z"
+    },
+    {
+      "id": "item-038",
+      "name": "Platner Coffee Table 36''",
+      "description": "Platner Coffee Table 36''.\n\nRight side wire table with glass when you come in.\n\nRetails for: $1,780.00\nSelling for: $1,400.00",
+      "price": 1400,
+      "category": "tables",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1780,
+      "productLink": "https://www.dwr.com/living-accent-coffee-tables/platner-coffee-table/857352.html"
+    },
+    {
+      "id": "item-039",
+      "name": "Polished Airplane Fuselage, with 5 Airplane window",
+      "description": "Polished Airplane Fuselage, with 5 Airplane window.\n\nRetails for: $4,826.00\nSelling for: $2,000.00",
+      "price": 2000,
+      "category": "decor",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 4826
+    },
+    {
+      "id": "item-040",
+      "name": "Purple Matress Brand Cal King (Less than 2 yrs)",
+      "description": "Purple Matress Brand Cal King (Less than 2 yrs).\n\nRetails for: $1,799.00\nSelling for: $600.00",
+      "price": 600,
+      "category": "beds",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1799,
+      "productLink": "https://purple.com/mattresses/purple-bed?size=cal_king"
+    },
+    {
+      "id": "item-041",
+      "name": "Queen purple mattress (barely used) #1",
+      "description": "Queen purple mattress (barely used) #1.\n\nRetails for: $1,299.00\nSelling for: $650.00",
+      "price": 650,
+      "category": "beds",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1299,
+      "productLink": "https://purple.com/mattresses/purple-bed"
+    },
+    {
+      "id": "item-042",
+      "name": "Queen purple mattress (barely used) #2",
+      "description": "Queen purple mattress (barely used) #2.\n\nRetails for: $1,299.00\nSelling for: $650.00",
+      "price": 650,
+      "category": "beds",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1299,
+      "productLink": "https://purple.com/mattresses/purple-bed"
+    },
+    {
+      "id": "item-043",
+      "name": "Replica Womb Chair with Ottoman - Smoke Gray Fabric",
+      "description": "Replica Womb Chair with Ottoman - Smoke Gray Fabric.\n\nRetails for: $1,500.00\nSelling for: $600.00",
+      "price": 600,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1500,
+      "productLink": "https://www.roveconcepts.com/womb-chair-and-ottoman"
+    },
+    {
+      "id": "item-044",
       "name": "Salamander Designs Acadia XL Wall Stand for TV",
-      "description": "Salamander Designs Acadia XL Wall Stand for TV.\n\nRetails for: $499.0\nSelling for: $300.0",
-      "price": 300.0,
+      "description": "Salamander Designs Acadia XL Wall Stand for TV.\n\nRetails for: $599.00\nSelling for: $300.00",
+      "price": 300,
       "category": "other",
       "status": "available",
       "images": [],
       "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.crutchfield.com/S-m4wAqfr4dh5/p_537ACWXL60/Salamander-Designs-Acadia-XL-Wall-Stand.html?XVINQ=GLX&XVVer=1FHV&awcr=634085895758&awdv=c&awnw=g&awug=9031037&awkw=pla-1883912639691&awmt=&awat=pla&gclid=EAIaIQobChMIr83xkrOU_gIVegutBh0inAnkEAQYCCABEgLh7fD_BwE",
-      "retailPrice": 499.0
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 599,
+      "productLink": "https://www.crutchfield.com/S-DSqS6BixsNs/p_537ACWXL60/Salamander-Designs-Acadia-XL-Wall-Stand.html"
     },
     {
-      "id": "excel-item-033",
-      "name": "Magis Spun Chair Spinning chair back bedroom",
-      "description": "Magis Spun Chair Spinning chair back bedroom.\n\nRetails for: $995.0\nSelling for: $600.0",
-      "price": 600.0,
-      "category": "other",
+      "id": "item-045",
+      "name": "Samsung Surround Sound system with Subwoofer and Speakers",
+      "description": "Samsung Surround Sound system with Subwoofer and Speakers.\n\nRetails for: $450.00\nSelling for: $150.00",
+      "price": 150,
+      "category": "electronics",
       "status": "available",
-      "images": [
-        "images/excel-items/excel-item-033_magis-spun-chair-spinning-chair-back-bed_1.jpg",
-        "images/excel-items/excel-item-033_magis-spun-chair-spinning-chair-back-bed_2.jpg",
-        "images/excel-items/excel-item-033_magis-spun-chair-spinning-chair-back-bed_3.jpg"
-      ],
-      "thumbnails": [
-        "images/excel-items/excel-item-033_magis-spun-chair-spinning-chair-back-bed_1.jpg",
-        "images/excel-items/excel-item-033_magis-spun-chair-spinning-chair-back-bed_2.jpg",
-        "images/excel-items/excel-item-033_magis-spun-chair-spinning-chair-back-bed_3.jpg"
-      ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://store.hermanmiller.com/outdoor-furniture-chairs/magis-spun-chair/100063889.html?lang=en_US&gclid=EAIaIQobChMIkfn0h5CU_gIVUwKtBh3zAwSFEAQYAiABEgI07fD_BwE&gclsrc=aw.ds",
-      "retailPrice": 995.0
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 450
     },
     {
-      "id": "excel-item-035",
-      "name": "Aluminimum Bike Rack Guest Bedroom",
-      "description": "Aluminimum Bike Rack Guest Bedroom.\n\nRetails for: $120.0\nSelling for: $80.0",
-      "price": 80.0,
+      "id": "item-046",
+      "name": "Savannah Modern Classic Black Stainless Steel Base Grey Outdoor Bench",
+      "description": "Savannah Modern Classic Black Stainless Steel Base Grey Outdoor Bench.\n\nRetails for: $1,049.00\nSelling for: $400.00",
+      "price": 400,
+      "category": "outdoor",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1049,
+      "productLink": "https://www.wayfair.com/outdoor/pdp/allmodern-kareen-62-concrete-outdoor-bench-w008053010.html"
+    },
+    {
+      "id": "item-047",
+      "name": "Turbine Coffee Table w/round Glass",
+      "description": "Turbine Coffee Table w/round Glass.\n\nRetails for: $8,950.00\nSelling for: $3,200.00",
+      "price": 3200,
+      "category": "tables",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 8950
+    },
+    {
+      "id": "item-048",
+      "name": "Varnado Vegan Leather Armchair #1",
+      "description": "Varnado Vegan Leather Armchair #1.\n\nRetails for: $400.00\nSelling for: $150.00",
+      "price": 150,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 400,
+      "productLink": "https://www.wayfair.com/furniture/pdp/ivy-bronx-varnado-2975-wide-armchair-w000183354.html"
+    },
+    {
+      "id": "item-049",
+      "name": "Varnado Vegan Leather Armchair #2",
+      "description": "Varnado Vegan Leather Armchair #2.\n\nRetails for: $400.00\nSelling for: $150.00",
+      "price": 150,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 400,
+      "productLink": "https://www.wayfair.com/furniture/pdp/ivy-bronx-varnado-2975-wide-armchair-w000183354.html"
+    },
+    {
+      "id": "item-050",
+      "name": "Vizio TV 75 / Stand For TV included",
+      "description": "Vizio TV 75 / Stand For TV included.\n\nRetails for: $1,400.00\nSelling for: $100.00",
+      "price": 100,
+      "category": "electronics",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1400
+    },
+    {
+      "id": "item-051",
+      "name": "VONDOM White Dinner Table Chairs with Metal Legs (set of 4)",
+      "description": "VONDOM White Dinner Table Chairs with Metal Legs (set of 4).\n\nRetails for: $1,887.00\nSelling for: $600.00",
+      "price": 600,
+      "category": "seating",
+      "status": "available",
+      "images": [],
+      "thumbnails": [],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1887,
+      "productLink": "https://www.lumens.com/faz-armchair-with-steel-baseand-set-of-4-by-vondom-VON594820.html"
+    },
+    {
+      "id": "item-052",
+      "name": "WaterRower Rowing Machine Model #300 S4 in Walnut Wood",
+      "description": "WaterRower Rowing Machine Model #300 S4 in Walnut Wood.\n\nRetails for: $1,699.00\nSelling for: $350.00",
+      "price": 350,
       "category": "other",
       "status": "available",
       "images": [],
       "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null,
-      "retailPrice": 120.0
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 1699,
+      "productLink": "https://store.moma.org/products/waterrower-rowing-machine-model-300-s4-in-walnut-wood"
     },
     {
-      "id": "excel-item-037",
-      "name": "Queen purple mattress (slept on for 4 weeks)",
-      "description": "Queen purple mattress (slept on for 4 weeks).\n\nRetails for: $1399.0\nSelling for: $900.0",
-      "price": 900.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/excel-items/excel-item-037_queen-purple-mattress-slept-on-for-4-wee_2.jpg"
-      ],
-      "thumbnails": [
-        "images/excel-items/excel-item-037_queen-purple-mattress-slept-on-for-4-wee_2.jpg"
-      ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://purple.com/mattresses/purple-bed",
-      "retailPrice": 1399.0
-    },
-    {
-      "id": "excel-item-038",
-      "name": "PS ROCKING CHAIR 2017 Limited Release",
-      "description": "PS ROCKING CHAIR 2017 Limited Release.\n\nRetails for: $587.0\nSelling for: $400.0",
-      "price": 400.0,
-      "category": "other",
+      "id": "item-053",
+      "name": "WoodScape Coffee Table with V-Legs by Modernica",
+      "description": "WoodScape Coffee Table with V-Legs by Modernica.\n\nRetails for: $840.00\nSelling for: $100.00",
+      "price": 100,
+      "category": "tables",
       "status": "available",
       "images": [],
       "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.walmart.com/ip/Ikea-Rocking-chair-428-20829-1818/298419101",
-      "retailPrice": 587.0
-    },
-    {
-      "id": "excel-item-040",
-      "name": "Covers for all outdoor Furniture",
-      "description": "Covers for all outdoor Furniture.\n\nRetails for: $290.0\nSelling for: $0\n\nProduct link: amazon.com",
-      "price": 0.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "amazon.com",
-      "retailPrice": 290.0
-    },
-    {
-      "id": "excel-item-041",
-      "name": "Bubble Club Sofa By Philippe Starch forKartell",
-      "description": "Bubble Club Sofa By Philippe Starch forKartell.\n\nRetails for: $1525.0\nSelling for: $700.0",
-      "price": 700.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.lumens.com/bubble-club-sofa-by-kartell-R050152.html?utm_source=google&utm_medium=PLA&utm_term=&utm_brand=Kartell&utm_id=R050152&utm_campaign=958854861&gclid=EAIaIQobChMI5rXTpq2U_gIVrx6tBh1BDANvEAQYASABEgJzgPD_BwE",
-      "retailPrice": 1525.0
-    },
-    {
-      "id": "excel-item-042",
-      "name": "Bubble Club Table Yellow By Philippe Starch forKartell",
-      "description": "Bubble Club Table Yellow By Philippe Starch forKartell.\n\nRetails for: $285.0\nSelling for: $100.0",
-      "price": 100.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.lumens.com/bubble-club-table-by-kartell-KTLY13043.html",
-      "retailPrice": 285.0
-    },
-    {
-      "id": "excel-item-044",
-      "name": "Large Ceramic Pot with Cactus",
-      "description": "Large Ceramic Pot with Cactus.\n\nRetails for: $450.0\nSelling for: $50.0",
-      "price": 50.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null,
-      "retailPrice": 450.0
-    },
-    {
-      "id": "excel-item-047",
-      "name": "Folding Garden Chairs 2 pcs Solid Teak Wood - Brown",
-      "description": "Folding Garden Chairs 2 pcs Solid Teak Wood - Brown.\n\nRetails for: $212.24/each\nSelling for: $0",
-      "price": 0.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.overstock.com/c/outdoor-dining-furniture/outdoor-dining-chairs?t=7926&featuredproduct=35111535&featuredoption=67221056&ci_sku=39317484-000-000&cnc=US&srsltid=AfAwrE4JPX4a9nIyMq4i8oVEBvyuShK1AqLu3OFo-nrrBIRgIlmjxtBJJxQ",
-      "retailPrice": 212.24
-    },
-    {
-      "id": "excel-item-049",
-      "name": "Aquart Outdoor Shower by Seletti",
-      "description": "Aquart Outdoor Shower by Seletti.\n\nRetails for: $472.0\nSelling for: $300.0",
-      "price": 300.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/excel-items/excel-item-049_aquart-outdoor-shower-by-seletti_1.jpg",
-        "images/excel-items/excel-item-049_aquart-outdoor-shower-by-seletti_2.jpg",
-        "images/excel-items/excel-item-049_aquart-outdoor-shower-by-seletti_3.jpg"
-      ],
-      "thumbnails": [
-        "images/excel-items/excel-item-049_aquart-outdoor-shower-by-seletti_1.jpg",
-        "images/excel-items/excel-item-049_aquart-outdoor-shower-by-seletti_2.jpg",
-        "images/excel-items/excel-item-049_aquart-outdoor-shower-by-seletti_3.jpg"
-      ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.houzz.com/products/aquart-outdoor-shower-by-seletti-prvw-vr~129370114?m_refid=PLA_HZ_129370114_17540098681&device=c&nw=x&gclid=EAIaIQobChMI2Pzq4bCU_gIVJgCtBh2x-QGKEAQYASABEgLsNvD_BwE",
-      "retailPrice": 472.0
-    },
-    {
-      "id": "excel-item-050",
-      "name": "Kamado Joe BBQ Classic II 18-Inch Ceramic Grill - KJ23RHC (used 1 time)",
-      "description": "Kamado Joe BBQ Classic II 18-Inch Ceramic Grill - KJ23RHC (used 1 time).\n\nRetails for: $1833.0\nSelling for: $700.0",
-      "price": 700.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.bbqguys.com/kamado-joe/classic-ii-18-inch-freestanding-ceramic-grill?irclickid=wZcXYdVkJxyNTLp0v31s%3A3WLUkAThmQEiSR2VI0&utm_source=impact&utm_medium=cpa&utm_species=affiliate&utm_partner=2006806&irgwc=1&%3D",
-      "retailPrice": 1833.0
-    },
-    {
-      "id": "excel-item-052",
-      "name": "Modern Adirondack Chairs 2 Under Tree",
-      "description": "Modern Adirondack Chairs 2 Under Tree.\n\nRetails for: $249.0\nSelling for: $100.0",
-      "price": 100.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/excel-items/excel-item-052_modern-adirondack-chairs-2-under-tree_1.jpg",
-        "images/excel-items/excel-item-052_modern-adirondack-chairs-2-under-tree_2.jpg",
-        "images/excel-items/excel-item-052_modern-adirondack-chairs-2-under-tree_3.jpg"
-      ],
-      "thumbnails": [
-        "images/excel-items/excel-item-052_modern-adirondack-chairs-2-under-tree_1.jpg",
-        "images/excel-items/excel-item-052_modern-adirondack-chairs-2-under-tree_2.jpg",
-        "images/excel-items/excel-item-052_modern-adirondack-chairs-2-under-tree_3.jpg"
-      ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.polywood.com/modern-adirondack-chair-ad420.html?polywood_frame_color=47&gclid=EAIaIQobChMIz4GQ6bGU_gIVJiCtBh2kTwLUEAQYAyABEgJTUvD_BwE",
-      "retailPrice": 249.0
-    },
-    {
-      "id": "excel-item-011",
-      "name": "Case Study\u00ae Furniture 98 V-Leg Daybed Extension with V-leg",
-      "description": "Case Study\u00ae Furniture 98 V-Leg Daybed Extension with V-leg.\n\nRetails for: $2525.0\nSelling for: $1600.0",
-      "price": 1600.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_1.jpg",
-        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_2.jpg",
-        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_3.jpg"
-      ],
-      "thumbnails": [
-        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_1.jpg",
-        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_2.jpg",
-        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_3.jpg"
-      ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-v-leg-daybed-couch",
-      "retailPrice": 2525.0
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:20:58.000Z",
+      "dateUpdated": "2026-02-24T05:20:58.000Z",
+      "retailPrice": 840
     }
   ]
 }
