@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "items": [
     {
       "id": "item-001",
@@ -37,8 +37,18 @@
       "price": 300,
       "category": "electronics",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-003-1.jpg",
+        "images/full/item-003-2.jpg",
+        "images/full/item-003-3.jpg",
+        "images/full/item-003-4.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-003-1-thumb.jpg",
+        "images/thumbnails/item-003-2-thumb.jpg",
+        "images/thumbnails/item-003-3-thumb.jpg",
+        "images/thumbnails/item-003-4-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -139,10 +149,14 @@
       "category": "seating",
       "status": "available",
       "images": [
-        "images/full/item-008-1.jpg"
+        "images/full/item-008-1.jpg",
+        "images/full/item-008-2.jpg",
+        "images/full/item-008-3.jpg"
       ],
       "thumbnails": [
-        "images/thumbnails/item-008-1-thumb.jpg"
+        "images/thumbnails/item-008-1-thumb.jpg",
+        "images/thumbnails/item-008-2-thumb.jpg",
+        "images/thumbnails/item-008-3-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
@@ -159,11 +173,17 @@
       "status": "available",
       "images": [
         "images/full/item-009-1.jpg",
-        "images/full/item-009-2.jpg"
+        "images/full/item-009-2.jpg",
+        "images/full/item-009-3.jpg",
+        "images/full/item-009-4.jpg",
+        "images/full/item-009-5.jpg"
       ],
       "thumbnails": [
         "images/thumbnails/item-009-1-thumb.jpg",
-        "images/thumbnails/item-009-2-thumb.jpg"
+        "images/thumbnails/item-009-2-thumb.jpg",
+        "images/thumbnails/item-009-3-thumb.jpg",
+        "images/thumbnails/item-009-4-thumb.jpg",
+        "images/thumbnails/item-009-5-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
@@ -178,8 +198,14 @@
       "price": 100,
       "category": "tables",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-010-1.jpg",
+        "images/full/item-010-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-010-1-thumb.jpg",
+        "images/thumbnails/item-010-2-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -217,14 +243,18 @@
         "images/full/item-012-2.jpg",
         "images/full/item-012-3.jpg",
         "images/full/item-012-4.jpg",
-        "images/full/item-012-5.jpg"
+        "images/full/item-012-5.jpg",
+        "images/full/item-012-6.jpg",
+        "images/full/item-012-7.jpg"
       ],
       "thumbnails": [
         "images/thumbnails/item-012-1-thumb.jpg",
         "images/thumbnails/item-012-2-thumb.jpg",
         "images/thumbnails/item-012-3-thumb.jpg",
         "images/thumbnails/item-012-4-thumb.jpg",
-        "images/thumbnails/item-012-5-thumb.jpg"
+        "images/thumbnails/item-012-5-thumb.jpg",
+        "images/thumbnails/item-012-6-thumb.jpg",
+        "images/thumbnails/item-012-7-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
@@ -244,14 +274,18 @@
         "images/full/item-013-2.jpg",
         "images/full/item-013-3.jpg",
         "images/full/item-013-4.jpg",
-        "images/full/item-013-5.jpg"
+        "images/full/item-013-5.jpg",
+        "images/full/item-013-6.jpg",
+        "images/full/item-013-7.jpg"
       ],
       "thumbnails": [
         "images/thumbnails/item-013-1-thumb.jpg",
         "images/thumbnails/item-013-2-thumb.jpg",
         "images/thumbnails/item-013-3-thumb.jpg",
         "images/thumbnails/item-013-4-thumb.jpg",
-        "images/thumbnails/item-013-5-thumb.jpg"
+        "images/thumbnails/item-013-5-thumb.jpg",
+        "images/thumbnails/item-013-6-thumb.jpg",
+        "images/thumbnails/item-013-7-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
@@ -309,10 +343,14 @@
       "category": "tables",
       "status": "available",
       "images": [
-        "images/full/item-016-1.jpg"
+        "images/full/item-016-1.jpg",
+        "images/full/item-016-2.jpg",
+        "images/full/item-016-3.jpg"
       ],
       "thumbnails": [
-        "images/thumbnails/item-016-1-thumb.jpg"
+        "images/thumbnails/item-016-1-thumb.jpg",
+        "images/thumbnails/item-016-2-thumb.jpg",
+        "images/thumbnails/item-016-3-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
@@ -326,8 +364,14 @@
       "price": 300,
       "category": "decor",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-017-1.jpg",
+        "images/full/item-017-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-017-1-thumb.jpg",
+        "images/thumbnails/item-017-2-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -632,12 +676,18 @@
       "images": [
         "images/full/item-032-1.jpg",
         "images/full/item-032-2.jpg",
-        "images/full/item-032-3.jpg"
+        "images/full/item-032-3.jpg",
+        "images/full/item-032-4.jpg",
+        "images/full/item-032-5.jpg",
+        "images/full/item-032-6.jpg"
       ],
       "thumbnails": [
         "images/thumbnails/item-032-1-thumb.jpg",
         "images/thumbnails/item-032-2-thumb.jpg",
-        "images/thumbnails/item-032-3-thumb.jpg"
+        "images/thumbnails/item-032-3-thumb.jpg",
+        "images/thumbnails/item-032-4-thumb.jpg",
+        "images/thumbnails/item-032-5-thumb.jpg",
+        "images/thumbnails/item-032-6-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
@@ -652,8 +702,12 @@
       "price": 500,
       "category": "electronics",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-033-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-033-1-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -668,11 +722,13 @@
       "status": "available",
       "images": [
         "images/full/item-034-1.jpg",
-        "images/full/item-034-2.jpg"
+        "images/full/item-034-2.jpg",
+        "images/full/item-034-3.jpg"
       ],
       "thumbnails": [
         "images/thumbnails/item-034-1-thumb.jpg",
-        "images/thumbnails/item-034-2-thumb.jpg"
+        "images/thumbnails/item-034-2-thumb.jpg",
+        "images/thumbnails/item-034-3-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
@@ -762,8 +818,16 @@
       "price": 2000,
       "category": "decor",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-039-1.jpg",
+        "images/full/item-039-2.jpg",
+        "images/full/item-039-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-039-1-thumb.jpg",
+        "images/thumbnails/item-039-2-thumb.jpg",
+        "images/thumbnails/item-039-3-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -994,8 +1058,20 @@
       "price": 100,
       "category": "electronics",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-050-1.jpg",
+        "images/full/item-050-2.jpg",
+        "images/full/item-050-3.jpg",
+        "images/full/item-050-4.jpg",
+        "images/full/item-050-5.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-050-1-thumb.jpg",
+        "images/thumbnails/item-050-2-thumb.jpg",
+        "images/thumbnails/item-050-3-thumb.jpg",
+        "images/thumbnails/item-050-4-thumb.jpg",
+        "images/thumbnails/item-050-5-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -1061,10 +1137,14 @@
       "category": "tables",
       "status": "available",
       "images": [
-        "images/full/item-053-1.jpg"
+        "images/full/item-053-1.jpg",
+        "images/full/item-053-2.jpg",
+        "images/full/item-053-3.jpg"
       ],
       "thumbnails": [
-        "images/thumbnails/item-053-1-thumb.jpg"
+        "images/thumbnails/item-053-1-thumb.jpg",
+        "images/thumbnails/item-053-2-thumb.jpg",
+        "images/thumbnails/item-053-3-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
@@ -1287,10 +1367,14 @@
       "category": "tables",
       "status": "available",
       "images": [
-        "images/full/item-064-1.jpg"
+        "images/full/item-064-1.jpg",
+        "images/full/item-064-2.jpg",
+        "images/full/item-064-3.jpg"
       ],
       "thumbnails": [
-        "images/thumbnails/item-064-1-thumb.jpg"
+        "images/thumbnails/item-064-1-thumb.jpg",
+        "images/thumbnails/item-064-2-thumb.jpg",
+        "images/thumbnails/item-064-3-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:45:21.000Z",
@@ -1304,10 +1388,14 @@
       "category": "seating",
       "status": "available",
       "images": [
-        "images/full/item-065-1.jpg"
+        "images/full/item-065-1.jpg",
+        "images/full/item-065-2.jpg",
+        "images/full/item-065-3.jpg"
       ],
       "thumbnails": [
-        "images/thumbnails/item-065-1-thumb.jpg"
+        "images/thumbnails/item-065-1-thumb.jpg",
+        "images/thumbnails/item-065-2-thumb.jpg",
+        "images/thumbnails/item-065-3-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:45:21.000Z",
@@ -1321,10 +1409,12 @@
       "category": "seating",
       "status": "available",
       "images": [
-        "images/full/item-066-1.jpg"
+        "images/full/item-066-1.jpg",
+        "images/full/item-066-2.jpg"
       ],
       "thumbnails": [
-        "images/thumbnails/item-066-1-thumb.jpg"
+        "images/thumbnails/item-066-1-thumb.jpg",
+        "images/thumbnails/item-066-2-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:45:21.000Z",
