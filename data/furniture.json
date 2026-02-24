@@ -1,648 +1,46 @@
 {
   "items": [
     {
-      "id": "001",
-      "name": "Gray Upholstered Lounge Chair",
-      "description": "Gray Upholstered Lounge Chair - Multiple angles available. Exact details to be added by admin.",
-      "category": "seating",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-001-1.jpg",
-        "images/full/item-001-2.jpg",
-        "images/full/item-001-3.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-001-1-thumb.jpg",
-        "images/thumbnails/item-001-2-thumb.jpg",
-        "images/thumbnails/item-001-3-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "002",
-      "name": "Modern Accent Chair",
-      "description": "Modern Accent Chair - Multiple angles available. Exact details to be added by admin.",
-      "category": "seating",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-002-1.jpg",
-        "images/full/item-002-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-002-1-thumb.jpg",
-        "images/thumbnails/item-002-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "003",
-      "name": "Leather Sofa",
-      "description": "Leather Sofa - Multiple angles available. Exact details to be added by admin.",
-      "category": "seating",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-003-1.jpg",
-        "images/full/item-003-2.jpg",
-        "images/full/item-003-3.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-003-1-thumb.jpg",
-        "images/thumbnails/item-003-2-thumb.jpg",
-        "images/thumbnails/item-003-3-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "004",
-      "name": "Dining Chair Set",
-      "description": "Dining Chair Set - Multiple angles available. Exact details to be added by admin.",
-      "category": "seating",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-004-1.jpg",
-        "images/full/item-004-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-004-1-thumb.jpg",
-        "images/thumbnails/item-004-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "005",
-      "name": "Coffee Table",
-      "description": "Coffee Table - Multiple angles available. Exact details to be added by admin.",
-      "category": "tables",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-005-1.jpg",
-        "images/full/item-005-2.jpg",
-        "images/full/item-005-3.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-005-1-thumb.jpg",
-        "images/thumbnails/item-005-2-thumb.jpg",
-        "images/thumbnails/item-005-3-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "006",
-      "name": "Side Table",
-      "description": "Side Table - Multiple angles available. Exact details to be added by admin.",
-      "category": "tables",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-006-1.jpg",
-        "images/full/item-006-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-006-1-thumb.jpg",
-        "images/thumbnails/item-006-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "007",
-      "name": "Console Table",
-      "description": "Console Table - Multiple angles available. Exact details to be added by admin.",
-      "category": "tables",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-007-1.jpg",
-        "images/full/item-007-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-007-1-thumb.jpg",
-        "images/thumbnails/item-007-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "008",
-      "name": "Bookshelf",
-      "description": "Bookshelf - Multiple angles available. Exact details to be added by admin.",
-      "category": "storage",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-008-1.jpg",
-        "images/full/item-008-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-008-1-thumb.jpg",
-        "images/thumbnails/item-008-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "009",
-      "name": "Dresser",
-      "description": "Dresser - Multiple angles available. Exact details to be added by admin.",
-      "category": "storage",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-009-1.jpg",
-        "images/full/item-009-2.jpg",
-        "images/full/item-009-3.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-009-1-thumb.jpg",
-        "images/thumbnails/item-009-2-thumb.jpg",
-        "images/thumbnails/item-009-3-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "010",
-      "name": "TV Stand",
-      "description": "TV Stand - Multiple angles available. Exact details to be added by admin.",
-      "category": "storage",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-010-1.jpg",
-        "images/full/item-010-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-010-1-thumb.jpg",
-        "images/thumbnails/item-010-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "011",
-      "name": "Nightstand",
-      "description": "Nightstand - Multiple angles available. Exact details to be added by admin.",
-      "category": "tables",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-011-1.jpg",
-        "images/full/item-011-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-011-1-thumb.jpg",
-        "images/thumbnails/item-011-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "012",
-      "name": "Desk",
-      "description": "Desk - Multiple angles available. Exact details to be added by admin.",
-      "category": "tables",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-012-1.jpg",
-        "images/full/item-012-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-012-1-thumb.jpg",
-        "images/thumbnails/item-012-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "013",
-      "name": "Dining Table",
-      "description": "Dining Table - Multiple angles available. Exact details to be added by admin.",
-      "category": "tables",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-013-1.jpg",
-        "images/full/item-013-2.jpg",
-        "images/full/item-013-3.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-013-1-thumb.jpg",
-        "images/thumbnails/item-013-2-thumb.jpg",
-        "images/thumbnails/item-013-3-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "014",
-      "name": "Bar Cart",
-      "description": "Bar Cart - Multiple angles available. Exact details to be added by admin.",
-      "category": "storage",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-014-1.jpg",
-        "images/full/item-014-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-014-1-thumb.jpg",
-        "images/thumbnails/item-014-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "015",
-      "name": "Armchair",
-      "description": "Armchair - Multiple angles available. Exact details to be added by admin.",
-      "category": "seating",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-015-1.jpg",
-        "images/full/item-015-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-015-1-thumb.jpg",
-        "images/thumbnails/item-015-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "016",
-      "name": "Ottoman",
-      "description": "Ottoman - Multiple angles available. Exact details to be added by admin.",
-      "category": "seating",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-016-1.jpg",
-        "images/full/item-016-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-016-1-thumb.jpg",
-        "images/thumbnails/item-016-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "017",
-      "name": "Accent Cabinet",
-      "description": "Accent Cabinet - Multiple angles available. Exact details to be added by admin.",
-      "category": "storage",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-017-1.jpg",
-        "images/full/item-017-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-017-1-thumb.jpg",
-        "images/thumbnails/item-017-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "018",
-      "name": "Wardrobe",
-      "description": "Wardrobe - Multiple angles available. Exact details to be added by admin.",
-      "category": "storage",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-018-1.jpg",
-        "images/full/item-018-2.jpg",
-        "images/full/item-018-3.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-018-1-thumb.jpg",
-        "images/thumbnails/item-018-2-thumb.jpg",
-        "images/thumbnails/item-018-3-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "019",
-      "name": "Bench",
-      "description": "Bench - Multiple angles available. Exact details to be added by admin.",
-      "category": "seating",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-019-1.jpg",
-        "images/full/item-019-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-019-1-thumb.jpg",
-        "images/thumbnails/item-019-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "020",
-      "name": "Floor Lamp",
-      "description": "Floor Lamp - Multiple angles available. Exact details to be added by admin.",
-      "category": "decor",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-020-1.jpg",
-        "images/full/item-020-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-020-1-thumb.jpg",
-        "images/thumbnails/item-020-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "021",
-      "name": "Table Lamp",
-      "description": "Table Lamp - Multiple angles available. Exact details to be added by admin.",
-      "category": "decor",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-021-1.jpg",
-        "images/full/item-021-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-021-1-thumb.jpg",
-        "images/thumbnails/item-021-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "022",
-      "name": "Mirror",
-      "description": "Mirror - Multiple angles available. Exact details to be added by admin.",
-      "category": "decor",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-022-1.jpg",
-        "images/full/item-022-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-022-1-thumb.jpg",
-        "images/thumbnails/item-022-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "023",
-      "name": "Wall Art",
-      "description": "Wall Art - Multiple angles available. Exact details to be added by admin.",
-      "category": "decor",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-023-1.jpg",
-        "images/full/item-023-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-023-1-thumb.jpg",
-        "images/thumbnails/item-023-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "024",
-      "name": "Sectional Sofa",
-      "description": "Sectional Sofa - Multiple angles available. Exact details to be added by admin.",
-      "category": "seating",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-024-1.jpg",
-        "images/full/item-024-2.jpg",
-        "images/full/item-024-3.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-024-1-thumb.jpg",
-        "images/thumbnails/item-024-2-thumb.jpg",
-        "images/thumbnails/item-024-3-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "025",
-      "name": "Recliner",
-      "description": "Recliner - Multiple angles available. Exact details to be added by admin.",
-      "category": "seating",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-025-1.jpg",
-        "images/full/item-025-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-025-1-thumb.jpg",
-        "images/thumbnails/item-025-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "026",
-      "name": "Vanity",
-      "description": "Vanity - Multiple angles available. Exact details to be added by admin.",
-      "category": "storage",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-026-1.jpg",
-        "images/full/item-026-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-026-1-thumb.jpg",
-        "images/thumbnails/item-026-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "027",
-      "name": "Plant Stand",
-      "description": "Plant Stand - Multiple angles available. Exact details to be added by admin.",
-      "category": "decor",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-027-1.jpg",
-        "images/full/item-027-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-027-1-thumb.jpg",
-        "images/thumbnails/item-027-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "028",
-      "name": "Media Console",
-      "description": "Media Console - Multiple angles available. Exact details to be added by admin.",
-      "category": "storage",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-028-1.jpg",
-        "images/full/item-028-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-028-1-thumb.jpg",
-        "images/thumbnails/item-028-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "029",
-      "name": "Credenza",
-      "description": "Credenza - Multiple angles available. Exact details to be added by admin.",
-      "category": "storage",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-029-1.jpg",
-        "images/full/item-029-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-029-1-thumb.jpg",
-        "images/thumbnails/item-029-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "030",
-      "name": "Loveseat",
-      "description": "Loveseat - Multiple angles available. Exact details to be added by admin.",
-      "category": "seating",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-030-1.jpg",
-        "images/full/item-030-2.jpg",
-        "images/full/item-030-3.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-030-1-thumb.jpg",
-        "images/thumbnails/item-030-2-thumb.jpg",
-        "images/thumbnails/item-030-3-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "031",
-      "name": "Chaise Lounge",
-      "description": "Chaise Lounge - Multiple angles available. Exact details to be added by admin.",
-      "category": "seating",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-031-1.jpg",
-        "images/full/item-031-2.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-031-1-thumb.jpg",
-        "images/thumbnails/item-031-2-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "032",
-      "name": "Decorative Vase",
-      "description": "Decorative Vase - Multiple angles available. Exact details to be added by admin.",
-      "category": "decor",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-032-1.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-032-1-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
-      "id": "033",
-      "name": "Storage Cabinet",
-      "description": "Storage Cabinet - Multiple angles available. Exact details to be added by admin.",
-      "category": "storage",
-      "price": 0,
-      "status": "available",
-      "images": [
-        "images/full/item-033-1.jpg",
-        "images/full/item-033-2.jpg",
-        "images/full/item-033-3.jpg"
-      ],
-      "thumbnails": [
-        "images/thumbnails/item-033-1-thumb.jpg",
-        "images/thumbnails/item-033-2-thumb.jpg",
-        "images/thumbnails/item-033-3-thumb.jpg"
-      ],
-      "dateAdded": "2026-02-20T20:01:16.067Z",
-      "dateUpdated": "2026-02-20T20:01:16.067Z"
-    },
-    {
       "id": "excel-item-001",
-      "name": "Purple Matress Brand NEW (NEVER SLEPT ON )",
+      "name": "Purple Mattress Brand NEW",
       "description": "Purple Matress Brand NEW (NEVER SLEPT ON ).\n\nRetails for: $3599.0\nSelling for: $1800.0",
       "price": 1800.0,
-      "category": "other",
+      "category": "beds",
       "status": "available",
       "images": [
-        "images/excel-items/excel-item-001_purple-matress-brand-new-never-slept-on-_1.jpg",
-        "images/excel-items/excel-item-001_purple-matress-brand-new-never-slept-on-_2.jpg",
-        "images/excel-items/excel-item-001_purple-matress-brand-new-never-slept-on-_3.jpg"
+        "images/full/excel-item-001-1.jpg",
+        "images/full/excel-item-001-2.jpg"
       ],
       "thumbnails": [
-        "images/excel-items/excel-item-001_purple-matress-brand-new-never-slept-on-_1.jpg",
-        "images/excel-items/excel-item-001_purple-matress-brand-new-never-slept-on-_2.jpg",
-        "images/excel-items/excel-item-001_purple-matress-brand-new-never-slept-on-_3.jpg"
+        "images/thumbnails/excel-item-001-1-thumb.jpg",
+        "images/thumbnails/excel-item-001-2-thumb.jpg"
       ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
       "productLink": "https://purple.com/2",
       "retailPrice": 3599.0
     },
     {
       "id": "excel-item-002",
-      "name": "DROMMEN ACACIA WOOD KING BED CB2",
+      "name": "DROMMEN Acacia Wood King Bed (CB2)",
       "description": "DROMMEN ACACIA WOOD KING BED CB2.\n\nRetails for: $1299.0\nSelling for: $1000.0",
       "price": 1000.0,
-      "category": "other",
+      "category": "beds",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
+      "images": [
+        "images/full/excel-item-002-1.jpg",
+        "images/full/excel-item-002-2.jpg",
+        "images/full/excel-item-002-3.jpg",
+        "images/full/excel-item-002-4.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-002-1-thumb.jpg",
+        "images/thumbnails/excel-item-002-2-thumb.jpg",
+        "images/thumbnails/excel-item-002-3-thumb.jpg",
+        "images/thumbnails/excel-item-002-4-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
       "productLink": "https://www.cb2.com/drommen-acacia-wood-king-bed/s213846",
       "retailPrice": 1299.0
     },
@@ -651,20 +49,24 @@
       "name": "Case Study V-Leg DayBed Couch",
       "description": "Case Study V-Leg DayBed Couch.\n\nRetails for: $2525.0\nSelling for: $1800.0",
       "price": 1800.0,
-      "category": "other",
+      "category": "seating",
       "status": "available",
       "images": [
-        "images/excel-items/excel-item-003_case-study-v-leg-daybed-couch_1.jpg",
-        "images/excel-items/excel-item-003_case-study-v-leg-daybed-couch_2.jpg",
-        "images/excel-items/excel-item-003_case-study-v-leg-daybed-couch_3.jpg"
+        "images/full/excel-item-003-1.jpg",
+        "images/full/excel-item-003-2.jpg",
+        "images/full/excel-item-003-3.jpg",
+        "images/full/excel-item-003-4.jpg",
+        "images/full/excel-item-003-5.jpg"
       ],
       "thumbnails": [
-        "images/excel-items/excel-item-003_case-study-v-leg-daybed-couch_1.jpg",
-        "images/excel-items/excel-item-003_case-study-v-leg-daybed-couch_2.jpg",
-        "images/excel-items/excel-item-003_case-study-v-leg-daybed-couch_3.jpg"
+        "images/thumbnails/excel-item-003-1-thumb.jpg",
+        "images/thumbnails/excel-item-003-2-thumb.jpg",
+        "images/thumbnails/excel-item-003-3-thumb.jpg",
+        "images/thumbnails/excel-item-003-4-thumb.jpg",
+        "images/thumbnails/excel-item-003-5-thumb.jpg"
       ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
       "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-v-leg-daybed-couch?variant=9097025585217",
       "retailPrice": 2525.0
     },
@@ -673,58 +75,815 @@
       "name": "WoodScape Coffee Table with V-Legs",
       "description": "WoodScape Coffee Table with V-Legs.\n\nRetails for: $840.0\nSelling for: $200.0",
       "price": 200.0,
-      "category": "other",
+      "category": "tables",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
+      "images": [
+        "images/full/excel-item-004-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-004-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
       "productLink": null,
       "retailPrice": 840.0
     },
     {
       "id": "excel-item-005",
-      "name": "Chair with Ottoman - Smoke Gray Fabric",
+      "name": "Chair with Ottoman - Smoke Gray",
       "description": "Chair with Ottoman - Smoke Gray Fabric.\n\nRetails for: $2260.0\nSelling for: $1200.0",
       "price": 1200.0,
-      "category": "other",
+      "category": "seating",
       "status": "available",
       "images": [
-        "images/excel-items/excel-item-005_chair-with-ottoman-smoke-gray-fabric_1.jpg",
-        "images/excel-items/excel-item-005_chair-with-ottoman-smoke-gray-fabric_2.jpg",
-        "images/excel-items/excel-item-005_chair-with-ottoman-smoke-gray-fabric_3.jpg"
+        "images/full/excel-item-005-1.jpg",
+        "images/full/excel-item-005-2.jpg",
+        "images/full/excel-item-005-3.jpg",
+        "images/full/excel-item-005-4.jpg",
+        "images/full/excel-item-005-5.jpg"
       ],
       "thumbnails": [
-        "images/excel-items/excel-item-005_chair-with-ottoman-smoke-gray-fabric_1.jpg",
-        "images/excel-items/excel-item-005_chair-with-ottoman-smoke-gray-fabric_2.jpg",
-        "images/excel-items/excel-item-005_chair-with-ottoman-smoke-gray-fabric_3.jpg"
+        "images/thumbnails/excel-item-005-1-thumb.jpg",
+        "images/thumbnails/excel-item-005-2-thumb.jpg",
+        "images/thumbnails/excel-item-005-3-thumb.jpg",
+        "images/thumbnails/excel-item-005-4-thumb.jpg",
+        "images/thumbnails/excel-item-005-5-thumb.jpg"
       ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
       "productLink": "https://www.modernclassics.com/store/pc/Womb-Chair-with-Ottoman-Smoke-Gray-Fabric-p32758.htm",
       "retailPrice": 2260.0
     },
     {
       "id": "excel-item-006",
-      "name": "LC4 Le Corbusier Lounge Chair ORIGINAL",
+      "name": "LC4 Le Corbusier Lounge Chair",
       "description": "LC4 Le Corbusier Lounge Chair ORIGINAL.\n\nRetails for: $5780.0\nSelling for: $3500.0",
       "price": 3500.0,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-006-1.jpg",
+        "images/full/excel-item-006-2.jpg",
+        "images/full/excel-item-006-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-006-1-thumb.jpg",
+        "images/thumbnails/excel-item-006-2-thumb.jpg",
+        "images/thumbnails/excel-item-006-3-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://www.dwr.com/living-lounge-chairs/lc4-chaise-lounge/6515.html?lang=en_US",
+      "retailPrice": 5780.0
+    },
+    {
+      "id": "excel-item-009",
+      "name": "Knoll Authentic Womb Chair",
+      "description": "Knoll Authentic Womb\u2122 Chair.\n\nRetails for: $5687.0\nSelling for: $4500.0",
+      "price": 4500.0,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-009-1.jpg",
+        "images/full/excel-item-009-2.jpg",
+        "images/full/excel-item-009-3.jpg",
+        "images/full/excel-item-009-4.jpg",
+        "images/full/excel-item-009-5.jpg",
+        "images/full/excel-item-009-6.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-009-1-thumb.jpg",
+        "images/thumbnails/excel-item-009-2-thumb.jpg",
+        "images/thumbnails/excel-item-009-3-thumb.jpg",
+        "images/thumbnails/excel-item-009-4-thumb.jpg",
+        "images/thumbnails/excel-item-009-5-thumb.jpg",
+        "images/thumbnails/excel-item-009-6-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://www.knoll.com/product/womb-chair",
+      "retailPrice": 5687.0
+    },
+    {
+      "id": "excel-item-010",
+      "name": "Case Study Daybed + Extension Sectional",
+      "description": "Case Study 98 V-Leg Daybed Couch + Extension arranged as sectional.\n\nDaybed: $2800 | Extension: $1600\nCombined price: $4400\n\nRetails for: $5780",
+      "price": 4400.0,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-010-1.jpg",
+        "images/full/excel-item-010-2.jpg",
+        "images/full/excel-item-010-3.jpg",
+        "images/full/excel-item-010-4.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-010-1-thumb.jpg",
+        "images/thumbnails/excel-item-010-2-thumb.jpg",
+        "images/thumbnails/excel-item-010-3-thumb.jpg",
+        "images/thumbnails/excel-item-010-4-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-furniture-98-v-leg-daybed-couch",
+      "retailPrice": 3255.0
+    },
+    {
+      "id": "excel-item-013",
+      "name": "Modernist Vintage Chrome/Glass Dining Table",
+      "description": "Modernist Vintage Chrome and Glass Dining Table.\n\nRetails for: $820.0\nSelling for: $350.0",
+      "price": 350.0,
+      "category": "tables",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-013-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-013-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": null,
+      "retailPrice": 820.0
+    },
+    {
+      "id": "excel-item-015",
+      "name": "LG 75\" TV",
+      "description": "TV 75\" New.\n\nRetails for: $2200.0\nSelling for: $800.0\n\nProduct link: closeout sale blueprint store",
+      "price": 800.0,
       "category": "other",
       "status": "available",
       "images": [
-        "images/excel-items/excel-item-006_lc4-le-corbusier-lounge-chair-original_1.jpg",
-        "images/excel-items/excel-item-006_lc4-le-corbusier-lounge-chair-original_2.jpg",
-        "images/excel-items/excel-item-006_lc4-le-corbusier-lounge-chair-original_3.jpg"
+        "images/full/excel-item-015-1.jpg",
+        "images/full/excel-item-015-2.jpg"
       ],
       "thumbnails": [
-        "images/excel-items/excel-item-006_lc4-le-corbusier-lounge-chair-original_1.jpg",
-        "images/excel-items/excel-item-006_lc4-le-corbusier-lounge-chair-original_2.jpg",
-        "images/excel-items/excel-item-006_lc4-le-corbusier-lounge-chair-original_3.jpg"
+        "images/thumbnails/excel-item-015-1-thumb.jpg",
+        "images/thumbnails/excel-item-015-2-thumb.jpg"
       ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.dwr.com/living-lounge-chairs/lc4-chaise-lounge/6515.html?lang=en_US",
-      "retailPrice": 5780.0
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "closeout sale blueprint store",
+      "retailPrice": 2200.0
+    },
+    {
+      "id": "excel-item-019",
+      "name": "Italian Carrera Marble Dining Table (RH)",
+      "description": "Italian Carrera Marble RECTANGULAR DINING TABLE Custom Ordered Restoration Harware.\n\nRetails for: $2650.0\nSelling for: $800.0",
+      "price": 800.0,
+      "category": "tables",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-019-1.jpg",
+        "images/full/excel-item-019-2.jpg",
+        "images/full/excel-item-019-3.jpg",
+        "images/full/excel-item-019-4.jpg",
+        "images/full/excel-item-019-5.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-019-1-thumb.jpg",
+        "images/thumbnails/excel-item-019-2-thumb.jpg",
+        "images/thumbnails/excel-item-019-3-thumb.jpg",
+        "images/thumbnails/excel-item-019-4-thumb.jpg",
+        "images/thumbnails/excel-item-019-5-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://rh.com/",
+      "retailPrice": 2650.0
+    },
+    {
+      "id": "excel-item-020",
+      "name": "BLUE DOT Real Good Chair (x2)",
+      "description": "BLUE DOT Real Good Chair Powder Coated Steel.\n\nOriginal price: $$199.00/each\nSelling for: $0",
+      "price": 100,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-020-1.jpg",
+        "images/full/excel-item-020-2.jpg",
+        "images/full/excel-item-020-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-020-1-thumb.jpg",
+        "images/thumbnails/excel-item-020-2-thumb.jpg",
+        "images/thumbnails/excel-item-020-3-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://www.bludot.com/"
+    },
+    {
+      "id": "excel-item-021",
+      "name": "VONDOM White Chairs (x4)",
+      "description": "VONDOM White Dinner Table Chairs with Metal Legs.\n\nOriginal price: $$249.00/each\nSelling for: $0",
+      "price": 140,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-021-1.jpg",
+        "images/full/excel-item-021-2.jpg",
+        "images/full/excel-item-021-3.jpg",
+        "images/full/excel-item-021-4.jpg",
+        "images/full/excel-item-021-5.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-021-1-thumb.jpg",
+        "images/thumbnails/excel-item-021-2-thumb.jpg",
+        "images/thumbnails/excel-item-021-3-thumb.jpg",
+        "images/thumbnails/excel-item-021-4-thumb.jpg",
+        "images/thumbnails/excel-item-021-5-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://www.2modern.com/"
+    },
+    {
+      "id": "excel-item-022",
+      "name": "Modern Metal Bar Stools (x2)",
+      "description": "Modern Metal Bar Stools (Kitchen).\n\nOriginal price: $$450/each\nSelling for: $0",
+      "price": 250,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-022-1.jpg",
+        "images/full/excel-item-022-2.jpg",
+        "images/full/excel-item-022-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-022-1-thumb.jpg",
+        "images/thumbnails/excel-item-022-2-thumb.jpg",
+        "images/thumbnails/excel-item-022-3-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": null
+    },
+    {
+      "id": "excel-item-024",
+      "name": "Turbine Coffee Table w/Round Glass",
+      "description": "TURBINE COFFEE TABLE w/round Glass.\n\nRetails for: $8950.0\nSelling for: $6400.0",
+      "price": 6400.0,
+      "category": "tables",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-024-1.jpg",
+        "images/full/excel-item-024-2.jpg",
+        "images/full/excel-item-024-3.jpg",
+        "images/full/excel-item-024-4.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-024-1-thumb.jpg",
+        "images/thumbnails/excel-item-024-2-thumb.jpg",
+        "images/thumbnails/excel-item-024-3-thumb.jpg",
+        "images/thumbnails/excel-item-024-4-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": null,
+      "retailPrice": 8950.0
+    },
+    {
+      "id": "excel-item-025",
+      "name": "RH Italia Slope Arm Leather Bench Couch",
+      "description": "RESTORATION HADWARE Italia Slope Arm Leather Bench Couch Metal Base Custom Ordered Leather.\n\nRetails for: $12650.0\nSelling for: $4200.0",
+      "price": 4200.0,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-025-1.jpg",
+        "images/full/excel-item-025-2.jpg",
+        "images/full/excel-item-025-3.jpg",
+        "images/full/excel-item-025-4.jpg",
+        "images/full/excel-item-025-5.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-025-1-thumb.jpg",
+        "images/thumbnails/excel-item-025-2-thumb.jpg",
+        "images/thumbnails/excel-item-025-3-thumb.jpg",
+        "images/thumbnails/excel-item-025-4-thumb.jpg",
+        "images/thumbnails/excel-item-025-5-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://rh.com/catalog/category/products.jsp?categoryId=cat7150089",
+      "retailPrice": 12650.0
+    },
+    {
+      "id": "excel-item-027",
+      "name": "Platner Coffee Table",
+      "description": "Platner Coffee Table (Right side wire table with glass when you come in).\n\nRetails for: $2929.0\nSelling for: $1800.0",
+      "price": 1800.0,
+      "category": "tables",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-027-1.jpg",
+        "images/full/excel-item-027-2.jpg",
+        "images/full/excel-item-027-3.jpg",
+        "images/full/excel-item-027-4.jpg",
+        "images/full/excel-item-027-5.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-027-1-thumb.jpg",
+        "images/thumbnails/excel-item-027-2-thumb.jpg",
+        "images/thumbnails/excel-item-027-3-thumb.jpg",
+        "images/thumbnails/excel-item-027-4-thumb.jpg",
+        "images/thumbnails/excel-item-027-5-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://www.dwr.com/living-accent-coffee-tables/platner-coffee-table/100208860.html?lang=en_US&gclid=EAIaIQobChMIjtrW54-U_gIVjQStBh22agBQEAQYAyABEgK8fvD_BwE&gclsrc=aw.ds",
+      "retailPrice": 2929.0
+    },
+    {
+      "id": "excel-item-028",
+      "name": "Varnado Vegan Leather Armchair (x2)",
+      "description": "Varnado Vegan Leather Armchair.\n\nOriginal price: $$399.99/each\nSelling for: $0",
+      "price": 150,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-028-1.jpg",
+        "images/full/excel-item-028-2.jpg",
+        "images/full/excel-item-028-3.jpg",
+        "images/full/excel-item-028-4.jpg",
+        "images/full/excel-item-028-5.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-028-1-thumb.jpg",
+        "images/thumbnails/excel-item-028-2-thumb.jpg",
+        "images/thumbnails/excel-item-028-3-thumb.jpg",
+        "images/thumbnails/excel-item-028-4-thumb.jpg",
+        "images/thumbnails/excel-item-028-5-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://www.wayfair.com/furniture/pdp/ivy-bronx-varnado-2975-wide-armchair-w000183354.html?piid=1622117663"
+    },
+    {
+      "id": "excel-item-029",
+      "name": "Bertoia Asymmetric Chaise (Knoll)",
+      "description": "Bertoia Asymmetric Chaise AUTHENTIC KNOLL WITH LEATHER INSERT.\n\nRetails for: $10672.0\nSelling for: $8500.0",
+      "price": 8500.0,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-029-1.jpg",
+        "images/full/excel-item-029-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-029-1-thumb.jpg",
+        "images/thumbnails/excel-item-029-2-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://www.dwr.com/living-lounge-chairs/bertoia-asymmetric-chaise/100151126.html?lang=en_US&gclid=EAIaIQobChMIpeqH5qWU_gIVZAh9Ch1O1w4eEAQYCCABEgJ2hfD_BwE&gclsrc=aw.ds",
+      "retailPrice": 10672.0
+    },
+    {
+      "id": "excel-item-030",
+      "name": "Richard Schultz Wing Chair (Knoll 1/1)",
+      "description": "Richard Schultz Prototype for Knoll Wing Chair 1/1.\n\nRetails for: $4700.0\nSelling for: $2800.0",
+      "price": 2800.0,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-030-1.jpg",
+        "images/full/excel-item-030-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-030-1-thumb.jpg",
+        "images/thumbnails/excel-item-030-2-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://www.shealatone.com/portfolio-items/richard-schultz-wing-chair/",
+      "retailPrice": 4700.0
+    },
+    {
+      "id": "excel-item-034",
+      "name": "WaterRower Rowing Machine",
+      "description": "WaterRower Rowing Machine Model #300 S4 in Walnut Wood.\n\nRetails for: $1599.0\nSelling for: $400.0",
+      "price": 400.0,
+      "category": "other",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-034-1.jpg",
+        "images/full/excel-item-034-2.jpg",
+        "images/full/excel-item-034-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-034-1-thumb.jpg",
+        "images/thumbnails/excel-item-034-2-thumb.jpg",
+        "images/thumbnails/excel-item-034-3-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://store.moma.org/products/waterrower-rowing-machine-model-300-s4-in-walnut-wood?currency=USD?variant=42994208276710&gclid=EAIaIQobChMIi9GUlqeU_gIVpBStBh2Q2wi4EAQYBSABEgItqPD_BwE",
+      "retailPrice": 1599.0
+    },
+    {
+      "id": "excel-item-036",
+      "name": "FLOYD The Bed Frame",
+      "description": "FLOYD The Bed Frame.\n\nRetails for: $1599.0\nSelling for: $1200.0",
+      "price": 1200.0,
+      "category": "beds",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-036-1.jpg",
+        "images/full/excel-item-036-2.jpg",
+        "images/full/excel-item-036-3.jpg",
+        "images/full/excel-item-036-4.jpg",
+        "images/full/excel-item-036-5.jpg",
+        "images/full/excel-item-036-6.jpg",
+        "images/full/excel-item-036-7.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-036-1-thumb.jpg",
+        "images/thumbnails/excel-item-036-2-thumb.jpg",
+        "images/thumbnails/excel-item-036-3-thumb.jpg",
+        "images/thumbnails/excel-item-036-4-thumb.jpg",
+        "images/thumbnails/excel-item-036-5-thumb.jpg",
+        "images/thumbnails/excel-item-036-6-thumb.jpg",
+        "images/thumbnails/excel-item-036-7-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://floydhome.com/products/the-bed-frame?variant=36971988385954&gclid=EAIaIQobChMIscjkqqeU_gIVaxKtBh2d8AD6EAQYAyABEgKcjfD_BwE",
+      "retailPrice": 1599.0
+    },
+    {
+      "id": "excel-item-039",
+      "name": "Jaxon Metal Outdoor Sofas",
+      "description": "Jaxon Metal Outdoor Sofas 4 sofas total and table.\n\nRetails for: $2540.0\nSelling for: $0",
+      "price": 0.0,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-039-1.jpg",
+        "images/full/excel-item-039-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-039-1-thumb.jpg",
+        "images/thumbnails/excel-item-039-2-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://www.allmodern.com/outdoor/pdp/grey-aluminum-outdoor-3-seater-sofa-with-cushions-a000949298.html?piid=2126512877",
+      "retailPrice": 2540.0
+    },
+    {
+      "id": "excel-item-043",
+      "name": "Bubble Club Chair (Kartell)",
+      "description": "Bubble Club Chair By Philippe Starch forKartell.\n\nRetails for: $1010.0\nSelling for: $400.0",
+      "price": 400.0,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-043-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-043-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://www.patioliving.com/kartelloutdoor-bubble-club-resin-patio-lounge-chair-kao607064",
+      "retailPrice": 1010.0
+    },
+    {
+      "id": "excel-item-045",
+      "name": "Savannah Outdoor Bench",
+      "description": "Savannah Modern Classic Black Stainless Steel Base Grey Outdoor Bench.\n\nRetails for: $1099.0\nSelling for: $400.0",
+      "price": 400.0,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-045-1.jpg",
+        "images/full/excel-item-045-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-045-1-thumb.jpg",
+        "images/thumbnails/excel-item-045-2-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://www.kathykuohome.com/Product/Detail/42450-Savannah-Modern-Classic-Black-Stainless-Steel-Base-Grey-Outdoor-Bench?gclid=EAIaIQobChMI3Mqov66U_gIVbwStBh20VwAoEAQYBiABEgKd2vD_BwE",
+      "retailPrice": 1099.0
+    },
+    {
+      "id": "excel-item-046",
+      "name": "Large Wood Table with Metal X Base",
+      "description": "Large Wood Table With Metal X Base.\n\nRetails for: $1460.0\nSelling for: $200.0",
+      "price": 200.0,
+      "category": "tables",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-046-1.jpg",
+        "images/full/excel-item-046-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-046-1-thumb.jpg",
+        "images/thumbnails/excel-item-046-2-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": null,
+      "retailPrice": 1460.0
+    },
+    {
+      "id": "excel-item-048",
+      "name": "Burning Barrel",
+      "description": "Burning Barrel Dark Grey Barrel Large.\n\nRetails for: $1493.64\nSelling for: $1200.0",
+      "price": 1200.0,
+      "category": "other",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-048-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-048-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://www.burningbarrel.co.uk/?v=79cba1185463",
+      "retailPrice": 1493.64
+    },
+    {
+      "id": "excel-item-051",
+      "name": "Geo Lounge Chair Set",
+      "description": "Geo Lounge Chair Set (White Lounge Chair with leg rest).\n\nRetails for: $700.0\nSelling for: $200.0",
+      "price": 200.0,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/excel-item-051-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/excel-item-051-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateUpdated": "2026-02-24T01:21:12.000Z",
+      "productLink": "https://industrywest.com/products/geo-lounge-chair?variant=40311603953804&nbt=nb%3Aadwords%3Ax%3A19689132220%3A%3A&nb_adtype=pla&nb_kwd=&nb_ti=&nb_mi=101621302&nb_pc=online&nb_pi=40311603953804&nb_ppi=&nb_placement=&nb_si=%7Bsourceid%7D&nb_li_ms=&nb_lp_ms=&nb_fii=&nb_ap=&nb_mt=&tw_source=google&tw_adid=&tw_campaign=19689132220&gclid=EAIaIQobChMImI7AuLGU_gIVAzetBh3u0Q2TEAQYDiABEgJ15PD_BwE",
+      "retailPrice": 700.0
+    },
+    {
+      "id": "new-black-chest-of-drawers",
+      "name": "Black 5-Drawer Chest (Crate & Barrel Tate)",
+      "description": "Black 5-Drawer Chest (Crate & Barrel Tate). Price to be determined.",
+      "price": 0,
+      "category": "storage",
+      "status": "available",
+      "images": [
+        "images/full/new-black-chest-of-drawers-1.jpg",
+        "images/full/new-black-chest-of-drawers-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/new-black-chest-of-drawers-1-thumb.jpg",
+        "images/thumbnails/new-black-chest-of-drawers-2-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T01:21:12.000Z",
+      "dateUpdated": "2026-02-24T01:21:12.000Z"
+    },
+    {
+      "id": "new-black-fireplace-log-holder",
+      "name": "Black Fireplace Log Holder",
+      "description": "Black Fireplace Log Holder. Price to be determined.",
+      "price": 0,
+      "category": "decor",
+      "status": "available",
+      "images": [
+        "images/full/new-black-fireplace-log-holder-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/new-black-fireplace-log-holder-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T01:21:12.000Z",
+      "dateUpdated": "2026-02-24T01:21:12.000Z"
+    },
+    {
+      "id": "new-black-fireplace-tool-set",
+      "name": "Black Fireplace Tool Set",
+      "description": "Black Fireplace Tool Set. Price to be determined.",
+      "price": 0,
+      "category": "decor",
+      "status": "available",
+      "images": [
+        "images/full/new-black-fireplace-tool-set-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/new-black-fireplace-tool-set-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T01:21:12.000Z",
+      "dateUpdated": "2026-02-24T01:21:12.000Z"
+    },
+    {
+      "id": "new-black-leather-office-chair",
+      "name": "Black Leather Office Chair",
+      "description": "Black Leather Office Chair. Price to be determined.",
+      "price": 0,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/new-black-leather-office-chair-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/new-black-leather-office-chair-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T01:21:12.000Z",
+      "dateUpdated": "2026-02-24T01:21:12.000Z"
+    },
+    {
+      "id": "new-cream-plastic-side-table",
+      "name": "Cream Plastic Side Table",
+      "description": "Cream Plastic Side Table. Price to be determined.",
+      "price": 0,
+      "category": "tables",
+      "status": "available",
+      "images": [
+        "images/full/new-cream-plastic-side-table-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/new-cream-plastic-side-table-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T01:21:12.000Z",
+      "dateUpdated": "2026-02-24T01:21:12.000Z"
+    },
+    {
+      "id": "new-industrial-console-table",
+      "name": "Industrial Console Table",
+      "description": "Industrial Console Table. Price to be determined.",
+      "price": 0,
+      "category": "tables",
+      "status": "available",
+      "images": [
+        "images/full/new-industrial-console-table-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/new-industrial-console-table-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T01:21:12.000Z",
+      "dateUpdated": "2026-02-24T01:21:12.000Z"
+    },
+    {
+      "id": "new-walnut-bar-bookcase",
+      "name": "Walnut Bar Bookcase with Drop-Front",
+      "description": "Walnut Bar Bookcase with Drop-Front. Price to be determined.",
+      "price": 0,
+      "category": "storage",
+      "status": "available",
+      "images": [
+        "images/full/new-walnut-bar-bookcase-1.jpg",
+        "images/full/new-walnut-bar-bookcase-2.jpg",
+        "images/full/new-walnut-bar-bookcase-3.jpg",
+        "images/full/new-walnut-bar-bookcase-4.jpg",
+        "images/full/new-walnut-bar-bookcase-5.jpg",
+        "images/full/new-walnut-bar-bookcase-6.jpg",
+        "images/full/new-walnut-bar-bookcase-7.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/new-walnut-bar-bookcase-1-thumb.jpg",
+        "images/thumbnails/new-walnut-bar-bookcase-2-thumb.jpg",
+        "images/thumbnails/new-walnut-bar-bookcase-3-thumb.jpg",
+        "images/thumbnails/new-walnut-bar-bookcase-4-thumb.jpg",
+        "images/thumbnails/new-walnut-bar-bookcase-5-thumb.jpg",
+        "images/thumbnails/new-walnut-bar-bookcase-6-thumb.jpg",
+        "images/thumbnails/new-walnut-bar-bookcase-7-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T01:21:12.000Z",
+      "dateUpdated": "2026-02-24T01:21:12.000Z"
+    },
+    {
+      "id": "new-walnut-bookshelf",
+      "name": "Walnut Leaning Bookshelf",
+      "description": "Walnut Leaning Bookshelf. Price to be determined.",
+      "price": 0,
+      "category": "storage",
+      "status": "available",
+      "images": [
+        "images/full/new-walnut-bookshelf-1.jpg",
+        "images/full/new-walnut-bookshelf-2.jpg",
+        "images/full/new-walnut-bookshelf-3.jpg",
+        "images/full/new-walnut-bookshelf-4.jpg",
+        "images/full/new-walnut-bookshelf-5.jpg",
+        "images/full/new-walnut-bookshelf-6.jpg",
+        "images/full/new-walnut-bookshelf-7.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/new-walnut-bookshelf-1-thumb.jpg",
+        "images/thumbnails/new-walnut-bookshelf-2-thumb.jpg",
+        "images/thumbnails/new-walnut-bookshelf-3-thumb.jpg",
+        "images/thumbnails/new-walnut-bookshelf-4-thumb.jpg",
+        "images/thumbnails/new-walnut-bookshelf-5-thumb.jpg",
+        "images/thumbnails/new-walnut-bookshelf-6-thumb.jpg",
+        "images/thumbnails/new-walnut-bookshelf-7-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T01:21:12.000Z",
+      "dateUpdated": "2026-02-24T01:21:12.000Z"
+    },
+    {
+      "id": "new-walnut-desk",
+      "name": "Walnut Writing Desk",
+      "description": "Walnut Writing Desk. Price to be determined.",
+      "price": 0,
+      "category": "tables",
+      "status": "available",
+      "images": [
+        "images/full/new-walnut-desk-1.jpg",
+        "images/full/new-walnut-desk-2.jpg",
+        "images/full/new-walnut-desk-3.jpg",
+        "images/full/new-walnut-desk-4.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/new-walnut-desk-1-thumb.jpg",
+        "images/thumbnails/new-walnut-desk-2-thumb.jpg",
+        "images/thumbnails/new-walnut-desk-3-thumb.jpg",
+        "images/thumbnails/new-walnut-desk-4-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T01:21:12.000Z",
+      "dateUpdated": "2026-02-24T01:21:12.000Z"
+    },
+    {
+      "id": "new-walnut-media-console",
+      "name": "Walnut Media Console",
+      "description": "Walnut Media Console. Price to be determined.",
+      "price": 0,
+      "category": "storage",
+      "status": "available",
+      "images": [
+        "images/full/new-walnut-media-console-1.jpg",
+        "images/full/new-walnut-media-console-2.jpg",
+        "images/full/new-walnut-media-console-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/new-walnut-media-console-1-thumb.jpg",
+        "images/thumbnails/new-walnut-media-console-2-thumb.jpg",
+        "images/thumbnails/new-walnut-media-console-3-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T01:21:12.000Z",
+      "dateUpdated": "2026-02-24T01:21:12.000Z"
+    },
+    {
+      "id": "new-walnut-wide-bookcase",
+      "name": "Walnut Wide Bookcase",
+      "description": "Walnut Wide Bookcase. Price to be determined.",
+      "price": 0,
+      "category": "storage",
+      "status": "available",
+      "images": [
+        "images/full/new-walnut-wide-bookcase-1.jpg",
+        "images/full/new-walnut-wide-bookcase-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/new-walnut-wide-bookcase-1-thumb.jpg",
+        "images/thumbnails/new-walnut-wide-bookcase-2-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T01:21:12.000Z",
+      "dateUpdated": "2026-02-24T01:21:12.000Z"
+    },
+    {
+      "id": "new-white-desk",
+      "name": "White Desk",
+      "description": "White Desk. Price to be determined.",
+      "price": 0,
+      "category": "tables",
+      "status": "available",
+      "images": [
+        "images/full/new-white-desk-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/new-white-desk-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T01:21:12.000Z",
+      "dateUpdated": "2026-02-24T01:21:12.000Z"
+    },
+    {
+      "id": "new-white-office-chair",
+      "name": "White Office Chair",
+      "description": "White Office Chair. Price to be determined.",
+      "price": 0,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/new-white-office-chair-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/new-white-office-chair-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T01:21:12.000Z",
+      "dateUpdated": "2026-02-24T01:21:12.000Z"
     },
     {
       "id": "excel-item-007",
@@ -763,72 +922,6 @@
       "retailPrice": 1400.0
     },
     {
-      "id": "excel-item-009",
-      "name": "Knoll Authentic Womb\u2122 Chair",
-      "description": "Knoll Authentic Womb\u2122 Chair.\n\nRetails for: $5687.0\nSelling for: $4500.0",
-      "price": 4500.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/excel-items/excel-item-009_knoll-authentic-womb-chair_1.jpg",
-        "images/excel-items/excel-item-009_knoll-authentic-womb-chair_2.jpg",
-        "images/excel-items/excel-item-009_knoll-authentic-womb-chair_3.jpg"
-      ],
-      "thumbnails": [
-        "images/excel-items/excel-item-009_knoll-authentic-womb-chair_1.jpg",
-        "images/excel-items/excel-item-009_knoll-authentic-womb-chair_2.jpg",
-        "images/excel-items/excel-item-009_knoll-authentic-womb-chair_3.jpg"
-      ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.knoll.com/product/womb-chair",
-      "retailPrice": 5687.0
-    },
-    {
-      "id": "excel-item-010",
-      "name": "Case Study\u00ae Furniture 98 V-Leg Daybed Couch",
-      "description": "Case Study\u00ae Furniture 98 V-Leg Daybed Couch.\n\nRetails for: $3255.0\nSelling for: $2800.0",
-      "price": 2800.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/excel-items/excel-item-010_case-study-furniture-98-v-leg-daybed-cou_1.jpg",
-        "images/excel-items/excel-item-010_case-study-furniture-98-v-leg-daybed-cou_2.jpg",
-        "images/excel-items/excel-item-010_case-study-furniture-98-v-leg-daybed-cou_3.jpg"
-      ],
-      "thumbnails": [
-        "images/excel-items/excel-item-010_case-study-furniture-98-v-leg-daybed-cou_1.jpg",
-        "images/excel-items/excel-item-010_case-study-furniture-98-v-leg-daybed-cou_2.jpg",
-        "images/excel-items/excel-item-010_case-study-furniture-98-v-leg-daybed-cou_3.jpg"
-      ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-furniture-98-v-leg-daybed-couch",
-      "retailPrice": 3255.0
-    },
-    {
-      "id": "excel-item-011",
-      "name": "Case Study\u00ae Furniture 98 V-Leg Daybed Extension with V-leg",
-      "description": "Case Study\u00ae Furniture 98 V-Leg Daybed Extension with V-leg.\n\nRetails for: $2525.0\nSelling for: $1600.0",
-      "price": 1600.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_1.jpg",
-        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_2.jpg",
-        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_3.jpg"
-      ],
-      "thumbnails": [
-        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_1.jpg",
-        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_2.jpg",
-        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_3.jpg"
-      ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-v-leg-daybed-couch",
-      "retailPrice": 2525.0
-    },
-    {
       "id": "excel-item-012",
       "name": "Hex Carpet Under table 2nd floor KOLLUND",
       "description": "Hex Carpet Under table 2nd floor KOLLUND.\n\nRetails for: $349.99\nSelling for: $200.0",
@@ -843,20 +936,6 @@
       "retailPrice": 349.99
     },
     {
-      "id": "excel-item-013",
-      "name": "Modernist Vintage Chrome and Glass Dining Table",
-      "description": "Modernist Vintage Chrome and Glass Dining Table.\n\nRetails for: $820.0\nSelling for: $350.0",
-      "price": 350.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null,
-      "retailPrice": 820.0
-    },
-    {
       "id": "excel-item-014",
       "name": "Ping Pong Table",
       "description": "Ping Pong Table.\n\nRetails for: $399.0\nSelling for: $300.0",
@@ -869,20 +948,6 @@
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://www.amazon.com/STIGA-Advantage-Competition-Ready-Indoor-Preassembled/dp/B01JMTDZ5Q/ref=asc_df_B01JMTDZ5Q/?tag=hyprod-20&linkCode=df0&hvadid=167134282234&hvpos=&hvnetw=g&hvrand=4297347808149441009&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9031037&hvtargid=pla-305812410130&psc=1",
       "retailPrice": 399.0
-    },
-    {
-      "id": "excel-item-015",
-      "name": "TV 75\" New",
-      "description": "TV 75\" New.\n\nRetails for: $2200.0\nSelling for: $800.0\n\nProduct link: closeout sale blueprint store",
-      "price": 800.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "closeout sale blueprint store",
-      "retailPrice": 2200.0
     },
     {
       "id": "excel-item-016",
@@ -927,59 +992,6 @@
       "retailPrice": 4700.0
     },
     {
-      "id": "excel-item-019",
-      "name": "Italian Carrera Marble RECTANGULAR DINING TABLE Custom Ordered Restoration Harware",
-      "description": "Italian Carrera Marble RECTANGULAR DINING TABLE Custom Ordered Restoration Harware.\n\nRetails for: $2650.0\nSelling for: $800.0",
-      "price": 800.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://rh.com/",
-      "retailPrice": 2650.0
-    },
-    {
-      "id": "excel-item-020",
-      "name": "BLUE DOT Real Good Chair Powder Coated Steel",
-      "description": "BLUE DOT Real Good Chair Powder Coated Steel.\n\nOriginal price: $$199.00/each\nSelling for: $0",
-      "price": 0.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.bludot.com/"
-    },
-    {
-      "id": "excel-item-021",
-      "name": "VONDOM White Dinner Table Chairs with Metal Legs",
-      "description": "VONDOM White Dinner Table Chairs with Metal Legs.\n\nOriginal price: $$249.00/each\nSelling for: $0",
-      "price": 0.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.2modern.com/"
-    },
-    {
-      "id": "excel-item-022",
-      "name": "Modern Metal Bar Stools (Kitchen)",
-      "description": "Modern Metal Bar Stools (Kitchen).\n\nOriginal price: $$450/each\nSelling for: $0",
-      "price": 0.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null
-    },
-    {
       "id": "excel-item-023",
       "name": "Bello Shag Wool Rug",
       "description": "Bello Shag Wool Rug.\n\nRetails for: $1349.2\nSelling for: $800.0",
@@ -994,34 +1006,6 @@
       "retailPrice": 1349.2
     },
     {
-      "id": "excel-item-024",
-      "name": "TURBINE COFFEE TABLE w/round Glass",
-      "description": "TURBINE COFFEE TABLE w/round Glass.\n\nRetails for: $8950.0\nSelling for: $6400.0",
-      "price": 6400.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null,
-      "retailPrice": 8950.0
-    },
-    {
-      "id": "excel-item-025",
-      "name": "RESTORATION HADWARE Italia Slope Arm Leather Bench Couch Metal Base Custom Ordered Leather",
-      "description": "RESTORATION HADWARE Italia Slope Arm Leather Bench Couch Metal Base Custom Ordered Leather.\n\nRetails for: $12650.0\nSelling for: $4200.0",
-      "price": 4200.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://rh.com/catalog/category/products.jsp?categoryId=cat7150089",
-      "retailPrice": 12650.0
-    },
-    {
       "id": "excel-item-026",
       "name": "Polished Airplane Fuselage, with 5 Airplane window",
       "description": "Polished Airplane Fuselage, with 5 Airplane window.\n\nRetails for: $4826.0\nSelling for: $2500.0",
@@ -1034,77 +1018,6 @@
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": null,
       "retailPrice": 4826.0
-    },
-    {
-      "id": "excel-item-027",
-      "name": "Platner Coffee Table (Right side wire table with glass when you come in)",
-      "description": "Platner Coffee Table (Right side wire table with glass when you come in).\n\nRetails for: $2929.0\nSelling for: $1800.0",
-      "price": 1800.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/excel-items/excel-item-027_platner-coffee-table-right-side-wire-tab_1.jpg",
-        "images/excel-items/excel-item-027_platner-coffee-table-right-side-wire-tab_2.jpg",
-        "images/excel-items/excel-item-027_platner-coffee-table-right-side-wire-tab_3.jpg"
-      ],
-      "thumbnails": [
-        "images/excel-items/excel-item-027_platner-coffee-table-right-side-wire-tab_1.jpg",
-        "images/excel-items/excel-item-027_platner-coffee-table-right-side-wire-tab_2.jpg",
-        "images/excel-items/excel-item-027_platner-coffee-table-right-side-wire-tab_3.jpg"
-      ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.dwr.com/living-accent-coffee-tables/platner-coffee-table/100208860.html?lang=en_US&gclid=EAIaIQobChMIjtrW54-U_gIVjQStBh22agBQEAQYAyABEgK8fvD_BwE&gclsrc=aw.ds",
-      "retailPrice": 2929.0
-    },
-    {
-      "id": "excel-item-028",
-      "name": "Varnado Vegan Leather Armchair",
-      "description": "Varnado Vegan Leather Armchair.\n\nOriginal price: $$399.99/each\nSelling for: $0",
-      "price": 0.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.wayfair.com/furniture/pdp/ivy-bronx-varnado-2975-wide-armchair-w000183354.html?piid=1622117663"
-    },
-    {
-      "id": "excel-item-029",
-      "name": "Bertoia Asymmetric Chaise AUTHENTIC KNOLL WITH LEATHER INSERT",
-      "description": "Bertoia Asymmetric Chaise AUTHENTIC KNOLL WITH LEATHER INSERT.\n\nRetails for: $10672.0\nSelling for: $8500.0",
-      "price": 8500.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/excel-items/excel-item-029_bertoia-asymmetric-chaise-authentic-knol_1.jpg",
-        "images/excel-items/excel-item-029_bertoia-asymmetric-chaise-authentic-knol_2.jpg",
-        "images/excel-items/excel-item-029_bertoia-asymmetric-chaise-authentic-knol_3.jpg"
-      ],
-      "thumbnails": [
-        "images/excel-items/excel-item-029_bertoia-asymmetric-chaise-authentic-knol_1.jpg",
-        "images/excel-items/excel-item-029_bertoia-asymmetric-chaise-authentic-knol_2.jpg",
-        "images/excel-items/excel-item-029_bertoia-asymmetric-chaise-authentic-knol_3.jpg"
-      ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.dwr.com/living-lounge-chairs/bertoia-asymmetric-chaise/100151126.html?lang=en_US&gclid=EAIaIQobChMIpeqH5qWU_gIVZAh9Ch1O1w4eEAQYCCABEgJ2hfD_BwE&gclsrc=aw.ds",
-      "retailPrice": 10672.0
-    },
-    {
-      "id": "excel-item-030",
-      "name": "Richard Schultz Prototype for Knoll Wing Chair 1/1",
-      "description": "Richard Schultz Prototype for Knoll Wing Chair 1/1.\n\nRetails for: $4700.0\nSelling for: $2800.0",
-      "price": 2800.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.shealatone.com/portfolio-items/richard-schultz-wing-chair/",
-      "retailPrice": 4700.0
     },
     {
       "id": "excel-item-031",
@@ -1157,28 +1070,6 @@
       "retailPrice": 995.0
     },
     {
-      "id": "excel-item-034",
-      "name": "WaterRower Rowing Machine Model #300 S4 in Walnut Wood",
-      "description": "WaterRower Rowing Machine Model #300 S4 in Walnut Wood.\n\nRetails for: $1599.0\nSelling for: $400.0",
-      "price": 400.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/excel-items/excel-item-034_waterrower-rowing-machine-model-300-s4-i_1.jpg",
-        "images/excel-items/excel-item-034_waterrower-rowing-machine-model-300-s4-i_2.jpg",
-        "images/excel-items/excel-item-034_waterrower-rowing-machine-model-300-s4-i_3.jpg"
-      ],
-      "thumbnails": [
-        "images/excel-items/excel-item-034_waterrower-rowing-machine-model-300-s4-i_1.jpg",
-        "images/excel-items/excel-item-034_waterrower-rowing-machine-model-300-s4-i_2.jpg",
-        "images/excel-items/excel-item-034_waterrower-rowing-machine-model-300-s4-i_3.jpg"
-      ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://store.moma.org/products/waterrower-rowing-machine-model-300-s4-in-walnut-wood?currency=USD?variant=42994208276710&gclid=EAIaIQobChMIi9GUlqeU_gIVpBStBh2Q2wi4EAQYBSABEgItqPD_BwE",
-      "retailPrice": 1599.0
-    },
-    {
       "id": "excel-item-035",
       "name": "Aluminimum Bike Rack Guest Bedroom",
       "description": "Aluminimum Bike Rack Guest Bedroom.\n\nRetails for: $120.0\nSelling for: $80.0",
@@ -1191,28 +1082,6 @@
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": null,
       "retailPrice": 120.0
-    },
-    {
-      "id": "excel-item-036",
-      "name": "FLOYD The Bed Frame",
-      "description": "FLOYD The Bed Frame.\n\nRetails for: $1599.0\nSelling for: $1200.0",
-      "price": 1200.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/excel-items/excel-item-036_floyd-the-bed-frame_1.jpg",
-        "images/excel-items/excel-item-036_floyd-the-bed-frame_2.jpg",
-        "images/excel-items/excel-item-036_floyd-the-bed-frame_3.jpg"
-      ],
-      "thumbnails": [
-        "images/excel-items/excel-item-036_floyd-the-bed-frame_1.jpg",
-        "images/excel-items/excel-item-036_floyd-the-bed-frame_2.jpg",
-        "images/excel-items/excel-item-036_floyd-the-bed-frame_3.jpg"
-      ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://floydhome.com/products/the-bed-frame?variant=36971988385954&gclid=EAIaIQobChMIscjkqqeU_gIVaxKtBh2d8AD6EAQYAyABEgKcjfD_BwE",
-      "retailPrice": 1599.0
     },
     {
       "id": "excel-item-037",
@@ -1245,20 +1114,6 @@
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://www.walmart.com/ip/Ikea-Rocking-chair-428-20829-1818/298419101",
       "retailPrice": 587.0
-    },
-    {
-      "id": "excel-item-039",
-      "name": "Jaxon Metal Outdoor Sofas 4 sofas total and table",
-      "description": "Jaxon Metal Outdoor Sofas 4 sofas total and table.\n\nRetails for: $2540.0\nSelling for: $0",
-      "price": 0.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.allmodern.com/outdoor/pdp/grey-aluminum-outdoor-3-seater-sofa-with-cushions-a000949298.html?piid=2126512877",
-      "retailPrice": 2540.0
     },
     {
       "id": "excel-item-040",
@@ -1303,28 +1158,6 @@
       "retailPrice": 285.0
     },
     {
-      "id": "excel-item-043",
-      "name": "Bubble Club Chair By Philippe Starch forKartell",
-      "description": "Bubble Club Chair By Philippe Starch forKartell.\n\nRetails for: $1010.0\nSelling for: $400.0",
-      "price": 400.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/excel-items/excel-item-043_bubble-club-chair-by-philippe-starch-for_1.jpg",
-        "images/excel-items/excel-item-043_bubble-club-chair-by-philippe-starch-for_2.jpg",
-        "images/excel-items/excel-item-043_bubble-club-chair-by-philippe-starch-for_3.jpg"
-      ],
-      "thumbnails": [
-        "images/excel-items/excel-item-043_bubble-club-chair-by-philippe-starch-for_1.jpg",
-        "images/excel-items/excel-item-043_bubble-club-chair-by-philippe-starch-for_2.jpg",
-        "images/excel-items/excel-item-043_bubble-club-chair-by-philippe-starch-for_3.jpg"
-      ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.patioliving.com/kartelloutdoor-bubble-club-resin-patio-lounge-chair-kao607064",
-      "retailPrice": 1010.0
-    },
-    {
       "id": "excel-item-044",
       "name": "Large Ceramic Pot with Cactus",
       "description": "Large Ceramic Pot with Cactus.\n\nRetails for: $450.0\nSelling for: $50.0",
@@ -1339,34 +1172,6 @@
       "retailPrice": 450.0
     },
     {
-      "id": "excel-item-045",
-      "name": "Savannah Modern Classic Black Stainless Steel Base Grey Outdoor Bench",
-      "description": "Savannah Modern Classic Black Stainless Steel Base Grey Outdoor Bench.\n\nRetails for: $1099.0\nSelling for: $400.0",
-      "price": 400.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.kathykuohome.com/Product/Detail/42450-Savannah-Modern-Classic-Black-Stainless-Steel-Base-Grey-Outdoor-Bench?gclid=EAIaIQobChMI3Mqov66U_gIVbwStBh20VwAoEAQYBiABEgKd2vD_BwE",
-      "retailPrice": 1099.0
-    },
-    {
-      "id": "excel-item-046",
-      "name": "Large Wood Table With Metal X Base",
-      "description": "Large Wood Table With Metal X Base.\n\nRetails for: $1460.0\nSelling for: $200.0",
-      "price": 200.0,
-      "category": "other",
-      "status": "available",
-      "images": [],
-      "thumbnails": [],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": null,
-      "retailPrice": 1460.0
-    },
-    {
       "id": "excel-item-047",
       "name": "Folding Garden Chairs 2 pcs Solid Teak Wood - Brown",
       "description": "Folding Garden Chairs 2 pcs Solid Teak Wood - Brown.\n\nRetails for: $212.24/each\nSelling for: $0",
@@ -1379,26 +1184,6 @@
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://www.overstock.com/c/outdoor-dining-furniture/outdoor-dining-chairs?t=7926&featuredproduct=35111535&featuredoption=67221056&ci_sku=39317484-000-000&cnc=US&srsltid=AfAwrE4JPX4a9nIyMq4i8oVEBvyuShK1AqLu3OFo-nrrBIRgIlmjxtBJJxQ",
       "retailPrice": 212.24
-    },
-    {
-      "id": "excel-item-048",
-      "name": "Burning Barrel Dark Grey Barrel Large",
-      "description": "Burning Barrel Dark Grey Barrel Large.\n\nRetails for: $1493.64\nSelling for: $1200.0",
-      "price": 1200.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/excel-items/excel-item-048_burning-barrel-dark-grey-barrel-large_2.jpg",
-        "images/excel-items/excel-item-048_burning-barrel-dark-grey-barrel-large_3.jpg"
-      ],
-      "thumbnails": [
-        "images/excel-items/excel-item-048_burning-barrel-dark-grey-barrel-large_2.jpg",
-        "images/excel-items/excel-item-048_burning-barrel-dark-grey-barrel-large_3.jpg"
-      ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://www.burningbarrel.co.uk/?v=79cba1185463",
-      "retailPrice": 1493.64
     },
     {
       "id": "excel-item-049",
@@ -1437,28 +1222,6 @@
       "retailPrice": 1833.0
     },
     {
-      "id": "excel-item-051",
-      "name": "Geo Lounge Chair Set (White Lounge Chair with leg rest)",
-      "description": "Geo Lounge Chair Set (White Lounge Chair with leg rest).\n\nRetails for: $700.0\nSelling for: $200.0",
-      "price": 200.0,
-      "category": "other",
-      "status": "available",
-      "images": [
-        "images/excel-items/excel-item-051_geo-lounge-chair-set-white-lounge-chair-_1.jpg",
-        "images/excel-items/excel-item-051_geo-lounge-chair-set-white-lounge-chair-_2.jpg",
-        "images/excel-items/excel-item-051_geo-lounge-chair-set-white-lounge-chair-_3.jpg"
-      ],
-      "thumbnails": [
-        "images/excel-items/excel-item-051_geo-lounge-chair-set-white-lounge-chair-_1.jpg",
-        "images/excel-items/excel-item-051_geo-lounge-chair-set-white-lounge-chair-_2.jpg",
-        "images/excel-items/excel-item-051_geo-lounge-chair-set-white-lounge-chair-_3.jpg"
-      ],
-      "hidden": true,
-      "dateUpdated": "2026-02-20T16:48:11.000Z",
-      "productLink": "https://industrywest.com/products/geo-lounge-chair?variant=40311603953804&nbt=nb%3Aadwords%3Ax%3A19689132220%3A%3A&nb_adtype=pla&nb_kwd=&nb_ti=&nb_mi=101621302&nb_pc=online&nb_pi=40311603953804&nb_ppi=&nb_placement=&nb_si=%7Bsourceid%7D&nb_li_ms=&nb_lp_ms=&nb_fii=&nb_ap=&nb_mt=&tw_source=google&tw_adid=&tw_campaign=19689132220&gclid=EAIaIQobChMImI7AuLGU_gIVAzetBh3u0Q2TEAQYDiABEgJ15PD_BwE",
-      "retailPrice": 700.0
-    },
-    {
       "id": "excel-item-052",
       "name": "Modern Adirondack Chairs 2 Under Tree",
       "description": "Modern Adirondack Chairs 2 Under Tree.\n\nRetails for: $249.0\nSelling for: $100.0",
@@ -1479,7 +1242,28 @@
       "dateUpdated": "2026-02-20T16:48:11.000Z",
       "productLink": "https://www.polywood.com/modern-adirondack-chair-ad420.html?polywood_frame_color=47&gclid=EAIaIQobChMIz4GQ6bGU_gIVJiCtBh2kTwLUEAQYAyABEgJTUvD_BwE",
       "retailPrice": 249.0
+    },
+    {
+      "id": "excel-item-011",
+      "name": "Case Study\u00ae Furniture 98 V-Leg Daybed Extension with V-leg",
+      "description": "Case Study\u00ae Furniture 98 V-Leg Daybed Extension with V-leg.\n\nRetails for: $2525.0\nSelling for: $1600.0",
+      "price": 1600.0,
+      "category": "other",
+      "status": "available",
+      "images": [
+        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_1.jpg",
+        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_2.jpg",
+        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_3.jpg"
+      ],
+      "thumbnails": [
+        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_1.jpg",
+        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_2.jpg",
+        "images/excel-items/excel-item-011_case-study-furniture-98-v-leg-daybed-ext_3.jpg"
+      ],
+      "hidden": true,
+      "dateUpdated": "2026-02-20T16:48:11.000Z",
+      "productLink": "https://modernica.net/collections/couch/products/case-study%C2%AE-v-leg-daybed-couch",
+      "retailPrice": 2525.0
     }
-  ],
-  "lastUpdated": "2026-02-20T16:48:11.000Z"
+  ]
 }
