@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "items": [
     {
       "id": "item-001",
@@ -1153,8 +1153,8 @@
     },
     {
       "id": "item-054",
-      "name": "Walnut Leaning Bookshelf",
-      "description": "Walnut Leaning Bookshelf",
+      "name": "Tate Walnut Storage Bookshelf by Crate & Barrel",
+      "description": "Tate Walnut Storage Bookshelf by Crate & Barrel. 1960s-inspired walnut veneer bookshelf designed by Blake Tovin. Solid poplar plywood with natural walnut finish, 3 fixed and 2 adjustable shelves. 22\"W x 14.5\"D x 75.5\"H.",
       "price": 0,
       "category": "storage",
       "status": "available",
@@ -1178,12 +1178,14 @@
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:45:21.000Z",
-      "dateUpdated": "2026-02-24T05:45:21.000Z"
+      "dateUpdated": "2026-02-24T05:45:21.000Z",
+      "retailPrice": 799,
+      "productLink": "https://www.crateandbarrel.com/tate-walnut-storage-bookshelf/s296807"
     },
     {
       "id": "item-055",
-      "name": "Walnut Bar Bookcase with Drop-Front",
-      "description": "Walnut Bar Bookcase with Drop-Front",
+      "name": "Tate 36\" Walnut Bookcase Bar Cabinet by Crate & Barrel",
+      "description": "Tate 36\" Walnut Bookcase Bar Cabinet by Crate & Barrel. Features flanking open shelves alongside a flat-front door that drops down to reveal wine glass rack, glass shelf, mirrored back, and bottle storage. Walnut veneer over poplar plywood. 36\"W x 14.5\"D x 75.5\"H. Designed by Blake Tovin.",
       "price": 0,
       "category": "storage",
       "status": "available",
@@ -1207,12 +1209,14 @@
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:45:21.000Z",
-      "dateUpdated": "2026-02-24T05:45:21.000Z"
+      "dateUpdated": "2026-02-24T05:45:21.000Z",
+      "retailPrice": 1399,
+      "productLink": "https://www.crateandbarrel.com/tate-36-walnut-bookcase-bar-cabinet/s127492"
     },
     {
       "id": "item-056",
-      "name": "Walnut Writing Desk",
-      "description": "Walnut Writing Desk",
+      "name": "Tate Walnut Desk with Outlet by Crate & Barrel",
+      "description": "Tate Walnut Desk with Outlet by Crate & Barrel. Mid-century inspired walnut desk with integrated power strip (2 USB + 2 three-prong outlets). Clean-lined design with tapered legs. Designed by Blake Tovin.",
       "price": 0,
       "category": "tables",
       "status": "available",
@@ -1230,12 +1234,14 @@
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:45:21.000Z",
-      "dateUpdated": "2026-02-24T05:45:21.000Z"
+      "dateUpdated": "2026-02-24T05:45:21.000Z",
+      "retailPrice": 699,
+      "productLink": "https://www.crateandbarrel.com/tate-48-walnut-desk-with-outlet/s115449"
     },
     {
       "id": "item-057",
-      "name": "Walnut Media Console",
-      "description": "Walnut Media Console",
+      "name": "Tate 80\" Walnut Storage Media Console by Crate & Barrel",
+      "description": "Tate 80\" Walnut Storage Media Console by Crate & Barrel. 1960s-inspired media console/credenza with open and closed shelving for electronics and media. Naturally finished walnut veneer with clean architectural lines. 80\"W x 16\"D x 30\"H. Designed by Blake Tovin.",
       "price": 0,
       "category": "storage",
       "status": "available",
@@ -1251,12 +1257,14 @@
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:45:21.000Z",
-      "dateUpdated": "2026-02-24T05:45:21.000Z"
+      "dateUpdated": "2026-02-24T05:45:21.000Z",
+      "retailPrice": 1799,
+      "productLink": "https://www.crateandbarrel.com/tate-80-walnut-storage-media-console/s120037"
     },
     {
       "id": "item-058",
-      "name": "Walnut Wide Bookcase",
-      "description": "Walnut Wide Bookcase",
+      "name": "Tate 36\" Walnut Wide Bookcase by Crate & Barrel",
+      "description": "Tate 36\" Walnut Wide Bookcase by Crate & Barrel. Wide walnut veneer bookcase with natural walnut finish over solid poplar plywood. 3 fixed and 2 adjustable shelves with levelers. 36\"W x 14.5\"D x 75.5\"H. Designed by Blake Tovin.",
       "price": 0,
       "category": "storage",
       "status": "available",
@@ -1270,12 +1278,14 @@
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:45:21.000Z",
-      "dateUpdated": "2026-02-24T05:45:21.000Z"
+      "dateUpdated": "2026-02-24T05:45:21.000Z",
+      "retailPrice": 999,
+      "productLink": "https://www.crateandbarrel.com/tate-walnut-wide-bookcase/f87560"
     },
     {
       "id": "item-059",
-      "name": "Black 5-Drawer Chest (Crate & Barrel Tate)",
-      "description": "Black 5-Drawer Chest (Crate & Barrel Tate)",
+      "name": "Tate 32\" Black 5-Drawer Tall Dresser by Crate & Barrel",
+      "description": "Tate 32\" Black 5-Drawer Tall Dresser by Crate & Barrel. One small top drawer stacked on four large drawers. Ash and hardwood veneers finished in ebonized black. Gallery fronts, linear undercut drawer pulls, and tapered turned legs. 31.89\"W x 20\"D x 50.75\"H. Designed by Blake Tovin.",
       "price": 0,
       "category": "storage",
       "status": "available",
@@ -1289,7 +1299,9 @@
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:45:21.000Z",
-      "dateUpdated": "2026-02-24T05:45:21.000Z"
+      "dateUpdated": "2026-02-24T05:45:21.000Z",
+      "retailPrice": 1399,
+      "productLink": "https://www.crateandbarrel.com/tate-32-black-5-drawer-tall-dresser/s112916"
     },
     {
       "id": "item-060",
