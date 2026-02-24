@@ -5,6 +5,7 @@
 
 const FurnitureData = {
   STORAGE_KEY: 'furniture_items',
+  VERSION_KEY: 'furniture_version',
 
   /**
    * Load all furniture items from localStorage
@@ -25,46 +26,58 @@ const FurnitureData = {
   },
 
   /**
-   * Initialize data - seeds localStorage from furniture.json if empty
-   * Call this before using loadItems() on page load
+   * Get the stored data version from localStorage
+   * @returns {number} Stored version number, or 0 if not set
+   */
+  getStoredVersion() {
+    try {
+      return parseInt(localStorage.getItem(this.VERSION_KEY) || '0', 10);
+    } catch (error) {
+      return 0;
+    }
+  },
+
+  /**
+   * Initialize data from furniture.json.
+   * Uses version-based sync: when furniture.json version changes,
+   * localStorage is fully replaced. Between version changes,
+   * admin edits in localStorage are preserved.
    * @returns {Promise<Array>} Array of furniture items
    */
   async init() {
-    const existing = this.loadItems();
-
-    // Always check furniture.json for new items
     try {
       const response = await fetch('data/furniture.json');
       if (response.ok) {
         const data = await response.json();
         const jsonItems = data.items || [];
+        const jsonVersion = data.version || 0;
+        const storedVersion = this.getStoredVersion();
 
-        if (existing.length === 0) {
-          // localStorage empty - seed entirely from JSON
-          if (jsonItems.length > 0) {
-            this.saveItems(jsonItems);
-            console.log('Seeded localStorage with', jsonItems.length, 'items from furniture.json');
-          }
+        if (jsonVersion > storedVersion) {
+          // New version: replace localStorage entirely
+          this.saveItems(jsonItems);
+          localStorage.setItem(this.VERSION_KEY, String(jsonVersion));
+          console.log(`furniture.json updated (v${storedVersion} → v${jsonVersion}). Replaced localStorage with ${jsonItems.length} items.`);
           return jsonItems;
         }
 
-        // Merge: add any items from JSON that don't exist in localStorage
-        const existingIds = new Set(existing.map(item => item.id));
-        const newItems = jsonItems.filter(item => !existingIds.has(item.id));
-
-        if (newItems.length > 0) {
-          const merged = existing.concat(newItems);
-          this.saveItems(merged);
-          console.log('Merged', newItems.length, 'new items from furniture.json. Total:', merged.length);
-          return merged;
+        // Same version: use localStorage (preserves admin edits)
+        const existing = this.loadItems();
+        if (existing.length > 0) {
+          return existing;
         }
 
-        return existing;
+        // localStorage empty but version matches (cleared manually) — re-seed
+        this.saveItems(jsonItems);
+        console.log('Re-seeded localStorage with', jsonItems.length, 'items from furniture.json');
+        return jsonItems;
       }
     } catch (error) {
       console.error('Error loading furniture.json:', error);
     }
 
+    // Fallback to localStorage if fetch fails
+    const existing = this.loadItems();
     return existing.length > 0 ? existing : [];
   },
 
@@ -83,7 +96,6 @@ const FurnitureData = {
       return true;
     } catch (error) {
       console.error('Error saving furniture items:', error);
-      // Check if quota exceeded
       if (error.name === 'QuotaExceededError') {
         alert('Storage quota exceeded. Please reduce the number or size of images.');
       }
