@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "items": [
     {
       "id": "item-001",
@@ -1070,6 +1070,265 @@
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
       "retailPrice": 840
+    },
+    {
+      "id": "item-054",
+      "name": "Walnut Leaning Bookshelf",
+      "description": "Walnut Leaning Bookshelf",
+      "price": 0,
+      "category": "storage",
+      "status": "available",
+      "images": [
+        "images/full/item-054-1.jpg",
+        "images/full/item-054-2.jpg",
+        "images/full/item-054-3.jpg",
+        "images/full/item-054-4.jpg",
+        "images/full/item-054-5.jpg",
+        "images/full/item-054-6.jpg",
+        "images/full/item-054-7.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-054-1-thumb.jpg",
+        "images/thumbnails/item-054-2-thumb.jpg",
+        "images/thumbnails/item-054-3-thumb.jpg",
+        "images/thumbnails/item-054-4-thumb.jpg",
+        "images/thumbnails/item-054-5-thumb.jpg",
+        "images/thumbnails/item-054-6-thumb.jpg",
+        "images/thumbnails/item-054-7-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:45:21.000Z",
+      "dateUpdated": "2026-02-24T05:45:21.000Z"
+    },
+    {
+      "id": "item-055",
+      "name": "Walnut Bar Bookcase with Drop-Front",
+      "description": "Walnut Bar Bookcase with Drop-Front",
+      "price": 0,
+      "category": "storage",
+      "status": "available",
+      "images": [
+        "images/full/item-055-1.jpg",
+        "images/full/item-055-2.jpg",
+        "images/full/item-055-3.jpg",
+        "images/full/item-055-4.jpg",
+        "images/full/item-055-5.jpg",
+        "images/full/item-055-6.jpg",
+        "images/full/item-055-7.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-055-1-thumb.jpg",
+        "images/thumbnails/item-055-2-thumb.jpg",
+        "images/thumbnails/item-055-3-thumb.jpg",
+        "images/thumbnails/item-055-4-thumb.jpg",
+        "images/thumbnails/item-055-5-thumb.jpg",
+        "images/thumbnails/item-055-6-thumb.jpg",
+        "images/thumbnails/item-055-7-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:45:21.000Z",
+      "dateUpdated": "2026-02-24T05:45:21.000Z"
+    },
+    {
+      "id": "item-056",
+      "name": "Walnut Writing Desk",
+      "description": "Walnut Writing Desk",
+      "price": 0,
+      "category": "tables",
+      "status": "available",
+      "images": [
+        "images/full/item-056-1.jpg",
+        "images/full/item-056-2.jpg",
+        "images/full/item-056-3.jpg",
+        "images/full/item-056-4.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-056-1-thumb.jpg",
+        "images/thumbnails/item-056-2-thumb.jpg",
+        "images/thumbnails/item-056-3-thumb.jpg",
+        "images/thumbnails/item-056-4-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:45:21.000Z",
+      "dateUpdated": "2026-02-24T05:45:21.000Z"
+    },
+    {
+      "id": "item-057",
+      "name": "Walnut Media Console",
+      "description": "Walnut Media Console",
+      "price": 0,
+      "category": "storage",
+      "status": "available",
+      "images": [
+        "images/full/item-057-1.jpg",
+        "images/full/item-057-2.jpg",
+        "images/full/item-057-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-057-1-thumb.jpg",
+        "images/thumbnails/item-057-2-thumb.jpg",
+        "images/thumbnails/item-057-3-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:45:21.000Z",
+      "dateUpdated": "2026-02-24T05:45:21.000Z"
+    },
+    {
+      "id": "item-058",
+      "name": "Walnut Wide Bookcase",
+      "description": "Walnut Wide Bookcase",
+      "price": 0,
+      "category": "storage",
+      "status": "available",
+      "images": [
+        "images/full/item-058-1.jpg",
+        "images/full/item-058-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-058-1-thumb.jpg",
+        "images/thumbnails/item-058-2-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:45:21.000Z",
+      "dateUpdated": "2026-02-24T05:45:21.000Z"
+    },
+    {
+      "id": "item-059",
+      "name": "Black 5-Drawer Chest (Crate & Barrel Tate)",
+      "description": "Black 5-Drawer Chest (Crate & Barrel Tate)",
+      "price": 0,
+      "category": "storage",
+      "status": "available",
+      "images": [
+        "images/full/item-059-1.jpg",
+        "images/full/item-059-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-059-1-thumb.jpg",
+        "images/thumbnails/item-059-2-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:45:21.000Z",
+      "dateUpdated": "2026-02-24T05:45:21.000Z"
+    },
+    {
+      "id": "item-060",
+      "name": "Black Fireplace Log Holder",
+      "description": "Black Fireplace Log Holder",
+      "price": 0,
+      "category": "decor",
+      "status": "available",
+      "images": [
+        "images/full/item-060-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-060-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:45:21.000Z",
+      "dateUpdated": "2026-02-24T05:45:21.000Z"
+    },
+    {
+      "id": "item-061",
+      "name": "Black Fireplace Tool Set",
+      "description": "Black Fireplace Tool Set",
+      "price": 0,
+      "category": "decor",
+      "status": "available",
+      "images": [
+        "images/full/item-061-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-061-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:45:21.000Z",
+      "dateUpdated": "2026-02-24T05:45:21.000Z"
+    },
+    {
+      "id": "item-062",
+      "name": "Industrial Console Table",
+      "description": "Industrial Console Table",
+      "price": 0,
+      "category": "tables",
+      "status": "available",
+      "images": [
+        "images/full/item-062-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-062-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:45:21.000Z",
+      "dateUpdated": "2026-02-24T05:45:21.000Z"
+    },
+    {
+      "id": "item-063",
+      "name": "Cream Plastic Side Table",
+      "description": "Cream Plastic Side Table",
+      "price": 0,
+      "category": "tables",
+      "status": "available",
+      "images": [
+        "images/full/item-063-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-063-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:45:21.000Z",
+      "dateUpdated": "2026-02-24T05:45:21.000Z"
+    },
+    {
+      "id": "item-064",
+      "name": "White Desk",
+      "description": "White Desk",
+      "price": 0,
+      "category": "tables",
+      "status": "available",
+      "images": [
+        "images/full/item-064-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-064-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:45:21.000Z",
+      "dateUpdated": "2026-02-24T05:45:21.000Z"
+    },
+    {
+      "id": "item-065",
+      "name": "White Office Chair",
+      "description": "White Office Chair",
+      "price": 0,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/item-065-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-065-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:45:21.000Z",
+      "dateUpdated": "2026-02-24T05:45:21.000Z"
+    },
+    {
+      "id": "item-066",
+      "name": "Black Leather Office Chair",
+      "description": "Black Leather Office Chair",
+      "price": 0,
+      "category": "seating",
+      "status": "available",
+      "images": [
+        "images/full/item-066-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-066-1-thumb.jpg"
+      ],
+      "hidden": false,
+      "dateAdded": "2026-02-24T05:45:21.000Z",
+      "dateUpdated": "2026-02-24T05:45:21.000Z"
     }
   ]
 }
