@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "items": [
     {
       "id": "item-001",
@@ -65,8 +65,14 @@
       "price": 4100,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-005-1.jpg",
+        "images/full/item-005-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-005-1-thumb.jpg",
+        "images/thumbnails/item-005-2-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -80,8 +86,22 @@
       "price": 2200,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-006-1.jpg",
+        "images/full/item-006-2.jpg",
+        "images/full/item-006-3.jpg",
+        "images/full/item-006-4.jpg",
+        "images/full/item-006-5.jpg",
+        "images/full/item-006-6.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-006-1-thumb.jpg",
+        "images/thumbnails/item-006-2-thumb.jpg",
+        "images/thumbnails/item-006-3-thumb.jpg",
+        "images/thumbnails/item-006-4-thumb.jpg",
+        "images/thumbnails/item-006-5-thumb.jpg",
+        "images/thumbnails/item-006-6-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -95,8 +115,16 @@
       "price": 150,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-007-1.jpg",
+        "images/full/item-007-2.jpg",
+        "images/full/item-007-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-007-1-thumb.jpg",
+        "images/thumbnails/item-007-2-thumb.jpg",
+        "images/thumbnails/item-007-3-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -110,8 +138,12 @@
       "price": 300,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-008-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-008-1-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -125,8 +157,14 @@
       "price": 500,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-009-1.jpg",
+        "images/full/item-009-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-009-1-thumb.jpg",
+        "images/thumbnails/item-009-2-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -155,8 +193,12 @@
       "price": 800,
       "category": "outdoor",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-011-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-011-1-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -170,8 +212,20 @@
       "price": 1500,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-012-1.jpg",
+        "images/full/item-012-2.jpg",
+        "images/full/item-012-3.jpg",
+        "images/full/item-012-4.jpg",
+        "images/full/item-012-5.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-012-1-thumb.jpg",
+        "images/thumbnails/item-012-2-thumb.jpg",
+        "images/thumbnails/item-012-3-thumb.jpg",
+        "images/thumbnails/item-012-4-thumb.jpg",
+        "images/thumbnails/item-012-5-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -185,8 +239,20 @@
       "price": 1500,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-013-1.jpg",
+        "images/full/item-013-2.jpg",
+        "images/full/item-013-3.jpg",
+        "images/full/item-013-4.jpg",
+        "images/full/item-013-5.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-013-1-thumb.jpg",
+        "images/thumbnails/item-013-2-thumb.jpg",
+        "images/thumbnails/item-013-3-thumb.jpg",
+        "images/thumbnails/item-013-4-thumb.jpg",
+        "images/thumbnails/item-013-5-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -200,8 +266,14 @@
       "price": 500,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-014-1.jpg",
+        "images/full/item-014-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-014-1-thumb.jpg",
+        "images/thumbnails/item-014-2-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -215,8 +287,14 @@
       "price": 300,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-015-1.jpg",
+        "images/full/item-015-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-015-1-thumb.jpg",
+        "images/thumbnails/item-015-2-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -230,8 +308,12 @@
       "price": 150,
       "category": "tables",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-016-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-016-1-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -272,8 +354,20 @@
       "price": 1500,
       "category": "tables",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-019-1.jpg",
+        "images/full/item-019-2.jpg",
+        "images/full/item-019-3.jpg",
+        "images/full/item-019-4.jpg",
+        "images/full/item-019-5.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-019-1-thumb.jpg",
+        "images/thumbnails/item-019-2-thumb.jpg",
+        "images/thumbnails/item-019-3-thumb.jpg",
+        "images/thumbnails/item-019-4-thumb.jpg",
+        "images/thumbnails/item-019-5-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -286,8 +380,22 @@
       "price": 650,
       "category": "beds",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-020-1.jpg",
+        "images/full/item-020-2.jpg",
+        "images/full/item-020-3.jpg",
+        "images/full/item-020-4.jpg",
+        "images/full/item-020-5.jpg",
+        "images/full/item-020-6.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-020-1-thumb.jpg",
+        "images/thumbnails/item-020-2-thumb.jpg",
+        "images/thumbnails/item-020-3-thumb.jpg",
+        "images/thumbnails/item-020-4-thumb.jpg",
+        "images/thumbnails/item-020-5-thumb.jpg",
+        "images/thumbnails/item-020-6-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -301,8 +409,22 @@
       "price": 700,
       "category": "beds",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-021-1.jpg",
+        "images/full/item-021-2.jpg",
+        "images/full/item-021-3.jpg",
+        "images/full/item-021-4.jpg",
+        "images/full/item-021-5.jpg",
+        "images/full/item-021-6.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-021-1-thumb.jpg",
+        "images/thumbnails/item-021-2-thumb.jpg",
+        "images/thumbnails/item-021-3-thumb.jpg",
+        "images/thumbnails/item-021-4-thumb.jpg",
+        "images/thumbnails/item-021-5-thumb.jpg",
+        "images/thumbnails/item-021-6-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -316,8 +438,22 @@
       "price": 700,
       "category": "beds",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-022-1.jpg",
+        "images/full/item-022-2.jpg",
+        "images/full/item-022-3.jpg",
+        "images/full/item-022-4.jpg",
+        "images/full/item-022-5.jpg",
+        "images/full/item-022-6.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-022-1-thumb.jpg",
+        "images/thumbnails/item-022-2-thumb.jpg",
+        "images/thumbnails/item-022-3-thumb.jpg",
+        "images/thumbnails/item-022-4-thumb.jpg",
+        "images/thumbnails/item-022-5-thumb.jpg",
+        "images/thumbnails/item-022-6-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -345,8 +481,12 @@
       "price": 100,
       "category": "outdoor",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-024-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-024-1-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -387,8 +527,14 @@
       "price": 3000,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-027-1.jpg",
+        "images/full/item-027-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-027-1-thumb.jpg",
+        "images/thumbnails/item-027-2-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -401,8 +547,20 @@
       "price": 4000,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-028-1.jpg",
+        "images/full/item-028-2.jpg",
+        "images/full/item-028-3.jpg",
+        "images/full/item-028-4.jpg",
+        "images/full/item-028-5.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-028-1-thumb.jpg",
+        "images/thumbnails/item-028-2-thumb.jpg",
+        "images/thumbnails/item-028-3-thumb.jpg",
+        "images/thumbnails/item-028-4-thumb.jpg",
+        "images/thumbnails/item-028-5-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -416,8 +574,14 @@
       "price": 400,
       "category": "outdoor",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-029-1.jpg",
+        "images/full/item-029-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-029-1-thumb.jpg",
+        "images/thumbnails/item-029-2-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -445,8 +609,14 @@
       "price": 0,
       "category": "tables",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-031-1.jpg",
+        "images/full/item-031-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-031-1-thumb.jpg",
+        "images/thumbnails/item-031-2-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -459,8 +629,16 @@
       "price": 3500,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-032-1.jpg",
+        "images/full/item-032-2.jpg",
+        "images/full/item-032-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-032-1-thumb.jpg",
+        "images/thumbnails/item-032-2-thumb.jpg",
+        "images/thumbnails/item-032-3-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -488,8 +666,14 @@
       "price": 500,
       "category": "electronics",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-034-1.jpg",
+        "images/full/item-034-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-034-1-thumb.jpg",
+        "images/thumbnails/item-034-2-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -517,8 +701,16 @@
       "price": 200,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-036-1.jpg",
+        "images/full/item-036-2.jpg",
+        "images/full/item-036-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-036-1-thumb.jpg",
+        "images/thumbnails/item-036-2-thumb.jpg",
+        "images/thumbnails/item-036-3-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z"
@@ -543,8 +735,20 @@
       "price": 1400,
       "category": "tables",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-038-1.jpg",
+        "images/full/item-038-2.jpg",
+        "images/full/item-038-3.jpg",
+        "images/full/item-038-4.jpg",
+        "images/full/item-038-5.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-038-1-thumb.jpg",
+        "images/thumbnails/item-038-2-thumb.jpg",
+        "images/thumbnails/item-038-3-thumb.jpg",
+        "images/thumbnails/item-038-4-thumb.jpg",
+        "images/thumbnails/item-038-5-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -572,8 +776,14 @@
       "price": 600,
       "category": "beds",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-040-1.jpg",
+        "images/full/item-040-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-040-1-thumb.jpg",
+        "images/thumbnails/item-040-2-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -587,8 +797,14 @@
       "price": 650,
       "category": "beds",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-041-1.jpg",
+        "images/full/item-041-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-041-1-thumb.jpg",
+        "images/thumbnails/item-041-2-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -602,8 +818,14 @@
       "price": 650,
       "category": "beds",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-042-1.jpg",
+        "images/full/item-042-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-042-1-thumb.jpg",
+        "images/thumbnails/item-042-2-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -617,8 +839,20 @@
       "price": 600,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-043-1.jpg",
+        "images/full/item-043-2.jpg",
+        "images/full/item-043-3.jpg",
+        "images/full/item-043-4.jpg",
+        "images/full/item-043-5.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-043-1-thumb.jpg",
+        "images/thumbnails/item-043-2-thumb.jpg",
+        "images/thumbnails/item-043-3-thumb.jpg",
+        "images/thumbnails/item-043-4-thumb.jpg",
+        "images/thumbnails/item-043-5-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -661,8 +895,14 @@
       "price": 400,
       "category": "outdoor",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-046-1.jpg",
+        "images/full/item-046-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-046-1-thumb.jpg",
+        "images/thumbnails/item-046-2-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -676,8 +916,18 @@
       "price": 3200,
       "category": "tables",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-047-1.jpg",
+        "images/full/item-047-2.jpg",
+        "images/full/item-047-3.jpg",
+        "images/full/item-047-4.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-047-1-thumb.jpg",
+        "images/thumbnails/item-047-2-thumb.jpg",
+        "images/thumbnails/item-047-3-thumb.jpg",
+        "images/thumbnails/item-047-4-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -690,8 +940,20 @@
       "price": 150,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-048-1.jpg",
+        "images/full/item-048-2.jpg",
+        "images/full/item-048-3.jpg",
+        "images/full/item-048-4.jpg",
+        "images/full/item-048-5.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-048-1-thumb.jpg",
+        "images/thumbnails/item-048-2-thumb.jpg",
+        "images/thumbnails/item-048-3-thumb.jpg",
+        "images/thumbnails/item-048-4-thumb.jpg",
+        "images/thumbnails/item-048-5-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -705,8 +967,20 @@
       "price": 150,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-049-1.jpg",
+        "images/full/item-049-2.jpg",
+        "images/full/item-049-3.jpg",
+        "images/full/item-049-4.jpg",
+        "images/full/item-049-5.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-049-1-thumb.jpg",
+        "images/thumbnails/item-049-2-thumb.jpg",
+        "images/thumbnails/item-049-3-thumb.jpg",
+        "images/thumbnails/item-049-4-thumb.jpg",
+        "images/thumbnails/item-049-5-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -734,8 +1008,22 @@
       "price": 600,
       "category": "seating",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-051-1.jpg",
+        "images/full/item-051-2.jpg",
+        "images/full/item-051-3.jpg",
+        "images/full/item-051-4.jpg",
+        "images/full/item-051-5.jpg",
+        "images/full/item-051-6.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-051-1-thumb.jpg",
+        "images/thumbnails/item-051-2-thumb.jpg",
+        "images/thumbnails/item-051-3-thumb.jpg",
+        "images/thumbnails/item-051-4-thumb.jpg",
+        "images/thumbnails/item-051-5-thumb.jpg",
+        "images/thumbnails/item-051-6-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -749,8 +1037,16 @@
       "price": 350,
       "category": "other",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-052-1.jpg",
+        "images/full/item-052-2.jpg",
+        "images/full/item-052-3.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-052-1-thumb.jpg",
+        "images/thumbnails/item-052-2-thumb.jpg",
+        "images/thumbnails/item-052-3-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
@@ -764,8 +1060,12 @@
       "price": 100,
       "category": "tables",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-053-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-053-1-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
