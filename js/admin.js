@@ -119,6 +119,14 @@ const AdminPanel = {
     document.getElementById('saveItemBtn').addEventListener('click', () => this.saveItem());
     document.getElementById('cancelFormBtn').addEventListener('click', () => this.hideItemForm());
 
+    // Auto-check B.O. when price is blank or 0
+    document.getElementById('itemPrice').addEventListener('input', (e) => {
+      const val = parseFloat(e.target.value);
+      if (!e.target.value || val === 0) {
+        document.getElementById('itemBestOffer').checked = true;
+      }
+    });
+
     // Image upload
     document.getElementById('imageUpload').addEventListener('change', (e) => this.handleImageUpload(e));
 
@@ -335,7 +343,7 @@ const AdminPanel = {
     document.getElementById('itemPrice').value = item ? item.price : '';
     document.getElementById('itemRetailPrice').value = item && item.retailPrice ? item.retailPrice : '';
     document.getElementById('itemProductLink').value = item && item.productLink ? item.productLink : '';
-    document.getElementById('itemBestOffer').checked = item ? !!item.bestOffer : false;
+    document.getElementById('itemBestOffer').checked = item ? (!!item.bestOffer || !item.price || item.price === 0) : false;
     document.getElementById('itemStatus').value = item ? item.status : 'available';
 
     // Clear file input
