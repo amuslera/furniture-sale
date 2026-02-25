@@ -778,3 +778,50 @@ tr:hover {
   height: 16px;
   cursor: pointer;
 }
+
+/* Best Offer badge in table */
+.bo-cell {
+  text-align: center;
+}
+
+.bo-badge {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  color: #ccc;
+  transition: all 0.2s;
+}
+
+.bo-badge.bo-active {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.bo-badge:hover {
+  transform: scale(1.15);
+}
+
+/* Best Offer toggle in edit form */
+.best-offer-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+
+.best-offer-toggle input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}

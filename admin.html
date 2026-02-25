@@ -34,6 +34,7 @@
       </div>
       <div class="header-actions">
         <button id="exportPdfBtn" class="btn btn-secondary" disabled>Export PDF</button>
+        <button id="toggleBoBtn" class="btn btn-secondary" disabled>Toggle B.O.</button>
         <button id="publishBtn" class="btn btn-primary">📤 Publish Changes</button>
         <button id="exportDataBtn" class="btn btn-secondary">Export Data</button>
         <button id="importDataBtn" class="btn btn-secondary">Import Data</button>
@@ -69,6 +70,7 @@
               <th class="sortable" data-sort="name">Name <span class="sort-icon"></span></th>
               <th>Description</th>
               <th class="sortable" data-sort="price" style="width: 100px;">Price <span class="sort-icon"></span></th>
+              <th style="width: 45px;" title="Best Offer">B.O.</th>
               <th class="sortable" data-sort="status" style="width: 130px;">Status <span class="sort-icon"></span></th>
               <th class="sortable" data-sort="dateUpdated" style="width: 150px;">Last Edit <span class="sort-icon"></span></th>
               <th style="width: 180px;">Actions</th>
@@ -76,7 +78,7 @@
           </thead>
           <tbody>
             <tr>
-              <td colspan="9" class="no-items">Loading...</td>
+              <td colspan="10" class="no-items">Loading...</td>
             </tr>
           </tbody>
         </table>
@@ -111,17 +113,20 @@
           ></textarea>
         </div>
 
-        <!-- Price -->
+        <!-- Price + Best Offer -->
         <div class="form-group">
-          <label for="itemPrice">Selling Price ($) *</label>
+          <label for="itemPrice">Selling Price ($)</label>
           <input
             type="number"
             id="itemPrice"
             placeholder="250"
             min="0"
             step="0.01"
-            required
           >
+          <label class="best-offer-toggle">
+            <input type="checkbox" id="itemBestOffer"> Best Offer / OBO
+          </label>
+          <small style="color: #666; margin-top: 5px; display: block;">Leave blank with Best Offer for "Make Your Offer" in catalog</small>
         </div>
 
         <!-- Retail Price -->

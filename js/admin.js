@@ -21,64 +21,39 @@ const AdminPanel = {
    * Initialize the admin panel
    */
   async init() {
-    // Check authentication
     if (!this.checkAuth()) {
       this.showLoginForm();
       return;
     }
-
-    // Seed localStorage from furniture.json if empty
     await FurnitureData.init();
-
-    // Show admin panel
     this.showAdminPanel();
     this.loadItemsTable();
     this.attachEventListeners();
   },
 
-  /**
-   * Check if user is authenticated
-   */
   checkAuth() {
-    const auth = sessionStorage.getItem(this.AUTH_KEY);
-    return auth === 'true';
+    return sessionStorage.getItem(this.AUTH_KEY) === 'true';
   },
 
-  /**
-   * Show login form
-   */
   showLoginForm() {
     document.getElementById('loginSection').style.display = 'flex';
     document.getElementById('adminSection').style.display = 'none';
-
     const loginBtn = document.getElementById('loginBtn');
     const passwordInput = document.getElementById('passwordInput');
-
     loginBtn.addEventListener('click', () => this.handleLogin());
     passwordInput.addEventListener('keypress', (e) => {
-      if (e.key === 'Enter') {
-        this.handleLogin();
-      }
+      if (e.key === 'Enter') this.handleLogin();
     });
-
-    // Focus password input
     passwordInput.focus();
   },
 
-  /**
-   * Handle login attempt
-   */
   async handleLogin() {
     const password = document.getElementById('passwordInput').value;
     const errorMsg = document.getElementById('loginError');
-
     if (password === this.ADMIN_PASSWORD) {
       sessionStorage.setItem(this.AUTH_KEY, 'true');
       errorMsg.style.display = 'none';
-
-      // Seed localStorage from furniture.json if empty
       await FurnitureData.init();
-
       this.showAdminPanel();
       this.loadItemsTable();
       this.attachEventListeners();
@@ -89,86 +64,65 @@ const AdminPanel = {
     }
   },
 
-  /**
-   * Show admin panel
-   */
   showAdminPanel() {
     document.getElementById('loginSection').style.display = 'none';
     document.getElementById('adminSection').style.display = 'block';
     this.updateStorageInfo();
   },
 
-  /**
-   * Logout user
-   */
   logout() {
     sessionStorage.removeItem(this.AUTH_KEY);
     location.reload();
   },
 
-  /**
-   * Attach event listeners
-   */
   attachEventListeners() {
-    // Logout button
     document.getElementById('logoutBtn').addEventListener('click', () => this.logout());
-
-    // Add new item button
     document.getElementById('addNewBtn').addEventListener('click', () => this.showItemForm());
-
-    // Form buttons
     document.getElementById('saveItemBtn').addEventListener('click', () => this.saveItem());
     document.getElementById('cancelFormBtn').addEventListener('click', () => this.hideItemForm());
-
-    // Image upload
     document.getElementById('imageUpload').addEventListener('change', (e) => this.handleImageUpload(e));
-
-    // Export/Import/Publish
     document.getElementById('publishBtn').addEventListener('click', () => this.publishChanges());
     document.getElementById('exportDataBtn').addEventListener('click', () => this.exportData());
     document.getElementById('importDataBtn').addEventListener('click', () => this.importData());
 
-    // Visibility filter
     document.getElementById('visibilityFilter').addEventListener('change', (e) => {
       this.visibilityFilter = e.target.value;
       this.clearSelection();
       this.loadItemsTable();
     });
 
-    // Export PDF button
-    document.getElementById('exportPdfBtn').addEventListener('click', () => this.showPdfFieldModal());
-
-    // PDF modal buttons
-    document.getElementById('generatePdfBtn').addEventListener('click', () => this.generatePdf());
-    document.getElementById('cancelPdfBtn').addEventListener('click', () => this.hidePdfFieldModal());
-
-    // Select all checkbox
+    // Selection & bulk actions
     document.getElementById('selectAllCheckbox').addEventListener('change', (e) => {
       this.toggleSelectAll(e.target.checked);
     });
+    document.getElementById('exportPdfBtn').addEventListener('click', () => this.showPdfFieldModal());
+    document.getElementById('toggleBoBtn').addEventListener('click', () => this.bulkToggleBestOffer());
+
+    // PDF modal
+    document.getElementById('generatePdfBtn').addEventListener('click', () => this.generatePdf());
+    document.getElementById('cancelPdfBtn').addEventListener('click', () => this.hidePdfFieldModal());
   },
 
-  /**
-   * Load items into table
-   */
+  // ══════════════════════════════════════════════════════════════
+  // TABLE
+  // ══════════════════════════════════════════════════════════════
+
   loadItemsTable(sortBy = null, sortOrder = 'asc') {
     let items = FurnitureData.loadItems();
     const tbody = document.querySelector('#itemsTable tbody');
 
     if (items.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="9" class="no-items">No items yet. Click "Add New Item" to get started.</td></tr>';
-      this.updateExportButtonState();
+      tbody.innerHTML = '<tr><td colspan="10" class="no-items">No items yet. Click "Add New Item" to get started.</td></tr>';
+      this.updateBulkButtonStates();
       return;
     }
 
-    // Apply visibility filter
     if (this.visibilityFilter === 'visible') {
       items = items.filter(item => !item.hidden);
     } else if (this.visibilityFilter === 'hidden') {
       items = items.filter(item => item.hidden === true);
     }
 
-    // Sort items if specified
     if (sortBy) {
       items = this.sortItems(items, sortBy, sortOrder);
     }
@@ -176,6 +130,7 @@ const AdminPanel = {
     tbody.innerHTML = items.map((item, index) => {
       const isHidden = item.hidden === true;
       const lastEdit = item.dateUpdated ? new Date(item.dateUpdated).toLocaleDateString() + ' ' + new Date(item.dateUpdated).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'}) : 'N/A';
+      const priceDisplay = (item.price && item.price > 0) ? `$${item.price.toFixed(2)}` : (item.bestOffer ? 'B.O.' : '$0.00');
 
       return `
       <tr class="${isHidden ? 'hidden-item' : ''}">
@@ -188,7 +143,10 @@ const AdminPanel = {
         </td>
         <td><strong>${this.escapeHtml(item.name)}</strong>${isHidden ? ' <span class="hidden-badge">Hidden</span>' : ''}</td>
         <td class="description-cell">${this.escapeHtml(item.description).substring(0, 100)}${item.description.length > 100 ? '...' : ''}</td>
-        <td>$${item.price.toFixed(2)}</td>
+        <td>${priceDisplay}</td>
+        <td class="bo-cell">
+          <span class="bo-badge ${item.bestOffer ? 'bo-active' : ''}" onclick="AdminPanel.quickToggleBestOffer('${item.id}')" title="Click to toggle Best Offer">${item.bestOffer ? '\u2713' : ''}</span>
+        </td>
         <td>
           <select class="status-select status-${item.status}" onchange="AdminPanel.quickStatusUpdate('${item.id}', this.value)">
             <option value="available" ${item.status === 'available' ? 'selected' : ''}>Available</option>
@@ -206,14 +164,13 @@ const AdminPanel = {
       </tr>
     `}).join('');
 
-    // Update item count display
+    // Update item count
     const countEl = document.getElementById('itemCount');
     if (countEl) {
       const allItems = FurnitureData.loadItems();
       const totalCount = allItems.length;
       const visibleCount = allItems.filter(i => !i.hidden).length;
       const hiddenCount = allItems.filter(i => i.hidden).length;
-
       if (this.visibilityFilter === 'all') {
         countEl.textContent = `(${totalCount} total${hiddenCount > 0 ? ', ' + hiddenCount + ' hidden' : ''})`;
       } else if (this.visibilityFilter === 'visible') {
@@ -226,24 +183,18 @@ const AdminPanel = {
     this.updateStorageInfo();
     this.attachSortListeners();
 
-    // Attach checkbox listeners
     document.querySelectorAll('.item-select-checkbox').forEach(cb => {
       cb.addEventListener('change', (e) => {
         this.toggleSelectItem(e.target.dataset.id, e.target.checked);
       });
     });
-    this.updateExportButtonState();
+    this.updateBulkButtonStates();
   },
 
-  /**
-   * Sort items by field
-   */
   sortItems(items, field, order = 'asc') {
     return items.sort((a, b) => {
       let aVal = a[field];
       let bVal = b[field];
-
-      // Handle different data types
       if (field === 'price') {
         aVal = parseFloat(aVal) || 0;
         bVal = parseFloat(bVal) || 0;
@@ -254,16 +205,12 @@ const AdminPanel = {
         aVal = (aVal || '').toString().toLowerCase();
         bVal = (bVal || '').toString().toLowerCase();
       }
-
       if (aVal < bVal) return order === 'asc' ? -1 : 1;
       if (aVal > bVal) return order === 'asc' ? 1 : -1;
       return 0;
     });
   },
 
-  /**
-   * Attach sort listeners to table headers
-   */
   attachSortListeners() {
     const sortableHeaders = document.querySelectorAll('.sortable');
     sortableHeaders.forEach(header => {
@@ -272,37 +219,25 @@ const AdminPanel = {
         const field = header.dataset.sort;
         const currentOrder = header.dataset.order || 'asc';
         const newOrder = currentOrder === 'asc' ? 'desc' : 'asc';
-
-        // Update all headers
         sortableHeaders.forEach(h => {
           h.dataset.order = '';
           h.querySelector('.sort-icon').textContent = '';
         });
-
-        // Update clicked header
         header.dataset.order = newOrder;
-        header.querySelector('.sort-icon').textContent = newOrder === 'asc' ? ' ▲' : ' ▼';
-
-        // Reload table with sorting
+        header.querySelector('.sort-icon').textContent = newOrder === 'asc' ? ' \u25b2' : ' \u25bc';
         this.loadItemsTable(field, newOrder);
       };
     });
   },
 
-  /**
-   * Duplicate an item
-   */
+  // ══════════════════════════════════════════════════════════════
+  // ITEM CRUD
+  // ══════════════════════════════════════════════════════════════
+
   duplicateItem(id) {
     const item = FurnitureData.getItemById(id);
     if (!item) return;
-
-    const newItem = {
-      ...item,
-      id: FurnitureData.generateId(),
-      name: item.name + ' (Copy)',
-      dateUpdated: new Date().toISOString()
-    };
-
+    const newItem = { ...item, id: FurnitureData.generateId(), name: item.name + ' (Copy)', dateUpdated: new Date().toISOString() };
     if (FurnitureData.addItem(newItem)) {
       this.showMessage('Item duplicated successfully', 'success');
       this.loadItemsTable();
@@ -311,73 +246,71 @@ const AdminPanel = {
     }
   },
 
-  /**
-   * Toggle hidden status of an item
-   */
   toggleHidden(id) {
     const item = FurnitureData.getItemById(id);
     if (!item) return;
-
     item.hidden = !item.hidden;
     if (FurnitureData.updateItem(id, item)) {
       this.showMessage(item.hidden ? 'Item hidden from public view' : 'Item is now visible', 'success');
       this.loadItemsTable();
-    } else {
-      this.showMessage('Failed to update visibility', 'error');
     }
   },
 
-  /**
-   * Quick status update from table
-   */
   quickStatusUpdate(id, newStatus) {
     const item = FurnitureData.getItemById(id);
     if (!item) return;
-
     item.status = newStatus;
     if (FurnitureData.updateItem(id, item)) {
-      this.showMessage('Status updated successfully', 'success');
+      this.showMessage('Status updated', 'success');
       this.updateStorageInfo();
-    } else {
-      this.showMessage('Failed to update status', 'error');
     }
   },
 
-  /**
-   * Show item form for adding/editing
-   */
+  quickToggleBestOffer(id) {
+    const item = FurnitureData.getItemById(id);
+    if (!item) return;
+    item.bestOffer = !item.bestOffer;
+    if (FurnitureData.updateItem(id, item)) {
+      this.showMessage(item.bestOffer ? 'Best Offer enabled' : 'Best Offer disabled', 'success');
+      this.loadItemsTable();
+    }
+  },
+
+  bulkToggleBestOffer() {
+    const allItems = FurnitureData.loadItems();
+    const selected = allItems.filter(item => this.selectedItems.has(item.id));
+    if (selected.length === 0) return;
+    const anyOff = selected.some(item => !item.bestOffer);
+    selected.forEach(item => {
+      item.bestOffer = anyOff;
+      FurnitureData.updateItem(item.id, item);
+    });
+    this.showMessage(`Best Offer ${anyOff ? 'enabled' : 'disabled'} for ${selected.length} item${selected.length !== 1 ? 's' : ''}`, 'success');
+    this.loadItemsTable();
+  },
+
+  // ══════════════════════════════════════════════════════════════
+  // ITEM FORM
+  // ══════════════════════════════════════════════════════════════
+
   showItemForm(item = null) {
     this.currentEditId = item ? item.id : null;
     this.uploadedImages = item && item.images ? [...item.images] : [];
-
-    // Update form title
     document.getElementById('formTitle').textContent = item ? 'Edit Item' : 'Add New Item';
-
-    // Populate form fields
     document.getElementById('itemName').value = item ? item.name : '';
     document.getElementById('itemDescription').value = item ? item.description : '';
-    document.getElementById('itemPrice').value = item ? item.price : '';
+    document.getElementById('itemPrice').value = item && item.price ? item.price : '';
+    document.getElementById('itemBestOffer').checked = item ? (item.bestOffer === true) : false;
     document.getElementById('itemRetailPrice').value = item && item.retailPrice ? item.retailPrice : '';
     document.getElementById('itemProductLink').value = item && item.productLink ? item.productLink : '';
     document.getElementById('itemStatus').value = item ? item.status : 'available';
-
-    // Clear file input
     document.getElementById('imageUpload').value = '';
-
-    // Show uploaded images
     this.renderUploadedImages();
-
-    // Show form
     document.getElementById('itemFormSection').style.display = 'block';
     document.getElementById('itemsListSection').style.display = 'none';
-
-    // Focus first field
     document.getElementById('itemName').focus();
   },
 
-  /**
-   * Hide item form
-   */
   hideItemForm() {
     document.getElementById('itemFormSection').style.display = 'none';
     document.getElementById('itemsListSection').style.display = 'block';
@@ -385,25 +318,13 @@ const AdminPanel = {
     this.uploadedImages = [];
   },
 
-  /**
-   * Handle image upload
-   */
   async handleImageUpload(event) {
     const files = Array.from(event.target.files);
-
     if (files.length === 0) return;
-
     this.showMessage('Processing images...', 'info');
-
     for (const file of files) {
       try {
-        // Check file type
-        if (!file.type.startsWith('image/')) {
-          this.showMessage(`${file.name} is not an image`, 'error');
-          continue;
-        }
-
-        // Process image
+        if (!file.type.startsWith('image/')) { this.showMessage(`${file.name} is not an image`, 'error'); continue; }
         const processedImage = await this.processImage(file);
         this.uploadedImages.push(processedImage);
       } catch (error) {
@@ -411,206 +332,133 @@ const AdminPanel = {
         this.showMessage(`Failed to process ${file.name}`, 'error');
       }
     }
-
     this.renderUploadedImages();
     this.showMessage(`${files.length} image(s) added`, 'success');
-
-    // Clear input
     event.target.value = '';
   },
 
-  /**
-   * Process and optimize image
-   */
   processImage(file) {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
-
       reader.onload = (e) => {
         const img = new Image();
-
         img.onload = () => {
           try {
-            // Calculate new dimensions
-            let width = img.width;
-            let height = img.height;
-
+            let width = img.width, height = img.height;
             if (width > this.MAX_IMAGE_WIDTH) {
               height = (height * this.MAX_IMAGE_WIDTH) / width;
               width = this.MAX_IMAGE_WIDTH;
             }
-
-            // Create canvas and resize
             const canvas = document.createElement('canvas');
-            canvas.width = width;
-            canvas.height = height;
-
-            const ctx = canvas.getContext('2d');
-            ctx.drawImage(img, 0, 0, width, height);
-
-            // Compress image
+            canvas.width = width; canvas.height = height;
+            canvas.getContext('2d').drawImage(img, 0, 0, width, height);
             let quality = 0.8;
             let dataUrl = canvas.toDataURL('image/jpeg', quality);
-
-            // Reduce quality if still too large
             while (dataUrl.length > this.MAX_FILE_SIZE * 1.37 && quality > 0.1) {
               quality -= 0.1;
               dataUrl = canvas.toDataURL('image/jpeg', quality);
             }
-
             resolve(dataUrl);
-          } catch (error) {
-            reject(error);
-          }
+          } catch (error) { reject(error); }
         };
-
         img.onerror = reject;
         img.src = e.target.result;
       };
-
       reader.onerror = reject;
       reader.readAsDataURL(file);
     });
   },
 
-  /**
-   * Render uploaded images preview
-   */
   renderUploadedImages() {
     const container = document.getElementById('imagePreview');
-
     if (this.uploadedImages.length === 0) {
       container.innerHTML = '<p class="no-images-text">No images uploaded yet</p>';
       return;
     }
-
     container.innerHTML = this.uploadedImages.map((img, index) => `
       <div class="image-preview-item" draggable="true" data-index="${index}">
         <img src="${img}" alt="Preview ${index + 1}">
         <div class="image-controls">
-          <button type="button" class="move-image-btn" onclick="AdminPanel.moveImage(${index}, -1)" ${index === 0 ? 'disabled' : ''}>◀</button>
-          <button type="button" class="move-image-btn" onclick="AdminPanel.moveImage(${index}, 1)" ${index === this.uploadedImages.length - 1 ? 'disabled' : ''}>▶</button>
-          <button type="button" class="remove-image-btn" onclick="AdminPanel.removeImage(${index})">×</button>
+          <button type="button" class="move-image-btn" onclick="AdminPanel.moveImage(${index}, -1)" ${index === 0 ? 'disabled' : ''}>\u25c0</button>
+          <button type="button" class="move-image-btn" onclick="AdminPanel.moveImage(${index}, 1)" ${index === this.uploadedImages.length - 1 ? 'disabled' : ''}>\u25b6</button>
+          <button type="button" class="remove-image-btn" onclick="AdminPanel.removeImage(${index})">\u00d7</button>
         </div>
         ${index === 0 ? '<span class="primary-badge">Primary</span>' : ''}
       </div>
     `).join('');
-
-    // Add drag and drop listeners
     this.attachImageDragListeners();
   },
 
-  /**
-   * Move an image in the array
-   */
   moveImage(fromIndex, direction) {
     const toIndex = fromIndex + direction;
     if (toIndex < 0 || toIndex >= this.uploadedImages.length) return;
-
-    // Swap images
-    [this.uploadedImages[fromIndex], this.uploadedImages[toIndex]] =
-      [this.uploadedImages[toIndex], this.uploadedImages[fromIndex]];
-
+    [this.uploadedImages[fromIndex], this.uploadedImages[toIndex]] = [this.uploadedImages[toIndex], this.uploadedImages[fromIndex]];
     this.renderUploadedImages();
     this.showMessage('Image order updated', 'info');
   },
 
-  /**
-   * Attach drag and drop listeners for image reordering
-   */
   attachImageDragListeners() {
     const items = document.querySelectorAll('.image-preview-item');
     let draggedIndex = null;
-
     items.forEach((item, index) => {
-      item.addEventListener('dragstart', (e) => {
-        draggedIndex = index;
-        item.classList.add('dragging');
-      });
-
-      item.addEventListener('dragend', (e) => {
-        item.classList.remove('dragging');
-      });
-
-      item.addEventListener('dragover', (e) => {
-        e.preventDefault();
-        item.classList.add('drag-over');
-      });
-
-      item.addEventListener('dragleave', (e) => {
-        item.classList.remove('drag-over');
-      });
-
+      item.addEventListener('dragstart', () => { draggedIndex = index; item.classList.add('dragging'); });
+      item.addEventListener('dragend', () => { item.classList.remove('dragging'); });
+      item.addEventListener('dragover', (e) => { e.preventDefault(); item.classList.add('drag-over'); });
+      item.addEventListener('dragleave', () => { item.classList.remove('drag-over'); });
       item.addEventListener('drop', (e) => {
-        e.preventDefault();
-        item.classList.remove('drag-over');
-
+        e.preventDefault(); item.classList.remove('drag-over');
         if (draggedIndex !== null && draggedIndex !== index) {
-          // Reorder images
           const draggedImage = this.uploadedImages[draggedIndex];
           this.uploadedImages.splice(draggedIndex, 1);
           this.uploadedImages.splice(index, 0, draggedImage);
           this.renderUploadedImages();
-          this.showMessage('Image order updated', 'info');
         }
         draggedIndex = null;
       });
     });
   },
 
-  /**
-   * Remove an uploaded image
-   */
   removeImage(index) {
     this.uploadedImages.splice(index, 1);
     this.renderUploadedImages();
     this.showMessage('Image removed', 'info');
   },
 
-  /**
-   * Validate form data
-   */
   validateForm() {
     const name = document.getElementById('itemName').value.trim();
     const description = document.getElementById('itemDescription').value.trim();
     const price = parseFloat(document.getElementById('itemPrice').value);
+    const bestOffer = document.getElementById('itemBestOffer').checked;
 
     if (!name) {
       this.showMessage('Please enter item name', 'error');
       document.getElementById('itemName').focus();
       return false;
     }
-
     if (!description) {
       this.showMessage('Please enter item description', 'error');
       document.getElementById('itemDescription').focus();
       return false;
     }
-
-    if (isNaN(price) || price < 0) {
-      this.showMessage('Please enter a valid price', 'error');
+    if (!bestOffer && (isNaN(price) || price < 0)) {
+      this.showMessage('Please enter a valid price or enable Best Offer', 'error');
       document.getElementById('itemPrice').focus();
       return false;
     }
-
-    // Images are optional - placeholder will be shown if none provided
-
     return true;
   },
 
-  /**
-   * Save item (add or update)
-   */
   saveItem() {
     if (!this.validateForm()) return;
-
     const retailPrice = document.getElementById('itemRetailPrice').value;
     const productLink = document.getElementById('itemProductLink').value.trim();
+    const priceVal = document.getElementById('itemPrice').value;
 
     const itemData = {
       name: document.getElementById('itemName').value.trim(),
       description: document.getElementById('itemDescription').value.trim(),
-      price: parseFloat(document.getElementById('itemPrice').value),
+      price: priceVal ? parseFloat(priceVal) : 0,
+      bestOffer: document.getElementById('itemBestOffer').checked,
       retailPrice: retailPrice ? parseFloat(retailPrice) : null,
       productLink: productLink || null,
       status: document.getElementById('itemStatus').value,
@@ -619,11 +467,9 @@ const AdminPanel = {
 
     let success;
     if (this.currentEditId) {
-      // Update existing item
       itemData.dateAdded = FurnitureData.getItemById(this.currentEditId).dateAdded;
       success = FurnitureData.updateItem(this.currentEditId, itemData);
     } else {
-      // Add new item
       itemData.id = FurnitureData.generateId();
       itemData.dateAdded = new Date().toISOString();
       itemData.dateUpdated = new Date().toISOString();
@@ -639,46 +485,31 @@ const AdminPanel = {
     }
   },
 
-  /**
-   * Edit item
-   */
   editItem(id) {
     const item = FurnitureData.getItemById(id);
-    if (item) {
-      this.showItemForm(item);
-    } else {
-      this.showMessage('Item not found', 'error');
-    }
+    if (item) this.showItemForm(item);
+    else this.showMessage('Item not found', 'error');
   },
 
-  /**
-   * Delete item
-   */
   deleteItem(id) {
     const item = FurnitureData.getItemById(id);
-    if (!item) {
-      this.showMessage('Item not found', 'error');
-      return;
-    }
-
+    if (!item) { this.showMessage('Item not found', 'error'); return; }
     if (confirm(`Are you sure you want to delete "${item.name}"? This cannot be undone.`)) {
       if (FurnitureData.deleteItem(id)) {
         this.showMessage('Item deleted successfully', 'success');
         this.loadItemsTable();
-      } else {
-        this.showMessage('Failed to delete item', 'error');
       }
     }
   },
 
-  // GitHub publish config
+  // ══════════════════════════════════════════════════════════════
+  // PUBLISH / EXPORT / IMPORT
+  // ══════════════════════════════════════════════════════════════
+
   GITHUB_REPO: 'amuslera/furniture-sale',
   GITHUB_FILE: 'data/furniture.json',
   GITHUB_TOKEN_KEY: 'furniture_github_token',
 
-  /**
-   * Publish changes - commit furniture.json directly to GitHub
-   */
   async publishChanges() {
     let token = localStorage.getItem(this.GITHUB_TOKEN_KEY);
     if (!token) {
@@ -686,72 +517,38 @@ const AdminPanel = {
       if (!token) return;
       localStorage.setItem(this.GITHUB_TOKEN_KEY, token);
     }
-
     this.showMessage('Publishing to GitHub...', 'info');
     const publishBtn = document.getElementById('publishBtn');
     publishBtn.disabled = true;
-    publishBtn.textContent = '⏳ Publishing...';
-
+    publishBtn.textContent = '\u23f3 Publishing...';
     try {
-      // Get current file SHA (required for updates)
-      const getResp = await fetch(
-        `https://api.github.com/repos/${this.GITHUB_REPO}/contents/${this.GITHUB_FILE}`,
-        { headers: { 'Authorization': `token ${token}` } }
-      );
+      const getResp = await fetch(`https://api.github.com/repos/${this.GITHUB_REPO}/contents/${this.GITHUB_FILE}`, { headers: { 'Authorization': `token ${token}` } });
       if (!getResp.ok) {
-        if (getResp.status === 401) {
-          localStorage.removeItem(this.GITHUB_TOKEN_KEY);
-          throw new Error('Invalid token. Please try again.');
-        }
+        if (getResp.status === 401) { localStorage.removeItem(this.GITHUB_TOKEN_KEY); throw new Error('Invalid token. Please try again.'); }
         throw new Error(`GitHub API error: ${getResp.status}`);
       }
       const fileData = await getResp.json();
-
-      // Build new furniture.json with version bump
       const items = FurnitureData.loadItems();
       const storedVersion = FurnitureData.getStoredVersion();
       const newVersion = storedVersion + 1;
-      const newData = { version: newVersion, items: items };
-      const jsonStr = JSON.stringify(newData, null, 2);
-
-      // Commit to GitHub
-      const putResp = await fetch(
-        `https://api.github.com/repos/${this.GITHUB_REPO}/contents/${this.GITHUB_FILE}`,
-        {
-          method: 'PUT',
-          headers: {
-            'Authorization': `token ${token}`,
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            message: `Update furniture data (v${newVersion}) from admin panel`,
-            content: btoa(unescape(encodeURIComponent(jsonStr))),
-            sha: fileData.sha
-          })
-        }
-      );
-
-      if (!putResp.ok) {
-        const err = await putResp.json();
-        throw new Error(err.message || `GitHub API error: ${putResp.status}`);
-      }
-
-      // Update local version to match
+      const jsonStr = JSON.stringify({ version: newVersion, items }, null, 2);
+      const putResp = await fetch(`https://api.github.com/repos/${this.GITHUB_REPO}/contents/${this.GITHUB_FILE}`, {
+        method: 'PUT',
+        headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: `Update furniture data (v${newVersion}) from admin panel`, content: btoa(unescape(encodeURIComponent(jsonStr))), sha: fileData.sha })
+      });
+      if (!putResp.ok) { const err = await putResp.json(); throw new Error(err.message || `GitHub API error: ${putResp.status}`); }
       localStorage.setItem(FurnitureData.VERSION_KEY, String(newVersion));
-
       this.showMessage(`Published v${newVersion} to GitHub! Site will update in ~1 minute.`, 'success');
     } catch (error) {
       console.error('Publish failed:', error);
       this.showMessage(`Publish failed: ${error.message}`, 'error');
     } finally {
       publishBtn.disabled = false;
-      publishBtn.textContent = '📤 Publish Changes';
+      publishBtn.textContent = '\ud83d\udce4 Publish Changes';
     }
   },
 
-  /**
-   * Export data to JSON file
-   */
   exportData() {
     const jsonData = FurnitureData.exportData();
     const blob = new Blob([jsonData], { type: 'application/json' });
@@ -766,18 +563,12 @@ const AdminPanel = {
     this.showMessage('Data exported successfully', 'success');
   },
 
-  /**
-   * Import data from JSON file
-   */
   importData() {
     const input = document.createElement('input');
-    input.type = 'file';
-    input.accept = '.json';
-
+    input.type = 'file'; input.accept = '.json';
     input.onchange = (e) => {
       const file = e.target.files[0];
       if (!file) return;
-
       const reader = new FileReader();
       reader.onload = (event) => {
         try {
@@ -785,98 +576,81 @@ const AdminPanel = {
             if (FurnitureData.importData(event.target.result)) {
               this.showMessage('Data imported successfully', 'success');
               this.loadItemsTable();
-            } else {
-              this.showMessage('Failed to import data. Invalid format.', 'error');
-            }
+            } else { this.showMessage('Failed to import data. Invalid format.', 'error'); }
           }
-        } catch (error) {
-          console.error('Import error:', error);
-          this.showMessage('Failed to import data', 'error');
-        }
+        } catch (error) { this.showMessage('Failed to import data', 'error'); }
       };
       reader.readAsText(file);
     };
-
     input.click();
   },
 
-  /**
-   * Update storage info display
-   */
   updateStorageInfo() {
     const info = FurnitureData.getStorageInfo();
     if (info) {
-      document.getElementById('storageInfo').textContent =
-        `Storage: ${info.sizeInKB} KB (${info.itemCount} items)`;
+      document.getElementById('storageInfo').textContent = `Storage: ${info.sizeInKB} KB (${info.itemCount} items)`;
     }
   },
 
-  /**
-   * Show message to user
-   */
   showMessage(message, type = 'info') {
     const messageEl = document.getElementById('messageBox');
     messageEl.textContent = message;
     messageEl.className = `message message-${type}`;
     messageEl.style.display = 'block';
-
-    setTimeout(() => {
-      messageEl.style.display = 'none';
-    }, 3000);
+    setTimeout(() => { messageEl.style.display = 'none'; }, 3000);
   },
 
-  // ── PDF Export: Selection ──────────────────────────────────────────
+  // ══════════════════════════════════════════════════════════════
+  // SELECTION & BULK ACTIONS
+  // ══════════════════════════════════════════════════════════════
 
   toggleSelectAll(checked) {
-    const checkboxes = document.querySelectorAll('.item-select-checkbox');
-    checkboxes.forEach(cb => {
+    document.querySelectorAll('.item-select-checkbox').forEach(cb => {
       cb.checked = checked;
-      if (checked) {
-        this.selectedItems.add(cb.dataset.id);
-      } else {
-        this.selectedItems.delete(cb.dataset.id);
-      }
+      if (checked) this.selectedItems.add(cb.dataset.id);
+      else this.selectedItems.delete(cb.dataset.id);
     });
-    this.updateExportButtonState();
+    this.updateBulkButtonStates();
   },
 
   toggleSelectItem(id, checked) {
-    if (checked) {
-      this.selectedItems.add(id);
-    } else {
-      this.selectedItems.delete(id);
-    }
-    // Update select-all checkbox state
-    const allCheckboxes = document.querySelectorAll('.item-select-checkbox');
+    if (checked) this.selectedItems.add(id);
+    else this.selectedItems.delete(id);
+    const allCbs = document.querySelectorAll('.item-select-checkbox');
     const selectAll = document.getElementById('selectAllCheckbox');
-    if (selectAll) {
-      selectAll.checked = allCheckboxes.length > 0 && Array.from(allCheckboxes).every(cb => cb.checked);
-    }
-    this.updateExportButtonState();
+    if (selectAll) selectAll.checked = allCbs.length > 0 && Array.from(allCbs).every(cb => cb.checked);
+    this.updateBulkButtonStates();
   },
 
-  updateExportButtonState() {
-    const btn = document.getElementById('exportPdfBtn');
-    if (!btn) return;
+  updateBulkButtonStates() {
     const count = this.selectedItems.size;
-    btn.disabled = count === 0;
-    btn.textContent = count > 0 ? `Export PDF (${count})` : 'Export PDF';
+    const pdfBtn = document.getElementById('exportPdfBtn');
+    const boBtn = document.getElementById('toggleBoBtn');
+    if (pdfBtn) {
+      pdfBtn.disabled = count === 0;
+      pdfBtn.textContent = count > 0 ? `Export PDF (${count})` : 'Export PDF';
+    }
+    if (boBtn) {
+      boBtn.disabled = count === 0;
+      boBtn.textContent = count > 0 ? `Toggle B.O. (${count})` : 'Toggle B.O.';
+    }
   },
 
   clearSelection() {
     this.selectedItems.clear();
     const selectAll = document.getElementById('selectAllCheckbox');
     if (selectAll) selectAll.checked = false;
-    this.updateExportButtonState();
+    this.updateBulkButtonStates();
   },
 
-  // ── PDF Export: Modal ────────────────────────────────────────────
+  // ══════════════════════════════════════════════════════════════
+  // PDF EXPORT: MODAL
+  // ══════════════════════════════════════════════════════════════
 
   showPdfFieldModal() {
     const modal = document.getElementById('pdfModal');
     const countEl = document.getElementById('pdfItemCount');
     countEl.textContent = `${this.selectedItems.size} item${this.selectedItems.size !== 1 ? 's' : ''} selected`;
-    // Reset all checkboxes to checked
     modal.querySelectorAll('input[name="pdfField"]').forEach(cb => { cb.checked = true; });
     modal.style.display = 'flex';
   },
@@ -887,43 +661,34 @@ const AdminPanel = {
 
   getSelectedPdfFields() {
     const fields = {};
-    document.querySelectorAll('input[name="pdfField"]').forEach(cb => {
-      fields[cb.value] = cb.checked;
-    });
+    document.querySelectorAll('input[name="pdfField"]').forEach(cb => { fields[cb.value] = cb.checked; });
     return fields;
   },
 
-  // ── PDF Export: Image Loading ────────────────────────────────────
+  // ══════════════════════════════════════════════════════════════
+  // PDF EXPORT: IMAGE LOADING
+  // ══════════════════════════════════════════════════════════════
 
   loadImageForPdf(src) {
     return new Promise((resolve) => {
       if (!src) { resolve(null); return; }
-
       const img = new Image();
       img.crossOrigin = 'anonymous';
-
       img.onload = () => {
         try {
-          const maxDim = 500;
+          const maxDim = 600;
           let w = img.width, h = img.height;
           if (w > maxDim || h > maxDim) {
             if (w > h) { h = Math.round(h * maxDim / w); w = maxDim; }
             else { w = Math.round(w * maxDim / h); h = maxDim; }
           }
           const canvas = document.createElement('canvas');
-          canvas.width = w;
-          canvas.height = h;
+          canvas.width = w; canvas.height = h;
           canvas.getContext('2d').drawImage(img, 0, 0, w, h);
-          resolve({ dataUrl: canvas.toDataURL('image/jpeg', 0.7), w, h });
-        } catch (e) {
-          console.warn('Image canvas error:', e);
-          resolve(null);
-        }
+          resolve({ dataUrl: canvas.toDataURL('image/jpeg', 0.75), w, h });
+        } catch (e) { resolve(null); }
       };
-
       img.onerror = () => { resolve(null); };
-
-      // For file paths, try thumbnail first
       if (src.startsWith('images/full/')) {
         const thumbSrc = src.replace('images/full/', 'images/thumbnails/').replace('.jpg', '-thumb.jpg');
         const testImg = new Image();
@@ -936,7 +701,9 @@ const AdminPanel = {
     });
   },
 
-  // ── PDF Export: Page Builders ────────────────────────────────────
+  // ══════════════════════════════════════════════════════════════
+  // PDF EXPORT: PAGE BUILDERS
+  // ══════════════════════════════════════════════════════════════
 
   addCoverPage(doc, count) {
     const pw = doc.internal.pageSize.getWidth();
@@ -944,145 +711,191 @@ const AdminPanel = {
     const cx = pw / 2;
 
     doc.setFontSize(44);
-    doc.setTextColor(26, 26, 46); // #1a1a2e
+    doc.setTextColor(26, 26, 46);
     doc.text('Furniture Catalog', cx, ph * 0.35, { align: 'center' });
 
-    // Green line
-    doc.setDrawColor(45, 106, 79); // #2d6a4f
-    doc.setLineWidth(1);
-    doc.line(cx - 80, ph * 0.38, cx + 80, ph * 0.38);
+    doc.setDrawColor(45, 106, 79);
+    doc.setLineWidth(2.5);
+    doc.line(cx - 100, ph * 0.385, cx + 100, ph * 0.385);
 
     doc.setFontSize(16);
-    doc.setTextColor(108, 117, 125); // #6c757d
+    doc.setTextColor(108, 117, 125);
     doc.text(`${count} Item${count !== 1 ? 's' : ''} Selected`, cx, ph * 0.43, { align: 'center' });
 
     doc.setFontSize(11);
     doc.setTextColor(153, 153, 153);
+    doc.text('Prices negotiable \u00b7 All items available for immediate sale', cx, ph * 0.48, { align: 'center' });
+
+    doc.setFontSize(10);
+    doc.setTextColor(170, 170, 170);
     const today = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-    doc.text(today, cx, ph * 0.48, { align: 'center' });
+    doc.text(today, cx, ph * 0.52, { align: 'center' });
   },
 
+  /**
+   * Render one item page with 2-column layout:
+   * - Title spans full width
+   * - Left column (38%): price, retail, description, status, link
+   * - Right column (62%): images stacked vertically
+   */
   addItemPage(doc, item, fields, imageCache, idx, total) {
-    const pw = doc.internal.pageSize.getWidth();  // 612
-    const ph = doc.internal.pageSize.getHeight(); // 792
-    const margin = 47; // 0.65 inch, matches reference
-    const contentW = pw - 2 * margin;
-    const footerY = ph - 50; // footer zone starts here
+    const pw = doc.internal.pageSize.getWidth();   // 612
+    const ph = doc.internal.pageSize.getHeight();  // 792
+    const margin = 47;
+    const contentW = pw - 2 * margin;              // 518
+    const footerY = ph - 50;
 
-    // y = baseline cursor for next text draw
+    // Column layout
+    const colGap = 14;
+    const textColW = Math.round(contentW * 0.38);  // ~197
+    const imgColX = margin + textColW + colGap;
+    const imgColW = contentW - textColW - colGap;   // ~307
+
     let y = margin;
 
-    // ── Title ──────────────────────────────────────────────
+    // ── Title (full width) ─────────────────────────────────
     if (fields.name) {
-      doc.setFontSize(20);
+      doc.setFontSize(18);
       doc.setFont('helvetica', 'bold');
       doc.setTextColor(26, 26, 46);
       const nameLines = doc.splitTextToSize(item.name || 'Unnamed Item', contentW);
-      y += 24; // first baseline
+      y += 22;
       for (let i = 0; i < nameLines.length; i++) {
         doc.text(nameLines[i], margin, y);
-        y += 24;
+        y += 22;
       }
-      y += 2; // small gap before HR
+      y += 2;
 
-      // Green HR (2pt thick like reference)
+      // Green HR full width
       doc.setDrawColor(45, 106, 79);
       doc.setLineWidth(2);
       doc.line(margin, y, margin + contentW, y);
-      y += 16; // space after HR
+      y += 14;
     }
 
-    // ── Price ──────────────────────────────────────────────
-    if (fields.price && item.price != null) {
+    const colTopY = y;
+
+    // ── LEFT COLUMN: Text ──────────────────────────────────
+    let ty = colTopY;
+
+    // Price with Best Offer logic
+    if (fields.price) {
+      const hasBestOffer = item.bestOffer === true;
+      const hasPrice = item.price && item.price > 0;
+
       doc.setFontSize(22);
       doc.setFont('helvetica', 'bold');
       doc.setTextColor(45, 106, 79);
-      const priceText = item.price === 0 ? 'Best Offer' : `$${item.price.toLocaleString('en-US', { minimumFractionDigits: 0 })}`;
-      y += 22; // baseline for 22pt text
-      doc.text(priceText, margin, y);
-      y += 4;
+
+      if (!hasPrice && hasBestOffer) {
+        // Make Your Offer
+        const moLines = doc.splitTextToSize('Make Your Offer', textColW);
+        ty += 22;
+        for (const line of moLines) { doc.text(line, margin, ty); ty += 24; }
+      } else if (hasPrice && hasBestOffer) {
+        // $X or Best Offer
+        ty += 22;
+        doc.text(`$${item.price.toLocaleString('en-US')}`, margin, ty);
+        ty += 16;
+        doc.setFontSize(12);
+        doc.setFont('helvetica', 'normal');
+        doc.text('or Best Offer', margin, ty);
+        ty += 6;
+      } else if (hasPrice) {
+        // Just price
+        ty += 22;
+        doc.text(`$${item.price.toLocaleString('en-US')}`, margin, ty);
+        ty += 6;
+      }
+      ty += 4;
     }
 
-    // ── Retail price + savings ─────────────────────────────
+    // Retail price + savings
     if (fields.retailPrice && item.retailPrice && item.retailPrice > 0) {
       doc.setFontSize(10);
       doc.setFont('helvetica', 'normal');
       doc.setTextColor(173, 181, 189);
-      let retailText = `Retail: $${item.retailPrice.toLocaleString('en-US')}`;
+      ty += 12;
+      doc.text(`Retail: $${item.retailPrice.toLocaleString('en-US')}`, margin, ty);
       if (item.price && item.price > 0 && item.retailPrice !== item.price) {
+        ty += 14;
         const savings = item.retailPrice - item.price;
         const pct = Math.round((savings / item.retailPrice) * 100);
-        retailText += `  \u00b7  Save $${savings.toLocaleString('en-US')}  (${pct}% off)`;
+        doc.text(`Save $${savings.toLocaleString('en-US')} (${pct}% off)`, margin, ty);
       }
-      y += 14;
-      doc.text(retailText, margin, y);
-      y += 10;
+      ty += 10;
     }
 
-    // ── Description ────────────────────────────────────────
+    // Description (wrapped to text column width)
     if (fields.description && item.description) {
-      y += 6;
+      ty += 8;
       doc.setFontSize(10);
       doc.setFont('helvetica', 'normal');
       doc.setTextColor(51, 51, 51);
-      const lines = doc.splitTextToSize(item.description, contentW);
-      const maxDescY = fields.images ? (ph * 0.45) : (footerY - 20);
-      const maxLines = Math.min(lines.length, Math.floor((maxDescY - y) / 15));
-      const trimmedLines = lines.slice(0, Math.max(maxLines, 3));
-      for (let i = 0; i < trimmedLines.length; i++) {
-        y += 15;
-        doc.text(trimmedLines[i], margin, y);
+      const descLines = doc.splitTextToSize(item.description, textColW);
+      const maxDescLines = Math.max(3, Math.floor((footerY - 40 - ty) / 14));
+      const trimmed = descLines.slice(0, maxDescLines);
+      for (const line of trimmed) {
+        ty += 14;
+        doc.text(line, margin, ty);
       }
-      y += 12;
+      ty += 10;
     }
 
-    // ── Status ─────────────────────────────────────────────
+    // Status
     if (fields.status && item.status) {
-      doc.setFontSize(10);
+      doc.setFontSize(9);
       doc.setFont('helvetica', 'bold');
       doc.setTextColor(108, 117, 125);
-      y += 14;
-      doc.text(`Status: ${item.status.charAt(0).toUpperCase() + item.status.slice(1)}`, margin, y);
-      y += 6;
+      ty += 14;
+      doc.text(`Status: ${item.status.charAt(0).toUpperCase() + item.status.slice(1)}`, margin, ty);
+      ty += 6;
     }
 
-    // ── Product link ───────────────────────────────────────
+    // Product link (wrapped in text column)
     if (fields.productLink && item.productLink) {
-      doc.setFontSize(9);
+      doc.setFontSize(8);
       doc.setFont('helvetica', 'normal');
       doc.setTextColor(45, 106, 79);
-      y += 14;
-      doc.textWithLink(item.productLink, margin, y, { url: item.productLink });
-      y += 6;
+      ty += 14;
+      const linkLines = doc.splitTextToSize(item.productLink, textColW);
+      for (const line of linkLines) {
+        doc.textWithLink(line, margin, ty, { url: item.productLink });
+        ty += 11;
+      }
     }
 
-    // ── Gray HR separator before image ─────────────────────
-    y += 8;
-    doc.setDrawColor(222, 226, 230);
-    doc.setLineWidth(0.5);
-    doc.line(margin, y, margin + contentW, y);
-    y += 14;
-
-    // ── Image ──────────────────────────────────────────────
+    // ── RIGHT COLUMN: Images stacked ───────────────────────
     if (fields.images && item.images && item.images.length > 0) {
-      const imgData = imageCache[item.images[0]];
-      if (imgData) {
-        const availH = footerY - y - 10;
-        const availW = contentW;
+      let iy = colTopY;
+      const availImgH = footerY - colTopY - 10;
+      const imageSrcs = item.images.slice(0, 4);
+      const loadedImages = imageSrcs.map(src => imageCache[src]).filter(Boolean);
 
-        if (availH > 80) {
-          let imgW = imgData.w;
-          let imgH = imgData.h;
+      if (loadedImages.length > 0) {
+        const imgGap = 8;
+        const totalGaps = (loadedImages.length - 1) * imgGap;
+        const maxPerImgH = (availImgH - totalGaps) / loadedImages.length;
 
-          const scaleW = availW / imgW;
-          const scaleH = availH / imgH;
-          const scale = Math.min(scaleW, scaleH, 1);
-          imgW = imgW * scale;
-          imgH = imgH * scale;
+        for (const imgData of loadedImages) {
+          let iw = imgData.w, ih = imgData.h;
 
-          // Center horizontally
-          const imgX = margin + (contentW - imgW) / 2;
-          doc.addImage(imgData.dataUrl, 'JPEG', imgX, y, imgW, imgH);
+          // Scale to column width
+          const scaleW = imgColW / iw;
+          iw = imgColW;
+          ih = ih * scaleW;
+
+          // Cap height
+          if (ih > maxPerImgH) {
+            const scaleH = maxPerImgH / ih;
+            iw = iw * scaleH;
+            ih = maxPerImgH;
+          }
+
+          // Center in image column
+          const ix = imgColX + (imgColW - iw) / 2;
+          doc.addImage(imgData.dataUrl, 'JPEG', ix, iy, iw, ih);
+          iy += ih + imgGap;
         }
       }
     }
@@ -1095,21 +908,25 @@ const AdminPanel = {
     doc.setFontSize(7.5);
     doc.setFont('helvetica', 'normal');
     doc.setTextColor(170, 170, 170);
-    const footerText = `Item ${idx} of ${total}  \u00b7  ${item.id || ''}  \u00b7  All items subject to prior sale`;
-    doc.text(footerText, pw / 2, footerY + 12, { align: 'center' });
+    doc.text(`Item ${idx} of ${total}  \u00b7  ${item.id || ''}  \u00b7  All items subject to prior sale`, pw / 2, footerY + 12, { align: 'center' });
   },
 
-  // ── PDF Export: Main Orchestrator ────────────────────────────────
+  // ══════════════════════════════════════════════════════════════
+  // PDF EXPORT: ORCHESTRATOR
+  // ══════════════════════════════════════════════════════════════
 
   async generatePdf() {
     const fields = this.getSelectedPdfFields();
     const allItems = FurnitureData.loadItems();
-    const selected = allItems.filter(item => this.selectedItems.has(item.id));
+    let selected = allItems.filter(item => this.selectedItems.has(item.id));
 
     if (selected.length === 0) {
       this.showMessage('No items selected', 'error');
       return;
     }
+
+    // Sort by price descending (highest value first)
+    selected.sort((a, b) => (b.price || 0) - (a.price || 0));
 
     this.hidePdfFieldModal();
     this.showMessage('Generating PDF...', 'info');
@@ -1119,33 +936,32 @@ const AdminPanel = {
     btn.textContent = 'Generating...';
 
     try {
-      // Pre-load images
+      // Pre-load ALL images (up to 4 per item)
       const imageCache = {};
       if (fields.images) {
         for (const item of selected) {
           if (item.images && item.images.length > 0) {
-            const result = await this.loadImageForPdf(item.images[0]);
-            if (result) {
-              imageCache[item.images[0]] = result;
+            const imagesToLoad = item.images.slice(0, 4);
+            for (const imgSrc of imagesToLoad) {
+              if (!imageCache[imgSrc]) {
+                const result = await this.loadImageForPdf(imgSrc);
+                if (result) imageCache[imgSrc] = result;
+              }
             }
           }
         }
       }
 
-      // Build PDF
       const { jsPDF } = window.jspdf;
       const doc = new jsPDF({ unit: 'pt', format: 'letter' });
 
-      // Cover page
       this.addCoverPage(doc, selected.length);
 
-      // Item pages
       selected.forEach((item, i) => {
         doc.addPage();
         this.addItemPage(doc, item, fields, imageCache, i + 1, selected.length);
       });
 
-      // Download
       const dateStr = new Date().toISOString().split('T')[0];
       doc.save(`furniture-catalog-${dateStr}.pdf`);
       this.showMessage(`PDF generated with ${selected.length} item${selected.length !== 1 ? 's' : ''}`, 'success');
@@ -1153,13 +969,10 @@ const AdminPanel = {
       console.error('PDF generation error:', error);
       this.showMessage('Failed to generate PDF: ' + error.message, 'error');
     } finally {
-      this.updateExportButtonState();
+      this.updateBulkButtonStates();
     }
   },
 
-  /**
-   * Escape HTML to prevent XSS
-   */
   escapeHtml(text) {
     const div = document.createElement('div');
     div.textContent = text;
@@ -1167,7 +980,6 @@ const AdminPanel = {
   }
 };
 
-// Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
   AdminPanel.init();
 });
