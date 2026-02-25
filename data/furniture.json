@@ -1,5 +1,5 @@
 {
-  "version": 18,
+  "version": 19,
   "items": [
     {
       "name": "Silver 2-Bike Upright Tension Mount Garage Bike Rack by Rad Cycle",
@@ -1254,11 +1254,12 @@
       "hidden": false
     },
     {
-      "id": "item-056",
-      "name": "Tate Walnut Desk with Outlet by Crate & Barrel",
-      "description": "Tate Walnut Desk with Outlet by Crate & Barrel. Mid-century inspired walnut desk with integrated power strip (2 USB + 2 three-prong outlets). Clean-lined design with tapered legs. Designed by Blake Tovin.",
-      "price": 0,
-      "category": "tables",
+      "name": "Tate 60\" Walnut Desk with Outlet by Crate & Barrel",
+      "description": "Mid-century inspired walnut desk with integrated power strip (2 USB + 2 three-prong outlets). Clean-lined design with tapered legs. Designed by Blake Tovin. Like new.",
+      "price": 600,
+      "retailPrice": 1199,
+      "productLink": "https://www.crateandbarrel.com/tate-60-walnut-desk-with-outlet/s115381",
+      "bestOffer": true,
       "status": "available",
       "images": [
         "images/full/item-056-1.jpg",
@@ -1266,17 +1267,10 @@
         "images/full/item-056-3.jpg",
         "images/full/item-056-4.jpg"
       ],
-      "thumbnails": [
-        "images/thumbnails/item-056-1-thumb.jpg",
-        "images/thumbnails/item-056-2-thumb.jpg",
-        "images/thumbnails/item-056-3-thumb.jpg",
-        "images/thumbnails/item-056-4-thumb.jpg"
-      ],
-      "hidden": false,
       "dateAdded": "2026-02-24T05:45:21.000Z",
-      "dateUpdated": "2026-02-24T05:45:21.000Z",
-      "retailPrice": 699,
-      "productLink": "https://www.crateandbarrel.com/tate-48-walnut-desk-with-outlet/s115449"
+      "id": "item-056",
+      "dateUpdated": "2026-02-25T04:20:32.224Z",
+      "hidden": false
     },
     {
       "id": "item-057",
