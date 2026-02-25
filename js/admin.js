@@ -15,6 +15,7 @@ const AdminPanel = {
   currentEditId: null,
   uploadedImages: [],
   visibilityFilter: 'all', // 'all', 'visible', 'hidden'
+  selectedItems: new Set(),
 
   /**
    * Initialize the admin panel
@@ -138,7 +139,20 @@ const AdminPanel = {
     // Visibility filter
     document.getElementById('visibilityFilter').addEventListener('change', (e) => {
       this.visibilityFilter = e.target.value;
+      this.clearSelection();
       this.loadItemsTable();
+    });
+
+    // Export PDF button
+    document.getElementById('exportPdfBtn').addEventListener('click', () => this.showPdfFieldModal());
+
+    // PDF modal buttons
+    document.getElementById('generatePdfBtn').addEventListener('click', () => this.generatePdf());
+    document.getElementById('cancelPdfBtn').addEventListener('click', () => this.hidePdfFieldModal());
+
+    // Select all checkbox
+    document.getElementById('selectAllCheckbox').addEventListener('change', (e) => {
+      this.toggleSelectAll(e.target.checked);
     });
   },
 
@@ -150,7 +164,8 @@ const AdminPanel = {
     const tbody = document.querySelector('#itemsTable tbody');
 
     if (items.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="8" class="no-items">No items yet. Click "Add New Item" to get started.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="9" class="no-items">No items yet. Click "Add New Item" to get started.</td></tr>';
+      this.updateExportButtonState();
       return;
     }
 
@@ -172,6 +187,7 @@ const AdminPanel = {
 
       return `
       <tr class="${isHidden ? 'hidden-item' : ''}">
+        <td><input type="checkbox" class="item-select-checkbox" data-id="${item.id}" ${this.selectedItems.has(item.id) ? 'checked' : ''}></td>
         <td class="row-number">${index + 1}</td>
         <td>
           ${item.images && item.images.length > 0
@@ -217,6 +233,14 @@ const AdminPanel = {
 
     this.updateStorageInfo();
     this.attachSortListeners();
+
+    // Attach checkbox listeners
+    document.querySelectorAll('.item-select-checkbox').forEach(cb => {
+      cb.addEventListener('change', (e) => {
+        this.toggleSelectItem(e.target.dataset.id, e.target.checked);
+      });
+    });
+    this.updateExportButtonState();
   },
 
   /**
@@ -810,6 +834,313 @@ const AdminPanel = {
     setTimeout(() => {
       messageEl.style.display = 'none';
     }, 3000);
+  },
+
+  // ── PDF Export: Selection ──────────────────────────────────────────
+
+  toggleSelectAll(checked) {
+    const checkboxes = document.querySelectorAll('.item-select-checkbox');
+    checkboxes.forEach(cb => {
+      cb.checked = checked;
+      if (checked) {
+        this.selectedItems.add(cb.dataset.id);
+      } else {
+        this.selectedItems.delete(cb.dataset.id);
+      }
+    });
+    this.updateExportButtonState();
+  },
+
+  toggleSelectItem(id, checked) {
+    if (checked) {
+      this.selectedItems.add(id);
+    } else {
+      this.selectedItems.delete(id);
+    }
+    // Update select-all checkbox state
+    const allCheckboxes = document.querySelectorAll('.item-select-checkbox');
+    const selectAll = document.getElementById('selectAllCheckbox');
+    if (selectAll) {
+      selectAll.checked = allCheckboxes.length > 0 && Array.from(allCheckboxes).every(cb => cb.checked);
+    }
+    this.updateExportButtonState();
+  },
+
+  updateExportButtonState() {
+    const btn = document.getElementById('exportPdfBtn');
+    if (!btn) return;
+    const count = this.selectedItems.size;
+    btn.disabled = count === 0;
+    btn.textContent = count > 0 ? `Export PDF (${count})` : 'Export PDF';
+  },
+
+  clearSelection() {
+    this.selectedItems.clear();
+    const selectAll = document.getElementById('selectAllCheckbox');
+    if (selectAll) selectAll.checked = false;
+    this.updateExportButtonState();
+  },
+
+  // ── PDF Export: Modal ────────────────────────────────────────────
+
+  showPdfFieldModal() {
+    const modal = document.getElementById('pdfModal');
+    const countEl = document.getElementById('pdfItemCount');
+    countEl.textContent = `${this.selectedItems.size} item${this.selectedItems.size !== 1 ? 's' : ''} selected`;
+    // Reset all checkboxes to checked
+    modal.querySelectorAll('input[name="pdfField"]').forEach(cb => { cb.checked = true; });
+    modal.style.display = 'flex';
+  },
+
+  hidePdfFieldModal() {
+    document.getElementById('pdfModal').style.display = 'none';
+  },
+
+  getSelectedPdfFields() {
+    const fields = {};
+    document.querySelectorAll('input[name="pdfField"]').forEach(cb => {
+      fields[cb.value] = cb.checked;
+    });
+    return fields;
+  },
+
+  // ── PDF Export: Image Loading ────────────────────────────────────
+
+  loadImageForPdf(src) {
+    return new Promise((resolve) => {
+      if (!src) { resolve(null); return; }
+
+      const img = new Image();
+      img.crossOrigin = 'anonymous';
+
+      img.onload = () => {
+        try {
+          const maxDim = 500;
+          let w = img.width, h = img.height;
+          if (w > maxDim || h > maxDim) {
+            if (w > h) { h = Math.round(h * maxDim / w); w = maxDim; }
+            else { w = Math.round(w * maxDim / h); h = maxDim; }
+          }
+          const canvas = document.createElement('canvas');
+          canvas.width = w;
+          canvas.height = h;
+          canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+          resolve({ dataUrl: canvas.toDataURL('image/jpeg', 0.7), w, h });
+        } catch (e) {
+          console.warn('Image canvas error:', e);
+          resolve(null);
+        }
+      };
+
+      img.onerror = () => { resolve(null); };
+
+      // For file paths, try thumbnail first
+      if (src.startsWith('images/full/')) {
+        const thumbSrc = src.replace('images/full/', 'images/thumbnails/').replace('.jpg', '-thumb.jpg');
+        const testImg = new Image();
+        testImg.onload = () => { img.src = thumbSrc; };
+        testImg.onerror = () => { img.src = src; };
+        testImg.src = thumbSrc;
+      } else {
+        img.src = src;
+      }
+    });
+  },
+
+  // ── PDF Export: Page Builders ────────────────────────────────────
+
+  addCoverPage(doc, count) {
+    const pw = doc.internal.pageSize.getWidth();
+    const ph = doc.internal.pageSize.getHeight();
+    const cx = pw / 2;
+
+    doc.setFontSize(44);
+    doc.setTextColor(26, 26, 46); // #1a1a2e
+    doc.text('Furniture Catalog', cx, ph * 0.35, { align: 'center' });
+
+    // Green line
+    doc.setDrawColor(45, 106, 79); // #2d6a4f
+    doc.setLineWidth(1);
+    doc.line(cx - 80, ph * 0.38, cx + 80, ph * 0.38);
+
+    doc.setFontSize(16);
+    doc.setTextColor(108, 117, 125); // #6c757d
+    doc.text(`${count} Item${count !== 1 ? 's' : ''} Selected`, cx, ph * 0.43, { align: 'center' });
+
+    doc.setFontSize(11);
+    doc.setTextColor(153, 153, 153);
+    const today = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    doc.text(today, cx, ph * 0.48, { align: 'center' });
+  },
+
+  addItemPage(doc, item, fields, imageCache, idx, total) {
+    const pw = doc.internal.pageSize.getWidth();
+    const margin = 40;
+    const contentW = pw - 2 * margin;
+    let y = margin;
+
+    // Item name
+    if (fields.name) {
+      doc.setFontSize(20);
+      doc.setFont('helvetica', 'bold');
+      doc.setTextColor(26, 26, 46);
+      doc.text(item.name || 'Unnamed Item', margin, y);
+      y += 10;
+
+      // Green HR
+      doc.setDrawColor(45, 106, 79);
+      doc.setLineWidth(0.8);
+      doc.line(margin, y, margin + contentW, y);
+      y += 12;
+    }
+
+    // Price
+    if (fields.price && item.price != null) {
+      doc.setFontSize(22);
+      doc.setFont('helvetica', 'bold');
+      doc.setTextColor(45, 106, 79);
+      const priceText = item.price === 0 ? 'Best Offer' : `$${item.price.toLocaleString('en-US', { minimumFractionDigits: 0 })}`;
+      doc.text(priceText, margin, y);
+      y += 8;
+    }
+
+    // Retail price + savings
+    if (fields.retailPrice && item.retailPrice && item.retailPrice > 0) {
+      doc.setFontSize(10);
+      doc.setFont('helvetica', 'normal');
+      doc.setTextColor(173, 181, 189);
+      let retailText = `Retail: $${item.retailPrice.toLocaleString('en-US')}`;
+      if (item.price && item.price > 0 && item.retailPrice !== item.price) {
+        const savings = item.retailPrice - item.price;
+        const pct = Math.round((savings / item.retailPrice) * 100);
+        retailText += `  ·  Save $${savings.toLocaleString('en-US')}  (${pct}% off)`;
+      }
+      doc.text(retailText, margin, y);
+      y += 10;
+    }
+
+    // Description
+    if (fields.description && item.description) {
+      doc.setFontSize(10);
+      doc.setFont('helvetica', 'normal');
+      doc.setTextColor(51, 51, 51);
+      const lines = doc.splitTextToSize(item.description, contentW);
+      // Limit lines to avoid overflow, leave room for image
+      const maxLines = fields.images ? 12 : 30;
+      const trimmedLines = lines.slice(0, maxLines);
+      doc.text(trimmedLines, margin, y);
+      y += trimmedLines.length * 5 + 6;
+    }
+
+    // Status
+    if (fields.status && item.status) {
+      doc.setFontSize(10);
+      doc.setFont('helvetica', 'bold');
+      doc.setTextColor(108, 117, 125);
+      doc.text(`Status: ${item.status.charAt(0).toUpperCase() + item.status.slice(1)}`, margin, y);
+      y += 8;
+    }
+
+    // Product link
+    if (fields.productLink && item.productLink) {
+      doc.setFontSize(9);
+      doc.setFont('helvetica', 'normal');
+      doc.setTextColor(45, 106, 79);
+      const linkText = item.productLink.length > 70 ? item.productLink.substring(0, 70) + '...' : item.productLink;
+      doc.textWithLink(linkText, margin, y, { url: item.productLink });
+      y += 10;
+    }
+
+    // Image
+    if (fields.images && item.images && item.images.length > 0) {
+      const imgData = imageCache[item.images[0]];
+      if (imgData) {
+        y += 4;
+        const ph = doc.internal.pageSize.getHeight();
+        const availH = ph - y - 30; // leave room for footer
+        const availW = contentW;
+
+        let imgW = imgData.w;
+        let imgH = imgData.h;
+
+        // Scale to fit available space
+        const scaleW = availW / imgW;
+        const scaleH = availH / imgH;
+        const scale = Math.min(scaleW, scaleH, 1);
+        imgW = imgW * scale;
+        imgH = imgH * scale;
+
+        // Center horizontally
+        const imgX = margin + (contentW - imgW) / 2;
+        doc.addImage(imgData.dataUrl, 'JPEG', imgX, y, imgW, imgH);
+        y += imgH + 6;
+      }
+    }
+
+    // Footer
+    const ph = doc.internal.pageSize.getHeight();
+    doc.setFontSize(7.5);
+    doc.setFont('helvetica', 'normal');
+    doc.setTextColor(170, 170, 170);
+    doc.text(`Item ${idx} of ${total}`, pw / 2, ph - 20, { align: 'center' });
+  },
+
+  // ── PDF Export: Main Orchestrator ────────────────────────────────
+
+  async generatePdf() {
+    const fields = this.getSelectedPdfFields();
+    const allItems = FurnitureData.loadItems();
+    const selected = allItems.filter(item => this.selectedItems.has(item.id));
+
+    if (selected.length === 0) {
+      this.showMessage('No items selected', 'error');
+      return;
+    }
+
+    this.hidePdfFieldModal();
+    this.showMessage('Generating PDF...', 'info');
+
+    const btn = document.getElementById('exportPdfBtn');
+    btn.disabled = true;
+    btn.textContent = 'Generating...';
+
+    try {
+      // Pre-load images
+      const imageCache = {};
+      if (fields.images) {
+        for (const item of selected) {
+          if (item.images && item.images.length > 0) {
+            const result = await this.loadImageForPdf(item.images[0]);
+            if (result) {
+              imageCache[item.images[0]] = result;
+            }
+          }
+        }
+      }
+
+      // Build PDF
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF({ unit: 'pt', format: 'letter' });
+
+      // Cover page
+      this.addCoverPage(doc, selected.length);
+
+      // Item pages
+      selected.forEach((item, i) => {
+        doc.addPage();
+        this.addItemPage(doc, item, fields, imageCache, i + 1, selected.length);
+      });
+
+      // Download
+      const dateStr = new Date().toISOString().split('T')[0];
+      doc.save(`furniture-catalog-${dateStr}.pdf`);
+      this.showMessage(`PDF generated with ${selected.length} item${selected.length !== 1 ? 's' : ''}`, 'success');
+    } catch (error) {
+      console.error('PDF generation error:', error);
+      this.showMessage('Failed to generate PDF: ' + error.message, 'error');
+    } finally {
+      this.updateExportButtonState();
+    }
   },
 
   /**

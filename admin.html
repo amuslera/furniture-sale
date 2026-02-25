@@ -33,6 +33,7 @@
         <span class="storage-info" id="storageInfo">Storage: Loading...</span>
       </div>
       <div class="header-actions">
+        <button id="exportPdfBtn" class="btn btn-secondary" disabled>Export PDF</button>
         <button id="publishBtn" class="btn btn-primary">📤 Publish Changes</button>
         <button id="exportDataBtn" class="btn btn-secondary">Export Data</button>
         <button id="importDataBtn" class="btn btn-secondary">Import Data</button>
@@ -62,6 +63,7 @@
         <table id="itemsTable">
           <thead>
             <tr>
+              <th style="width: 40px;"><input type="checkbox" id="selectAllCheckbox" title="Select all"></th>
               <th style="width: 40px;">#</th>
               <th style="width: 80px;">Image</th>
               <th class="sortable" data-sort="name">Name <span class="sort-icon"></span></th>
@@ -74,7 +76,7 @@
           </thead>
           <tbody>
             <tr>
-              <td colspan="8" class="no-items">Loading...</td>
+              <td colspan="9" class="no-items">Loading...</td>
             </tr>
           </tbody>
         </table>
@@ -192,9 +194,34 @@
         </div>
       </form>
     </div>
+
+    <!-- PDF Export Modal -->
+    <div id="pdfModal" class="modal-overlay" style="display: none;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Export PDF Catalog</h3>
+          <span id="pdfItemCount" style="font-size: 14px; color: #666;"></span>
+        </div>
+        <div class="modal-body">
+          <p style="margin-bottom: 12px; color: #555;">Select fields to include:</p>
+          <div class="field-option"><label><input type="checkbox" name="pdfField" value="name" checked> Item Name</label></div>
+          <div class="field-option"><label><input type="checkbox" name="pdfField" value="description" checked> Description</label></div>
+          <div class="field-option"><label><input type="checkbox" name="pdfField" value="price" checked> Selling Price</label></div>
+          <div class="field-option"><label><input type="checkbox" name="pdfField" value="retailPrice" checked> Retail Price</label></div>
+          <div class="field-option"><label><input type="checkbox" name="pdfField" value="status" checked> Status</label></div>
+          <div class="field-option"><label><input type="checkbox" name="pdfField" value="productLink" checked> Product Link</label></div>
+          <div class="field-option"><label><input type="checkbox" name="pdfField" value="images" checked> Images</label></div>
+        </div>
+        <div class="modal-footer">
+          <button id="generatePdfBtn" class="btn btn-success">Generate PDF</button>
+          <button id="cancelPdfBtn" class="btn btn-secondary">Cancel</button>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js"></script>
   <script src="js/data.js"></script>
   <script src="js/admin.js"></script>
 </body>
