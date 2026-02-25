@@ -1,5 +1,5 @@
 {
-  "version": 9,
+  "version": 10,
   "items": [
     {
       "id": "item-001",
@@ -640,11 +640,19 @@
       "status": "available",
       "images": [
         "images/full/item-029-1.jpg",
-        "images/full/item-029-2.jpg"
+        "images/full/item-029-2.jpg",
+        "images/full/item-029-3.jpg",
+        "images/full/item-029-4.jpg",
+        "images/full/item-029-5.jpg",
+        "images/full/item-029-6.jpg"
       ],
       "thumbnails": [
         "images/thumbnails/item-029-1-thumb.jpg",
-        "images/thumbnails/item-029-2-thumb.jpg"
+        "images/thumbnails/item-029-2-thumb.jpg",
+        "images/thumbnails/item-029-3-thumb.jpg",
+        "images/thumbnails/item-029-4-thumb.jpg",
+        "images/thumbnails/item-029-5-thumb.jpg",
+        "images/thumbnails/item-029-6-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
