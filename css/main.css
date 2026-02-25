@@ -386,6 +386,12 @@ body {
     order: -1;
 }
 
+.price-label {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #666;
+}
+
 .best-offer-tag {
     font-size: 0.875rem;
     font-weight: 400;
