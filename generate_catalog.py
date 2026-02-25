@@ -4,6 +4,7 @@ Generate a polished PDF catalog for the furniture showcase.
 Multi-page per item is fine — focus on good image sizes and clean layout.
 """
 
+import argparse
 import json
 import math
 import os
@@ -32,8 +33,8 @@ CONTENT_H = PAGE_H - 2 * MARGIN
 # Images: 2 per row
 IMG_GAP = 10  # gap between columns
 IMG_COL_W = (CONTENT_W - IMG_GAP) / 2
-MAX_IMG_H = 4.0 * inch  # generous — multi-page ok
-SINGLE_IMG_MAX_H = 5.5 * inch  # for items with only 1 image, can be taller
+MAX_IMG_H = 3.4 * inch  # ~15% smaller than before
+SINGLE_IMG_MAX_H = 4.7 * inch  # for items with only 1 image
 
 # Bundle definitions: (bundle_id, [individual item IDs])
 BUNDLE_GROUPS = [
@@ -282,7 +283,7 @@ def build_styles():
     }
 
 
-def build_item_story(item, styles, idx, total):
+def build_item_story(item, styles, idx, total, no_price=False):
     """
     Build the story elements for one item.
     Multi-page is fine — images get generous sizing.
@@ -309,30 +310,49 @@ def build_item_story(item, styles, idx, total):
     story.append(Spacer(1, 8))
 
     # ── Pricing ─────────────────────────────────────────────────────────
-    if price is not None:
-        if price == 0:
-            story.append(Paragraph("Best Offer", styles["price"]))
-        else:
-            story.append(Paragraph(f"${price:,.0f}", styles["price"]))
+    if no_price:
+        # No-price mode: just "Make Your Offer", no sale price
+        story.append(Paragraph("Make Your Offer", styles["price"]))
+    else:
+        if price is not None:
+            if price == 0:
+                story.append(Paragraph("Best Offer", styles["price"]))
+            else:
+                story.append(Paragraph(f"${price:,.0f}", styles["price"]))
 
-    if retail_price and retail_price > 0 and price and price > 0 and retail_price != price:
-        savings = retail_price - price
-        savings_pct = int((savings / retail_price) * 100)
-        story.append(Paragraph(
-            f"Retail: ${retail_price:,.0f}  ·  Save ${savings:,.0f}  ({savings_pct}% off)",
-            styles["retail"]
-        ))
-    elif retail_price and retail_price > 0 and (not price or price == 0):
-        story.append(Paragraph(
-            f"Retail: ${retail_price:,.0f}",
-            styles["retail"]
-        ))
+        if retail_price and retail_price > 0 and price and price > 0 and retail_price != price:
+            savings = retail_price - price
+            savings_pct = int((savings / retail_price) * 100)
+            story.append(Paragraph(
+                f"Retail: ${retail_price:,.0f}  ·  Save ${savings:,.0f}  ({savings_pct}% off)",
+                styles["retail"]
+            ))
+        elif retail_price and retail_price > 0 and (not price or price == 0):
+            story.append(Paragraph(
+                f"Retail: ${retail_price:,.0f}",
+                styles["retail"]
+            ))
 
     # ── Description ─────────────────────────────────────────────────────
     if description:
+        import re
+        desc_text = description
+        if no_price:
+            # Strip "Selling for: $X" lines from description
+            desc_text = re.sub(r'\n*Selling for:.*', '', desc_text).strip()
+            # Bold the "Retails for:" line
+            desc_text = re.sub(r'(Retails for:[^\n]*)', r'<b>\1</b>', desc_text)
         story.append(Spacer(1, 4))
-        clean_desc = description.replace("\n\n", "<br/><br/>").replace("\n", "<br/>")
+        clean_desc = desc_text.replace("\n\n", "<br/><br/>").replace("\n", "<br/>")
         story.append(Paragraph(clean_desc, styles["desc"]))
+
+    # ── Product Link (no-price mode only) ──────────────────────────────
+    product_link = item.get("productLink", "")
+    if no_price and product_link:
+        story.append(Paragraph(
+            f'Link to retail: <a href="{product_link}" color="#2d6a4f">{product_link}</a>',
+            styles["retail"]
+        ))
 
     story.append(Spacer(1, 8))
     story.append(HRFlowable(width=CONTENT_W, thickness=0.5,
@@ -362,7 +382,7 @@ def build_item_story(item, styles, idx, total):
 def build_bundle_divider(bundle_name, bundle_counter, styles):
     """A full-page Special Bundle Offer divider."""
     story = []
-    story.append(Spacer(1, 2.8 * inch))
+    story.append(Spacer(1, 2.5 * inch))
     story.append(HRFlowable(width=CONTENT_W, thickness=3,
                              color=colors.HexColor("#2d6a4f")))
     story.append(Spacer(1, 0.35 * inch))
@@ -375,10 +395,10 @@ def build_bundle_divider(bundle_name, bundle_counter, styles):
     ))
     story.append(Paragraph(
         bundle_name,
-        ParagraphStyle(f"BD_name_{bundle_counter}", fontSize=18,
+        ParagraphStyle(f"BD_name_{bundle_counter}", fontSize=16,
                        textColor=colors.HexColor("#2d6a4f"),
                        fontName="Helvetica-Bold", alignment=TA_CENTER,
-                       spaceAfter=8)
+                       leading=22, spaceAfter=8)
     ))
     story.append(Paragraph(
         "Buy them together and save",
@@ -393,14 +413,16 @@ def build_bundle_divider(bundle_name, bundle_counter, styles):
     return story
 
 
-def generate_pdf():
-    print(f"Loading data from {DATA_FILE}...")
+def generate_pdf(no_price=False):
+    output = OUTPUT_FILE.replace(".pdf", "_no_price.pdf") if no_price else OUTPUT_FILE
+    mode_label = "NO-PRICE" if no_price else "STANDARD"
+    print(f"[{mode_label}] Loading data from {DATA_FILE}...")
     sequence = load_data()
     total = len(sequence)
     print(f"Found {total} sequence entries.")
 
     doc = SimpleDocTemplate(
-        OUTPUT_FILE,
+        output,
         pagesize=letter,
         leftMargin=MARGIN,
         rightMargin=MARGIN,
@@ -437,8 +459,11 @@ def generate_pdf():
                        alignment=TA_CENTER, spaceAfter=8)
     ))
     story.append(Spacer(1, 0.5 * inch))
+    cover_note = ("All items available for immediate sale  ·  Make your offer"
+                  if no_price else
+                  "Prices negotiable  ·  All items available for immediate sale")
     story.append(Paragraph(
-        "Prices negotiable  ·  All items available for immediate sale",
+        cover_note,
         ParagraphStyle("CoverNote", fontSize=11, textColor=colors.HexColor("#999999"),
                        alignment=TA_CENTER)
     ))
@@ -456,13 +481,18 @@ def generate_pdf():
             print(f"  [BUNDLE DIVIDER] {name}")
 
         print(f"  [{idx}/{total}] {name}")
-        story.extend(build_item_story(item, styles, idx, total))
+        story.extend(build_item_story(item, styles, idx, total, no_price=no_price))
         idx += 1
 
-    print(f"\nBuilding PDF: {OUTPUT_FILE}")
+    print(f"\nBuilding PDF: {output}")
     doc.build(story)
-    print(f"Done! PDF saved to {OUTPUT_FILE}")
+    print(f"Done! PDF saved to {output}")
+    return output
 
 
 if __name__ == "__main__":
-    generate_pdf()
+    parser = argparse.ArgumentParser(description="Generate furniture catalog PDF")
+    parser.add_argument("--no-price", action="store_true",
+                        help="Hide sale prices, show only retail + 'Make Your Offer'")
+    args = parser.parse_args()
+    generate_pdf(no_price=args.no_price)
