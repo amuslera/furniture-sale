@@ -393,6 +393,10 @@ body {
     font-style: italic;
 }
 
+.card-price.best-offer-highlight {
+    color: #e67e22;
+}
+
 .card-product-link {
     margin-top: var(--spacing-sm);
     padding-top: var(--spacing-sm);

@@ -193,7 +193,7 @@ function createFurnitureCard(item) {
                             <polyline points="15 3 21 3 21 9"></polyline>
                             <line x1="10" y1="14" x2="21" y2="3"></line>
                         </svg>
-                        Product Details
+                        Reference Retail Page
                     </a>
                 </div>
             ` : ''}
@@ -201,7 +201,7 @@ function createFurnitureCard(item) {
                 <div class="card-price-section">
                     ${item.retailPrice ? `<div class="card-retail-price">$${item.retailPrice.toLocaleString()}</div>` : ''}
                     ${(!item.price || item.price === 0)
-                        ? `<div class="card-price">Best Offer</div>`
+                        ? `<div class="card-price best-offer-highlight">Best Offer</div>`
                         : `<div class="card-price">$${item.price.toLocaleString()}${item.bestOffer ? ' <span class="best-offer-tag">or best offer</span>' : ''}</div>`
                     }
                 </div>
