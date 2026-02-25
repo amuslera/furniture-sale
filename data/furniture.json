@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 11,
   "items": [
     {
       "id": "item-001",
@@ -179,7 +179,8 @@
         "images/full/item-009-5.jpg",
         "images/full/item-009-6.jpg",
         "images/full/item-009-7.jpg",
-        "images/full/item-009-8.jpg"
+        "images/full/item-009-8.jpg",
+        "images/full/item-009-9.jpg"
       ],
       "thumbnails": [
         "images/thumbnails/item-009-1-thumb.jpg",
@@ -189,7 +190,8 @@
         "images/thumbnails/item-009-5-thumb.jpg",
         "images/thumbnails/item-009-6-thumb.jpg",
         "images/thumbnails/item-009-7-thumb.jpg",
-        "images/thumbnails/item-009-8-thumb.jpg"
+        "images/thumbnails/item-009-8-thumb.jpg",
+        "images/thumbnails/item-009-9-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
@@ -351,12 +353,14 @@
       "images": [
         "images/full/item-016-1.jpg",
         "images/full/item-016-2.jpg",
-        "images/full/item-016-3.jpg"
+        "images/full/item-016-3.jpg",
+        "images/full/item-016-4.jpg"
       ],
       "thumbnails": [
         "images/thumbnails/item-016-1-thumb.jpg",
         "images/thumbnails/item-016-2-thumb.jpg",
-        "images/thumbnails/item-016-3-thumb.jpg"
+        "images/thumbnails/item-016-3-thumb.jpg",
+        "images/thumbnails/item-016-4-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
@@ -436,7 +440,10 @@
         "images/full/item-020-3.jpg",
         "images/full/item-020-4.jpg",
         "images/full/item-020-5.jpg",
-        "images/full/item-020-6.jpg"
+        "images/full/item-020-6.jpg",
+        "images/full/item-020-7.jpg",
+        "images/full/item-020-8.jpg",
+        "images/full/item-020-9.jpg"
       ],
       "thumbnails": [
         "images/thumbnails/item-020-1-thumb.jpg",
@@ -444,7 +451,10 @@
         "images/thumbnails/item-020-3-thumb.jpg",
         "images/thumbnails/item-020-4-thumb.jpg",
         "images/thumbnails/item-020-5-thumb.jpg",
-        "images/thumbnails/item-020-6-thumb.jpg"
+        "images/thumbnails/item-020-6-thumb.jpg",
+        "images/thumbnails/item-020-7-thumb.jpg",
+        "images/thumbnails/item-020-8-thumb.jpg",
+        "images/thumbnails/item-020-9-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
@@ -707,7 +717,8 @@
         "images/full/item-032-3.jpg",
         "images/full/item-032-4.jpg",
         "images/full/item-032-5.jpg",
-        "images/full/item-032-6.jpg"
+        "images/full/item-032-6.jpg",
+        "images/full/item-032-7.jpg"
       ],
       "thumbnails": [
         "images/thumbnails/item-032-1-thumb.jpg",
@@ -715,7 +726,8 @@
         "images/thumbnails/item-032-3-thumb.jpg",
         "images/thumbnails/item-032-4-thumb.jpg",
         "images/thumbnails/item-032-5-thumb.jpg",
-        "images/thumbnails/item-032-6-thumb.jpg"
+        "images/thumbnails/item-032-6-thumb.jpg",
+        "images/thumbnails/item-032-7-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
@@ -989,11 +1001,17 @@
       "status": "available",
       "images": [
         "images/full/item-046-1.jpg",
-        "images/full/item-046-2.jpg"
+        "images/full/item-046-2.jpg",
+        "images/full/item-046-3.jpg",
+        "images/full/item-046-4.jpg",
+        "images/full/item-046-5.jpg"
       ],
       "thumbnails": [
         "images/thumbnails/item-046-1-thumb.jpg",
-        "images/thumbnails/item-046-2-thumb.jpg"
+        "images/thumbnails/item-046-2-thumb.jpg",
+        "images/thumbnails/item-046-3-thumb.jpg",
+        "images/thumbnails/item-046-4-thumb.jpg",
+        "images/thumbnails/item-046-5-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
@@ -1037,14 +1055,20 @@
         "images/full/item-048-2.jpg",
         "images/full/item-048-3.jpg",
         "images/full/item-048-4.jpg",
-        "images/full/item-048-5.jpg"
+        "images/full/item-048-5.jpg",
+        "images/full/item-048-6.jpg",
+        "images/full/item-048-7.jpg",
+        "images/full/item-048-8.jpg"
       ],
       "thumbnails": [
         "images/thumbnails/item-048-1-thumb.jpg",
         "images/thumbnails/item-048-2-thumb.jpg",
         "images/thumbnails/item-048-3-thumb.jpg",
         "images/thumbnails/item-048-4-thumb.jpg",
-        "images/thumbnails/item-048-5-thumb.jpg"
+        "images/thumbnails/item-048-5-thumb.jpg",
+        "images/thumbnails/item-048-6-thumb.jpg",
+        "images/thumbnails/item-048-7-thumb.jpg",
+        "images/thumbnails/item-048-8-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
@@ -1118,7 +1142,8 @@
         "images/full/item-051-3.jpg",
         "images/full/item-051-4.jpg",
         "images/full/item-051-5.jpg",
-        "images/full/item-051-6.jpg"
+        "images/full/item-051-6.jpg",
+        "images/full/item-051-7.jpg"
       ],
       "thumbnails": [
         "images/thumbnails/item-051-1-thumb.jpg",
@@ -1126,7 +1151,8 @@
         "images/thumbnails/item-051-3-thumb.jpg",
         "images/thumbnails/item-051-4-thumb.jpg",
         "images/thumbnails/item-051-5-thumb.jpg",
-        "images/thumbnails/item-051-6-thumb.jpg"
+        "images/thumbnails/item-051-6-thumb.jpg",
+        "images/thumbnails/item-051-7-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
@@ -1193,7 +1219,8 @@
         "images/full/item-054-4.jpg",
         "images/full/item-054-5.jpg",
         "images/full/item-054-6.jpg",
-        "images/full/item-054-7.jpg"
+        "images/full/item-054-7.jpg",
+        "images/full/item-054-8.jpg"
       ],
       "thumbnails": [
         "images/thumbnails/item-054-1-thumb.jpg",
@@ -1202,7 +1229,8 @@
         "images/thumbnails/item-054-4-thumb.jpg",
         "images/thumbnails/item-054-5-thumb.jpg",
         "images/thumbnails/item-054-6-thumb.jpg",
-        "images/thumbnails/item-054-7-thumb.jpg"
+        "images/thumbnails/item-054-7-thumb.jpg",
+        "images/thumbnails/item-054-8-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:45:21.000Z",
@@ -1459,6 +1487,25 @@
       "hidden": false,
       "dateAdded": "2026-02-24T05:45:21.000Z",
       "dateUpdated": "2026-02-24T05:45:21.000Z"
+    },
+    {
+      "id": "item-067",
+      "name": "Basic Desk",
+      "description": "Simple desk, practical and functional.",
+      "price": 0,
+      "retailPrice": 0,
+      "category": "tables",
+      "condition": "",
+      "productLink": "",
+      "images": [
+        "images/full/item-067-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-067-1-thumb.jpg"
+      ],
+      "status": "available",
+      "hidden": false,
+      "notes": ""
     }
   ]
 }
