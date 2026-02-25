@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 9,
   "items": [
     {
       "id": "item-001",
@@ -176,14 +176,20 @@
         "images/full/item-009-2.jpg",
         "images/full/item-009-3.jpg",
         "images/full/item-009-4.jpg",
-        "images/full/item-009-5.jpg"
+        "images/full/item-009-5.jpg",
+        "images/full/item-009-6.jpg",
+        "images/full/item-009-7.jpg",
+        "images/full/item-009-8.jpg"
       ],
       "thumbnails": [
         "images/thumbnails/item-009-1-thumb.jpg",
         "images/thumbnails/item-009-2-thumb.jpg",
         "images/thumbnails/item-009-3-thumb.jpg",
         "images/thumbnails/item-009-4-thumb.jpg",
-        "images/thumbnails/item-009-5-thumb.jpg"
+        "images/thumbnails/item-009-5-thumb.jpg",
+        "images/thumbnails/item-009-6-thumb.jpg",
+        "images/thumbnails/item-009-7-thumb.jpg",
+        "images/thumbnails/item-009-8-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
@@ -576,14 +582,22 @@
         "images/full/item-027-2.jpg",
         "images/full/item-027-3.jpg",
         "images/full/item-027-4.jpg",
-        "images/full/item-027-5.jpg"
+        "images/full/item-027-5.jpg",
+        "images/full/item-027-6.jpg",
+        "images/full/item-027-7.jpg",
+        "images/full/item-027-8.jpg",
+        "images/full/item-027-9.jpg"
       ],
       "thumbnails": [
         "images/thumbnails/item-027-1-thumb.jpg",
         "images/thumbnails/item-027-2-thumb.jpg",
         "images/thumbnails/item-027-3-thumb.jpg",
         "images/thumbnails/item-027-4-thumb.jpg",
-        "images/thumbnails/item-027-5-thumb.jpg"
+        "images/thumbnails/item-027-5-thumb.jpg",
+        "images/thumbnails/item-027-6-thumb.jpg",
+        "images/thumbnails/item-027-7-thumb.jpg",
+        "images/thumbnails/item-027-8-thumb.jpg",
+        "images/thumbnails/item-027-9-thumb.jpg"
       ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
