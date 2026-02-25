@@ -120,14 +120,6 @@ const AdminPanel = {
     document.getElementById('saveItemBtn').addEventListener('click', () => this.saveItem());
     document.getElementById('cancelFormBtn').addEventListener('click', () => this.hideItemForm());
 
-    // Auto-check B.O. when price is blank or 0
-    document.getElementById('itemPrice').addEventListener('input', (e) => {
-      const val = parseFloat(e.target.value);
-      if (!e.target.value || val === 0) {
-        document.getElementById('itemBestOffer').checked = true;
-      }
-    });
-
     // Image upload
     document.getElementById('imageUpload').addEventListener('change', (e) => this.handleImageUpload(e));
 
@@ -367,7 +359,6 @@ const AdminPanel = {
     document.getElementById('itemPrice').value = item ? item.price : '';
     document.getElementById('itemRetailPrice').value = item && item.retailPrice ? item.retailPrice : '';
     document.getElementById('itemProductLink').value = item && item.productLink ? item.productLink : '';
-    document.getElementById('itemBestOffer').checked = item ? (!!item.bestOffer || !item.price || item.price === 0) : false;
     document.getElementById('itemStatus').value = item ? item.status : 'available';
 
     // Clear file input
@@ -596,8 +587,7 @@ const AdminPanel = {
       return false;
     }
 
-    const bestOffer = document.getElementById('itemBestOffer').checked;
-    if (!bestOffer && (isNaN(price) || price < 0)) {
+    if (isNaN(price) || price < 0) {
       this.showMessage('Please enter a valid price', 'error');
       document.getElementById('itemPrice').focus();
       return false;
@@ -620,10 +610,9 @@ const AdminPanel = {
     const itemData = {
       name: document.getElementById('itemName').value.trim(),
       description: document.getElementById('itemDescription').value.trim(),
-      price: parseFloat(document.getElementById('itemPrice').value) || 0,
+      price: parseFloat(document.getElementById('itemPrice').value),
       retailPrice: retailPrice ? parseFloat(retailPrice) : null,
       productLink: productLink || null,
-      bestOffer: document.getElementById('itemBestOffer').checked,
       status: document.getElementById('itemStatus').value,
       images: this.uploadedImages
     };
@@ -975,23 +964,25 @@ const AdminPanel = {
 
   addItemPage(doc, item, fields, imageCache, idx, total) {
     const pw = doc.internal.pageSize.getWidth();
+    const ph = doc.internal.pageSize.getHeight();
     const margin = 40;
     const contentW = pw - 2 * margin;
-    let y = margin;
+    let y = margin + 24; // start with room for first text baseline
 
-    // Item name
+    // Item name (wrap long names)
     if (fields.name) {
       doc.setFontSize(20);
       doc.setFont('helvetica', 'bold');
       doc.setTextColor(26, 26, 46);
-      doc.text(item.name || 'Unnamed Item', margin, y);
-      y += 10;
+      const nameLines = doc.splitTextToSize(item.name || 'Unnamed Item', contentW);
+      doc.text(nameLines, margin, y);
+      y += nameLines.length * 24 + 6;
 
       // Green HR
       doc.setDrawColor(45, 106, 79);
       doc.setLineWidth(0.8);
       doc.line(margin, y, margin + contentW, y);
-      y += 12;
+      y += 18;
     }
 
     // Price
@@ -1001,7 +992,7 @@ const AdminPanel = {
       doc.setTextColor(45, 106, 79);
       const priceText = item.price === 0 ? 'Best Offer' : `$${item.price.toLocaleString('en-US', { minimumFractionDigits: 0 })}`;
       doc.text(priceText, margin, y);
-      y += 8;
+      y += 28;
     }
 
     // Retail price + savings
@@ -1013,10 +1004,10 @@ const AdminPanel = {
       if (item.price && item.price > 0 && item.retailPrice !== item.price) {
         const savings = item.retailPrice - item.price;
         const pct = Math.round((savings / item.retailPrice) * 100);
-        retailText += `  ·  Save $${savings.toLocaleString('en-US')}  (${pct}% off)`;
+        retailText += `  |  Save $${savings.toLocaleString('en-US')}  (${pct}% off)`;
       }
       doc.text(retailText, margin, y);
-      y += 10;
+      y += 18;
     }
 
     // Description
@@ -1026,10 +1017,10 @@ const AdminPanel = {
       doc.setTextColor(51, 51, 51);
       const lines = doc.splitTextToSize(item.description, contentW);
       // Limit lines to avoid overflow, leave room for image
-      const maxLines = fields.images ? 12 : 30;
+      const maxLines = fields.images ? 10 : 35;
       const trimmedLines = lines.slice(0, maxLines);
       doc.text(trimmedLines, margin, y);
-      y += trimmedLines.length * 5 + 6;
+      y += trimmedLines.length * 14 + 8;
     }
 
     // Status
@@ -1038,7 +1029,7 @@ const AdminPanel = {
       doc.setFont('helvetica', 'bold');
       doc.setTextColor(108, 117, 125);
       doc.text(`Status: ${item.status.charAt(0).toUpperCase() + item.status.slice(1)}`, margin, y);
-      y += 8;
+      y += 18;
     }
 
     // Product link
@@ -1046,39 +1037,38 @@ const AdminPanel = {
       doc.setFontSize(9);
       doc.setFont('helvetica', 'normal');
       doc.setTextColor(45, 106, 79);
-      const linkText = item.productLink.length > 70 ? item.productLink.substring(0, 70) + '...' : item.productLink;
+      const linkText = item.productLink.length > 80 ? item.productLink.substring(0, 80) + '...' : item.productLink;
       doc.textWithLink(linkText, margin, y, { url: item.productLink });
-      y += 10;
+      y += 18;
     }
 
     // Image
     if (fields.images && item.images && item.images.length > 0) {
       const imgData = imageCache[item.images[0]];
       if (imgData) {
-        y += 4;
-        const ph = doc.internal.pageSize.getHeight();
-        const availH = ph - y - 30; // leave room for footer
+        y += 8;
+        const availH = ph - y - 36; // room for footer
         const availW = contentW;
 
-        let imgW = imgData.w;
-        let imgH = imgData.h;
+        if (availH > 60) { // only render if enough space
+          let imgW = imgData.w;
+          let imgH = imgData.h;
 
-        // Scale to fit available space
-        const scaleW = availW / imgW;
-        const scaleH = availH / imgH;
-        const scale = Math.min(scaleW, scaleH, 1);
-        imgW = imgW * scale;
-        imgH = imgH * scale;
+          // Scale to fit available space
+          const scaleW = availW / imgW;
+          const scaleH = availH / imgH;
+          const scale = Math.min(scaleW, scaleH, 1);
+          imgW = imgW * scale;
+          imgH = imgH * scale;
 
-        // Center horizontally
-        const imgX = margin + (contentW - imgW) / 2;
-        doc.addImage(imgData.dataUrl, 'JPEG', imgX, y, imgW, imgH);
-        y += imgH + 6;
+          // Center horizontally
+          const imgX = margin + (contentW - imgW) / 2;
+          doc.addImage(imgData.dataUrl, 'JPEG', imgX, y, imgW, imgH);
+        }
       }
     }
 
     // Footer
-    const ph = doc.internal.pageSize.getHeight();
     doc.setFontSize(7.5);
     doc.setFont('helvetica', 'normal');
     doc.setTextColor(170, 170, 170);
