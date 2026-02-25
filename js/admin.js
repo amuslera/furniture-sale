@@ -963,39 +963,47 @@ const AdminPanel = {
   },
 
   addItemPage(doc, item, fields, imageCache, idx, total) {
-    const pw = doc.internal.pageSize.getWidth();
-    const ph = doc.internal.pageSize.getHeight();
-    const margin = 40;
+    const pw = doc.internal.pageSize.getWidth();  // 612
+    const ph = doc.internal.pageSize.getHeight(); // 792
+    const margin = 47; // 0.65 inch, matches reference
     const contentW = pw - 2 * margin;
-    let y = margin + 24; // start with room for first text baseline
+    const footerY = ph - 50; // footer zone starts here
 
-    // Item name (wrap long names)
+    // y = baseline cursor for next text draw
+    let y = margin;
+
+    // ── Title ──────────────────────────────────────────────
     if (fields.name) {
       doc.setFontSize(20);
       doc.setFont('helvetica', 'bold');
       doc.setTextColor(26, 26, 46);
       const nameLines = doc.splitTextToSize(item.name || 'Unnamed Item', contentW);
-      doc.text(nameLines, margin, y);
-      y += nameLines.length * 24 + 6;
+      y += 24; // first baseline
+      for (let i = 0; i < nameLines.length; i++) {
+        doc.text(nameLines[i], margin, y);
+        y += 24;
+      }
+      y += 2; // small gap before HR
 
-      // Green HR
+      // Green HR (2pt thick like reference)
       doc.setDrawColor(45, 106, 79);
-      doc.setLineWidth(0.8);
+      doc.setLineWidth(2);
       doc.line(margin, y, margin + contentW, y);
-      y += 18;
+      y += 16; // space after HR
     }
 
-    // Price
+    // ── Price ──────────────────────────────────────────────
     if (fields.price && item.price != null) {
       doc.setFontSize(22);
       doc.setFont('helvetica', 'bold');
       doc.setTextColor(45, 106, 79);
       const priceText = item.price === 0 ? 'Best Offer' : `$${item.price.toLocaleString('en-US', { minimumFractionDigits: 0 })}`;
+      y += 22; // baseline for 22pt text
       doc.text(priceText, margin, y);
-      y += 28;
+      y += 4;
     }
 
-    // Retail price + savings
+    // ── Retail price + savings ─────────────────────────────
     if (fields.retailPrice && item.retailPrice && item.retailPrice > 0) {
       doc.setFontSize(10);
       doc.setFont('helvetica', 'normal');
@@ -1004,57 +1012,68 @@ const AdminPanel = {
       if (item.price && item.price > 0 && item.retailPrice !== item.price) {
         const savings = item.retailPrice - item.price;
         const pct = Math.round((savings / item.retailPrice) * 100);
-        retailText += `  |  Save $${savings.toLocaleString('en-US')}  (${pct}% off)`;
+        retailText += `  \u00b7  Save $${savings.toLocaleString('en-US')}  (${pct}% off)`;
       }
+      y += 14;
       doc.text(retailText, margin, y);
-      y += 18;
+      y += 10;
     }
 
-    // Description
+    // ── Description ────────────────────────────────────────
     if (fields.description && item.description) {
+      y += 6;
       doc.setFontSize(10);
       doc.setFont('helvetica', 'normal');
       doc.setTextColor(51, 51, 51);
       const lines = doc.splitTextToSize(item.description, contentW);
-      // Limit lines to avoid overflow, leave room for image
-      const maxLines = fields.images ? 10 : 35;
-      const trimmedLines = lines.slice(0, maxLines);
-      doc.text(trimmedLines, margin, y);
-      y += trimmedLines.length * 14 + 8;
+      const maxDescY = fields.images ? (ph * 0.45) : (footerY - 20);
+      const maxLines = Math.min(lines.length, Math.floor((maxDescY - y) / 15));
+      const trimmedLines = lines.slice(0, Math.max(maxLines, 3));
+      for (let i = 0; i < trimmedLines.length; i++) {
+        y += 15;
+        doc.text(trimmedLines[i], margin, y);
+      }
+      y += 12;
     }
 
-    // Status
+    // ── Status ─────────────────────────────────────────────
     if (fields.status && item.status) {
       doc.setFontSize(10);
       doc.setFont('helvetica', 'bold');
       doc.setTextColor(108, 117, 125);
+      y += 14;
       doc.text(`Status: ${item.status.charAt(0).toUpperCase() + item.status.slice(1)}`, margin, y);
-      y += 18;
+      y += 6;
     }
 
-    // Product link
+    // ── Product link ───────────────────────────────────────
     if (fields.productLink && item.productLink) {
       doc.setFontSize(9);
       doc.setFont('helvetica', 'normal');
       doc.setTextColor(45, 106, 79);
-      const linkText = item.productLink.length > 80 ? item.productLink.substring(0, 80) + '...' : item.productLink;
-      doc.textWithLink(linkText, margin, y, { url: item.productLink });
-      y += 18;
+      y += 14;
+      doc.textWithLink(item.productLink, margin, y, { url: item.productLink });
+      y += 6;
     }
 
-    // Image
+    // ── Gray HR separator before image ─────────────────────
+    y += 8;
+    doc.setDrawColor(222, 226, 230);
+    doc.setLineWidth(0.5);
+    doc.line(margin, y, margin + contentW, y);
+    y += 14;
+
+    // ── Image ──────────────────────────────────────────────
     if (fields.images && item.images && item.images.length > 0) {
       const imgData = imageCache[item.images[0]];
       if (imgData) {
-        y += 8;
-        const availH = ph - y - 36; // room for footer
+        const availH = footerY - y - 10;
         const availW = contentW;
 
-        if (availH > 60) { // only render if enough space
+        if (availH > 80) {
           let imgW = imgData.w;
           let imgH = imgData.h;
 
-          // Scale to fit available space
           const scaleW = availW / imgW;
           const scaleH = availH / imgH;
           const scale = Math.min(scaleW, scaleH, 1);
@@ -1068,11 +1087,16 @@ const AdminPanel = {
       }
     }
 
-    // Footer
+    // ── Footer ─────────────────────────────────────────────
+    doc.setDrawColor(222, 226, 230);
+    doc.setLineWidth(0.5);
+    doc.line(margin, footerY, margin + contentW, footerY);
+
     doc.setFontSize(7.5);
     doc.setFont('helvetica', 'normal');
     doc.setTextColor(170, 170, 170);
-    doc.text(`Item ${idx} of ${total}`, pw / 2, ph - 20, { align: 'center' });
+    const footerText = `Item ${idx} of ${total}  \u00b7  ${item.id || ''}  \u00b7  All items subject to prior sale`;
+    doc.text(footerText, pw / 2, footerY + 12, { align: 'center' });
   },
 
   // ── PDF Export: Main Orchestrator ────────────────────────────────
