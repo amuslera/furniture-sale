@@ -16,6 +16,7 @@ const AdminPanel = {
   uploadedImages: [],
   visibilityFilter: 'all', // 'all', 'visible', 'hidden'
   selectedItems: new Set(),
+  currentTableItems: [], // ordered list of item IDs as shown in table
 
   /**
    * Initialize the admin panel
@@ -79,6 +80,7 @@ const AdminPanel = {
     document.getElementById('logoutBtn').addEventListener('click', () => this.logout());
     document.getElementById('addNewBtn').addEventListener('click', () => this.showItemForm());
     document.getElementById('saveItemBtn').addEventListener('click', () => this.saveItem());
+    document.getElementById('saveNextBtn').addEventListener('click', () => this.saveAndEditNext());
     document.getElementById('cancelFormBtn').addEventListener('click', () => this.hideItemForm());
     document.getElementById('imageUpload').addEventListener('change', (e) => this.handleImageUpload(e));
     document.getElementById('publishBtn').addEventListener('click', () => this.publishChanges());
@@ -126,6 +128,9 @@ const AdminPanel = {
     if (sortBy) {
       items = this.sortItems(items, sortBy, sortOrder);
     }
+
+    // Track current table order for Save & Edit Next
+    this.currentTableItems = items.map(item => item.id);
 
     tbody.innerHTML = items.map((item, index) => {
       const isHidden = item.hidden === true;
@@ -306,6 +311,17 @@ const AdminPanel = {
     document.getElementById('itemStatus').value = item ? item.status : 'available';
     document.getElementById('imageUpload').value = '';
     this.renderUploadedImages();
+
+    // Show "Save & Edit Next" only when editing an existing item with a next item available
+    const saveNextBtn = document.getElementById('saveNextBtn');
+    if (item && this.currentTableItems.length > 0) {
+      const idx = this.currentTableItems.indexOf(item.id);
+      const hasNext = idx >= 0 && idx < this.currentTableItems.length - 1;
+      saveNextBtn.style.display = hasNext ? 'inline-block' : 'none';
+    } else {
+      saveNextBtn.style.display = 'none';
+    }
+
     document.getElementById('itemFormSection').style.display = 'block';
     document.getElementById('itemsListSection').style.display = 'none';
     document.getElementById('itemName').focus();
@@ -448,8 +464,8 @@ const AdminPanel = {
     return true;
   },
 
-  saveItem() {
-    if (!this.validateForm()) return;
+  _doSave() {
+    if (!this.validateForm()) return false;
     const retailPrice = document.getElementById('itemRetailPrice').value;
     const productLink = document.getElementById('itemProductLink').value.trim();
     const priceVal = document.getElementById('itemPrice').value;
@@ -476,13 +492,40 @@ const AdminPanel = {
       success = FurnitureData.addItem(itemData);
     }
 
-    if (success) {
+    if (!success) {
+      this.showMessage('Failed to save item. Storage may be full.', 'error');
+    }
+    return success;
+  },
+
+  saveItem() {
+    if (this._doSave()) {
       this.showMessage(this.currentEditId ? 'Item updated successfully' : 'Item added successfully', 'success');
       this.hideItemForm();
       this.loadItemsTable();
-    } else {
-      this.showMessage('Failed to save item. Storage may be full.', 'error');
     }
+  },
+
+  saveAndEditNext() {
+    const currentId = this.currentEditId;
+    if (!this._doSave()) return;
+
+    const idx = this.currentTableItems.indexOf(currentId);
+    if (idx >= 0 && idx < this.currentTableItems.length - 1) {
+      const nextId = this.currentTableItems[idx + 1];
+      const nextItem = FurnitureData.getItemById(nextId);
+      if (nextItem) {
+        const pos = idx + 2; // 1-based position of the next item
+        const total = this.currentTableItems.length;
+        this.showMessage(`Saved! Now editing ${pos} of ${total}`, 'success');
+        this.showItemForm(nextItem);
+        return;
+      }
+    }
+    // Fallback: no next item
+    this.showMessage('Item saved. No more items to edit.', 'success');
+    this.hideItemForm();
+    this.loadItemsTable();
   },
 
   editItem(id) {
