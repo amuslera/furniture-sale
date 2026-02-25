@@ -1,5 +1,5 @@
 {
-  "version": 11,
+  "version": 12,
   "items": [
     {
       "id": "item-001",
@@ -394,8 +394,12 @@
       "price": 300,
       "category": "decor",
       "status": "available",
-      "images": [],
-      "thumbnails": [],
+      "images": [
+        "images/full/item-018-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-018-1-thumb.jpg"
+      ],
       "hidden": false,
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "dateUpdated": "2026-02-24T05:20:58.000Z",
