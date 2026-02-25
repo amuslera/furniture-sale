@@ -386,6 +386,13 @@ body {
     order: -1;
 }
 
+.best-offer-tag {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #666;
+    font-style: italic;
+}
+
 .card-product-link {
     margin-top: var(--spacing-sm);
     padding-top: var(--spacing-sm);

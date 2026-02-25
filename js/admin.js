@@ -335,6 +335,7 @@ const AdminPanel = {
     document.getElementById('itemPrice').value = item ? item.price : '';
     document.getElementById('itemRetailPrice').value = item && item.retailPrice ? item.retailPrice : '';
     document.getElementById('itemProductLink').value = item && item.productLink ? item.productLink : '';
+    document.getElementById('itemBestOffer').checked = item ? !!item.bestOffer : false;
     document.getElementById('itemStatus').value = item ? item.status : 'available';
 
     // Clear file input
@@ -563,7 +564,8 @@ const AdminPanel = {
       return false;
     }
 
-    if (isNaN(price) || price < 0) {
+    const bestOffer = document.getElementById('itemBestOffer').checked;
+    if (!bestOffer && (isNaN(price) || price < 0)) {
       this.showMessage('Please enter a valid price', 'error');
       document.getElementById('itemPrice').focus();
       return false;
@@ -586,9 +588,10 @@ const AdminPanel = {
     const itemData = {
       name: document.getElementById('itemName').value.trim(),
       description: document.getElementById('itemDescription').value.trim(),
-      price: parseFloat(document.getElementById('itemPrice').value),
+      price: parseFloat(document.getElementById('itemPrice').value) || 0,
       retailPrice: retailPrice ? parseFloat(retailPrice) : null,
       productLink: productLink || null,
+      bestOffer: document.getElementById('itemBestOffer').checked,
       status: document.getElementById('itemStatus').value,
       images: this.uploadedImages
     };

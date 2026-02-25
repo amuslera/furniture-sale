@@ -200,7 +200,10 @@ function createFurnitureCard(item) {
             <div class="card-footer">
                 <div class="card-price-section">
                     ${item.retailPrice ? `<div class="card-retail-price">$${item.retailPrice.toLocaleString()}</div>` : ''}
-                    <div class="card-price">$${item.price.toLocaleString()}</div>
+                    ${item.bestOffer && (!item.price || item.price === 0)
+                        ? `<div class="card-price">Best Offer</div>`
+                        : `<div class="card-price">$${item.price.toLocaleString()}${item.bestOffer ? ' <span class="best-offer-tag">or best offer</span>' : ''}</div>`
+                    }
                 </div>
                 ${hasMultiplePhotos ? `<a class="card-view-all" onclick="openLightbox('${item.id}', 0)">View All Photos</a>` : ''}
             </div>

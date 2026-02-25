@@ -112,14 +112,20 @@
         <!-- Price -->
         <div class="form-group">
           <label for="itemPrice">Selling Price ($) *</label>
-          <input
-            type="number"
-            id="itemPrice"
-            placeholder="250"
-            min="0"
-            step="0.01"
-            required
-          >
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <input
+              type="number"
+              id="itemPrice"
+              placeholder="250"
+              min="0"
+              step="0.01"
+              required
+              style="flex: 1;"
+            >
+            <label for="itemBestOffer" title="Or best offer" style="display: flex; align-items: center; gap: 4px; cursor: pointer; white-space: nowrap; font-weight: 500;">
+              <input type="checkbox" id="itemBestOffer"> B.O.
+            </label>
+          </div>
         </div>
 
         <!-- Retail Price -->
