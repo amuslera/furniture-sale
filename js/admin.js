@@ -656,11 +656,11 @@ const AdminPanel = {
    * Publish changes - commit furniture.json directly to GitHub
    */
   async publishChanges() {
-    let token = sessionStorage.getItem(this.GITHUB_TOKEN_KEY);
+    let token = localStorage.getItem(this.GITHUB_TOKEN_KEY);
     if (!token) {
-      token = prompt('Enter your GitHub Personal Access Token\n(needs "Contents: Read and write" permission on amuslera/furniture-sale):');
+      token = prompt('Enter your GitHub Personal Access Token\n(needs "Contents: Read and write" permission on amuslera/furniture-sale)\n\nThis will be saved in your browser so you only need to do this once.');
       if (!token) return;
-      sessionStorage.setItem(this.GITHUB_TOKEN_KEY, token);
+      localStorage.setItem(this.GITHUB_TOKEN_KEY, token);
     }
 
     this.showMessage('Publishing to GitHub...', 'info');
@@ -676,7 +676,7 @@ const AdminPanel = {
       );
       if (!getResp.ok) {
         if (getResp.status === 401) {
-          sessionStorage.removeItem(this.GITHUB_TOKEN_KEY);
+          localStorage.removeItem(this.GITHUB_TOKEN_KEY);
           throw new Error('Invalid token. Please try again.');
         }
         throw new Error(`GitHub API error: ${getResp.status}`);
