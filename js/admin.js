@@ -773,6 +773,22 @@ const AdminPanel = {
     doc.setTextColor(170, 170, 170);
     const today = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
     doc.text(today, cx, ph * 0.52, { align: 'center' });
+
+    // Contact info
+    doc.setDrawColor(45, 106, 79);
+    doc.setLineWidth(0.5);
+    doc.line(cx - 140, ph * 0.58, cx + 140, ph * 0.58);
+
+    doc.setFontSize(12);
+    doc.setFont('helvetica', 'bold');
+    doc.setTextColor(51, 51, 51);
+    doc.text('Contact', cx, ph * 0.62, { align: 'center' });
+
+    doc.setFontSize(11);
+    doc.setFont('helvetica', 'normal');
+    doc.setTextColor(108, 117, 125);
+    doc.text('arielmuslera@gmail.com  \u00b7  415-320-0264', cx, ph * 0.66, { align: 'center' });
+    doc.text('Pick up in Silver Triangle, Venice', cx, ph * 0.69, { align: 'center' });
   },
 
   /**
@@ -795,6 +811,16 @@ const AdminPanel = {
     const imgColW = contentW - textColW - colGap;   // ~307
 
     let y = margin;
+
+    // ── Contact header ──────────────────────────────────────
+    doc.setFontSize(8);
+    doc.setFont('helvetica', 'normal');
+    doc.setTextColor(150, 150, 150);
+    doc.text('arielmuslera@gmail.com  \u00b7  415-320-0264  \u00b7  Silver Triangle, Venice', pw / 2, y, { align: 'center' });
+    doc.setDrawColor(222, 226, 230);
+    doc.setLineWidth(0.3);
+    doc.line(margin, y + 6, margin + contentW, y + 6);
+    y += 18;
 
     // ── Title (full width) ─────────────────────────────────
     if (fields.name) {
