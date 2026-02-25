@@ -11,7 +11,7 @@ const state = {
     furniture: [],
     filteredFurniture: [],
     currentFilter: 'all',
-    currentSort: 'default',
+    currentSort: 'price-high',
     searchQuery: '',
     lightbox: {
         isOpen: false,
@@ -60,10 +60,8 @@ async function loadFurnitureData() {
         state.furniture = allItems.filter(item => item.hidden !== true);
         console.log('Loaded furniture data:', state.furniture.length, 'items (', allItems.length - state.furniture.length, 'hidden)');
 
-        // Initialize the app
-        state.filteredFurniture = [...state.furniture];
-        renderFurniture();
-        updateResultsCount();
+        // Initialize the app with default sort applied
+        applyFiltersAndSort();
 
     } catch (error) {
         console.error('Error loading furniture data:', error);
