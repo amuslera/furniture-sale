@@ -647,33 +647,82 @@ const AdminPanel = {
     }
   },
 
+  // GitHub publish config
+  GITHUB_REPO: 'amuslera/furniture-sale',
+  GITHUB_FILE: 'data/furniture.json',
+  GITHUB_TOKEN_KEY: 'furniture_github_token',
+
   /**
-   * Publish changes - sends email with JSON data
+   * Publish changes - commit furniture.json directly to GitHub
    */
-  publishChanges() {
-    const jsonData = FurnitureData.exportData();
-    const items = FurnitureData.loadItems();
-    const itemCount = items.length;
-    const timestamp = new Date().toISOString().split('T')[0];
+  async publishChanges() {
+    let token = sessionStorage.getItem(this.GITHUB_TOKEN_KEY);
+    if (!token) {
+      token = prompt('Enter your GitHub Personal Access Token\n(needs "Contents: Read and write" permission on amuslera/furniture-sale):');
+      if (!token) return;
+      sessionStorage.setItem(this.GITHUB_TOKEN_KEY, token);
+    }
 
-    // Create email subject and body
-    const subject = encodeURIComponent(`Furniture Website Update - ${timestamp}`);
-    const body = encodeURIComponent(
-      `Hi,\n\n` +
-      `I've updated the furniture listings and would like to publish the changes to the live website.\n\n` +
-      `Updated data:\n` +
-      `- Total items: ${itemCount}\n` +
-      `- Date: ${timestamp}\n\n` +
-      `The JSON data is attached below. Please copy it and update the website.\n\n` +
-      `JSON Data:\n` +
-      `${jsonData}\n\n` +
-      `Thanks!`
-    );
+    this.showMessage('Publishing to GitHub...', 'info');
+    const publishBtn = document.getElementById('publishBtn');
+    publishBtn.disabled = true;
+    publishBtn.textContent = '⏳ Publishing...';
 
-    // Open email client with pre-filled content
-    window.location.href = `mailto:arielmuslera@gmail.com?subject=${subject}&body=${body}`;
+    try {
+      // Get current file SHA (required for updates)
+      const getResp = await fetch(
+        `https://api.github.com/repos/${this.GITHUB_REPO}/contents/${this.GITHUB_FILE}`,
+        { headers: { 'Authorization': `token ${token}` } }
+      );
+      if (!getResp.ok) {
+        if (getResp.status === 401) {
+          sessionStorage.removeItem(this.GITHUB_TOKEN_KEY);
+          throw new Error('Invalid token. Please try again.');
+        }
+        throw new Error(`GitHub API error: ${getResp.status}`);
+      }
+      const fileData = await getResp.json();
 
-    this.showMessage('Email opened - send it to publish your changes', 'success');
+      // Build new furniture.json with version bump
+      const items = FurnitureData.loadItems();
+      const storedVersion = FurnitureData.getStoredVersion();
+      const newVersion = storedVersion + 1;
+      const newData = { version: newVersion, items: items };
+      const jsonStr = JSON.stringify(newData, null, 2);
+
+      // Commit to GitHub
+      const putResp = await fetch(
+        `https://api.github.com/repos/${this.GITHUB_REPO}/contents/${this.GITHUB_FILE}`,
+        {
+          method: 'PUT',
+          headers: {
+            'Authorization': `token ${token}`,
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            message: `Update furniture data (v${newVersion}) from admin panel`,
+            content: btoa(unescape(encodeURIComponent(jsonStr))),
+            sha: fileData.sha
+          })
+        }
+      );
+
+      if (!putResp.ok) {
+        const err = await putResp.json();
+        throw new Error(err.message || `GitHub API error: ${putResp.status}`);
+      }
+
+      // Update local version to match
+      localStorage.setItem(FurnitureData.VERSION_KEY, String(newVersion));
+
+      this.showMessage(`Published v${newVersion} to GitHub! Site will update in ~1 minute.`, 'success');
+    } catch (error) {
+      console.error('Publish failed:', error);
+      this.showMessage(`Publish failed: ${error.message}`, 'error');
+    } finally {
+      publishBtn.disabled = false;
+      publishBtn.textContent = '📤 Publish Changes';
+    }
   },
 
   /**
