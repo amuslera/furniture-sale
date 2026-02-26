@@ -1,5 +1,5 @@
 {
-  "version": 22,
+  "version": 23,
   "items": [
     {
       "name": "Silver 2-Bike Upright Tension Mount Garage Bike Rack by Rad Cycle",
@@ -1175,6 +1175,176 @@
       "id": "item-067",
       "dateUpdated": "2026-02-25T23:33:18.883Z",
       "hidden": false
+    },
+    {
+      "id": "item-077",
+      "name": "Portable Air Conditioner",
+      "description": "White portable AC unit with exhaust hose and digital controls. Perfect for cooling individual rooms. Includes window venting kit. Good working condition.",
+      "price": 120,
+      "retailPrice": 350,
+      "bestOffer": true,
+      "category": "electronics",
+      "status": "available",
+      "hidden": false,
+      "images": [
+        "images/full/item-077-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-077-1-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-26T12:00:00.000Z",
+      "dateUpdated": "2026-02-26T12:00:00.000Z",
+      "productLink": null
+    },
+    {
+      "id": "item-078",
+      "name": "Gray Geometric Pattern Area Rug",
+      "description": "Large woven area rug with bold black, gray, and cream geometric hexagonal pattern. Textured wool/cotton blend. Some wear visible (see detail photo). Approximate size 8x10 feet.",
+      "price": 150,
+      "retailPrice": 500,
+      "bestOffer": true,
+      "category": "decor",
+      "status": "available",
+      "hidden": false,
+      "images": [
+        "images/full/item-078-1.jpg",
+        "images/full/item-078-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-078-1-thumb.jpg",
+        "images/thumbnails/item-078-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-26T12:00:00.000Z",
+      "dateUpdated": "2026-02-26T12:00:00.000Z",
+      "productLink": null
+    },
+    {
+      "id": "item-079",
+      "name": "Black Velvet Bean Bag Chair",
+      "description": "Oversized round black velvet bean bag chair. Super soft and comfortable. Great for lounging or a media room. Approximately 4 feet in diameter.",
+      "price": 75,
+      "retailPrice": 200,
+      "bestOffer": true,
+      "category": "seating",
+      "status": "available",
+      "hidden": false,
+      "images": [
+        "images/full/item-079-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-079-1-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-26T12:00:00.000Z",
+      "dateUpdated": "2026-02-26T12:00:00.000Z",
+      "productLink": null
+    },
+    {
+      "id": "item-080",
+      "name": "Wood Platform Bed with White Mattress",
+      "description": "Natural wood platform bed frame with clean modern lines. Includes white quilted mattress. Queen size. Solid construction with angled legs. Headboard-free minimalist design.",
+      "price": 350,
+      "retailPrice": 900,
+      "bestOffer": true,
+      "category": "beds",
+      "status": "available",
+      "hidden": false,
+      "images": [
+        "images/full/item-080-1.jpg",
+        "images/full/item-080-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-080-1-thumb.jpg",
+        "images/thumbnails/item-080-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-26T12:00:00.000Z",
+      "dateUpdated": "2026-02-26T12:00:00.000Z",
+      "productLink": null
+    },
+    {
+      "id": "item-081",
+      "name": "Stainless Steel Cylinder Side Table",
+      "description": "Modern brushed stainless steel cylindrical side table with round glass top. Sleek minimalist design. Approximately 18 inches diameter, 22 inches tall. Great as a bedside or accent table.",
+      "price": 95,
+      "retailPrice": 250,
+      "bestOffer": true,
+      "category": "tables",
+      "status": "available",
+      "hidden": false,
+      "images": [
+        "images/full/item-081-1.jpg",
+        "images/full/item-081-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-081-1-thumb.jpg",
+        "images/thumbnails/item-081-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-26T12:00:00.000Z",
+      "dateUpdated": "2026-02-26T12:00:00.000Z",
+      "productLink": null
+    },
+    {
+      "id": "item-082",
+      "name": "Folding Teak & Walnut Deck Chairs (Set of 2)",
+      "description": "Pair of folding slatted deck chairs \u2014 one in natural teak, one in darker walnut finish. Stainless steel hardware. Compact and easy to store. Great for patio, balcony, or indoor use.",
+      "price": 120,
+      "retailPrice": 300,
+      "bestOffer": true,
+      "category": "outdoor",
+      "status": "available",
+      "hidden": false,
+      "images": [
+        "images/full/item-082-1.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-082-1-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-26T12:00:00.000Z",
+      "dateUpdated": "2026-02-26T12:00:00.000Z",
+      "productLink": null
+    },
+    {
+      "id": "item-083",
+      "name": "White Nightstand with Glass Door",
+      "description": "White wooden nightstand with ribbed glass panel door and open shelf. Classic cottage style. Sturdy construction with clean lines.",
+      "price": 65,
+      "retailPrice": 180,
+      "bestOffer": true,
+      "category": "storage",
+      "status": "available",
+      "hidden": false,
+      "images": [
+        "images/full/item-083-1.jpg",
+        "images/full/item-083-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-083-1-thumb.jpg",
+        "images/thumbnails/item-083-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-26T12:00:00.000Z",
+      "dateUpdated": "2026-02-26T12:00:00.000Z",
+      "productLink": null
+    },
+    {
+      "id": "item-084",
+      "name": "Black Metal Open-Frame Nightstand",
+      "description": "Industrial-style black metal open-frame nightstand or side table. Minimalist geometric design with open shelving. Pairs well with modern or industrial decor. Sturdy welded steel construction.",
+      "price": 55,
+      "retailPrice": 150,
+      "bestOffer": true,
+      "category": "storage",
+      "status": "available",
+      "hidden": false,
+      "images": [
+        "images/full/item-084-1.jpg",
+        "images/full/item-084-2.jpg"
+      ],
+      "thumbnails": [
+        "images/thumbnails/item-084-1-thumb.jpg",
+        "images/thumbnails/item-084-2-thumb.jpg"
+      ],
+      "dateAdded": "2026-02-26T12:00:00.000Z",
+      "dateUpdated": "2026-02-26T12:00:00.000Z",
+      "productLink": null
     }
   ]
 }
