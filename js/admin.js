@@ -157,6 +157,8 @@ const AdminPanel = {
             <option value="available" ${item.status === 'available' ? 'selected' : ''}>Available</option>
             <option value="pending" ${item.status === 'pending' ? 'selected' : ''}>Pending</option>
             <option value="sold" ${item.status === 'sold' ? 'selected' : ''}>Sold</option>
+            <option value="newly_added" ${item.status === 'newly_added' ? 'selected' : ''}>Newly Added</option>
+            <option value="discounted" ${item.status === 'discounted' ? 'selected' : ''}>Discounted</option>
           </select>
         </td>
         <td class="last-edit-cell">${lastEdit}</td>
@@ -917,7 +919,7 @@ const AdminPanel = {
       doc.setFont('helvetica', 'bold');
       doc.setTextColor(108, 117, 125);
       ty += 14;
-      doc.text(`Status: ${item.status.charAt(0).toUpperCase() + item.status.slice(1)}`, margin, ty);
+      doc.text(`Status: ${item.status.replace(/_/g, " ").split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ")}`, margin, ty);
       ty += 6;
     }
 

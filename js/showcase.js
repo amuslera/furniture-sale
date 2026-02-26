@@ -218,7 +218,9 @@ function formatStatus(status) {
     const statusMap = {
         'available': 'Available',
         'pending': 'Pending',
-        'sold': 'Sold'
+        'sold': 'Sold',
+        'newly_added': 'New!',
+        'discounted': 'Discounted!'
     };
     return statusMap[status] || status;
 }

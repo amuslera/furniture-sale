@@ -825,3 +825,13 @@ tr:hover {
   height: 18px;
   cursor: pointer;
 }
+
+.status-newly_added {
+  background-color: #fce4ec;
+  color: #c2185b;
+}
+
+.status-discounted {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
+}

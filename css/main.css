@@ -22,6 +22,8 @@
     --color-available: #4CAF50;
     --color-pending: #FF9800;
     --color-sold: #F44336;
+    --color-newly-added: #E91E63;
+    --color-discounted: #9C27B0;
 
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -835,4 +837,42 @@ input:focus-visible,
 select:focus-visible {
     outline: 2px solid var(--color-primary);
     outline-offset: 2px;
+}
+
+/* Newly Added badge - eye-catching pulse animation */
+.card-status-badge.newly_added {
+    background-color: var(--color-newly-added);
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 5px rgba(233, 30, 99, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(233, 30, 99, 0.8), 0 0 30px rgba(233, 30, 99, 0.4);
+    }
+}
+
+/* Discounted badge - bold purple with subtle shimmer */
+.card-status-badge.discounted {
+    background-color: var(--color-discounted);
+    animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0%, 100% {
+        background-color: #9C27B0;
+    }
+    50% {
+        background-color: #AB47BC;
+    }
+}
+
+/* Respect reduced motion preference for new animations */
+@media (prefers-reduced-motion: reduce) {
+    .card-status-badge.newly_added,
+    .card-status-badge.discounted {
+        animation: none;
+    }
 }
