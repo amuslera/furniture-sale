@@ -14,7 +14,8 @@ const AdminPanel = {
   // State
   currentEditId: null,
   uploadedImages: [],
-  visibilityFilter: 'all', // 'all', 'visible', 'hidden'
+  visibilityFilter: 'all',
+  searchQuery: '',
   selectedItems: new Set(),
   currentTableItems: [], // ordered list of item IDs as shown in table
 
@@ -93,6 +94,17 @@ const AdminPanel = {
       this.loadItemsTable();
     });
 
+    // Search
+    let searchTimeout;
+    document.getElementById('adminSearchInput').addEventListener('input', (e) => {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => {
+        this.searchQuery = e.target.value.trim();
+        this.clearSelection();
+        this.loadItemsTable();
+      }, 300);
+    });
+
     // Selection & bulk actions
     document.getElementById('selectAllCheckbox').addEventListener('change', (e) => {
       this.toggleSelectAll(e.target.checked);
@@ -123,6 +135,15 @@ const AdminPanel = {
       items = items.filter(item => !item.hidden);
     } else if (this.visibilityFilter === 'hidden') {
       items = items.filter(item => item.hidden === true);
+    }
+
+    if (this.searchQuery) {
+      const q = this.searchQuery.toLowerCase();
+      items = items.filter(item =>
+        (item.name && item.name.toLowerCase().includes(q)) ||
+        (item.description && item.description.toLowerCase().includes(q)) ||
+        (item.id && item.id.toLowerCase().includes(q))
+      );
     }
 
     if (sortBy) {
