@@ -1,5 +1,5 @@
 {
-  "version": 25,
+  "version": 26,
   "items": [
     {
       "name": "Silver 2-Bike Upright Tension Mount Garage Bike Rack by Rad Cycle",
@@ -198,7 +198,7 @@
     {
       "name": "Case Study V-Leg Daybed by Modernica (Cream)",
       "description": "20% discount if bundled with other Modernica items!!",
-      "price": 1000,
+      "price": 1495,
       "bestOffer": true,
       "retailPrice": 2295,
       "productLink": "https://modernica.net/collections/daybeds/products/case-study%C2%AE-v-leg-daybed",
@@ -214,7 +214,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-012",
-      "dateUpdated": "2026-02-25T22:00:39.110Z",
+      "dateUpdated": "2026-02-27T00:14:06.243Z",
       "hidden": false
     },
     {
@@ -276,7 +276,7 @@
     {
       "name": "Chrome and Glass Coffee Table with V-Legs by Modernica",
       "description": "20% discount if bundled with other Modernica items!!\nExtra 10% off the whole package if buying the full set (total 30% off!)",
-      "price": 200,
+      "price": 300,
       "bestOffer": true,
       "retailPrice": 840,
       "productLink": null,
@@ -288,7 +288,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-016",
-      "dateUpdated": "2026-02-25T22:02:14.312Z",
+      "dateUpdated": "2026-02-27T00:14:59.725Z",
       "hidden": false
     },
     {
@@ -948,8 +948,8 @@
     },
     {
       "name": "WoodScape Coffee Table with V-Legs by Modernica",
-      "description": "20% discount if bundled with another Modernica item",
-      "price": 100,
+      "description": "30% discount if bundled with another Modernica item",
+      "price": 200,
       "bestOffer": true,
       "retailPrice": 840,
       "productLink": null,
@@ -961,7 +961,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-053",
-      "dateUpdated": "2026-02-25T23:23:17.991Z",
+      "dateUpdated": "2026-02-27T00:15:27.442Z",
       "hidden": false
     },
     {
@@ -1253,7 +1253,7 @@
     {
       "id": "item-082",
       "name": "Folding Teak & Walnut Deck Chairs (Set of 2)",
-      "description": "Pair of folding slatted deck chairs \u2014 one in natural teak, one in darker walnut finish. Stainless steel hardware. Compact and easy to store. Great for patio, balcony, or indoor use.",
+      "description": "Pair of folding slatted deck chairs — one in natural teak, one in darker walnut finish. Stainless steel hardware. Compact and easy to store. Great for patio, balcony, or indoor use.",
       "price": 120,
       "retailPrice": 300,
       "bestOffer": true,
@@ -1305,32 +1305,26 @@
       "hidden": false
     },
     {
-      "id": "item-085",
       "name": "Modernica Case Study Grey Living Room Set (3 Pieces)",
-      "description": "Full set of Modernica Case Study V-Leg furniture in Grey. Includes the Daybed with Arm, the Daybed Chair, and the Convertible Square Ottoman. Mid-century modern design with signature V-legs. All pieces in excellent condition. Sold as a complete set.",
-      "price": 1750,
-      "retailPrice": 4200,
+      "description": "Full set of Modernica Case Study V-Leg furniture in Grey. Includes the Daybed with Arm, the Daybed Chair, and the Convertible Square Ottoman. Mid-century modern design with signature V-legs. All pieces in excellent condition. Sold as a complete set or separate.",
+      "price": 2800,
       "bestOffer": true,
-      "category": "seating",
+      "retailPrice": 4225.05,
+      "productLink": "https://modernica.net/collections/daybeds",
       "status": "available",
-      "hidden": false,
       "images": [
+        "images/full/item-013-6.jpg",
+        "images/full/item-013-4.jpg",
         "images/full/item-013-1.jpg",
         "images/full/item-013-2.jpg",
         "images/full/item-013-3.jpg",
-        "images/full/item-013-4.jpg",
         "images/full/item-013-5.jpg",
-        "images/full/item-013-6.jpg",
-        "images/full/item-013-7.jpg",
-        "images/full/item-014-1.jpg",
-        "images/full/item-014-2.jpg",
-        "images/full/item-015-1.jpg",
-        "images/full/item-015-2.jpg"
+        "images/full/item-013-7.jpg"
       ],
-      "thumbnails": [],
       "dateAdded": "2026-02-26T12:00:00.000Z",
-      "dateUpdated": "2026-02-26T12:00:00.000Z",
-      "productLink": null
+      "id": "item-085",
+      "dateUpdated": "2026-02-27T00:12:46.849Z",
+      "hidden": false
     }
   ]
 }
