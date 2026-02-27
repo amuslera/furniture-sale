@@ -1,5 +1,5 @@
 {
-  "version": 28,
+  "version": 29,
   "items": [
     {
       "name": "Silver 2-Bike Upright Tension Mount Garage Bike Rack by Rad Cycle",
@@ -335,12 +335,12 @@
         "images/full/item-019-1.jpg",
         "images/full/item-019-2.jpg",
         "images/full/item-019-3.jpg",
-        "images/full/item-019-4.jpg",
+        "images/full/item-019-3.jpg",
         "images/full/item-019-5.jpg"
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-019",
-      "dateUpdated": "2026-02-25T22:05:00.877Z",
+      "dateUpdated": "2026-02-27T02:36:01.845Z",
       "hidden": false
     },
     {
@@ -1252,7 +1252,7 @@
     {
       "id": "item-082",
       "name": "Folding Teak & Walnut Deck Chairs (Set of 2)",
-      "description": "Pair of folding slatted deck chairs \u2014 one in natural teak, one in darker walnut finish. Stainless steel hardware. Compact and easy to store. Great for patio, balcony, or indoor use.",
+      "description": "Pair of folding slatted deck chairs — one in natural teak, one in darker walnut finish. Stainless steel hardware. Compact and easy to store. Great for patio, balcony, or indoor use.",
       "price": 120,
       "retailPrice": 300,
       "bestOffer": true,
