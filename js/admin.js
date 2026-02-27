@@ -576,6 +576,50 @@ const AdminPanel = {
   GITHUB_FILE: 'data/furniture.json',
   GITHUB_TOKEN_KEY: 'furniture_github_token',
 
+  /**
+   * Upload a base64 image to GitHub and return the file path
+   */
+  async uploadBase64ImageToGitHub(token, itemId, imgIndex, dataUrl) {
+    const match = dataUrl.match(/^data:image\/(\w+);base64,(.+)$/);
+    if (!match) return null;
+    const ext = match[1] === 'png' ? 'png' : 'jpg';
+    const b64data = match[2];
+    const filePath = `images/full/${itemId}-${imgIndex}.${ext}`;
+
+    // Check if file already exists (need SHA for update)
+    let sha = null;
+    try {
+      const checkResp = await fetch(
+        `https://api.github.com/repos/${this.GITHUB_REPO}/contents/${filePath}`,
+        { headers: { 'Authorization': `token ${token}` } }
+      );
+      if (checkResp.ok) {
+        const existing = await checkResp.json();
+        sha = existing.sha;
+      }
+    } catch (e) { /* file doesn't exist, that's fine */ }
+
+    const body = {
+      message: `Upload image ${filePath}`,
+      content: b64data
+    };
+    if (sha) body.sha = sha;
+
+    const putResp = await fetch(
+      `https://api.github.com/repos/${this.GITHUB_REPO}/contents/${filePath}`,
+      {
+        method: 'PUT',
+        headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      }
+    );
+    if (!putResp.ok) {
+      console.error(`Failed to upload ${filePath}:`, putResp.status);
+      return null;
+    }
+    return filePath;
+  },
+
   async publishChanges() {
     let token = localStorage.getItem(this.GITHUB_TOKEN_KEY);
     if (!token) {
@@ -595,6 +639,36 @@ const AdminPanel = {
       }
       const fileData = await getResp.json();
       const items = FurnitureData.loadItems();
+
+      // Extract base64 images to GitHub files before publishing JSON
+      let uploadedCount = 0;
+      for (const item of items) {
+        if (!item.images) continue;
+        const newImages = [];
+        for (let i = 0; i < item.images.length; i++) {
+          const img = item.images[i];
+          if (img.startsWith('data:')) {
+            publishBtn.textContent = `\u23f3 Uploading images (${uploadedCount + 1})...`;
+            const filePath = await this.uploadBase64ImageToGitHub(token, item.id, i + 1, img);
+            if (filePath) {
+              newImages.push(filePath);
+              uploadedCount++;
+            } else {
+              newImages.push(img); // keep base64 as fallback if upload fails
+            }
+          } else {
+            newImages.push(img);
+          }
+        }
+        item.images = newImages;
+      }
+
+      // Save cleaned items back to localStorage
+      if (uploadedCount > 0) {
+        FurnitureData.saveItems(items);
+      }
+
+      publishBtn.textContent = '\u23f3 Publishing data...';
       const storedVersion = FurnitureData.getStoredVersion();
       const newVersion = storedVersion + 1;
       const jsonStr = JSON.stringify({ version: newVersion, items }, null, 2);
@@ -605,7 +679,8 @@ const AdminPanel = {
       });
       if (!putResp.ok) { const err = await putResp.json(); throw new Error(err.message || `GitHub API error: ${putResp.status}`); }
       localStorage.setItem(FurnitureData.VERSION_KEY, String(newVersion));
-      this.showMessage(`Published v${newVersion} to GitHub! Site will update in ~1 minute.`, 'success');
+      const imgMsg = uploadedCount > 0 ? ` (${uploadedCount} images uploaded)` : '';
+      this.showMessage(`Published v${newVersion} to GitHub${imgMsg}! Site will update in ~1 minute.`, 'success');
     } catch (error) {
       console.error('Publish failed:', error);
       this.showMessage(`Publish failed: ${error.message}`, 'error');
