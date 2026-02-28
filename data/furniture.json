@@ -1,5 +1,5 @@
 {
-  "version": 30,
+  "version": 31,
   "items": [
     {
       "name": "Silver 2-Bike Upright Tension Mount Garage Bike Rack by Rad Cycle",
@@ -370,7 +370,7 @@
       "bestOffer": true,
       "retailPrice": 1400,
       "productLink": "https://floydhome.com/products/the-bed-frame",
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-021-1.jpg",
         "images/full/item-021-2.jpg",
@@ -381,7 +381,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-021",
-      "dateUpdated": "2026-02-25T22:06:53.332Z",
+      "dateUpdated": "2026-02-28T17:11:40.577Z",
       "hidden": false
     },
     {
@@ -494,7 +494,7 @@
       "bestOffer": true,
       "retailPrice": 12695,
       "productLink": "https://rh.com/us/en/catalog/product/product.jsp/prod14970190",
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-028-1.jpg",
         "images/full/item-028-2.jpg",
@@ -504,7 +504,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-028",
-      "dateUpdated": "2026-02-25T22:11:22.763Z",
+      "dateUpdated": "2026-02-28T17:10:49.760Z",
       "hidden": false
     },
     {
@@ -888,21 +888,19 @@
     {
       "name": "Vizio TV",
       "description": "Free TV stand included.\nJust the stand is worth more than the asking price!!",
-      "price": 150,
+      "price": 0,
       "bestOffer": true,
       "retailPrice": 1400,
       "productLink": null,
       "status": "available",
       "images": [
-        "images/full/item-050-1.jpg",
-        "images/full/item-050-2.jpg",
         "images/full/item-050-3.jpg",
         "images/full/item-050-4.jpg",
         "images/full/item-050-5.jpg"
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-050",
-      "dateUpdated": "2026-02-25T23:20:50.405Z",
+      "dateUpdated": "2026-02-27T03:44:44.076Z",
       "hidden": false
     },
     {
