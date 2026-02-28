@@ -1,5 +1,5 @@
 {
-  "version": 32,
+  "version": 33,
   "items": [
     {
       "name": "Silver 2-Bike Upright Tension Mount Garage Bike Rack by Rad Cycle",
@@ -41,7 +41,7 @@
       "bestOffer": true,
       "retailPrice": null,
       "productLink": "https://www.bang-olufsen.com/en/us/speakers/beosound-a9",
-      "status": "available",
+      "status": "pending",
       "images": [
         "images/full/item-003-5.jpg",
         "images/full/item-003-6.jpg",
@@ -51,7 +51,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-003",
-      "dateUpdated": "2026-02-25T21:53:16.375Z",
+      "dateUpdated": "2026-02-28T17:14:14.250Z",
       "hidden": false
     },
     {
@@ -386,12 +386,12 @@
     },
     {
       "name": "FLOYD The Bed Frame #2",
-      "description": "Barely used!\n30% off bundle if purchasing with Purlple mattress!!\n(the headset had to be cut down manually bc Floyd sent a King size by mistake)",
-      "price": 200,
+      "description": "Barely used!\nFree Purple mattress included \n(the headset had to be cut down manually bc Floyd sent a King size by mistake)",
+      "price": 600,
       "bestOffer": true,
       "retailPrice": 1400,
       "productLink": "https://floydhome.com/products/the-bed-frame",
-      "status": "available",
+      "status": "discounted",
       "images": [
         "images/full/item-022-1.jpg",
         "images/full/item-022-2.jpg",
@@ -402,7 +402,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-022",
-      "dateUpdated": "2026-02-28T17:12:58.234Z",
+      "dateUpdated": "2026-02-28T17:14:07.834Z",
       "hidden": false
     },
     {
@@ -732,24 +732,24 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-041",
-      "dateUpdated": "2026-02-28T17:12:30.750Z",
+      "dateUpdated": "2026-02-28T17:15:10.968Z",
       "hidden": false
     },
     {
       "name": "Queen purple mattress #2",
-      "description": "Minimal use\n30% discount to bed+mattress bundle!!",
-      "price": 600,
+      "description": "Minimal use, small cup ring stain barely noticeable.",
+      "price": 200,
       "bestOffer": true,
       "retailPrice": 1299,
       "productLink": "https://purple.com/mattresses/purple-bed",
-      "status": "available",
+      "status": "discounted",
       "images": [
         "images/full/item-042-1.jpg",
         "images/full/item-042-2.jpg"
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-042",
-      "dateUpdated": "2026-02-25T23:16:00.954Z",
+      "dateUpdated": "2026-02-28T17:16:01.801Z",
       "hidden": false
     },
     {
