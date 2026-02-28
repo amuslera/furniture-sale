@@ -1,5 +1,5 @@
 {
-  "version": 33,
+  "version": 34,
   "items": [
     {
       "name": "Silver 2-Bike Upright Tension Mount Garage Bike Rack by Rad Cycle",
@@ -1030,7 +1030,7 @@
       "bestOffer": true,
       "retailPrice": 1799,
       "productLink": "https://www.crateandbarrel.com/tate-80-walnut-storage-media-console/s120037",
-      "status": "available",
+      "status": "pending",
       "images": [
         "images/full/item-057-1.jpg",
         "images/full/item-057-2.jpg",
@@ -1038,41 +1038,24 @@
       ],
       "dateAdded": "2026-02-24T05:45:21.000Z",
       "id": "item-057",
-      "dateUpdated": "2026-02-25T23:29:23.895Z",
-      "hidden": false
-    },
-    {
-      "name": "Tate 36\" Walnut Wide Bookcase by Crate & Barrel [delete]",
-      "description": "Tate 36\" Walnut Wide Bookcase by Crate & Barrel. Wide walnut veneer bookcase with natural walnut finish over solid poplar plywood. 3 fixed and 2 adjustable shelves with levelers. 36\"W x 14.5\"D x 75.5\"H. Designed by Blake Tovin.",
-      "price": 0,
-      "bestOffer": true,
-      "retailPrice": 999,
-      "productLink": "https://www.crateandbarrel.com/tate-walnut-wide-bookcase/f87560",
-      "status": "available",
-      "images": [
-        "images/full/item-058-1.jpg",
-        "images/full/item-058-2.jpg"
-      ],
-      "dateAdded": "2026-02-24T05:45:21.000Z",
-      "id": "item-058",
-      "dateUpdated": "2026-02-25T23:29:38.463Z",
+      "dateUpdated": "2026-02-28T18:08:56.521Z",
       "hidden": false
     },
     {
       "name": "Tate 32\" Black 5-Drawer Tall Dresser by Crate & Barrel",
       "description": "Tate 32\" Black 5-Drawer Tall Dresser by Crate & Barrel. One small top drawer stacked on four large drawers. Ash and hardwood veneers finished in ebonized black. Gallery fronts, linear undercut drawer pulls, and tapered turned legs. 31.89\"W x 20\"D x 50.75\"H. Designed by Blake Tovin.",
-      "price": 700,
+      "price": 600,
       "bestOffer": true,
       "retailPrice": 1399,
       "productLink": "https://www.crateandbarrel.com/tate-32-black-5-drawer-tall-dresser/s112916",
-      "status": "available",
+      "status": "discounted",
       "images": [
         "images/full/item-059-1.jpg",
         "images/full/item-059-2.jpg"
       ],
       "dateAdded": "2026-02-24T05:45:21.000Z",
       "id": "item-059",
-      "dateUpdated": "2026-02-25T23:29:50.361Z",
+      "dateUpdated": "2026-02-28T18:08:50.962Z",
       "hidden": false
     },
     {
