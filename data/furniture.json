@@ -1,5 +1,5 @@
 {
-  "version": 35,
+  "version": 36,
   "items": [
     {
       "name": "Silver 2-Bike Upright Tension Mount Garage Bike Rack by Rad Cycle",
@@ -391,7 +391,7 @@
       "bestOffer": true,
       "retailPrice": 1400,
       "productLink": "https://floydhome.com/products/the-bed-frame",
-      "status": "discounted",
+      "status": "sold",
       "images": [
         "images/full/item-022-1.jpg",
         "images/full/item-022-2.jpg",
@@ -402,7 +402,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-022",
-      "dateUpdated": "2026-02-28T17:14:07.834Z",
+      "dateUpdated": "2026-03-05T00:01:33.590Z",
       "hidden": false
     },
     {
