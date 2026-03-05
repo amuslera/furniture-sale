@@ -1,5 +1,5 @@
 {
-  "version": 34,
+  "version": 35,
   "items": [
     {
       "name": "Silver 2-Bike Upright Tension Mount Garage Bike Rack by Rad Cycle",
@@ -41,7 +41,7 @@
       "bestOffer": true,
       "retailPrice": null,
       "productLink": "https://www.bang-olufsen.com/en/us/speakers/beosound-a9",
-      "status": "pending",
+      "status": "sold",
       "images": [
         "images/full/item-003-5.jpg",
         "images/full/item-003-6.jpg",
@@ -51,7 +51,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-003",
-      "dateUpdated": "2026-02-28T17:14:14.250Z",
+      "dateUpdated": "2026-03-04T23:58:46.669Z",
       "hidden": false
     },
     {
@@ -78,13 +78,13 @@
       "bestOffer": true,
       "retailPrice": 8267,
       "productLink": "https://www.lumens.com/bertoia-asymmetric-chaise-with-seat-cushion-by-knoll-KNO882019.html",
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-005-2.jpg"
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-005",
-      "dateUpdated": "2026-02-25T21:55:26.993Z",
+      "dateUpdated": "2026-03-04T23:57:38.823Z",
       "hidden": false
     },
     {
@@ -94,7 +94,7 @@
       "bestOffer": true,
       "retailPrice": 4554,
       "productLink": "https://www.knoll.com/shop/en_us/living-lounge-chairs/womb-chair-standard/310079.html",
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-006-1.jpg",
         "images/full/item-006-2.jpg",
@@ -103,7 +103,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-006",
-      "dateUpdated": "2026-02-25T21:56:12.308Z",
+      "dateUpdated": "2026-03-04T23:57:59.020Z",
       "hidden": false
     },
     {
@@ -113,7 +113,7 @@
       "bestOffer": true,
       "retailPrice": 870,
       "productLink": "https://www.bludot.com/collections/real-good-collection",
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-007-1.jpg",
         "images/full/item-007-2.jpg",
@@ -121,7 +121,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-007",
-      "dateUpdated": "2026-02-25T21:58:03.892Z",
+      "dateUpdated": "2026-03-04T23:59:16.623Z",
       "hidden": false
     },
     {
@@ -202,7 +202,7 @@
       "bestOffer": true,
       "retailPrice": 2295,
       "productLink": "https://modernica.net/collections/daybeds/products/case-study%C2%AE-v-leg-daybed",
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-012-1.jpg",
         "images/full/item-012-2.jpg",
@@ -214,7 +214,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-012",
-      "dateUpdated": "2026-02-27T00:14:06.243Z",
+      "dateUpdated": "2026-03-04T23:58:08.870Z",
       "hidden": false
     },
     {
@@ -298,13 +298,13 @@
       "bestOffer": true,
       "retailPrice": 1495,
       "productLink": null,
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-017-3.jpg"
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-017",
-      "dateUpdated": "2026-02-25T22:03:07.228Z",
+      "dateUpdated": "2026-03-04T23:58:50.788Z",
       "hidden": false
     },
     {
@@ -314,13 +314,13 @@
       "bestOffer": true,
       "retailPrice": 1495,
       "productLink": null,
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-018-1.jpg"
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-018",
-      "dateUpdated": "2026-02-25T22:03:45.377Z",
+      "dateUpdated": "2026-03-04T23:58:57.539Z",
       "hidden": false
     },
     {
@@ -470,7 +470,7 @@
       "bestOffer": true,
       "retailPrice": 4700,
       "productLink": null,
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-027-1.jpg",
         "images/full/item-027-2.jpg",
@@ -484,7 +484,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-027",
-      "dateUpdated": "2026-02-25T22:09:50.931Z",
+      "dateUpdated": "2026-03-04T23:57:50.523Z",
       "hidden": false
     },
     {
@@ -514,7 +514,7 @@
       "bestOffer": true,
       "retailPrice": 4000,
       "productLink": null,
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-029-4.jpg",
         "images/full/item-029-6.jpg",
@@ -524,7 +524,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-029",
-      "dateUpdated": "2026-02-25T22:14:52.535Z",
+      "dateUpdated": "2026-03-04T23:58:17.343Z",
       "hidden": false
     },
     {
@@ -565,7 +565,7 @@
       "bestOffer": true,
       "retailPrice": 5728,
       "productLink": "https://www.dwr.com/brands-cassina",
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-032-1.jpg",
         "images/full/item-032-2.jpg",
@@ -577,7 +577,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-032",
-      "dateUpdated": "2026-02-25T22:16:58.515Z",
+      "dateUpdated": "2026-03-04T23:57:42.039Z",
       "hidden": false
     },
     {
@@ -603,7 +603,7 @@
       "bestOffer": true,
       "retailPrice": 2200,
       "productLink": null,
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-034-1.jpg",
         "images/full/item-034-2.jpg",
@@ -611,7 +611,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-034",
-      "dateUpdated": "2026-02-25T22:18:25.998Z",
+      "dateUpdated": "2026-03-04T23:58:29.420Z",
       "hidden": false
     },
     {
@@ -670,7 +670,7 @@
       "bestOffer": true,
       "retailPrice": 1780,
       "productLink": "https://www.dwr.com/living-accent-coffee-tables/platner-coffee-table/857352.html",
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-038-1.jpg",
         "images/full/item-038-2.jpg",
@@ -680,7 +680,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-038",
-      "dateUpdated": "2026-02-25T23:13:57.106Z",
+      "dateUpdated": "2026-03-04T23:58:11.205Z",
       "hidden": false
     },
     {
@@ -690,7 +690,7 @@
       "bestOffer": true,
       "retailPrice": 4826,
       "productLink": null,
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-039-1.jpg",
         "images/full/item-039-2.jpg",
@@ -698,7 +698,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-039",
-      "dateUpdated": "2026-02-25T23:14:18.072Z",
+      "dateUpdated": "2026-03-04T23:58:03.723Z",
       "hidden": false
     },
     {
@@ -725,14 +725,14 @@
       "bestOffer": true,
       "retailPrice": 1299,
       "productLink": "https://purple.com/mattresses/purple-bed",
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-041-1.jpg",
         "images/full/item-041-2.jpg"
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-041",
-      "dateUpdated": "2026-02-28T17:15:10.968Z",
+      "dateUpdated": "2026-03-04T23:58:38.886Z",
       "hidden": false
     },
     {
@@ -810,7 +810,7 @@
       "bestOffer": true,
       "retailPrice": 1049,
       "productLink": "https://www.wayfair.com/outdoor/pdp/allmodern-kareen-62-concrete-outdoor-bench-w008053010.html",
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-046-1.jpg",
         "images/full/item-046-2.jpg",
@@ -820,7 +820,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-046",
-      "dateUpdated": "2026-02-25T23:17:59.472Z",
+      "dateUpdated": "2026-03-04T23:58:59.570Z",
       "hidden": false
     },
     {
@@ -849,7 +849,7 @@
       "bestOffer": true,
       "retailPrice": 840,
       "productLink": "https://www.wayfair.com/furniture/pdp/ivy-bronx-varnado-2975-wide-armchair-w000183354.html",
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-048-1.jpg",
         "images/full/item-048-2.jpg",
@@ -862,27 +862,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-048",
-      "dateUpdated": "2026-02-25T23:19:43.788Z",
-      "hidden": false
-    },
-    {
-      "name": "Varnado Vegan Leather Armchair #2 [delete]",
-      "description": "Varnado Vegan Leather Armchair #2.\n\nRetails for: $400.00\nSelling for: $150.00",
-      "price": 150,
-      "bestOffer": false,
-      "retailPrice": 400,
-      "productLink": "https://www.wayfair.com/furniture/pdp/ivy-bronx-varnado-2975-wide-armchair-w000183354.html",
-      "status": "available",
-      "images": [
-        "images/full/item-049-1.jpg",
-        "images/full/item-049-2.jpg",
-        "images/full/item-049-3.jpg",
-        "images/full/item-049-4.jpg",
-        "images/full/item-049-5.jpg"
-      ],
-      "dateAdded": "2026-02-24T05:20:58.000Z",
-      "id": "item-049",
-      "dateUpdated": "2026-02-25T23:20:02.089Z",
+      "dateUpdated": "2026-03-04T23:59:12.391Z",
       "hidden": false
     },
     {
@@ -910,7 +890,7 @@
       "bestOffer": false,
       "retailPrice": 1887,
       "productLink": "https://www.lumens.com/faz-armchair-with-steel-baseand-set-of-4-by-vondom-VON594820.html",
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-051-1.jpg",
         "images/full/item-051-2.jpg",
@@ -922,7 +902,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-051",
-      "dateUpdated": "2026-02-25T23:22:10.706Z",
+      "dateUpdated": "2026-03-04T23:58:42.386Z",
       "hidden": false
     },
     {
@@ -932,7 +912,7 @@
       "bestOffer": true,
       "retailPrice": 1699,
       "productLink": "https://store.moma.org/products/waterrower-rowing-machine-model-300-s4-in-walnut-wood",
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-052-1.jpg",
         "images/full/item-052-2.jpg",
@@ -940,7 +920,7 @@
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-052",
-      "dateUpdated": "2026-02-25T23:22:42.423Z",
+      "dateUpdated": "2026-03-04T23:59:04.171Z",
       "hidden": false
     },
     {
@@ -1030,7 +1010,7 @@
       "bestOffer": true,
       "retailPrice": 1799,
       "productLink": "https://www.crateandbarrel.com/tate-80-walnut-storage-media-console/s120037",
-      "status": "pending",
+      "status": "sold",
       "images": [
         "images/full/item-057-1.jpg",
         "images/full/item-057-2.jpg",
@@ -1038,7 +1018,7 @@
       ],
       "dateAdded": "2026-02-24T05:45:21.000Z",
       "id": "item-057",
-      "dateUpdated": "2026-02-28T18:08:56.521Z",
+      "dateUpdated": "2026-03-04T23:57:25.848Z",
       "hidden": false
     },
     {
@@ -1115,7 +1095,7 @@
       "bestOffer": true,
       "retailPrice": null,
       "productLink": null,
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-065-1.jpg",
         "images/full/item-065-2.jpg",
@@ -1123,7 +1103,7 @@
       ],
       "dateAdded": "2026-02-24T05:45:21.000Z",
       "id": "item-065",
-      "dateUpdated": "2026-02-25T23:32:52.662Z",
+      "dateUpdated": "2026-03-05T00:00:10.206Z",
       "hidden": false
     },
     {
@@ -1133,14 +1113,14 @@
       "bestOffer": true,
       "retailPrice": null,
       "productLink": null,
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-066-1.jpg",
         "images/full/item-066-2.jpg"
       ],
       "dateAdded": "2026-02-24T05:45:21.000Z",
       "id": "item-066",
-      "dateUpdated": "2026-02-25T23:33:10.095Z",
+      "dateUpdated": "2026-03-05T00:00:13.090Z",
       "hidden": false
     },
     {
@@ -1215,7 +1195,7 @@
       "retailPrice": 250,
       "bestOffer": true,
       "category": "tables",
-      "status": "available",
+      "status": "sold",
       "hidden": false,
       "images": [
         "images/full/item-081-1.jpg",
@@ -1226,7 +1206,7 @@
         "images/thumbnails/item-081-2-thumb.jpg"
       ],
       "dateAdded": "2026-02-26T12:00:00.000Z",
-      "dateUpdated": "2026-02-26T12:00:00.000Z",
+      "dateUpdated": "2026-03-05T00:00:30.040Z",
       "productLink": null
     },
     {
@@ -1290,7 +1270,7 @@
       "bestOffer": true,
       "retailPrice": 4225.05,
       "productLink": "https://modernica.net/collections/daybeds",
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-013-6.jpg",
         "images/full/item-013-4.jpg",
@@ -1302,7 +1282,7 @@
       ],
       "dateAdded": "2026-02-26T12:00:00.000Z",
       "id": "item-085",
-      "dateUpdated": "2026-02-27T00:12:46.849Z",
+      "dateUpdated": "2026-03-04T23:57:56.424Z",
       "hidden": false
     }
   ]
