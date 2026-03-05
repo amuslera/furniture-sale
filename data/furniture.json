@@ -1,5 +1,5 @@
 {
-  "version": 36,
+  "version": 37,
   "items": [
     {
       "name": "Silver 2-Bike Upright Tension Mount Garage Bike Rack by Rad Cycle",
@@ -8,13 +8,13 @@
       "bestOffer": true,
       "retailPrice": 84.5,
       "productLink": null,
-      "status": "available",
+      "status": "sold",
       "images": [
         "images/full/item-001-1.jpg"
       ],
       "dateAdded": "2026-02-24T05:20:58.000Z",
       "id": "item-001",
-      "dateUpdated": "2026-02-25T23:36:52.763Z",
+      "dateUpdated": "2026-03-05T00:02:41.271Z",
       "hidden": false
     },
     {
